@@ -1,7 +1,7 @@
 import LLMStrategy
 
 # Concrete Strategy: OpenAI GPT
-class OpenAIGPT(LLMStrategy):
+class chatGpt4o(LLMStrategy):
     def __init__(self, api_key: str):
         self.api_key = api_key
 
