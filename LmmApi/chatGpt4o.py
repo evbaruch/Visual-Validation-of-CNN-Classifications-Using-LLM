@@ -1,4 +1,5 @@
-import LLMStrategy
+from LmmApi.LLMStrategy import LLMStrategy
+
 
 # Concrete Strategy: OpenAI GPT
 class chatGpt4o(LLMStrategy):

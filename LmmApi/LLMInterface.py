@@ -1,4 +1,4 @@
-import LLMStrategy
+from LmmApi.LLMStrategy import LLMStrategy
 
 
 # Context Class
@@ -12,4 +12,4 @@ class LLMInterface:
 
     def get_response(self, prompt: str, image: str) -> str:
         """Generate a response using the current strategy."""
-        return self.strategy.generate_response(prompt, image)
+        return self.strategy.generate_response(prompt = prompt, image = image)

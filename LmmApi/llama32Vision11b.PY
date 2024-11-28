@@ -1,4 +1,4 @@
-import LLMStrategy
+from LmmApi.LLMStrategy import LLMStrategy
 import ollama
 
 # Concrete Strategy: OpenAI GPT 
@@ -9,12 +9,17 @@ class llama32Vision11b(LLMStrategy):
 
 
     def generate_response(self, prompt: str, image: str) -> str:
-        response = ollama.chat(model=self.model, messages=[
-            { 
-                'role': 'user',
-                'content': prompt,
-                'images': [image]
-            },
-        ])
-
-        return f"llama32Vision11b response for prompt: {prompt}"
+        
+        try:
+            response = ollama.chat(model=self.model, messages=[
+                { 
+                    'role': 'user',
+                    'content': prompt,
+                    'images': [image]
+                },
+            ])
+            return response['message']['content']
+             
+        except TypeError as e:
+            print("LmmApi\llama32Vision11b.py: Error in ollama.chat:", e)
+            raise
