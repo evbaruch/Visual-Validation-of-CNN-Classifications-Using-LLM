@@ -2,7 +2,7 @@ import base64
 import os
 from dotenv import load_dotenv
 from openai import OpenAI
-from LLMStrategy import LLMStrategy
+from LmmApi.LLMStrategy import LLMStrategy
 
 class ChatGPT4O(LLMStrategy): # ChatGPT4O class implements the LLMStrategy interface
     def __init__(self, api_key: str):
@@ -22,7 +22,7 @@ class ChatGPT4O(LLMStrategy): # ChatGPT4O class implements the LLMStrategy inter
         with open(image_path, "rb") as image_file:
             return base64.b64encode(image_file.read()).decode('utf-8')
 
-    def generate_response(self, prompt: str, image_path: str) -> str:
+    def generate_response(self, prompt: str, image: str) -> str:
         """
         Generates a response using OpenAI's chat completion.
 
@@ -34,7 +34,7 @@ class ChatGPT4O(LLMStrategy): # ChatGPT4O class implements the LLMStrategy inter
             str: The generated response from OpenAI.
         """
         # Encode the image to base64
-        base64_image = self.encode_image(image_path)
+        base64_image = self.encode_image(image)
 
         # Send the request to OpenAI
         completion = self.client.chat.completions.create(
@@ -56,4 +56,4 @@ class ChatGPT4O(LLMStrategy): # ChatGPT4O class implements the LLMStrategy inter
         )
 
         # Return the API response
-        return completion.choices[0].message["content"]
+        return completion.choices[0].message.content
