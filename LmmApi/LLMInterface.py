@@ -2,7 +2,7 @@ import LLMStrategy
 
 
 # Context Class
-class LLMContext:
+class LLMInterface:
     def __init__(self, strategy: LLMStrategy):
         self.strategy = strategy
 
@@ -10,6 +10,6 @@ class LLMContext:
         """Set a different strategy at runtime."""
         self.strategy = strategy
 
-    def get_response(self, prompt: str) -> str:
+    def get_response(self, prompt: str, image: str) -> str:
         """Generate a response using the current strategy."""
-        return self.strategy.generate_response(prompt)
+        return self.strategy.generate_response(prompt, image)
