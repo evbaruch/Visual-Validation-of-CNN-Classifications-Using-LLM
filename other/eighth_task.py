@@ -1388,7 +1388,7 @@ def main():
     k = 5
 
     # Set the threshold for pixel removal in the saliency mask
-    threshold = 0.001
+    threshold = 0.01
 
     # Define the explanation method to be used
     method = 'Saliency'
@@ -1457,11 +1457,6 @@ def main():
     for i in range(a_masked_x_batch.shape[0]):
         # Generate and display a heatmap for the i-th image in the batch using the `create_heatmap()` function.
        create_heatmap(a_masked_x_batch[i], threshold, i)
-
-    # Loop through each image in the batch (`a_masked_x_batch`) again, redundant as the previous loop does the same task.
-    for i in range(a_masked_x_batch.shape[0]):
-       # Generate and display a heatmap for the i-th image in the batch using the `create_heatmap()` function.
-        create_heatmap(a_masked_x_batch[i], threshold, i)
 
     """## Info"""
 
