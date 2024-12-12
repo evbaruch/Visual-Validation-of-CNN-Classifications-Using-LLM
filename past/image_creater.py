@@ -74,16 +74,18 @@ def load_images(num, link):
     return x_batch, y_batch, s_batch
 
 # Load images from separate .pt files for x_batch, y_batch, and s_batch, and move them to the specified device.
-def load_images(num, x_link, y_link, s_link, device):
-    x_batch = torch.load(x_link).to(device)[:num]
-    y_batch = torch.load(y_link).to(device)[:num]
-    s_batch = torch.load(s_link).reshape(-1, 1, 224, 224).to(device)[:num]
+def load_images(nr_samples, x_link, y_link, s_link, device):
+
+    x_batch = torch.load(x_link, weights_only=True).to(device)[:nr_samples]
+    y_batch = torch.load(y_link, weights_only=True).to(device)[:nr_samples]
+    s_batch = torch.load(s_link, weights_only=True).reshape(-1, 1, 224, 224).to(device)[:nr_samples]
     return x_batch, y_batch, s_batch
+
 
 """## Utils"""
 
 # Denormalize an image from the ImageNet format and convert it to a format suitable for display.
-def normalize_image(arr: Union[np.ndarray, torch.Tensor]) -> np.ndarray:
+def change_ImageNet_format(arr: Union[np.ndarray, torch.Tensor]) -> np.ndarray:
     mean = np.array([0.485, 0.456, 0.406])
     std = np.array([0.229, 0.224, 0.225])
     if isinstance(arr, torch.Tensor):
@@ -156,7 +158,7 @@ def get_probabilities(batch, model):
   probabilities = [0] * len(batch)
 
   for i in range(len(batch)):
-    input_image = Image.fromarray(normalize_image(batch[i]))  # Assuming the pixel values are in the range [0, 1]
+    input_image = Image.fromarray(change_ImageNet_format(batch[i]))  # Assuming the pixel values are in the range [0, 1]
 
     preprocess = transforms.Compose([
         transforms.Resize(256),
@@ -293,7 +295,8 @@ def is_classified_correct(row, k):
 # Calculates and displays the proportion of correctly classified images based on top-k accuracy.
 def get_corrects(df, k):
   df['Match'] = df.apply(is_classified_correct, k=k, axis=1)
-  print(f"Correctly classified instances: {(df['Match'].sum() / len(df))}")
+  return (df['Match'].sum() / len(df))
+
 
 """## Main"""
 
@@ -310,7 +313,7 @@ def get_results(model, a_masked_x_batch, y_batch, k):
 
 """## Heatmap"""
 
-def create_heatmap(a_matrix, threshold, image_index):
+def create_heatmap1(a_matrix, threshold, image_index):
     # Move to CPU and convert to NumPy if a_matrix is a tensor
     if isinstance(a_matrix, torch.Tensor):
         a_matrix = a_matrix.cpu().numpy()
@@ -322,13 +325,31 @@ def create_heatmap(a_matrix, threshold, image_index):
     # Normalize the importance matrix and apply threshold if needed
     plt.figure(figsize=(8, 8))
     sns.heatmap(a_matrix, cmap='viridis', cbar=True)
-
+    plt.title(f'Heatmap of Pixel Importance - Image {image_index + 1}')
+    plt.xlabel('Width')
+    plt.ylabel('Height')
+    
     # TODO: save all the images to a folder 
     os.makedirs("images2", exist_ok=True)
     plt.savefig(f"images2/heatmap_{image_index}.png")
     
 
+def create_heatmap2(a_matrix, threshold, image_index):
+    # Move to CPU and convert to NumPy if a_matrix is a tensor
+    if isinstance(a_matrix, torch.Tensor):
+        a_matrix = a_matrix.cpu().numpy()
 
+    importance_matrix = np.where(a_matrix > threshold, a_matrix, 0)
+    importance_matrix = importance_matrix / np.max(importance_matrix)
+
+    plt.figure(figsize=(8, 8))
+    sns.heatmap(importance_matrix[0], cmap='viridis', cbar=True)
+    plt.title(f'Heatmap of Pixel Importance - Image {image_index + 1}')
+    plt.xlabel('Width')
+    plt.ylabel('Height')
+    plt.show()
+    
+    # TODO: save all the images to a folder
 
 """## Catagories"""
 
@@ -380,7 +401,7 @@ def main():
     k = 5
 
     # Set the threshold for pixel removal in the saliency mask
-    threshold = 0.01
+    threshold = 0.1
 
     # Define the explanation method to be used
     method = 'Saliency'
@@ -404,7 +425,8 @@ def main():
     print("Area removed from instances: " + str(removed))
 
     # Calculate and print classification accuracy based on the top-k matches in `df`.
-    get_corrects(df, k)
+    Correctly = get_corrects(df, k)
+    print(f"Correctly classified instances: {Correctly}")
 
     # Save the results DataFrame as a CSV file with a filename that includes the method, threshold, and k-value.
     df.to_csv(f"{SAVE_FILES_LINK}a_batch_{method}_{threshold}_{k}.csv", index=False)
@@ -413,61 +435,18 @@ def main():
     #beep(BEEP_LINK)
 
     # Normalize the first image from the masked batch using the normalization function for saliency maps.
-    normalize_image(a_masked_x_batch[0])
+    for imeg in a_masked_x_batch:
+        
+        a = change_ImageNet_format(imeg)
+        plt.imshow(a)
+        plt.axis('off')  # Hide axis for better display
+        plt.show()
 
-    # Create a dictionary mapping explanation method names to their corresponding saliency maps.
-    explanations = {
-        "Saliency": a_batch,
-    }
-
-    # Set the index of the image to be displayed
-    index = 11
-
-    # Create a subplot with 1 + len(explanations) columns (1 for the original image, others for explanations)
-    fig, axes = plt.subplots(nrows=1, ncols=1+len(explanations), figsize=(15, 8))
-
-    # Display the original image, denormalized, with normalization applied to the ImageNet standard.
-    # The image is denormalized using the mean and std values for ImageNet, and the axis is turned off.
-    axes[0].imshow(np.moveaxis(quantus.normalise_func.denormalise(x_batch[index].cpu().numpy(),
-                                                              mean=np.array([0.485, 0.456, 0.406]),
-                                                              std=np.array([0.229, 0.224, 0.225])), 0, -1), vmin=0.0, vmax=1.0)
-
-    # Set the title of the first subplot (original image) to show its corresponding ImageNet class.
-    axes[0].title.set_text(f"ImageNet class {y_batch[index].item()}")
-
-    # Hide the axes of the original image
-    axes[0].axis("off")
-
-    # Loop through the explanations dictionary and display each saliency map in the subsequent subplots.
-    # The saliency maps are normalized and displayed using the 'seismic' color map.
-    for i, (k, v) in enumerate(explanations.items()):
-        axes[i+1].imshow(quantus.normalise_func.normalise_by_negative(explanations[k][index].reshape(224, 224)), cmap="seismic", vmin=-1.0, vmax=1.0)
-        axes[i+1].title.set_text(f"{k}")  # Set the title of each subplot to the explanation method name
-        axes[i+1].axis("off")  # Hide the axes for the explanation maps
-
-    # Loop through each image in the batch (`a_masked_x_batch`) by iterating over its first dimension (batch size).
-    for i in range(a_masked_x_batch.shape[0]):
-        # Generate and display a heatmap for the i-th image in the batch using the `create_heatmap()` function.
-       create_heatmap(a_masked_x_batch[i], threshold, i)
-
-    """## Info"""
-
-    # Call the `exist_models()` function to check or load any existing models.
-    exist_models()
-
-    # Call the `available_methods_captum()` function from the `quantus.helpers.constants` module to list available explanation methods in Captum.
-    quantus.helpers.constants.available_methods_captum()
-
-    # Call the `available_metrics()` function from the `quantus.helpers.constants` module to list available metrics for evaluation.
-    quantus.helpers.constants.available_metrics()
-
-    """## Images"""
-
-    # Normalize the second image from the masked batch (`a_masked_x_batch`) using the `normalize_image()` function.
-    normalize_image(a_masked_x_batch[1])
-
-    # Normalize the second image from the saliency batch (`a_batch`) using the `normalize_image()` function.
-    normalize_image(a_batch[1])
+        # Convert the array to an image
+        img = Image.fromarray(a.astype('uint8'))  # Ensure the data is in uint8 format for saving
+    
+        # Save the image as PNG
+        img.save('image{imeg}.png')
 
 
 if __name__ == "__main__":
