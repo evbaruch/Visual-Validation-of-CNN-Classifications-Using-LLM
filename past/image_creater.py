@@ -16,8 +16,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import quantus
 import os
+from classes import CLASSES
 
-import classes as CLASSES
 
 clear_output()
 
@@ -322,31 +322,13 @@ def create_heatmap(a_matrix, threshold, image_index):
     # Normalize the importance matrix and apply threshold if needed
     plt.figure(figsize=(8, 8))
     sns.heatmap(a_matrix, cmap='viridis', cbar=True)
-    plt.title(f'Heatmap of Pixel Importance - Image {image_index + 1}')
-    plt.xlabel('Width')
-    plt.ylabel('Height')
-    
+
     # TODO: save all the images to a folder 
-    os.makedirs("images", exist_ok=True)
-    plt.savefig(f"images/heatmap_{image_index}.png")
+    os.makedirs("images2", exist_ok=True)
+    plt.savefig(f"images2/heatmap_{image_index}.png")
     
 
-def create_heatmap(a_matrix, threshold, image_index):
-    # Move to CPU and convert to NumPy if a_matrix is a tensor
-    if isinstance(a_matrix, torch.Tensor):
-        a_matrix = a_matrix.cpu().numpy()
 
-    importance_matrix = np.where(a_matrix > threshold, a_matrix, 0)
-    importance_matrix = importance_matrix / np.max(importance_matrix)
-
-    plt.figure(figsize=(8, 8))
-    sns.heatmap(importance_matrix[0], cmap='viridis', cbar=True)
-    plt.title(f'Heatmap of Pixel Importance - Image {image_index + 1}')
-    plt.xlabel('Width')
-    plt.ylabel('Height')
-    plt.show()
-    
-    # TODO: save all the images to a folder
 
 """## Catagories"""
 
