@@ -1,16 +1,18 @@
 # Virtual Environment
-venv/
+/.venv
 
 # Python
 __pycache__/
 *.py[cod]
 
 # Environment variables
-.env
+/.env
 
 # IDE settings
-.vscode/
-.idea/
+/.vscode
+/.idea
 
 # OS generated files
-.DS_Store
+/DS_Store
+/data/mid
+/data/source
