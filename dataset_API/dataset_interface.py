@@ -83,3 +83,7 @@ class dataset_interface:
             image_dir = os.path.join(self.save_path,f"{method}_{threshold}_{pre_trained_model}")
             os.makedirs(image_dir, exist_ok=True)
             img.save(os.path.join(image_dir, f"{i}_{real_name}.png"))  # Use forward slash or raw string literal for file paths
+
+        return f"{method} {threshold} {pre_trained_model} removed: {removed} Correctly: {Correctly}"
+
+
