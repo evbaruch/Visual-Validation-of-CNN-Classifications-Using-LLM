@@ -51,7 +51,6 @@ class dataset_interface:
         # `a_masked_x_batch` is the result of applying the mask, and `removed` gives the proportion of pixels removed.
         a_masked_x_batch, removed = imc.new_remove_pixels(a_batch, x_batch, threshold)
         self.removed = removed
-        print(f"removed {removed}")
 
         categories = gd.load_imagenet_classes()
 
@@ -62,7 +61,6 @@ class dataset_interface:
         # Calculate and print classification accuracy based on the top-k matches in `df`.
         Correctly = imc.get_corrects(df, self.top_k)
         self.Correctly = Correctly
-        print(f"Correctly {Correctly}")
 
         csv_dir = os.path.join(self.save_path,"csv")
         os.makedirs(csv_dir, exist_ok=True)
@@ -85,5 +83,3 @@ class dataset_interface:
             image_dir = os.path.join(self.save_path,f"{method}_{threshold}_{pre_trained_model}")
             os.makedirs(image_dir, exist_ok=True)
             img.save(os.path.join(image_dir, f"{i}_{real_name}.png"))  # Use forward slash or raw string literal for file paths
-
-            print(f"label:{i}  {label} -->  {real_name}")
