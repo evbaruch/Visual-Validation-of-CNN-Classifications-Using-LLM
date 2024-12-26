@@ -58,7 +58,7 @@ def initialize_transform():
 
 def find_closest_category(raw_label, imagenet_classes):
     """
-    Find the most similar category index from the ImageNet class labels.
+    Find the most similar category and index from the ImageNet class labels.
 
     Args:
         raw_label (str): The raw label to match against ImageNet classes.

@@ -26,8 +26,8 @@ class LLMInterface:
     
     def get_response(self, image: str) -> str:
         """Generate a response using the current strategy."""
-        self.response = self.strategy.generate_response(self.prompt, image, self.jsonDescription)
-        return self.response
+        return self.strategy.generate_response(self.prompt, image, self.jsonDescription)
+         
     
     def process_response(self, response: list) -> str:
         """Process the response from the LLM."""
@@ -35,44 +35,63 @@ class LLMInterface:
         for item in response:
             _, closest_label = gd.find_closest_category(item, self.imagenet_categories)
             arr.append(closest_label)
-
         return arr
 
 
-    def classify_images_with_llm(self, root_directory: str, save_path: str):
-        for dirpath, _, filenames in os.walk(root_directory):
-            data = []
-            for file in tqdm(filenames, desc=f"Processing files in {dirpath}"):
-                if file.endswith('.png'):
-                    file_path = os.path.join(dirpath, file)
+    def structured_outputs_classification(self, root_directory: str, save_path: str):
+        """
+        Classifies images in the specified root directory using a language model (LLM) strategy.
+        The classification results are saved in CSV files, with one CSV file per method (folder name).
 
+        Parameters:
+        - root_directory (str): The root directory containing subdirectories with images to classify.
+        - save_path (str): The directory where the CSV files with classification results will be saved.
+        """
+        os.makedirs(save_path, exist_ok=True)
+
+        for dirpath, _, filenames in os.walk(root_directory): 
+            image_files = [f for f in filenames if f.endswith('.png')] 
+            data = []
+            max_labels = 0
+            max_llm = 0
+            for file in tqdm(image_files, desc=f"Processing files in {dirpath}"):
+                # Get the full path of the image file
+                file_path = os.path.join(dirpath, file)
+
+                # Generate a response from the LLM
                 response = self.strategy.generate_response(self.prompt, file_path, self.jsonDescription)
 
+                # Extract the model dump from the response
                 response_list = list(response.model_dump().values())
 
+                # Find the top 5 predicted labels
                 labels = []
                 for item in response_list:
                     _, closest_label = gd.find_closest_category(item, self.imagenet_categories)
                     labels.append(closest_label)
+                
+                # Update the maximum number of labels
+                max_labels = max(max_labels, len(labels))
+                max_llm = max(max_llm, len(response_list))
 
-                index = file.split('_')[0]
-                mid = file.split('_')[1]
-                True_label = mid.split('.')[0]
-                method = dirpath.split('\\')[-1]
+                # Extract image index, true label, and method (directory name)
+                index, mid = file.split('_')[:2]
+                true_label = mid.split('.')[0]
+                method = os.path.basename(dirpath)
 
-                correctly = False
-                if True_label in labels:
-                    correctly = True
+                # Check if the true label is among the top 5 predicted labels
+                correctly = true_label in labels
 
-                data.append([index, True_label] + labels + [correctly])
+                data.append([index, true_label, correctly] + labels + response_list)
 
-            columns = ['Index', 'True_Label', 'Label_1', 'Label_2', 'Label_3', 'Label_4', 'Label_5', 'Correctly']
+            if len(data) == 0:
+                continue
+
+            label_columns = [f'Class_{i+1}' for i in range(max_labels)]
+            llm_columns = [f'llm_{i+1}' for i in range(max_llm)]
+            columns = ['Index', 'True_Label', 'Match'] + label_columns + llm_columns
             # Create a DataFrame from the array and add the column titles
             df = pd.DataFrame(data, columns=columns)
-
-
-
-            os.makedirs(save_path, exist_ok=True)
 
             # Save the DataFrame to a CSV file
             df.to_csv(os.path.join(save_path, f"{method}.csv"), index=False)

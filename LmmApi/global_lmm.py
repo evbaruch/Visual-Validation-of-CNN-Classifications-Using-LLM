@@ -13,6 +13,7 @@ import numpy as np
 # Load the spaCy model for lemmatization
 nlp = spacy.load("en_core_web_sm")
 
+# Define a function to clean the text by separating punctuation and removing extra spaces
 def clean_text(input_text):
     """
     Cleans text by separating punctuation and removing extra spaces.
@@ -27,7 +28,7 @@ def clean_text(input_text):
     cleaned_text = re.sub(r'\s+', ' ', cleaned_text)  # Remove extra spaces
     return cleaned_text.strip()
 
-
+# Define a function to lemmatize the text using spaCy
 def lemmatize_text(input_text):
     """
     Lemmatizes the input text using spaCy after converting it to lowercase.
@@ -42,6 +43,7 @@ def lemmatize_text(input_text):
     doc = nlp(text)
     return " ".join([token.lemma_ for token in doc])
 
+# Define a function to filter the text by removing stop words, numbers, punctuation, and non-alphabetic characters
 def filter_text(input_text):
     """
     Filters the word list by removing stop words, numbers, punctuation,

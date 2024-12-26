@@ -7,6 +7,28 @@ import os
 from pydantic import BaseModel
 from typing import Literal
 from typing import Union
+import pandas as pd
+
+
+
+def calculate_accuracy(root_directory: str, save_path: str):
+
+    #os.makedirs(save_path, exist_ok=True)
+
+    for dirpath, _, filenames in os.walk(root_directory): 
+        image_files = [f for f in filenames if f.endswith('.csv')] 
+
+        for file in image_files:
+            # Get the full path of the image file
+            file_path = os.path.join(dirpath, file)
+
+            # Load the CSV file into a DataFrame
+            df = pd.read_csv(file_path)
+
+            # Calculate the average of the 'Match' column
+            average_match = df['Match'].mean()
+
+            print(f"Average match for {file}: {average_match}")
 
 
 
@@ -14,11 +36,9 @@ from typing import Union
 def ask_llm(imges_path: str, save_path: str, jsonDescription: BaseModel | None = None):
     llama = llama32Vision11b()
     llm_context = LLMInterface(llama)
-    llm_context.set_prompt("Give me the category for the following picture.", jsonDescription)
+    llm_context.set_prompt("Tell me at length what you see in the picture.", jsonDescription)
 
-    llm_context.classify_images_with_llm(imges_path, save_path)
-
-
+    llm_context.structured_outputs_classification(imges_path, save_path)
     return llm_context 
 
 
@@ -52,7 +72,7 @@ def image_creater(dir_path: str, save_path: str, samples: int = 200):
     thresholds = [0.001, 0.002, 0.005, 0.01, 0.02, 0.05, 0.1, 0.2, 0.5]
 
     # Initialize dataset interface
-    dataset = di.dataset_interface(dir_path, save_path)
+    dataset = di.dataset_interface(dir_path, save_path, samples)
 
     # Apply filters using models, explanation methods, and thresholds
     for prtm in pre_trained_model:
@@ -64,16 +84,21 @@ def image_creater(dir_path: str, save_path: str, samples: int = 200):
 
 #imagenet_classes = gd.load_imagenet_classes()
 
-class ImageDescription(BaseModel):
+class ImageDescription_1(BaseModel):
+    Summary: str
+    category: str
+
+class ImageDescription_5(BaseModel):
     category1: str
     category2: str
     category3: str
     category4: str
     category5: str
+    
 
 
 if __name__ == "__main__":
-    image_creater("data\\source\\imagenet_sample2\\pt", "data\\mid")
-    ask_llm("data\\mid\\Saliency_0.02_v3_large", "data\\llm_answer", ImageDescription)
-    #foo1()
-    #"data\mid2\Saliency_0.02_v3_inception"
+    image_creater("data\\source\\imagenet_sample2\\pt", "data\\mid", samples=1000)
+
+    #ask_llm("data\\mid", "data\\llm_answer\\structured_outputs\\5_categoris", ImageDescription_5)
+    #ask_llm("data\\mid\\Saliency_0.001_v3_large", "data\\llm_answer\\structured_outputs\\1_categoris", ImageDescription_1)

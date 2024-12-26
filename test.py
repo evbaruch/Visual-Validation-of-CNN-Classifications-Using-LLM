@@ -1,38 +1,32 @@
-import time
-from tqdm import tqdm
 
-# Example nested loops
-def nested_loops():
-    outer_loops = 10
-    middle_loops = 20
-    inner_loops = 30
-    
-    # Total iterations (for progress bar calculation)
-    total_iterations = outer_loops * middle_loops * inner_loops
-    
-    # Start timing
-    start_time = time.time()
+import os
+from gensim.models import KeyedVectors
+from data import global_data as gd
+import gensim.downloader as api
 
-    # Progress bar
-    with tqdm(total=total_iterations, desc="Processing", unit="iteration") as pbar:
-        for i in range(outer_loops):
-            for j in range(middle_loops):
-                for k in range(inner_loops):
- 
-                    # Simulate some work (e.g., computation or I/O)
-                    time.sleep(0.001)  # Simulate a short delay
+model_path = "word2vec-google-news-300.model"
 
-                    #print(f"Processing iteration {i+1}/{outer_loops}, {j+1}/{middle_loops}, {k+1}/{inner_loops}")
+# Check if the model is already saved locally
+if not os.path.exists(model_path):
+    # Download the model and save it locally
+    model = api.load("word2vec-google-news-300")
+    model.save(model_path)
+else:
+    # Load the model from the local file
+    model = KeyedVectors.load(model_path)
+imagenet_classesA = gd.load_imagenet_classes()
+#imagenet_classesB = ["aaa", "bbb", "ccc", "ddd", "eee", "fff", "ggg", "hhh",]
 
-                    pbar.update(1)
+i = 0
+for imeg in imagenet_classesA:
+    i = i + 1
+    #idx, closest = gd.find_closest_category(imeg, imagenet_classesA)
+    sentence_list = [word  for word in imeg.split()]
+     
+    for word in sentence_list:
+    #   model[word]
 
+        if word not in model.key_to_index:
+            print(f"{imeg} --> {word} : {i}")
 
-    # End timing
-    end_time = time.time()
-    
-    # Calculate elapsed time
-    elapsed_time = end_time - start_time
-    print(f"Total execution time: {elapsed_time:.2f} seconds")
-
-# Call the function
-nested_loops()
+print("Done.")
