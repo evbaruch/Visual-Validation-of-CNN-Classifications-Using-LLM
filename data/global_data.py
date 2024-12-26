@@ -3,6 +3,7 @@ import torch
 from PIL import Image
 from torchvision import transforms
 from sklearn.metrics import pairwise_distances_argmin
+from sklearn.metrics import pairwise_distances
 from sklearn.feature_extraction.text import CountVectorizer
 import numpy as np
 import requests
@@ -55,7 +56,7 @@ def initialize_transform():
         transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])  # Normalize images
         ])
 
-def find_closest_category_idx(raw_label, imagenet_classes):
+def find_closest_category(raw_label, imagenet_classes):
     """
     Find the most similar category index from the ImageNet class labels.
 
@@ -65,12 +66,15 @@ def find_closest_category_idx(raw_label, imagenet_classes):
 
     Returns:
         int: The index of the closest matching category.
+        str: The name of the closest matching category.
     """
     vectorizer = CountVectorizer().fit(imagenet_classes)
     category_vectors = vectorizer.transform(imagenet_classes)
     raw_vector = vectorizer.transform([raw_label])
     closest_idx = pairwise_distances_argmin(raw_vector, category_vectors)[0]
-    return closest_idx
+    return closest_idx, imagenet_classes[closest_idx]
+
+
 
 def download_imagenet_classes(url: str, output_file: str):
     """

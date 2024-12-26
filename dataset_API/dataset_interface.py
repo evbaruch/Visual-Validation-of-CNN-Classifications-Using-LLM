@@ -8,7 +8,6 @@ from PIL import Image
 
 class dataset_interface:
 
-
     def __init__(self, data_path: str, save_path: str, samples: int = 200):
 
         self.data_path = data_path
@@ -18,8 +17,8 @@ class dataset_interface:
         self.top_k = 5
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu") 
 
-        self.removed = 0
-        self.Correctly = 0
+        self.removed = []
+        self.Correctly = []
 
 
     def filter_with_model(self, threshold: float, method: str, pre_trained_model: str):
@@ -50,7 +49,7 @@ class dataset_interface:
         # Remove pixels below the specified threshold in the explanation maps and calculate the masked x_batch.
         # `a_masked_x_batch` is the result of applying the mask, and `removed` gives the proportion of pixels removed.
         a_masked_x_batch, removed = imc.new_remove_pixels(a_batch, x_batch, threshold)
-        self.removed = removed
+        self.removed.append(removed)
 
         categories = gd.load_imagenet_classes()
 
@@ -60,7 +59,7 @@ class dataset_interface:
 
         # Calculate and print classification accuracy based on the top-k matches in `df`.
         Correctly = imc.get_corrects(df, self.top_k)
-        self.Correctly = Correctly
+        self.Correctly.append(Correctly)
 
         csv_dir = os.path.join(self.save_path,"csv")
         os.makedirs(csv_dir, exist_ok=True)

@@ -4,8 +4,8 @@ from PIL import Image
 import global_data as gd
 from tqdm import tqdm
 
-load_image_dir = "data\\source\\imagenet-sample2\\JPEG"
-save_image_dir = "data\\source\\imagenet-sample2\\pt"
+load_image_dir = "data\\source\\imagenet_sample2\\JPEG"
+save_image_dir = "data\\source\\imagenet_sample2\\pt"
 
 def process_images(image_dir, imagenet_classes, transform):
     """
@@ -39,8 +39,8 @@ def process_images(image_dir, imagenet_classes, transform):
                 raw_label = " ".join(filename.split("_")[1:]).rsplit(".", 1)[0].replace("_", " ")
 
                 # Map the raw label to the closest ImageNet class index
-                closest_label = gd.find_closest_category_idx(raw_label, imagenet_classes)
-                labels.append(closest_label)
+                closest_label_idx, _ = gd.find_closest_category(raw_label, imagenet_classes)
+                labels.append(closest_label_idx)
             except Exception as e:
                 print(f"Error processing file {filename}: {e}")
     
