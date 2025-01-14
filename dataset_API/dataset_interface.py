@@ -84,5 +84,38 @@ class dataset_interface:
             img.save(os.path.join(image_dir, f"{i}_{real_name}.png"))  # Use forward slash or raw string literal for file paths
 
         return f"{method} {threshold} {pre_trained_model} removed: {removed} Correctly: {Correctly}"
+    
+    @staticmethod
+    def parse_file_name(path):
+        """
+        Parses a file path or file name and extracts three components: 
+        method, threshold, and pre-trained model name. 
+        The file name must follow the format: 'method_threshold_pre_trained_model'.
 
+        Args:
+            path (str): The file path or file name.
 
+        Returns:
+            tuple: A tuple containing:
+                - method (str): The method name.
+                - threshold (str): The threshold value.
+                - pre_trained_model (str): The name of the pre-trained model.
+
+        Raises:
+            ValueError: If the file name does not have the expected format.
+        """
+        # Extract the file name without the directory
+        file_name = os.path.basename(path)
+        
+        # Remove the file extension if present
+        file_name = os.path.splitext(file_name)[0]
+        
+        # Split the name into parts based on underscores
+        parts = file_name.split('_', 2)
+        
+        if len(parts) != 3:
+            raise ValueError("Invalid file name format. Expected format: 'method_threshold_preTrainedModel'")
+        
+        # Extract parts
+        method, threshold, pre_trained_model = parts
+        return method, threshold, pre_trained_model

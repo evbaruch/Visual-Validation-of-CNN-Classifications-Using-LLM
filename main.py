@@ -1,12 +1,10 @@
 from LmmApi.LLMInterface import LLMInterface
 from LmmApi.llama32Vision11b import llama32Vision11b
-from data  import global_data as gd
+from data  import results
 from dataset_API import dataset_interface as di
 from dataset_API import image_creater as imc
 import os
 from pydantic import BaseModel
-from typing import Literal
-from typing import Union
 import pandas as pd
 
 
@@ -98,11 +96,11 @@ class ImageDescription_5(BaseModel):
 
 
 if __name__ == "__main__":
-    image_creater("data\\source\\imagenet_sample2\\pt", "data\\mid", samples=500)
+    #image_creater("data\\source\\imagenet_sample2\\pt", "data\\mid", samples=500)
 
     #ask_llm("data\\mid\\Saliency_0.001_resnet18", "data\\llm_answer\\anchored_structured_outputs\\5_categoris", ImageDescription_5)
     #ask_llm("data\\mid\\Saliency_0.001_resnet18", "data\\llm_answer\\anchored_structured_outputs\\1_categoris", ImageDescription_1)
 
-    calculate_accuracy("data\\llm_answer\\anchored_structured_outputs\\5_categoris", "data\\llm_answer\\structured_outputs\\5_categoris")
+    results.calculate_accuracy("data\\llm_answer\\structured_outputs\\5_categoris", "data\\llm_answer\\structured_outputs\\5_categoris\\results")
     print("-------------------------------------------------")
-    calculate_accuracy("data\\llm_answer\\anchored_structured_outputs\\1_categoris", "data\\llm_answer\\structured_outputs\\1_categoris")
+    results.calculate_accuracy("data\\llm_answer\\structured_outputs\\1_categoris", "data\\llm_answer\\structured_outputs\\1_categoris\\results")
