@@ -1,0 +1,45 @@
+class ImageDescription_5(BaseModel):
+    category1: str
+    category2: str
+    category3: str
+    category4: str
+    category5: str
+
+# Set up chat as usual
+response = chat(
+    model= 'llama3.2-vision:11b',
+    format=ImageDescription_5.model_json_schema(),  # Pass in the schema for the response
+    messages=[
+        {
+            'role': 'system',
+            'content': f"You are an image classifier. Use the ImageNet categories to classify images. return as JSON"
+        },
+        {
+            'role': 'user',
+            'content': "Tell me what you see in the picture and what category it is from imagenet",
+            'images': [image],
+        },
+    ],
+    options={'temperature': 0},  # Set temperature to 0 for more deterministic output
+)
+
+image_analysis = jsonDescription.model_validate_json(response.message.content)
+
+
+def find_closest_category(raw_label, imagenet_classes):
+    """
+    Find the most similar category and index from the ImageNet class labels.
+
+    Args:
+        raw_label (str): The raw label to match against ImageNet classes.
+        imagenet_classes (list): A list of ImageNet class labels.
+
+    Returns:
+        int: The index of the closest matching category.
+        str: The name of the closest matching category.
+    """
+    vectorizer = CountVectorizer().fit(imagenet_classes)
+    category_vectors = vectorizer.transform(imagenet_classes)
+    raw_vector = vectorizer.transform([raw_label])
+    closest_idx = pairwise_distances_argmin(raw_vector, category_vectors)[0]
+    return closest_idx, imagenet_classes[closest_idx]

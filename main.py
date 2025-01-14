@@ -36,9 +36,9 @@ def calculate_accuracy(root_directory: str, save_path: str):
 def ask_llm(imges_path: str, save_path: str, jsonDescription: BaseModel | None = None):
     llama = llama32Vision11b()
     llm_context = LLMInterface(llama)
-    llm_context.set_prompt("Tell me at length what you see in the picture.", jsonDescription)
+    llm_context.set_prompt("Tell me what you see in the picture and what category it is from imagenet", jsonDescription)
 
-    llm_context.structured_outputs_classification(imges_path, save_path)
+    llm_context.anchored_outputs_classification(imges_path, save_path)
     return llm_context 
 
 
@@ -98,7 +98,11 @@ class ImageDescription_5(BaseModel):
 
 
 if __name__ == "__main__":
-    image_creater("data\\source\\imagenet_sample2\\pt", "data\\mid", samples=1000)
+    image_creater("data\\source\\imagenet_sample2\\pt", "data\\mid", samples=500)
 
-    #ask_llm("data\\mid", "data\\llm_answer\\structured_outputs\\5_categoris", ImageDescription_5)
-    #ask_llm("data\\mid\\Saliency_0.001_v3_large", "data\\llm_answer\\structured_outputs\\1_categoris", ImageDescription_1)
+    #ask_llm("data\\mid\\Saliency_0.001_resnet18", "data\\llm_answer\\anchored_structured_outputs\\5_categoris", ImageDescription_5)
+    #ask_llm("data\\mid\\Saliency_0.001_resnet18", "data\\llm_answer\\anchored_structured_outputs\\1_categoris", ImageDescription_1)
+
+    calculate_accuracy("data\\llm_answer\\anchored_structured_outputs\\5_categoris", "data\\llm_answer\\structured_outputs\\5_categoris")
+    print("-------------------------------------------------")
+    calculate_accuracy("data\\llm_answer\\anchored_structured_outputs\\1_categoris", "data\\llm_answer\\structured_outputs\\1_categoris")

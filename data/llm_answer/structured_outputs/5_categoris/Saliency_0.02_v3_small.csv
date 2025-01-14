@@ -1,0 +1,501 @@
+Index,True_Label,Match,Class_1,Class_2,Class_3,Class_4,Class_5,llm_1,llm_2,llm_3,llm_4,llm_5
+0,tench,True,anemone fish,goldfish,tench,tench,tench,fish,goldfish,animal,mammal,carnivore
+100,black swan,True,tench,tench,black swan,tench,tench,bird,waterfowl,swan,animal,mammal
+101,tusker,False,tench,tench,tench,tench,tench,person,man,standing,outdoors,one person
+102,echidna,False,tench,tench,tench,tench,tench,bird,duck,animal,wildlife,beak
+103,platypus,False,anemone fish,tench,tench,tench,tench,fish,animal,mammal,carnivore,caniform
+104,wallaby,False,Maltese dog,toy terrier,Maltese dog,tench,tench,Dog,Terrier,Mixed-breed dog,Canine,Mammal
+105,koala,False,tench,Maltese dog,tiger cat,Indian elephant,lion,bird,dog,cat,elephant,lion
+106,wombat,False,mouse,tench,tench,tench,tench,mouse,animal,rodent,mammal,carnivore
+107,jellyfish,False,Maltese dog,tiger cat,tench,anemone fish,tench,dog,cat,bird,fish,bicycle
+108,sea anemone,False,tench,tench,macaw,macaw,tench,Bird,Parrot,Macaw,Blue-and-yellow macaw,Animal
+109,brain coral,False,tench,tench,tench,tench,tench,bird,parrot,animal,beak,eye
+10,brambling,False,tench,tench,tench,common newt,tench,bird,songbird,warbler,common yellowthroat,animal
+110,flatworm,False,tench,tench,tench,tench,tench,Abstract,Painting,Artwork,Canvas,Wallpaper
+111,nematode,False,tench,tench,macaw,macaw,tench,bird,parrot,macaw,blue-and-yellow macaw,animal
+112,conch,False,anemone fish,goldfish,tench,tench,tench,fish,goldfish,animal,mammal,carnivore
+113,snail,True,tench,snail,tench,tench,tench,shell,snail,invertebrate,animal,creatures
+114,slug,False,Maltese dog,anemone fish,tench,tiger cat,tench,dog,fish,bird,cat,cow
+115,sea slug,False,tench,tench,tench,tench,feather boa,bird,parrot,animal,beak,feather
+116,chiton,False,tench,sea snake,tench,tench,tench,shell,sea shell,bivalve mollusk,mollusc,animal
+117,chambered nautilus,False,tench,tench,tench,tench,tench,Eye,Human eye,Close-up of an eye,Anatomy,Body part
+118,Dungeness crab,False,anemone fish,tench,tench,tench,tench,fish,other,other,other,other
+119,rock crab,False,tench,tench,horse cart,tench,tench,cow,antelope,horse,sheep,goat
+11,goldfinch,True,tench,tench,house finch,goldfinch,goldfinch,bird,songbird,finch,goldfinch,male goldfinch
+120,fiddler crab,False,tench,tench,tench,tench,tench,crustacean,animal,invertebrate,arthropod,crustacean
+121,king crab,False,tiger,tiger cat,lion,Maltese dog,brown bear,tiger,cat,lion,dog,bear
+122,American lobster,False,tench,tench,tench,tench,tench,crustacean,shrimp,food,seafood,animal
+123,spiny lobster,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+124,crayfish,False,tench,tench,tench,tench,tench,bird,parrot,animal,pet,beak
+125,hermit crab,False,tench,tench,snail,tench,tench,Animal,Bird,Snail,Invertebrate,Mollusk
+126,isopod,False,cabbage butterfly,tench,tench,tench,tench,Butterfly,Insect,Animal,Crawling Animal,Arthropod
+127,white stork,True,tench,white stork,tench,tench,tench,bird,stork,animal,wildlife,animal
+128,black stork,False,tench,white stork,tench,tench,tench,bird,stork,animal,wildlife,animal
+129,spoonbill,True,tench,tench,flamingo,spoonbill,tench,bird,wading bird,flamingo-like wading bird,roseate spoonbill,animal
+12,house finch,True,tench,house finch,house finch,tench,tench,bird,finch,house finch,passeriformes,animal
+130,flamingo,True,flamingo,tench,tench,tench,tench,Flamingo,Bird,Animal,Wildlife,Animals
+131,little blue heron,False,tench,tench,tench,tench,water ouzel,bird,heron,anhinga,anhingidae,water bird
+132,American egret,True,tench,tench,white stork,American egret,American egret,bird,heron,white heron,great egret,egret
+133,bittern,False,tench,tench,tench,tench,tench,Bird,Nuthatch,Sitta europaea,Class: Aves,Order: Passeriformes
+134,crane,False,tench,tench,tench,tench,tench,bird,animal,wildlife,animal,bird
+135,limpkin,False,tench,tench,tench,tench,tench,Bird,Animal,Wildlife,Animals,Mammal
+136,European gallinule,False,prairie chicken,tench,tench,tench,tench,chicken,bird,animal,fowl,domesticated_fowl
+137,American coot,False,cabbage butterfly,tench,tench,tench,tench,Butterfly,Insect,Animal,Crawling Insect,Arthropod
+138,bustard,False,tench,crane,tench,tench,tench,bird,crane,animal,wildlife,nature
+139,ruddy turnstone,False,tench,water ouzel,tench,tench,tench,bird,water bird,shorebird,sandpiper,semipalmated sandpiper
+13,junco,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+140,red-backed sandpiper,False,tench,tench,tench,tench,anemone fish,bird,animal,wildlife,insect,fish
+141,redshank,False,tench,tench,spotted salamander,tench,tench,bird,sandpiper,spotted sandpiper,animal,wildlife
+142,dowitcher,False,tench,tench,tench,tench,tench,bird,sandpiper,semipalmated sandpiper,animal,wildlife
+143,oystercatcher,False,tench,tench,tench,tench,tench,bird,seagull,animal,feathered,beak
+144,pelican,False,tench,tench,tench,tench,tench,bird,animal,wildlife,beak,feathered
+145,king penguin,True,king penguin,tench,tench,tench,tench,penguin,bird,animal,wildlife,mammal
+146,albatross,True,tench,albatross,tench,tench,tench,bird,albatross,procellariiformes,animal,wildlife
+147,grey whale,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+148,killer whale,False,king penguin,tench,tench,tench,tench,Penguin,Bird,Animal,Wildlife,Animals
+149,dugong,True,tench,tench,sea lion,dugong,tench,Tuberculosis,Manatee,Sea lion,Dugong,Walrus
+14,indigo bunting,True,tench,tench,tench,indigo bunting,tench,bird,blue bird,small blue bird,indigo bunting,passerine bird
+150,sea lion,False,tench,tench,tench,tench,tench,Seal,Mammal,Animal,Carnivore,Aquatic Mammal
+151,Chihuahua,False,Maltese dog,toy terrier,toy terrier,tench,tench,Dog,Terrier,Jack Russell Terrier,Canine,Mammal
+152,Japanese spaniel,False,Maltese dog,Shih-Tzu,tench,tench,tench,Dog,Shih Tzu,Animal,Mammal,Carnivore
+153,Maltese dog,True,Maltese dog,tench,tench,tench,Maltese dog,Dog,Animal,Mammal,Canine,Small dog
+154,Pekinese,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,domesticated mammal
+155,Shih-Tzu,True,Maltese dog,Shih-Tzu,tench,tench,tench,Dog,Shih Tzu,Animal,Mammal,Canine
+156,Blenheim spaniel,False,Maltese dog,tench,tench,tench,tench,Dog,Animal,Mammal,Canine,Pet
+157,papillon,False,Maltese dog,toy terrier,toy terrier,tench,tench,Dog,Terrier,Jack Russell Terrier,Canine,Mammal
+158,toy terrier,False,Maltese dog,Brabancon griffon,tench,tench,tench,Dog,Brussels Griffon,Canine,Mammal,Animal
+159,Rhodesian ridgeback,False,Maltese dog,red fox,wolf spider,tench,hyena,Dog,Fox,Wolf,Jackal,Hyena
+15,robin,False,tench,tench,tench,tench,tench,bird,animal,feathered,beak,songbird
+160,Afghan hound,True,Maltese dog,Afghan hound,tench,tench,tench,Dog,Afghan Hound,Canine,Mammal,Animal
+161,basset,False,Maltese dog,king snake,tench,tench,tench,Dog,Cavalier King Charles Spaniel,Animal,Mammal,Animal life form
+162,beagle,False,Maltese dog,toy terrier,king snake,tench,tench,Dog,Terrier,Cavalier King Charles Spaniel,Animal,Mammal
+163,bloodhound,False,Maltese dog,tench,Maltese dog,Maltese dog,Maltese dog,Dog,Person,Dog,Dog,Dog
+164,bluetick,True,Maltese dog,tench,bluetick,tench,tench,Dog,Coonhound,Bluetick Coonhound,Animal,Mammal
+165,black-and-tan coonhound,False,Maltese dog,tiger cat,tench,anemone fish,tench,dog,cat,bird,fish,bicycle
+166,Walker hound,False,Maltese dog,toy terrier,toy terrier,tench,tench,Dog,Terrier,Jack Russell Terrier,Animal,Mammal
+167,English foxhound,False,tiger cat,Maltese dog,tench,cabbage butterfly,anemone fish,Cat,Dog,Bird,Butterfly,Fish
+168,redbone,False,Maltese dog,tench,tench,tench,tench,dog,puppy,animal,pet,mammal
+169,borzoi,False,Maltese dog,tench,tench,tench,tench,Dog,Canine,Mammal,Animal,Vertebrate
+16,bulbul,False,tench,tench,tench,tench,tench,bird,songbird,passerine,tanager,scarlet tanager
+170,Irish wolfhound,False,toy terrier,Maltese dog,tench,tench,tench,Terrier,Dog,Canine,Mammal,Animal
+171,Italian greyhound,False,Maltese dog,tench,tench,tench,tench,Dog,Animal,Mammal,Canine,Pet
+172,whippet,False,Maltese dog,toy terrier,collie,toy terrier,tench,Dog,Terrier,Collie,Scottish Terrier,Animal
+173,Ibizan hound,False,Maltese dog,toy terrier,toy terrier,tench,tench,Dog,Terrier,Jack Russell Terrier,Canine,Mammal
+174,Norwegian elkhound,False,Maltese dog,toy terrier,West Highland white terrier,tench,tench,Dog,Terrier,West Highland White Terrier,Canine,Mammal
+175,otterhound,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Wallpaper
+176,Saluki,False,Maltese dog,toy terrier,cocker spaniel,tench,tench,Dog,Terrier,Cocker Spaniel,Animal,Mammal
+177,Scottish deerhound,False,Maltese dog,toy terrier,toy terrier,tench,tench,Dog,Terrier,Scottish Terrier,Animal,Mammal
+178,Weimaraner,True,Maltese dog,Weimaraner,tench,tench,tench,Dog,Weimaraner,Animal,Mammal,Canine
+179,Staffordshire bullterrier,False,Maltese dog,toy terrier,toy terrier,tench,tench,Dog,Terrier,Pit Bull Terrier,Breed,Mammal
+17,jay,True,tench,jay,tench,tench,tench,bird,blue jay,animal,mammal,carnivore
+180,American Staffordshire terrier,False,toy terrier,Maltese dog,toy terrier,tench,tench,Jack Russell Terrier,Dog,Terrier,Canine,Mammal
+181,Bedlington terrier,False,Maltese dog,tench,toy poodle,Maltese dog,Maltese dog,Dog,Bichon Frise,Poodle,Toy dog,Small dog
+182,Border terrier,False,Maltese dog,toy terrier,Maltese dog,tench,tench,Dog,Terrier,Mixed-breed dog,Canine,Mammal
+183,Kerry blue terrier,False,Maltese dog,tench,tench,tench,tench,dog,man,person,animal,human
+184,Irish terrier,False,Maltese dog,tench,tench,tench,tench,Dog,Animal,Mammal,Canine,Pet
+185,Norfolk terrier,False,Maltese dog,toy terrier,Yorkshire terrier,tench,tench,Dog,Terrier,Yorkshire Terrier,Animal,Mammal
+186,Norwich terrier,False,Maltese dog,toy terrier,Yorkshire terrier,tench,tench,Dog,Terrier,Yorkshire Terrier,Animal,Mammal
+187,Yorkshire terrier,True,Maltese dog,toy terrier,Yorkshire terrier,tench,tench,Dog,Terrier,Yorkshire Terrier,Animal,Mammal
+188,wire-haired fox terrier,False,toy terrier,Maltese dog,tench,tench,tench,Terrier,Dog,Mammal,Animal,Vertebrate
+189,Lakeland terrier,False,toy terrier,Maltese dog,tench,tench,tench,Terrier,Dog,Mammal,Animal,Vertebrate
+18,magpie,False,tench,tench,tench,tench,tench,bird,animal,wildlife,animal,bird
+190,Sealyham terrier,False,Maltese dog,toy terrier,West Highland white terrier,tench,tench,Dog,Terrier,West Highland White Terrier,Animal,Mammal
+191,Airedale,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,domesticated mammal
+192,cairn,False,Maltese dog,toy terrier,toy terrier,tench,tench,Dog,Terrier,Scottish Terrier,Animal,Mammal
+193,Australian terrier,False,tench,tench,bullet train,tench,car mirror,airplane,helicopter,train,boat,car
+194,Dandie Dinmont,False,Maltese dog,toy terrier,Yorkshire terrier,tench,tench,Dog,Terrier,Yorkshire Terrier,Animal,Mammal
+195,Boston bull,False,Maltese dog,toy terrier,toy terrier,tench,tench,Dog,Terrier,Boston Terrier,Animal,Mammal
+196,miniature schnauzer,False,Maltese dog,toy terrier,papillon,tench,tench,Dog,Terrier,Papillon,Animal,Mammal
+197,giant schnauzer,False,Maltese dog,tench,tench,tench,tench,Dog,Animal,Mammal,Canine,Pet
+198,standard schnauzer,False,Maltese dog,toy terrier,miniature schnauzer,tench,tench,Dog,Terrier,Miniature Schnauzer,Animal,Mammal
+199,Scotch terrier,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,domesticated mammal
+19,chickadee,True,tench,chickadee,chickadee,tench,tench,bird,chickadee,black-capped chickadee,animal,mammal
+1,goldfish,True,anemone fish,goldfish,tench,tench,tench,fish,goldfish,animal,mammal,carnivore
+200,Tibetan terrier,False,Maltese dog,toy terrier,Yorkshire terrier,tench,tench,Dog,Terrier,Yorkshire Terrier,Animal,Mammal
+201,silky terrier,False,Maltese dog,toy terrier,Yorkshire terrier,tench,tench,Dog,Terrier,Yorkshire Terrier,Animal,Mammal
+202,soft-coated wheaten terrier,False,Maltese dog,toy terrier,Irish terrier,tench,tench,Dog,Terrier,Irish Terrier,Animal,Mammal
+203,West Highland white terrier,False,Maltese dog,toy terrier,Yorkshire terrier,tench,tench,Dog,Terrier,Yorkshire Terrier,Animal,Mammal
+204,Lhasa,False,tench,tench,tench,tench,studio couch,person,man,sitting,indoor,studio
+205,flat-coated retriever,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,domesticated mammal
+206,curly-coated retriever,False,Maltese dog,toy terrier,Maltese dog,tench,tench,Dog,Terrier,Mixed-breed dog,Animal,Mammal
+207,golden retriever,False,tiger,Maltese dog,lion,proboscis monkey,tench,Tiger,Dog,Lion,Monkey,Bird
+208,Labrador retriever,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,domesticated mammal
+209,Chesapeake Bay retriever,False,Maltese dog,tench,tench,tench,tench,Dog,Animal,Mammal,Canine,Pet
+20,water ouzel,False,tench,tench,tench,tench,tench,Bluebird,Bird,Animal,Wildlife,Animals
+210,German short-haired pointer,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,domesticated mammal
+211,vizsla,True,Maltese dog,vizsla,tench,tench,tench,Dog,Vizsla,Canine,Animal,Mammal
+212,English setter,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,domesticated mammal
+213,Irish setter,False,Maltese dog,toy terrier,toy terrier,tench,tench,Dog,Terrier,Scottish Terrier,Animal,Mammal
+214,Gordon setter,False,Maltese dog,toy terrier,Yorkshire terrier,tench,tench,Dog,Terrier,Yorkshire Terrier,Animal,Mammal
+215,Brittany spaniel,False,Maltese dog,toy terrier,toy terrier,tench,tench,Dog,Terrier,Jack Russell Terrier,Animal,Mammal
+216,clumber,False,Maltese dog,tench,tench,tench,tench,Dog,Animal,Mammal,Canine,Pet
+217,English springer,False,tench,tench,tench,tench,tench,Cow,Cow,Cow,Cow,Cow
+218,Welsh springer spaniel,False,Maltese dog,toy terrier,English foxhound,tench,tench,Dog,Terrier,English Foxhound,Canine,Animal
+219,cocker spaniel,False,Maltese dog,toy terrier,Maltese dog,tench,tench,Dog,Terrier,Pet dog,Animal,Mammal
+21,kite,False,tench,tench,tench,tench,tench,flower,lotus,pink lotus,pink flower,pink lotus flower
+220,Sussex spaniel,False,tench,tench,tench,tench,tench,Cow,Animal,Mammal,Domesticated mammal,Ruminant
+221,Irish water spaniel,False,Maltese dog,toy terrier,Maltese dog,tench,tench,Dog,Terrier,Mixed-breed dog,Animal,Mammal
+222,kuvasz,False,Maltese dog,tench,tench,tench,tench,Dog,Canine,Mammal,Animal,Vertebrate
+223,schipperke,False,tiger cat,Maltese dog,tench,tench,cabbage butterfly,Cat,Dog,Cow,Bird,Butterfly
+224,groenendael,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,domesticated mammal
+225,malinois,False,Maltese dog,German shepherd,tench,tench,tench,Dog,German Shepherd,Animal,Mammal,Canine
+226,briard,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,domesticated mammal
+227,kelpie,False,Maltese dog,German shepherd,tench,tench,tench,Dog,German Shepherd,Animal,Mammal,Canine
+228,komondor,False,mountain bike,snow leopard,tench,tench,tench,Mountain,Snow,Landscape,Nature,Outdoor
+229,Old English sheepdog,False,Maltese dog,tench,tench,tench,tench,Dog,Animal,Mammal,Canine,Pet
+22,bald eagle,True,tench,bald eagle,bald eagle,tench,tench,bird,eagle,bald eagle,animal,mammal
+230,Shetland sheepdog,False,Maltese dog,Border collie,collie,tench,tench,Dog,Border Collie,Collie,Canine,Animal
+231,collie,False,tench,tench,tench,tench,tench,Cow,Cow,Cow,Cow,Cow
+232,Border collie,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,pet
+233,Bouvier des Flandres,False,Maltese dog,tench,tench,tench,German shepherd,Dog,Animal,Mammal,Canine,Black German Shepherd
+234,Rottweiler,False,Maltese dog,German shepherd,tench,tench,tench,Dog,German Shepherd,Animal,Mammal,Canine
+235,German shepherd,True,German shepherd,Maltese dog,tench,tench,tench,German Shepherd Dog,Dog,Canine,Animal,Mammal
+236,Doberman,True,Maltese dog,toy terrier,Doberman,tench,tench,Dog,Terrier,Doberman Pinscher,Canine,Animal
+237,miniature pinscher,False,Maltese dog,toy terrier,Yorkshire terrier,tench,tench,Dog,Terrier,Yorkshire Terrier,Animal,Mammal
+238,Greater Swiss Mountain dog,False,Maltese dog,toy terrier,tench,tench,tench,Dog,Terrier,Bichon Frise,Animal,Mammal
+239,Bernese mountain dog,True,Maltese dog,Bernese mountain dog,tench,tench,tench,Dog,Bernese Mountain Dog,Animal,Mammal,Domesticated mammal
+23,vulture,False,water tower,tench,tench,tench,tench,tower,building,structure,architecture,city
+240,Appenzeller,False,Maltese dog,tench,beagle,tench,tench,dog,breed,beagle,animal,mammal
+241,EntleBucher,False,Maltese dog,tench,tiger cat,anemone fish,horse cart,dog,bird,cat,fish,horse
+242,boxer,False,Maltese dog,French bulldog,English foxhound,tench,tench,Dog,Bulldog,English Bulldog,Animal,Mammal
+243,bull mastiff,False,pug,Maltese dog,tench,tench,tench,Pug,Dog,Canine,Mammal,Animal
+244,Tibetan mastiff,False,Maltese dog,tench,tench,tench,Maltese dog,Dog,Animal,Mammal,Canine,Domesticated dog
+245,French bulldog,False,tench,Maltese dog,toy terrier,toy terrier,toy terrier,Canine,Dog,Terrier,Fox Terrier,Smooth Fox Terrier
+246,Great Dane,False,Maltese dog,pug,tench,tench,tench,dog,pug,animal,mammal,domesticated mammal
+247,Saint Bernard,False,Maltese dog,Bernese mountain dog,tench,tench,tench,Dog,Bernese Mountain Dog,Animal,Mammal,Domesticated mammal
+248,Eskimo dog,False,Maltese dog,tench,tench,tench,tench,Dog,Canine,Mammal,Animal,Vertebrate
+249,malamute,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,domesticated mammal
+24,great grey owl,False,tench,tench,tench,tench,tench,Owl,Bird,Animal,Fauna,Wildlife
+250,Siberian husky,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,domesticated mammal
+251,dalmatian,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,domesticated mammal
+252,affenpinscher,False,Maltese dog,tench,tiger cat,tench,horse cart,dog,bird,cat,cow,horse
+253,basenji,True,Maltese dog,toy terrier,basenji,tench,tench,Dog,Terrier,Basenji,Canine,Animal
+254,pug,False,Maltese dog,toy terrier,papillon,tench,tench,Dog,Terrier,Papillon,Animal,Mammal
+255,Leonberg,False,cowboy boot,horse cart,tench,tench,tench,Cowboy,Horse,Person,Animal,Outdoors
+256,Newfoundland,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,domesticated animal
+257,Great Pyrenees,False,Maltese dog,tench,tench,tench,tench,Dog,Animal,Mammal,Canine,Pet
+258,Samoyed,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,pet
+259,Pomeranian,True,Maltese dog,toy terrier,Pomeranian,tench,tench,Dog,Terrier,Pomeranian,Animal,Mammal
+25,European fire salamander,False,tree frog,tench,tench,tench,car mirror,tree,bird,boat,airplane,car
+260,chow,False,Maltese dog,tench,tench,tench,tench,Dog,Animal,Mammal,Canine,Pet
+261,keeshond,False,Maltese dog,tench,tench,tench,tench,Dog,Animal,Mammal,Canine,Domesticated animal
+262,Brabancon griffon,False,tiger cat,Maltese dog,tench,Indian elephant,tench,cat,dog,bird,elephant,giraffe
+263,Pembroke,True,Maltese dog,toy terrier,tench,Pembroke,tench,Dog,Terrier,Corgi,Welsh Corgi Pembroke,Animal
+264,Cardigan,False,tench,tench,macaw,tench,tench,bird,parrot,macaw,animal,pet
+265,toy poodle,False,Maltese dog,toy terrier,Yorkshire terrier,tench,tench,Dog,Terrier,Yorkshire Terrier,Animal,Mammal
+266,miniature poodle,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,domesticated mammal
+267,standard poodle,False,toy poodle,Maltese dog,tench,tench,tench,Poodle,Dog,Animal,Mammal,Canine
+268,Mexican hairless,False,Maltese dog,toy terrier,tench,tench,tench,Dog,Terrier,Dachshund,Animal,Mammal
+269,timber wolf,False,horse cart,Maltese dog,tench,tiger cat,tench,horse,dog,cow,cat,bird
+26,common newt,False,Maltese dog,tench,tiger cat,tench,cabbage butterfly,Dog,Cow,Cat,Bird,Butterfly
+270,white wolf,False,ostrich,tench,tench,tench,tench,Ostrich,Bird,Animal,Mammal,Vertebrate
+271,red wolf,False,tench,Maltese dog,tiger cat,tench,horse cart,bird,dog,cat,cow,horse
+272,coyote,False,tench,tench,tench,tench,tench,Canis lupus familiaris,Mammal,Animal,Carnivore,Predator
+273,dingo,False,tench,Maltese dog,tench,tench,tench,antelope,dog,deer,goat,sheep
+274,dhole,False,tench,tench,tench,tench,tench,deer,animal,mammal,artiodactyla,cervidae
+275,African hunting dog,False,Maltese dog,tench,tench,tench,tench,Dog,Canine,Mammal,Animal,Fauna
+276,hyena,True,tench,tench,tench,tench,hyena,Animal,Mammal,Carnivore,Caniformia,Hyena
+277,red fox,False,tench,tench,tench,Maltese dog,Afghan hound,Mammal,Carnivore,Canine,Dog,Hound
+278,kit fox,False,tench,red fox,tench,tench,tench,Canine,Fox,Mammal,Carnivore,Animal
+279,Arctic fox,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,domesticated mammal
+27,eft,False,Maltese dog,fox squirrel,tench,tiger cat,anemone fish,Dog,Squirrel,Bird,Cat,Fish
+280,grey fox,False,tench,tench,tench,tench,tench,Canidae,Mammalia,Animals,Carnivores,Mammal
+281,tabby,False,tiger cat,Maltese dog,tench,Indian elephant,lion,cat,dog,bird,elephant,lion
+282,tiger cat,False,tench,tench,macaw,tench,tench,Bird,Parrot,Macaw,Animal,Mammal
+283,Persian cat,False,tiger cat,tench,tench,tench,tench,Cat,Animal,Mammal,Domesticated Animal,Feline
+284,Siamese cat,True,tiger cat,Siamese cat,tiger cat,tench,tench,cat,siamese cat,domestic cat,animal,mammal
+285,Egyptian cat,False,tiger cat,tench,tench,tench,tench,Cat,Animal,Mammal,Domesticated Animal,Feline
+286,cougar,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,domesticated animal
+287,lynx,True,lynx,tiger cat,tench,tench,wild boar,lynx,cat,animal,mammal,wild animal
+288,leopard,False,tiger cat,Maltese dog,tench,tench,cabbage butterfly,Cat,Dog,Cow,Bird,Butterfly
+289,snow leopard,False,cheetah,tiger cat,tench,tench,tench,Cheetah,Cat,Mammal,Animal,Predator
+28,spotted salamander,True,spotted salamander,tench,tench,tench,amphibian,Salamander,Reptile,Animal,Caudata,Amphibian
+290,jaguar,False,tiger,tiger cat,lion,Maltese dog,brown bear,Tiger,Cat,Lion,Dog,Bear
+291,lion,True,lion,tench,tench,tench,tench,Lion,Animal,Mammal,Carnivore,Predator
+292,tiger,True,tiger,tench,tench,tench,tench,Tiger,Animal,Mammal,Carnivore,Feline
+293,cheetah,True,cheetah,tiger cat,tench,tench,tench,Cheetah,Cat,Animal,Mammal,Predator
+294,brown bear,False,Maltese dog,tench,tench,tench,tench,Dog,Animal,Mammal,Canine,Pet
+295,American black bear,False,Maltese dog,tiger cat,tench,anemone fish,horse cart,dog,cat,bird,fish,horse
+296,ice bear,False,brown bear,brown bear,tench,tench,tench,polar bear,bear,mammal,animal,carnivore
+297,sloth bear,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,domesticated mammal
+298,mongoose,False,tench,tench,tench,weasel,weasel,mammal,carnivore,mustelid,weasel,least weasel
+299,meerkat,False,ostrich,tench,tench,tench,tench,Ostrich,Bird,Animal,Mammal,Vertebrate
+29,axolotl,False,anemone fish,tench,tench,amphibian,tench,fish,animal,reptile,amphibian,bird
+2,great white shark,False,Maltese dog,tench,tench,tench,tench,Dog,Animal,Mammal,Canine,Pet
+300,tiger beetle,False,tench,fly,tench,tench,tench,Insect,Fly,Diptera,Brachycera,Tabanidae
+301,ladybug,True,ladybug,tench,tench,tench,tench,Ladybug,Coccinellidae,Insect,Arthropod,Animal
+302,ground beetle,False,fly,tench,tench,tench,tench,Fly,Insect,Animal,Crawling Insect,Diptera
+303,long-horned beetle,False,tiger beetle,tench,tench,tench,tench,beetle,insect,arthropod,animal,creatures
+304,leaf beetle,False,tiger beetle,tench,tench,tench,tench,beetle,insect,animal,arthropod,crawling_insect
+305,dung beetle,False,tench,tiger beetle,tiger beetle,tench,tench,Insect,Beetle,Stag Beetle,Coleoptera,Cranefly
+306,rhinoceros beetle,False,tiger beetle,tench,tench,tench,tench,beetle,insect,animal,arthropod,diptera
+307,weevil,False,frilled lizard,tench,tench,tench,tench,Lizard,Reptile,Animal,Carnivore,Cold-blooded
+308,fly,False,cabbage butterfly,tench,tench,tench,tench,Butterfly,Insect,Animal,Crawling Insect,Arthropod
+309,bee,False,proboscis monkey,tench,tench,tench,tench,Monkey,Animal,Mammal,Primate,Carnivore
+30,bullfrog,False,tree frog,tench,amphibian,tench,tench,frog,animal,amphibian,reptile,wildlife
+310,ant,False,green lizard,tree frog,tench,amphibian,tench,green,frog,animal,amphibian,reptile
+311,grasshopper,True,grasshopper,tench,tench,tench,tench,grasshopper,insect,arthropod,animal,creatures
+312,cricket,False,tench,fly,tench,tench,tench,Insect,Fly,Diptera,Brachycera,Tabanidae
+313,walking stick,False,tench,tench,tench,tench,car mirror,bird,airplane,boat,bicycle,car
+314,cockroach,False,tench,tench,tench,tench,Maltese dog,eye,person,animal,bird,dog
+315,mantis,False,tench,tree frog,tree frog,tree frog,tree frog,plant,tree,deciduous tree,broadleaf evergreen tree,coniferous tree
+316,cicada,False,anemone fish,goldfish,tench,tench,tench,fish,goldfish,animal,mammal,carnivore
+317,leafhopper,False,fly,tench,tench,tench,tench,Fly,Insect,Animal,Crawling Insect,Diptera
+318,lacewing,False,tench,fly,tench,cabbage butterfly,tiger beetle,Insect,Fly,Moth,Butterfly,Beetle
+319,dragonfly,True,cabbage butterfly,dragonfly,fly,tench,tench,Butterfly,Dragonfly,Fly,Insect,Animal
+31,tree frog,False,tench,tench,tench,proboscis monkey,capuchin,Animal,Mammal,Primate,Monkey,Capuchin
+320,damselfly,False,dragonfly,tench,tench,tench,tench,dragonfly,insect,animal,wildlife,nature
+321,admiral,False,tench,robin,tench,tench,tench,Bird,Robin,Passeriformes,Animal,Wildlife
+322,ringlet,False,cabbage butterfly,tench,tench,tench,tench,Butterfly,Insect,Animal,Crawling Animal,Arthropod
+323,monarch,False,cabbage butterfly,tench,tench,tench,tench,Butterfly,Insect,Animal,Crawling Animal,Arthropod
+324,cabbage butterfly,True,cabbage butterfly,tench,tench,tench,tench,Butterfly,Insect,Animal,Caterpillar,Pupa
+325,sulphur butterfly,False,cabbage butterfly,tench,tench,tench,tench,Butterfly,Insect,Animal,Crawling Insect,Flying Insect
+326,lycaenid,False,cabbage butterfly,tench,tench,tench,tench,Butterfly,Insect,Animal,Crawling Animal,Arthropod
+327,starfish,False,proboscis monkey,tench,tench,tench,tench,Monkey,Ape,Primate,Mammal,Animal
+328,sea urchin,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Wallpaper
+329,sea cucumber,False,tench,Maltese dog,tiger cat,anemone fish,tench,bird,dog,cat,fish,cow
+32,tailed frog,False,hamster,tench,tench,tench,tench,Hamster,Rodent,Mammal,Animal,Vertebrate
+330,wood rabbit,False,tiger cat,tench,tench,tench,tench,Cat,Animal,Mammal,Domesticated Animal,Feline
+331,hare,False,wood rabbit,tench,tench,tench,tench,Rabbit,Bird,Bird,Bird,Bird
+332,Angora,False,wood rabbit,tench,tench,tench,tench,Rabbit,Animal,Mammal,Rodent,Carnivore
+333,hamster,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,pet
+334,porcupine,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+335,fox squirrel,False,anemone fish,tench,Maltese dog,tiger cat,Indian elephant,fish,bird,dog,cat,elephant
+336,marmot,True,marmot,tench,fox squirrel,beaver,tench,marmot,groundhog,squirrel,beaver,chipmunk
+337,beaver,True,beaver,tench,tench,tench,tench,beaver,rodent,mammal,animal,carnivore
+338,guinea pig,False,Maltese dog,tench,tench,tench,tench,Dog,Animal,Mammal,Canine,Pet
+339,sorrel,False,bison,tench,tench,tench,tench,Bison,Mammal,Animal,Mammalia,Carnivore
+33,loggerhead,False,anemone fish,tench,tench,tench,Maltese dog,fish,animal,mammal,carnivore,dog
+340,zebra,False,Maltese dog,tiger cat,tench,anemone fish,tench,dog,cat,bird,fish,bicycle
+341,hog,False,wood rabbit,tench,tench,tench,tench,Rabbit,Animal,Mammal,Rodent,Carnivore
+342,wild boar,False,African elephant,Indian elephant,tench,tench,tench,African Elephant,Elephant,Mammal,Animal,Wildlife
+343,warthog,False,tench,tench,Maltese dog,tench,tench,Mammal,Carnivore,Dog,Canine,Animal
+344,hippopotamus,False,guinea pig,tench,tench,tench,tench,Pig,Animal,Mammal,Domesticated Animal,Swine
+345,ox,False,proboscis monkey,tench,tench,tench,proboscis monkey,Monkey,Animal,Mammal,Primate,New World Monkey
+346,water buffalo,False,tench,tench,tench,tench,tench,cow,animal,mammal,domesticated mammal,cattle
+347,bison,True,bison,tench,tench,tench,tench,Bison,Mammal,Animal,Wildlife,Carnivore
+348,ram,False,tench,tench,tench,tench,tench,sheep,animal,mammal,domesticated mammal,farm animal
+349,bighorn,False,tench,tench,tench,tench,tench,goat,animal,mammal,domesticated mammal,ungulate
+34,leatherback turtle,False,tiger cat,Maltese dog,tench,anemone fish,horse cart,cat,dog,bird,fish,horse
+350,ibex,False,tench,mountain bike,tench,bighorn,tench,antelope,mountain goat,goat,bighorn sheep,sheep
+351,hartebeest,False,tench,tench,tench,horse cart,tench,Antelope,Deer,Cow,Horse,Sheep
+352,impala,False,tench,tench,tench,tench,tench,Antelope,Animal,Mammal,Artiodactyla,Bovidae
+353,gazelle,False,tench,tench,tench,tench,tench,Antelope,Animal,Mammal,Artiodactyla,Ruminantia
+354,Arabian camel,False,tree frog,tench,horse cart,Maltese dog,tench,tree,person,horse,dog,cow
+355,llama,True,tench,llama,tench,tench,tench,Alpaca,Llama,Camelidae,Mammal,Animal
+356,weasel,False,brown bear,brown bear,tench,tench,tench,bear,brown bear, Ursidae,mammal,animal
+357,mink,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,domesticated mammal
+358,polecat,False,tench,tench,tench,weasel,weasel,animal,mammal,mustelid,weasel,least weasel
+359,black-footed ferret,False,mouse,tench,tench,tench,tench,mouse,animal,mammal,rodent,small mammal
+35,mud turtle,False,leatherback turtle,tench,tench,tench,tench,Turtle,Reptile,Animal,Wildlife,Fauna
+360,otter,True,otter,tench,tench,tench,tench,otter,animal,mammal,carnivore,mustelid
+361,skunk,True,skunk,tench,tench,tench,tench,skunk,mammal,animal,carnivore,rodent
+362,badger,True,tench,tench,tench,tench,badger,Mammal,Carnivore,Caniformia,Mustelidae,Badger
+363,armadillo,False,tench,anemone fish,Maltese dog,tiger cat,Indian elephant,bird,fish,dog,cat,elephant
+364,three-toed sloth,False,proboscis monkey,tench,tench,tench,tench,Monkey,Ape,Primate,Mammal,Animal
+365,orangutan,True,proboscis monkey,orangutan,tench,tench,tench,Monkey,Orangutan,Animal,Mammal,Primate
+366,gorilla,False,proboscis monkey,tench,tench,tench,tench,monkey,animal,mammal,primate,ape
+367,chimpanzee,True,chimpanzee,tench,proboscis monkey,tench,tench,chimpanzee,ape,monkey,primate,mammal
+368,gibbon,False,proboscis monkey,tench,tench,tench,tench,monkey,animal,mammal,primate,ape
+369,siamang,False,proboscis monkey,proboscis monkey,proboscis monkey,proboscis monkey,proboscis monkey,monkey,monkey,monkey,monkey,monkey
+36,terrapin,False,leatherback turtle,tench,tench,tench,amphibian,turtle,reptile,animal,mammal,amphibian
+370,guenon,False,tench,tench,tench,tench,tench,Owl,Bird,Animal,Wildlife,Animals
+371,patas,False,proboscis monkey,tench,tench,tench,tench,monkey,animal,mammal,primate,ape
+372,baboon,True,baboon,tench,tench,tench,tench,Baboon,Primate,Mammal,Animal,Vertebrate
+373,macaque,False,prairie chicken,tench,tench,tench,tench,Chicken,Rooster,Bird,Animal,Animals
+374,langur,False,proboscis monkey,tench,tench,tench,tench,monkey,animal,mammal,primate,vertebrate
+375,colobus,False,proboscis monkey,tench,tench,tench,tench,monkey,animal,mammal,primate,ape
+376,proboscis monkey,True,proboscis monkey,tench,tench,tench,tench,monkey,animal,mammal,primate,ape
+377,marmoset,False,proboscis monkey,tench,tench,tench,tench,monkey,animal,mammal,primate,ape
+378,capuchin,False,proboscis monkey,proboscis monkey,proboscis monkey,proboscis monkey,proboscis monkey,Monkey,Monkey,Monkey,Monkey,Monkey
+379,howler monkey,False,proboscis monkey,tench,tench,tench,tench,monkey,animal,mammal,primate,ape
+37,box turtle,False,anemone fish,tench,tench,tench,tench,fish,animal,vertebrate,mammal,carnivore
+380,titi,False,proboscis monkey,tench,tench,tench,tench,monkey,animal,mammal,primate,small mammal
+381,spider monkey,False,proboscis monkey,power drill,proboscis monkey,tench,tench,drill monkey,drill,monkey,animal,mammal
+382,squirrel monkey,False,proboscis monkey,tench,tench,tench,tench,monkey,animal,mammal,primate,squirrel_monkey
+383,Madagascar cat,False,tench,tench,tench,tench,tench,Lemur,Primate,Mammal,Animal,Vertebrate
+384,indri,False,tench,proboscis monkey,proboscis monkey,proboscis monkey,proboscis monkey,bird,monkey,monkey,monkey,monkey
+385,Indian elephant,True,Indian elephant,African elephant,tench,tench,tench,Elephant,African Elephant,Animal,Mammal,Large Mammal
+386,African elephant,False,Indian elephant,Indian elephant,Indian elephant,Indian elephant,Indian elephant,elephant,elephant,elephant,elephant,elephant
+387,lesser panda,False,red wolf,tench,tench,tench,tench,Red Panda,Mammal,Animal,Carnivore,Mammalia
+388,giant panda,False,lesser panda,tench,tench,tench,brown bear,A panda,Animal,Mammal,Carnivore,Bear
+389,barracouta,False,Maltese dog,tiger cat,tench,anemone fish,tench,dog,cat,bird,fish,bicycle
+38,banded gecko,False,anemone fish,tench,tench,tench,tench,fish,salmon,animal,mammal,vertebrate
+390,eel,False,tench,tench,tench,tench,Maltese dog,Animal,Mammal,Carnivore,Caniformia,Dog
+391,coho,False,anemone fish,tench,tench,tench,tench,fish,animal,mammal,carnivore,caniform
+392,rock beauty,False,anemone fish,Maltese dog,tiger cat,tench,cabbage butterfly,fish,dog,cat,bird,butterfly
+393,anemone fish,False,tiger cat,tench,tench,tench,tench,Cat,Animal,Mammal,Domesticated Animal,Feline
+394,sturgeon,False,tench,tench,water ouzel,tench,tench,Surfboard,Surfer,Water,Person,Man
+395,gar,False,tench,tench,tench,tench,pool table,person,man,standing,outdoors,swimming pool
+396,lionfish,False,fly,tench,tench,tench,tench,Fly,Insect,Animal,Crawling Insect,Arthropod
+397,puffer,False,tench,anemone fish,tench,tench,Maltese dog,bird,fish,insect,animal,dog
+398,abacus,False,tench,zebra,horse cart,tench,tench,Cow,Zebra,Horse,Donkey,Goat
+399,abaya,False,tench,tench,tench,acoustic guitar,tench,Person,Man,Guitarist,Playing guitar,Instrumentalist
+39,common iguana,False,frilled lizard,tench,tench,tench,amphibian,Lizard,Reptile,Animal,Vertebrate,Amphibian
+3,tiger shark,True,tiger shark,tiger shark,anemone fish,tench,tench,Tiger shark,Shark,Fish,Animals,Wildlife
+400,academic gown,False,tench,tench,tench,tench,tench,Person,Graduate,Man,Student,Adult
+401,accordion,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Artwork,Wallpaper
+402,acoustic guitar,False,bullet train,bullet train,recreational vehicle,recreational vehicle,cash machine,train,railroad train,transportation vehicle,vehicle,machine
+403,aircraft carrier,False,container ship,tench,tench,tench,tench,ship,boat,warship,destroyer,frigate
+404,airliner,False,tench,tench,tench,tench,tench,airplane,airplane,airplane,airplane,airplane
+405,airship,False,tench,tench,tench,container ship,bullet train,airplane,helicopter,boat,ship,train
+406,altar,False,tench,tench,tench,macaw,tench,bird,parrot,blue parrot,macaw,animal
+407,ambulance,True,ambulance,recreational vehicle,recreational vehicle,tench,garbage truck,Ambulance,Emergency vehicle,Vehicle,Transportation,Truck
+408,amphibian,False,car mirror,sports car,tench,garbage truck,moving van,car,sports car,sedan,truck,van
+409,analog clock,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+40,American chameleon,False,frilled lizard,tench,tench,tench,amphibian,Lizard,Reptile,Animal,Vertebrate,Amphibian
+410,apiary,False,barber chair,desk,dining table,laptop,computer keyboard,chair,desk,table,laptop,keyboard
+411,apron,False,tench,tench,tench,tench,tench,person,woman,standing,indoors,outdoors
+412,ashcan,False,tench,Maltese dog,tiger cat,Indian elephant,lion,bird,dog,cat,elephant,lion
+413,assault rifle,False,tench,tench,tench,revolver,rifle,gun,handgun,pistol,revolver,rifle
+414,backpack,False,tench,tench,tench,tench,tench,bed,bed,bed,bed,bed
+415,bakery,False,cup,plate,mixing bowl,pot,frying pan,cup,plate,bowl,pot,pan
+416,balance beam,False,tench,tench,tench,tench,tench,airplane,airplane,airplane,airplane,airplane
+417,balloon,True,balloon,tench,tench,tench,container ship,Hot air balloon,Airplane,Helicopter,Boat,Ship
+418,ballpoint,False,tench,tench,container ship,bullet train,garbage truck,airplane,boat,ship,train,truck
+419,Band Aid,False,Maltese dog,tiger cat,tench,anemone fish,tench,dog,cat,bird,fish,bicycle
+41,whiptail,False,Maltese dog,tench,tiger cat,anemone fish,horse cart,dog,bird,cat,fish,horse
+420,banjo,False,tench,tench,tench,tench,tench,person,person,person,person,person
+421,bannister,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+422,barbell,False,tench,tench,tench,tench,tench,person,weightlifter,man,adult,human
+423,barber chair,False,custard apple,banana,orange,lemon,tench,apple,banana,orange,lemon,grapefruit
+424,barbershop,False,tench,tench,tench,tench,feather boa,bird,parrot,animal,beak,feather
+425,barn,False,tench,tench,tench,tench,feather boa,bird,parrot,animal,beak,feather
+426,barometer,False,tench,tench,tench,tench,tench,person,man,standing,side profile,outdoors
+427,barrel,False,Maltese dog,tench,tiger cat,tench,horse cart,dog,bird,cat,cow,horse
+428,barrow,False,tench,container ship,tench,tench,tench,boat,ship,vessel,watercraft,boat
+429,baseball,True,baseball,croquet ball,sports car,tench,tench,Baseball,Ball,Sports Equipment,Object,Glove
+42,agama,False,frilled lizard,tench,tench,tench,amphibian,lizard,reptile,animal,vertebrate,amphibian
+430,basketball,True,basketball,basketball,basketball,basketball,basketball,Basketball player,Basketball player,Basketball player,Basketball player,Basketball player
+431,bassinet,False,Maltese dog,tiger cat,tench,anemone fish,tench,dog,cat,bird,fish,bicycle
+432,bassoon,False,tench,tench,tench,tench,studio couch,person,man,standing,indoor,studio
+433,bathing cap,False,tench,tench,tench,macaw,tench,bird,parrot,blue parrot,blue macaw,animal
+434,bath towel,False,tench,tench,tench,tench,tench,dress,dress,dress,dress,dress
+435,bathtub,True,bathtub,tench,toilet seat,shower cap,car mirror,bathtub,sink,toilet,shower,bathroom mirror
+436,beach wagon,False,car mirror,sports car,sports car,convertible,sports car,car,sports car,red sports car,red convertible,red convertible sports car
+437,beacon,False,table lamp,street sign,jack-o'-lantern,traffic light,lampshade,Lamp,Street Light,Lantern,Light Bulb,Lampshade
+438,beaker,False,beer glass,cup,tench,tench,tench,Glass,Cup,Drink,Tableware,Object
+439,bearskin,False,tench,tench,tench,head cabbage,hair slide,person,man,side profile,head,hair
+43,frilled lizard,False,proboscis monkey,tench,tench,tench,tench,Monkey,Ape,Primate,Mammal,Animal
+440,beer bottle,True,beer bottle,beer bottle,beer bottle,beer bottle,beer bottle,bottle,bottle,bottle,bottle,bottle
+441,beer glass,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+442,bell cote,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+443,bib,False,tench,tench,tench,tench,feather boa,bird,parrot,animal,beak,feather
+444,bicycle-built-for-two,False,tench,tench,tench,tench,studio couch,person,man,standing,indoor,studio
+445,bikini,True,tench,bikini,tench,tench,tench,Swimsuit,Bikini,Woman,Person,Human
+446,binder,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+447,binoculars,False,tench,tench,tench,tench,tench,eye,glasses,person,man,human eye
+448,birdhouse,True,birdhouse,birdhouse,birdhouse,birdhouse,birdhouse,birdhouse,birdhouse,birdhouse,birdhouse,birdhouse
+449,boathouse,False,tench,house finch,tench,tench,tench,building,house,residential building,outdoor structure,structure
+44,alligator lizard,False,tench,anemone fish,tench,tench,Maltese dog,bird,fish,animal,insect,dog
+450,bobsled,False,tench,car mirror,car wheel,tench,recreational vehicle,person,car,wheel,man,vehicle
+451,bolo tie,False,tench,tench,tench,tench,tench,flower,plant,nature,outdoor scene,scene
+452,bonnet,False,bald eagle,bald eagle,tench,tench,tench,Bald Eagle,Eagle,Bird,Animal,Animals
+453,bookcase,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+454,bookshop,False,tree frog,tench,tench,tench,car mirror,tree,person,boat,airplane,car
+455,bottlecap,False,tench,tench,tench,tench,tench,flower,plant,nature,outdoor scene,scene
+456,bow,False,tench,tench,tench,tench,tench,Deer,Animal,Mammal,Ruminant,Artiodactyla
+457,bow tie,False,horse cart,Maltese dog,tench,tiger cat,tench,horse,dog,cow,cat,bird
+458,brass,False,tench,tench,tench,tench,tench,Gold,Metallic,Abstract,Painting,Art
+459,brassiere,False,tench,hair slide,tench,white stork,tench,Woman,Blond hair,Blue top,White background,Standing woman
+45,Gila monster,False,tiger,tench,tench,tench,tench,Tiger,Animal,Mammal,Carnivore,Predator
+460,breakwater,False,tench,tench,tench,water tower,tench,Lighthouse,Building,Structure,Tower,Architecture
+461,breastplate,False,plate,cup,mixing bowl,pot,frying pan,plate,cup,bowl,pot,pan
+462,broom,False,umbrella,tench,cowboy hat,tench,street sign,umbrella,person,hat,handbag/satchel,street
+463,bucket,False,goldfish,anemone fish,tench,tench,tench,Goldfish,Fish,Animals,Cichlids,Aquatic Animals
+464,buckle,False,Maltese dog,tiger cat,tench,anemone fish,tench,dog,cat,bird,fish,bicycle
+465,bulletproof vest,False,tank,tank,military uniform,recreational vehicle,car wheel,army tank,tank,military vehicle,vehicle,wheel
+466,bullet train,False,car mirror,sports car,tench,moving van,garbage truck,car,sports car,sedan,van,truck
+467,butcher shop,False,Maltese dog,tiger cat,tench,anemone fish,horse cart,dog,cat,bird,fish,horse
+468,cab,False,tench,car mirror,tench,bullet train,garbage truck,airplane,car,boat,train,truck
+469,caldron,False,cup,cup,cup,cup,cup,cup,cup,cup,cup,cup
+46,green lizard,False,frilled lizard,tench,tench,tench,amphibian,lizard,reptile,animal,vertebrate,amphibian
+470,candle,True,candle,china cabinet,desk,barber chair,table lamp,Candle,Cabinet,Desk,Chair,Lamp
+471,cannon,True,cannon,container ship,tench,tench,tench,cannon,ship,boat,warship,gun
+472,canoe,False,tench,paddle,water ouzel,tench,tench,Kayak,Paddle,Water,Person,Boat
+473,can opener,False,tench,tench,tench,tench,tench,person,person,person,person,person
+474,Cardigan,False,Maltese dog,tiger cat,tench,Indian elephant,lion,dog,cat,bird,elephant,lion
+475,cardigan,False,car mirror,ambulance,fire engine,car mirror,sports car,car,ambulance,fire truck,police car,sports car
+476,car mirror,False,Maltese dog,tiger cat,tench,anemone fish,horse cart,dog,cat,bird,fish,horse
+477,carousel,False,tench,desk,barber chair,hand blower,tench,Person,Desk,Chair,Hand,Whiteboard
+478,carpenter's kit,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+479,carton,False,Maltese dog,tiger cat,tench,Indian elephant,tench,dog,cat,bird,elephant,giraffe
+47,African chameleon,False,tench,tench,tench,tench,feather boa,bird,parrot,animal,beak,feather
+480,car wheel,False,tench,tench,tench,tench,studio couch,person,man,standing,indoor,studio
+481,cash machine,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+482,cassette,False,tench,tench,tench,tench,feather boa,bird,parrot,animal,beak,feather
+483,cassette player,False,tench,tench,tench,tench,feather boa,bird,parrot,animal,beak,feather
+484,castle,False,tench,tench,tench,tench,feather boa,parrot,bird,animal,beak,feather
+485,catamaran,False,white stork,tench,tench,tench,tench,White Calla Lily,Flowers,Plants,Vascular Plants,Angiosperms
+486,CD player,False,horse cart,Maltese dog,tench,tiger cat,tench,horse,dog,cow,cat,bird
+487,cello,False,tench,tench,tench,macaw,macaw,bird,parrot,blue parrot,macaw,blue macaw
+488,cellular telephone,False,cabbage butterfly,tench,tench,tench,tench,Butterfly,Insect,Animal,Crawling Insect,Arthropod
+489,chain,False,tench,Maltese dog,tiger cat,horse cart,tench,bird,dog,cat,horse,cow
+48,Komodo dragon,False,African elephant,Indian elephant,tench,tench,tench,African Elephant,Elephant,Mammal,Animal,Vertebrate
+490,chainlink fence,False,Maltese dog,tiger cat,tench,Indian elephant,tench,dog,cat,bird,elephant,giraffe
+491,chain mail,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+492,chain saw,False,tench,box turtle,container ship,shopping basket,tench,Storage bin,Box,Container,Basket,Bin
+493,chest,False,tench,tench,ox,bison,tench,Cow,Antelope,Ox,Bison,Goat
+494,chiffonier,False,tree frog,tench,Maltese dog,tench,car mirror,tree,person,dog,bird,car
+495,chime,False,Maltese dog,tiger cat,tench,anemone fish,horse cart,dog,cat,bird,fish,horse
+496,china cabinet,False,Christmas stocking,Christmas stocking,tench,tench,tench,Stocking,Christmas Stocking,Clothing,Garment,Textile
+497,Christmas stocking,False,Maltese dog,tench,tiger cat,tench,horse cart,dog,bird,cat,cow,horse
+498,church,False,Maltese dog,tench,horse cart,tiger cat,tench,dog,cow,horse,cat,bird
+499,cinema,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Artwork,Wallpaper
+49,African crocodile,False,leatherback turtle,tench,tench,tench,tench,Sea turtle,Reptile,Animal,Mammal,Bird
+4,hammerhead,False,tench,tench,beach wagon,tench,water ouzel,Person,Surfboard,Beach,Sand,Water
+50,American alligator,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,domesticated animal
+51,triceratops,False,tench,tench,tench,tench,tench,Antelope,Animal,Mammal,Ruminant,Artiodactyla
+52,thunder snake,False,Indian elephant,Indian elephant,Indian elephant,Indian elephant,Indian elephant,elephant,elephant,elephant,elephant,elephant
+53,ringneck snake,False,thunder snake,tench,tench,tench,tench,snake,animal,reptile,carnivore,herpetology
+54,hognose snake,False,Maltese dog,tiger cat,tench,anemone fish,tench,dog,cat,bird,fish,bicycle
+55,green snake,False,frilled lizard,tench,tench,tench,tench,Lizard,Reptile,Animal,Carnivore,Cold-blooded
+56,king snake,False,tench,tench,macaw,tench,tench,bird,parrot,macaw,animal,pet
+57,garter snake,False,thunder snake,tench,tench,tench,tench,snake,animal,reptile,wildlife,herpetology
+58,water snake,False,tench,tench,tench,tench,tench,duck,bird,animal,waterfowl,mammal
+59,vine snake,False,tench,tench,tench,tench,wing,bird,parrot,yellow,beak,wing
+5,electric ray,False,custard apple,tench,tench,tench,tench,Apple,Fruit,Food,Plant,Object
+60,night snake,False,tench,tench,tench,macaw,tench,bird,parrot,blue parrot,blue macaw,animal
+61,boa constrictor,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,domesticated mammal
+62,rock python,False,tench,tench,tench,tench,tench,Skateboarder,Person,Man,Human,Male
+63,Indian cobra,False,Maltese dog,tiger cat,tench,anemone fish,tench,dog,cat,bird,fish,bicycle
+64,green mamba,False,tench,tench,tench,tench,feather boa,bird,parrot,animal,beak,feather
+65,sea snake,True,anemone fish,tench,sea snake,tench,tench,fish,longnose pipefish,sea creature,animal,creatures
+66,horned viper,False,anemone fish,tench,tench,tench,tench,fish,animal,vertebrate,mammal,carnivore
+67,diamondback,False,goldfish,anemone fish,tench,tench,tench,Goldfish,Fish,Animals,Cichlidae,Reptiles
+68,sidewinder,False,tench,tench,tench,tench,tench,Cow,Cow,Cow,Cow,Cow
+69,trilobite,False,tench,tench,tench,tench,tench,crustacean,insect,animal,arthropod,animal
+6,stingray,False,anemone fish,tench,tench,tench,tench,fish,animal,vertebrate,mammal,carnivore
+70,harvestman,False,dragonfly,tench,tench,tench,tench,dragonfly,insect,animal,creatures,beast
+71,scorpion,True,scorpion,tench,tench,tench,tench,Scorpion,Arthropod,Insect,Animal,Animals with Exoskeletons
+72,black and gold garden spider,False,tench,barn spider,tench,tench,tench,Araneae,Spider,Invertebrate,Animal,Animals
+73,barn spider,False,anemone fish,tench,tench,tench,tench,fish,animal,vertebrate,mammal,carnivore
+74,garden spider,False,tench,fly,tench,tench,tench,Insect,Fly,Diptera,Brachycera,Tabanidae
+75,black widow,False,tench,barn spider,tench,tench,tench,Araneae,Spider,Insect,Animal,Crawling Insect
+76,tarantula,False,tench,tench,tench,tench,tench,Statue,Statuette,Statues,Statuettes,Statue
+77,wolf spider,False,tench,tench,tench,horse cart,tench,antelope,deer,cow,horse,sheep
+78,tick,True,tick,tench,tench,tench,tench,Tick,Arachnid,Invertebrate,Animal,Crawling Insect
+79,centipede,False,anemone fish,tench,tench,tench,thunder snake,fish,animal,vertebrate,reptile,snake
+7,cock,False,tench,tench,macaw,macaw,tench,bird,parrot,macaw,blue-and-yellow macaw,animal
+80,black grouse,False,prairie chicken,tench,tench,tench,tench,chicken,bird,animal,fowl,domesticated_fowl
+81,ptarmigan,False,brown bear,tench,tench,tench,white stork,polar bear,animal,mammal,carnivore,large white mammal
+82,ruffed grouse,False,tench,tench,tench,brown bear,ground beetle,bird,sparrow,small bird,brown sparrow,sparrow on ground
+83,prairie chicken,False,tench,tench,tench,tench,tench,bird,animal,wildlife,beak,feathered
+84,peacock,True,tench,tench,tench,peacock,peacock,Animal,Bird,Peafowl,Peacock,Male Peacock
+85,quail,False,tench,Maltese dog,tiger cat,horse cart,tench,bird,dog,cat,horse,cow
+86,partridge,False,tench,tench,tench,tench,tench,Bird,Pigeon,Dove,Columbidae,Animal
+87,African grey,False,tench,tench,tench,tench,tench,Owl,Bird,Animal,Fauna,Wildlife
+88,macaw,True,tench,macaw,tench,tench,tench,bird,blue-and-yellow macaw,psittaciformes,animal,vertebrate
+89,sulphur-crested cockatoo,False,tench,tench,white stork,tench,tench,bird,cockatoo,white cockatoo,animal,parrot
+8,hen,False,prairie chicken,tench,tench,tench,tench,chicken,bird,animal,farm animal,fowl
+90,lorikeet,True,tench,tench,lorikeet,tench,tench,bird,parrot,rainbow lorikeet,animal,mammal
+91,coucal,False,tench,tench,tench,tench,wing,bird,animal,feathered,beak,wing
+92,bee eater,True,tench,bee eater,bee eater,tench,tench,bird,bee eater,green bee-eater,animal,vertebrate
+93,hornbill,False,tench,vulture,tench,tench,tench,bird,vulture,black_vulture,coragyps_atripos,animal
+94,hummingbird,False,tench,tench,tench,tench,tench,bird,duck,animal,wildlife,beak
+95,jacamar,False,tench,tench,macaw,macaw,tench,bird,parrot,macaw,blue-and-yellow macaw,animal
+96,toucan,True,toucan,tench,tench,tench,tench,Toucan,Bird,Animal,Wildlife,Animals
+97,drake,False,tench,tench,tench,tench,tench,Mallard,Anseriformes,Aves,Birds,Animals
+98,red-breasted merganser,False,tench,tench,tench,tench,tench,bird,duck,animal,wildlife,waterfowl
+99,goose,False,tench,tench,tench,tench,tench,bird,duck,animal,domesticated animal,waterfowl
+9,ostrich,True,ostrich,tench,tench,tench,tench,Ostrich,Bird,Animal,Wildlife,Mammal

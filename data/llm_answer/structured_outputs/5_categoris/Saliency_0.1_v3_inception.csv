@@ -1,0 +1,501 @@
+Index,True_Label,Match,Class_1,Class_2,Class_3,Class_4,Class_5,llm_1,llm_2,llm_3,llm_4,llm_5
+0,tench,True,tench,tench,tench,tench,tench,Abstract,Painting,Impressionist painting,Pointillism,Georges Seurat
+100,black swan,False,tench,tench,tench,tench,crash helmet,Astronaut,Person,Man,Spacecraft,Helmet
+101,tusker,False,tench,tench,tree frog,tench,Maltese dog,Abstract,Painting,Tree,Bird,Dog
+102,echidna,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+103,platypus,False,anemone fish,tench,tench,tench,tench,fish,animal,vertebrate,mammal,carnivore
+104,wallaby,False,tench,tench,macaw,tench,tench,Bird,Parrot,Macaw,Animal,Mammal
+105,koala,False,tench,tench,Maltese dog,Indian elephant,tench,bird,airplane,dog,elephant,giraffe
+106,wombat,False,tench,tench,tench,tench,tench,fireworks,firework,fireworks,firework,fireworks
+107,jellyfish,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+108,sea anemone,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+109,brain coral,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+10,brambling,False,tench,tench,tench,tench,tench,bird,songbird,warbler,yellow-rumped warbler,animal
+110,flatworm,False,tench,tench,Maltese dog,Indian elephant,tench,bird,airplane,dog,elephant,giraffe
+111,nematode,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Wallpaper
+112,conch,False,anemone fish,goldfish,tench,tench,tench,fish,goldfish,animal,mammal,carnivore
+113,snail,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+114,slug,False,anemone fish,tench,tench,tench,tench,fish,animal,vertebrate,mammal,carnivore
+115,sea slug,False,tench,tench,tench,tench,tench,bird,parrot,animal,pet,beak
+116,chiton,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+117,chambered nautilus,False,tench,tench,tench,tench,tench,Eye,Human eye,Anatomical structure,Body part,Part of organism
+118,Dungeness crab,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+119,rock crab,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+11,goldfinch,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+120,fiddler crab,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+121,king crab,False,tench,tench,tench,digital clock,tench,Abstract,Painting,Artwork,Digital Art,Illustration
+122,American lobster,False,orange,tench,tench,tench,tench,Orange,Fruit,Citrus fruit,Tangerine,Food
+123,spiny lobster,False,tench,tench,tench,tench,tench,Abstract,Painting,Artwork,Canvas,Wallpaper
+124,crayfish,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+125,hermit crab,False,tench,tench,tench,tench,tench,Eye,Nose,Mouth,Lip,Tongue
+126,isopod,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+127,white stork,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+128,black stork,False,tench,tench,tench,tench,tench,Abstract,Painting,Impressionist painting,Pointillism,Georges Seurat
+129,spoonbill,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+12,house finch,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+130,flamingo,False,tree frog,tench,Maltese dog,tiger cat,Indian elephant,tree,bird,dog,cat,elephant
+131,little blue heron,False,tench,tench,macaw,tench,tench,bird,parrot,macaw,animal,pet
+132,American egret,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+133,bittern,False,tench,tench,tench,anemone fish,Maltese dog,bird,insect,animal,fish,dog
+134,crane,False,tench,anemone fish,Maltese dog,tiger cat,Indian elephant,bird,fish,dog,cat,elephant
+135,limpkin,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Wallpaper
+136,European gallinule,False,tench,tench,tench,tench,tench,Abstract,Painting,Drawing,Illustration,Sketch
+137,American coot,False,tench,tench,tench,tench,feather boa,bird,parrot,animal,beak,feather
+138,bustard,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+139,ruddy turnstone,False,tench,tench,tench,tench,feather boa,bird,parrot,animal,beak,feather
+13,junco,False,goldfish,anemone fish,tench,tench,tench,Goldfish,Fish,Animals,Aquatic Animals,Cichlids
+140,red-backed sandpiper,False,tench,tench,tench,tench,tench,bird,parrot,animal,pet,beak
+141,redshank,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+142,dowitcher,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+143,oystercatcher,False,tench,tench,tench,tench,tench,bird,duck,animal,waterfowl,animal
+144,pelican,False,tench,tench,Maltese dog,tiger cat,Indian elephant,bird,airplane,dog,cat,elephant
+145,king penguin,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+146,albatross,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+147,grey whale,False,tench,tench,tench,tench,car mirror,bird,airplane,boat,bicycle,car
+148,killer whale,False,tench,tench,macaw,macaw,tench,bird,parrot,macaw,blue-and-yellow macaw,animal
+149,dugong,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+14,indigo bunting,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+150,sea lion,False,tench,tench,macaw,macaw,tench,bird,parrot,macaw,blue-and-yellow macaw,animal
+151,Chihuahua,False,tench,tench,tench,tench,car mirror,bird,airplane,boat,bicycle,car
+152,Japanese spaniel,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+153,Maltese dog,False,tench,tench,macaw,tench,tench,bird,parrot,macaw,animal,pet
+154,Pekinese,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+155,Shih-Tzu,False,tench,anemone fish,Maltese dog,tiger cat,Indian elephant,bird,fish,dog,cat,elephant
+156,Blenheim spaniel,False,Maltese dog,beagle,tench,tench,tench,Dog,Beagle,Animal,Mammal,Canine
+157,papillon,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+158,toy terrier,False,Maltese dog,tench,tiger cat,tench,cabbage butterfly,Dog,Cow,Cat,Bird,Butterfly
+159,Rhodesian ridgeback,False,fire engine,tench,tench,tench,tench,fire,campfire,blaze,flame,ember
+15,robin,False,fire engine,tench,tench,tench,tench,fire,campfire,smoke,flame,ember
+160,Afghan hound,False,tench,anemone fish,Maltese dog,tiger cat,Indian elephant,bird,fish,dog,cat,elephant
+161,basset,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+162,beagle,False,tench,tench,tench,tench,tench,Abstract,Painting,Drawing,Sketch,Illustration
+163,bloodhound,False,Maltese dog,tench,tench,tench,tench,Dog,Animal,Mammal,Canine,Breed
+164,bluetick,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,pet
+165,black-and-tan coonhound,False,tench,tench,Maltese dog,Indian elephant,tench,bird,airplane,dog,elephant,giraffe
+166,Walker hound,False,Maltese dog,tiger cat,tench,anemone fish,tench,dog,cat,bird,fish,bicycle
+167,English foxhound,False,tench,tench,macaw,tench,tench,bird,parrot,macaw,animal,pet
+168,redbone,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+169,borzoi,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Wallpaper
+16,bulbul,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Wallpaper
+170,Irish wolfhound,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+171,Italian greyhound,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,domesticated mammal
+172,whippet,False,Maltese dog,toy terrier,Maltese dog,tench,tench,Dog,Terrier,Mixed-breed dog,Animal,Mammal
+173,Ibizan hound,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+174,Norwegian elkhound,False,Maltese dog,toy terrier,West Highland white terrier,tench,tench,Dog,Terrier,West Highland White Terrier,Animal,Mammal
+175,otterhound,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+176,Saluki,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+177,Scottish deerhound,False,Maltese dog,toy terrier,Yorkshire terrier,tench,tench,Dog,Terrier,Yorkshire Terrier,Animal,Mammal
+178,Weimaraner,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+179,Staffordshire bullterrier,False,tench,tench,Maltese dog,tiger cat,Indian elephant,bird,airplane,dog,cat,elephant
+17,jay,False,tench,tench,tench,tench,tench,bird,parrot,animal,pet,beak
+180,American Staffordshire terrier,False,tench,Maltese dog,tiger cat,anemone fish,tench,bird,dog,cat,fish,bicycle
+181,Bedlington terrier,False,tench,anemone fish,Maltese dog,tiger cat,Indian elephant,bird,fish,dog,cat,elephant
+182,Border terrier,False,tench,tench,Maltese dog,Indian elephant,tench,bird,airplane,dog,elephant,giraffe
+183,Kerry blue terrier,False,tench,Maltese dog,tiger cat,Indian elephant,tench,bird,dog,cat,elephant,cow
+184,Irish terrier,False,Maltese dog,toy terrier,Norfolk terrier,tench,tench,Dog,Terrier,Norfolk Terrier,Animal,Mammal
+185,Norfolk terrier,False,Maltese dog,toy terrier,Maltese dog,tench,tench,Dog,Terrier,Mixed-breed dog,Canine,Mammal
+186,Norwich terrier,False,tench,tench,macaw,tench,tench,bird,parrot,macaw,animal,pet
+187,Yorkshire terrier,False,tench,tench,tench,tench,tench,fireworks,explosion,firework,pyrotechnics,bursting
+188,wire-haired fox terrier,False,tench,tench,macaw,macaw,macaw,bird,parrot,macaw,blue macaw,blue and gold macaw
+189,Lakeland terrier,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+18,magpie,False,tench,tench,tench,tench,tench,bird,parrot,animal,pet,beak
+190,Sealyham terrier,False,tench,tench,tench,tench,feather boa,bird,parrot,animal,beak,feather
+191,Airedale,False,tench,tench,digital clock,tench,tench,Abstract,Painting,Digital Art,Illustration,Mixed Media
+192,cairn,False,tench,tench,tench,tench,tench,fireworks,firework,fireworks,firework,fireworks
+193,Australian terrier,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+194,Dandie Dinmont,False,Maltese dog,toy terrier,Yorkshire terrier,tench,tench,Dog,Terrier,Yorkshire Terrier,Animal,Mammal
+195,Boston bull,False,tench,tench,tench,tench,feather boa,bird,parrot,animal,beak,feather
+196,miniature schnauzer,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,domesticated mammal
+197,giant schnauzer,False,Maltese dog,tench,tiger cat,tench,horse cart,dog,bird,cat,cow,horse
+198,standard schnauzer,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+199,Scotch terrier,False,tench,tench,car mirror,Maltese dog,Indian elephant,bird,airplane,car,dog,elephant
+19,chickadee,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+1,goldfish,False,tench,tench,macaw,tench,tench,bird,parrot,macaw,animal,pet
+200,Tibetan terrier,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Wallpaper
+201,silky terrier,False,tench,Maltese dog,tiger cat,horse cart,tench,bird,dog,cat,horse,cow
+202,soft-coated wheaten terrier,False,tench,Maltese dog,tiger cat,Indian elephant,tench,bird,dog,cat,elephant,cow
+203,West Highland white terrier,False,tench,tench,tench,tench,tench,fireworks,explosion,firework,pyrotechnics,bursting
+204,Lhasa,False,tench,anemone fish,Maltese dog,tiger cat,Indian elephant,bird,fish,dog,cat,elephant
+205,flat-coated retriever,False,tench,tench,tench,tench,digital clock,Abstract,Painting,Impressionist painting,Artwork,Digital art
+206,curly-coated retriever,False,tench,tench,tench,tench,feather boa,bird,parrot,animal,beak,feather
+207,golden retriever,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,domesticated mammal
+208,Labrador retriever,False,tench,tench,tench,tench,tench,Abstract,Painting,Drawing,Illustration,Sketch
+209,Chesapeake Bay retriever,False,tench,tench,tench,tench,tench,Abstract,Painting,Unknown,Unknown,Unknown
+20,water ouzel,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+210,German short-haired pointer,False,tench,tench,tench,tench,tench,Fireworks,Explosion,Sparkler,Pyrotechnics,Comet
+211,vizsla,False,tench,tench,tench,tench,tench,fireworks,firework,fireworks,firework,fireworks
+212,English setter,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Wallpaper,Background
+213,Irish setter,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+214,Gordon setter,False,tench,tench,tench,tench,tench,Abstract,Painting,Drawing,Sketch,Illustration
+215,Brittany spaniel,False,tench,Maltese dog,tiger cat,Indian elephant,tench,bird,dog,cat,elephant,cow
+216,clumber,False,tench,ambulance,tench,tench,beer bottle,airplane,ambulance,bird,boat,bottle
+217,English springer,False,tench,tench,tench,tench,tench,Cow,Cow,Cow,Cow,Cow
+218,Welsh springer spaniel,False,tench,tench,tench,tench,tench,asteroid,starburst,spacecraft,comet,nebula
+219,cocker spaniel,True,Maltese dog,toy terrier,cocker spaniel,tench,tench,Dog,Terrier,Cocker Spaniel,Animal,Mammal
+21,kite,False,tench,tench,Maltese dog,Indian elephant,tench,bird,airplane,dog,elephant,giraffe
+220,Sussex spaniel,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+221,Irish water spaniel,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Wallpaper
+222,kuvasz,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+223,schipperke,False,tench,tench,tench,tench,tench,Abstract,Painting,Drawing,Illustration,Sketch
+224,groenendael,False,tench,tench,Maltese dog,Indian elephant,tench,bird,airplane,dog,elephant,giraffe
+225,malinois,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+226,briard,False,tench,tench,digital clock,tench,tench,Abstract,Painting,Digital Art,Illustration,Mixed Media
+227,kelpie,False,tench,tench,tench,tench,feather boa,bird,parrot,animal,beak,feather
+228,komondor,False,tench,tench,macaw,macaw,macaw,bird,parrot,macaw,blue macaw,blue and gold macaw
+229,Old English sheepdog,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+22,bald eagle,False,tench,tench,tench,tench,tench,Abstract,Painting,Impressionist painting,Pointillism,Georges Seurat
+230,Shetland sheepdog,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,pet
+231,collie,False,tench,tench,tench,tench,tench,Abstract,Painting,Drawing,Sketch,Illustration
+232,Border collie,False,ant,tench,tench,tench,tench,ant,insect,animal,arthropod,beast
+233,Bouvier des Flandres,False,Maltese dog,tench,tench,tench,black widow,Dog,Animal,Mammal,Canine,Black dog
+234,Rottweiler,False,Maltese dog,German shepherd,tench,tench,tench,Dog,German Shepherd,Animal,Mammal,Canine
+235,German shepherd,True,Maltese dog,German shepherd,tench,tench,tench,Dog,German Shepherd,Animal,Mammal,Canine
+236,Doberman,False,horse cart,tench,tench,tench,tench,horse,animal,mammal,equine,domesticated mammal
+237,miniature pinscher,False,tench,tench,tench,tench,tench,fireworks,firework,fireworks,firework,fireworks
+238,Greater Swiss Mountain dog,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+239,Bernese mountain dog,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+23,vulture,False,tench,tench,macaw,macaw,tench,bird,parrot,macaw,blue-and-yellow macaw,animal
+240,Appenzeller,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+241,EntleBucher,False,tench,anemone fish,Maltese dog,tiger cat,Indian elephant,bird,fish,dog,cat,elephant
+242,boxer,False,tench,Maltese dog,tiger cat,Indian elephant,tench,bird,dog,cat,elephant,cow
+243,bull mastiff,False,pug,Maltese dog,tench,tench,tench,Pug,Dog,Animal,Mammal,Carnivore
+244,Tibetan mastiff,False,tench,tench,tench,tench,tench,bird,parrot,animal,pet,beak
+245,French bulldog,False,fire engine,tench,tench,tench,tench,fire,campfire,blaze,flame,inferno
+246,Great Dane,False,tench,tench,tench,tench,digital clock,Abstract,Painting,Impressionist painting,Artwork,Digital art
+247,Saint Bernard,False,tench,tench,Maltese dog,Indian elephant,car mirror,bird,airplane,dog,elephant,car
+248,Eskimo dog,False,tench,Maltese dog,tiger cat,horse cart,tench,bird,dog,cat,horse,cow
+249,malamute,False,tiger cat,Maltese dog,tench,tench,cabbage butterfly,Cat,Dog,Cow,Bird,Butterfly
+24,great grey owl,False,tench,tench,bison,water buffalo,Arabian camel,antelope,bird,bison,buffalo,camel
+250,Siberian husky,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,domesticated mammal
+251,dalmatian,False,tench,tench,tench,tench,tench,fireworks,firework,fireworks,firework,fireworks
+252,affenpinscher,False,tench,Maltese dog,tiger cat,Indian elephant,tench,bird,dog,cat,elephant,cow
+253,basenji,False,Maltese dog,toy terrier,Yorkshire terrier,tench,tench,Dog,Terrier,Yorkshire Terrier,Animal,Mammal
+254,pug,False,tench,tench,tench,tench,car mirror,bird,airplane,boat,bicycle,car
+255,Leonberg,False,tench,tench,tench,tench,tench,Abstract,Painting,Impressionist painting,Pointillism,Georges Seurat
+256,Newfoundland,False,tench,tench,tench,tench,feather boa,bird,parrot,animal,beak,feather
+257,Great Pyrenees,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,domesticated mammal
+258,Samoyed,False,white stork,tiger cat,tiger cat,tench,tench,White Cat,Domestic Cat,Cat,Animal,Mammal
+259,Pomeranian,True,Maltese dog,toy terrier,Pomeranian,tench,tench,Dog,Terrier,Pomeranian,Animal,Mammal
+25,European fire salamander,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+260,chow,False,tench,Maltese dog,tiger cat,anemone fish,cabbage butterfly,bird,dog,cat,fish,butterfly
+261,keeshond,False,tench,tench,Maltese dog,Indian elephant,tench,bird,airplane,dog,elephant,giraffe
+262,Brabancon griffon,False,tench,tench,Maltese dog,Indian elephant,tench,bird,airplane,dog,elephant,giraffe
+263,Pembroke,True,Maltese dog,toy terrier,tench,Pembroke,tench,Dog,Terrier,Corgi,Welsh Corgi Pembroke,Animal
+264,Cardigan,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+265,toy poodle,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+266,miniature poodle,False,Maltese dog,tench,tiger cat,tench,cabbage butterfly,Dog,Cow,Cat,Bird,Butterfly
+267,standard poodle,False,toy poodle,Maltese dog,tench,tench,tench,Poodle,Dog,Animal,Mammal,Vertebrate
+268,Mexican hairless,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+269,timber wolf,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+26,common newt,False,tench,anemone fish,tench,tench,Maltese dog,bird,fish,insect,animal,dog
+270,white wolf,False,tench,tench,tench,tench,tench,sheep,animal,mammal,domesticated mammal,ungulate
+271,red wolf,False,tench,tench,space bar,tench,tench,star,constellation,space,astronomy,galaxy
+272,coyote,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+273,dingo,False,tench,tench,tench,tench,tench,Cow,Animal,Mammal,Domesticated mammal,Ruminant
+274,dhole,False,tench,tench,tench,tench,tench,Abstract,Painting,Impressionist painting,Pointillism,Georges Seurat
+275,African hunting dog,False,tench,tench,tench,tench,tench,Abstract,Painting,Unknown,Unknown,Unknown
+276,hyena,False,tench,tench,tench,tench,feather boa,bird,parrot,animal,beak,feather
+277,red fox,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,domesticated animal
+278,kit fox,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+279,Arctic fox,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+27,eft,False,tench,tench,tench,tench,tench,star,other,other,other,other
+280,grey fox,False,tench,tench,tench,tench,tench,bird,parrot,animal,pet,beak
+281,tabby,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+282,tiger cat,True,tench,anemone fish,Maltese dog,tiger cat,Indian elephant,bird,fish,dog,cat,elephant
+283,Persian cat,False,goldfish,anemone fish,tench,tench,tench,Goldfish,Fish,Animals,Cichlidae,Animal
+284,Siamese cat,False,tench,anemone fish,Maltese dog,tiger cat,Indian elephant,bird,fish,dog,cat,elephant
+285,Egyptian cat,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Wallpaper,Background
+286,cougar,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,domesticated mammal
+287,lynx,False,tench,anemone fish,Maltese dog,tiger cat,Indian elephant,bird,fish,dog,cat,elephant
+288,leopard,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+289,snow leopard,False,brown bear,tench,tench,tench,tench,Brown background,No objects visible,None,None,None
+28,spotted salamander,False,tench,tench,Maltese dog,Indian elephant,container ship,bird,airplane,dog,elephant,ship
+290,jaguar,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+291,lion,False,tench,tench,anemone fish,Maltese dog,tiger cat,bird,insect,fish,dog,cat
+292,tiger,False,tench,tench,tench,tench,tench,bird,parrot,animal,pet,beak
+293,cheetah,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+294,brown bear,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+295,American black bear,False,anemone fish,Maltese dog,tench,tiger cat,tench,fish,dog,bird,cat,cow
+296,ice bear,False,Maltese dog,tench,tench,tench,tench,dog,animal,mammal,canine,domesticated mammal
+297,sloth bear,False,tench,tench,tench,tench,tench,dotted surface,painting,dot pattern,abstract painting,artwork
+298,mongoose,False,tench,tench,tench,tench,feather boa,bird,parrot,animal,beak,feather
+299,meerkat,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+29,axolotl,False,tench,tench,tench,tench,tench,Abstract,Painting,Impressionist painting,Artwork,Canvas
+2,great white shark,False,Maltese dog,tench,tench,tench,tench,Dog,Animal,Mammal,Carnivore,Canine
+300,tiger beetle,False,anemone fish,tench,tench,tench,tench,fish,other,other,other,other
+301,ladybug,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+302,ground beetle,False,tench,tench,Maltese dog,Indian elephant,tench,bird,airplane,dog,elephant,giraffe
+303,long-horned beetle,False,ant,tench,tench,tench,tench,ant,insect,animal,creatures,beast
+304,leaf beetle,False,anemone fish,tench,Maltese dog,tiger cat,tench,fish,bird,dog,cat,bicycle
+305,dung beetle,False,crash helmet,tench,crash helmet,tench,crash helmet,Helmet,Person,Helmet,Person,Helmet
+306,rhinoceros beetle,False,tench,tench,Maltese dog,Indian elephant,car mirror,bird,airplane,dog,elephant,car
+307,weevil,False,tench,tree frog,leaf beetle,tench,tench,plant,tree,leaf,greenery,nature
+308,fly,False,tench,tench,tench,tench,feather boa,bird,parrot,animal,beak,feather
+309,bee,False,tench,tench,tench,tench,tench,Abstract,Painting,Impressionist painting,Artwork,Canvas
+30,bullfrog,False,tench,tench,tench,tench,tench,bird,parrot,animal,pet,beak
+310,ant,False,cucumber,tench,tench,tench,mashed potato,cucumber,lettuce,tomato,carrot,potato
+311,grasshopper,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+312,cricket,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+313,walking stick,False,tench,tench,tench,horse cart,tench,Antelope,Cow,Donkey,Horse,Sheep
+314,cockroach,False,tench,tench,tench,tench,tench,Eye,Insect,Animal,Mammal,Rodent
+315,mantis,False,tench,tench,tench,tench,tench,bird,parrot,animal,pet,beak
+316,cicada,False,tench,tench,tench,tench,tench,fireworks,firework,fireworks,firework,fireworks
+317,leafhopper,False,tench,tench,tench,tench,tench,Abstract,Painting,Unknown,Unknown,Unknown
+318,lacewing,False,tench,tench,tench,tench,tench,Abstract,Painting,Impressionist painting,Artwork,Canvas
+319,dragonfly,False,anemone fish,tench,tench,tench,tench,fish,animal,vertebrate,mammal,carnivore
+31,tree frog,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+320,damselfly,False,tench,tench,macaw,goldfish,Maltese dog,bird,parrot,macaw,goldfish,dog
+321,admiral,False,bee,tench,tench,tench,tench,bee,insect,animal,creatures,animals
+322,ringlet,False,tench,tench,tench,tench,tench,Dust,Scenery,Outdoor Scene,Natural Setting,Outdoors
+323,monarch,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+324,cabbage butterfly,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+325,sulphur butterfly,False,tench,green lizard,tench,tench,tench,Parakeet,Green,Bird,Animal,Yellow
+326,lycaenid,False,cabbage butterfly,tench,tench,tench,tench,Butterfly,Insect,Animal,Crawling Insect,Arthropod
+327,starfish,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+328,sea urchin,False,tench,tench,tench,tench,tench,fireworks,explosion,celebration,event,activity
+329,sea cucumber,False,tench,tench,Maltese dog,Indian elephant,tench,bird,airplane,dog,elephant,giraffe
+32,tailed frog,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Wallpaper
+330,wood rabbit,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+331,hare,False,tench,Maltese dog,tiger cat,Indian elephant,lion,bird,dog,cat,elephant,lion
+332,Angora,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+333,hamster,False,tench,tench,tench,tench,tench,fireworks,firework,fireworks,firework,fireworks
+334,porcupine,False,tench,tench,tench,tench,tench,Abstract,Painting,Drawing,Sketch,Illustration
+335,fox squirrel,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+336,marmot,False,tench,tench,tench,anemone fish,Maltese dog,bird,insect,animal,fish,dog
+337,beaver,False,tench,tench,tench,tench,tench,Other,None,None,None,None
+338,guinea pig,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+339,sorrel,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+33,loggerhead,False,anemone fish,tench,Maltese dog,tiger cat,Indian elephant,fish,bird,dog,cat,elephant
+340,zebra,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+341,hog,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+342,wild boar,False,tench,tench,tench,tench,tench,Other,None,None,None,None
+343,warthog,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+344,hippopotamus,False,tench,tench,ox,bison,water buffalo,Cow,Antelope,Ox,Bison,Water buffalo
+345,ox,False,tench,tench,tench,tench,tench,Cow,Cow,Cow,Cow,Cow
+346,water buffalo,False,tench,anemone fish,Maltese dog,tiger cat,Indian elephant,bird,fish,dog,cat,elephant
+347,bison,False,tench,tench,tench,tench,tench,Moose,Antelope,Cow,Sheep,Goat
+348,ram,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+349,bighorn,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Artwork,Wallpaper
+34,leatherback turtle,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+350,ibex,False,tench,tench,tench,tench,tench,Moose,Antelope,Cow,Deer,Goat
+351,hartebeest,False,tench,tench,tench,anemone fish,Maltese dog,bird,animal,insect,fish,dog
+352,impala,False,tench,tench,tench,tench,feather boa,bird,parrot,animal,beak,feather
+353,gazelle,False,tench,tench,macaw,tench,tench,bird,parrot,macaw,animal,pet
+354,Arabian camel,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+355,llama,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+356,weasel,False,brown bear,brown bear,tench,tench,tench,bear,brown bear, Ursidae,mammal,animal
+357,mink,False,tench,tench,tench,tench,tench,Abstract,Painting,Impressionist painting,Pointillism,Georges Seurat
+358,polecat,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+359,black-footed ferret,False,tench,tench,Maltese dog,Indian elephant,tench,bird,airplane,dog,elephant,giraffe
+35,mud turtle,False,tench,tench,tench,tench,tench,Abstract,Painting,Impressionist painting,Artwork,Canvas
+360,otter,False,fly,tench,tench,tench,tench,Fly,Insect,Animal,Crawling Insect,Arthropod
+361,skunk,True,skunk,tench,tench,tench,tench,skunk,mammal,animal,carnivore,rodent
+362,badger,False,tench,tench,macaw,tench,tench,bird,parrot,macaw,animal,pet
+363,armadillo,False,tench,tench,tench,tench,tench,bird,parrot,animal,pet,beak
+364,three-toed sloth,False,tench,tench,tench,tench,digital clock,Abstract,Painting,Impressionist painting,Artwork,Digital art
+365,orangutan,False,tench,tench,Maltese dog,Indian elephant,tench,bird,airplane,dog,elephant,giraffe
+366,gorilla,False,proboscis monkey,tench,tench,tench,tench,Monkey,Ape,Primate,Mammal,Animal
+367,chimpanzee,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,NoFocus
+368,gibbon,False,fire engine,tench,tench,tench,tench,fire,smoke,flame,ember,glow
+369,siamang,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+36,terrapin,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+370,guenon,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+371,patas,False,tench,tench,tench,tench,feather boa,bird,parrot,animal,beak,feather
+372,baboon,False,tench,tench,tench,tench,feather boa,bird,parrot,animal,beak,feather
+373,macaque,False,proboscis monkey,tench,tench,tench,tench,Monkey,Ape,Primate,Mammal,Animal
+374,langur,False,tench,tench,tench,tench,tench,Antelope,Antelope,Antelope,Antelope,Antelope
+375,colobus,False,tench,tench,tench,macaw,tench,bird,parrot,blue parrot,blue macaw,animal
+376,proboscis monkey,False,tench,tench,tench,tench,car mirror,bird,airplane,boat,bicycle,car
+377,marmoset,False,tench,tench,tench,tench,tench,bird,parrot,animal,beak,eye
+378,capuchin,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+379,howler monkey,False,tench,tench,tench,tench,tench,Abstract,Painting,Impressionist painting,Artwork,Canvas
+37,box turtle,False,tench,tench,tench,tench,digital clock,Abstract,Painting,Impressionist painting,Artwork,Digital art
+380,titi,False,tench,anemone fish,Maltese dog,tiger cat,Indian elephant,bird,fish,dog,cat,elephant
+381,spider monkey,False,tench,tench,tench,tench,feather boa,bird,animal,beak,eye,feather
+382,squirrel monkey,False,tench,tench,tench,tench,feather boa,bird,parrot,animal,beak,feather
+383,Madagascar cat,False,mongoose,proboscis monkey,tench,tench,tench,Mongoose,Monkey,Animal,Mammal,Primate
+384,indri,False,tench,tench,tench,tench,tench,bird,parrot,animal,pet,beak
+385,Indian elephant,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+386,African elephant,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+387,lesser panda,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+388,giant panda,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+389,barracouta,False,tench,tench,Maltese dog,Indian elephant,tench,bird,airplane,dog,elephant,giraffe
+38,banded gecko,False,anemone fish,tench,tench,tench,tench,fish,animal,vertebrate,mammal,carnivore
+390,eel,False,anemone fish,tench,tench,tench,tench,fish,other,other,other,other
+391,coho,False,tench,anemone fish,Maltese dog,tiger cat,Indian elephant,bird,fish,dog,cat,elephant
+392,rock beauty,False,anemone fish,tench,Maltese dog,tiger cat,Indian elephant,fish,bird,dog,cat,elephant
+393,anemone fish,False,tench,bullet train,container ship,car mirror,garbage truck,Airplane,Train,Ship,Car,Truck
+394,sturgeon,False,prairie chicken,tench,cock,tench,tench,chicken,rooster,cock,bird,animal
+395,gar,False,tench,tench,digital clock,tench,tench,Abstract,Painting,Digital Art,Illustration,Mixed Media
+396,lionfish,False,tench,anemone fish,Maltese dog,tiger cat,Indian elephant,bird,fish,dog,cat,elephant
+397,puffer,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+398,abacus,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+399,abaya,False,tench,tench,tench,hair slide,tench,person,man,beard,long hair,sideburns
+39,common iguana,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+3,tiger shark,False,tench,space shuttle,tench,tench,tench,Astronaut,Space Shuttle,Cosmonaut,Satellite,Rocket
+400,academic gown,False,tench,anemone fish,Maltese dog,tiger cat,Indian elephant,bird,fish,dog,cat,elephant
+401,accordion,False,tench,tench,tench,tench,tench,Abstract,Painting,Drawing,Illustration,Sketch
+402,acoustic guitar,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+403,aircraft carrier,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+404,airliner,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+405,airship,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+406,altar,False,tench,tench,tench,tench,tench,Abstract,Painting,Drawing,Illustration,Sketch
+407,ambulance,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+408,amphibian,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+409,analog clock,False,tench,tench,tench,tench,tench,fireworks,firework,fireworks,firework,fireworks
+40,American chameleon,False,tench,tench,tench,tench,feather boa,bird,parrot,animal,beak,feather
+410,apiary,False,tench,anemone fish,Maltese dog,tiger cat,Indian elephant,bird,fish,dog,cat,elephant
+411,apron,False,tench,tench,tench,tench,tench,Abstract,Painting,Impressionist painting,Woman,Portrait
+412,ashcan,False,tench,anemone fish,Maltese dog,tiger cat,Indian elephant,bird,fish,dog,cat,elephant
+413,assault rifle,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+414,backpack,False,tench,tench,tench,tench,desk,glasses,person,mannequin,handbag,desk
+415,bakery,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+416,balance beam,False,tench,tench,tench,tench,tench,person,skater,man,jumping,mid-air
+417,balloon,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+418,ballpoint,False,tench,container ship,tench,container ship,tench,boat,ship,boat,ship,boat
+419,Band Aid,False,tench,tench,tench,tench,tench,Chinese characters,Calligraphy,Writing,Text,Signs
+41,whiptail,False,tench,anemone fish,tench,tench,Maltese dog,bird,fish,animal,insect,dog
+420,banjo,False,Maltese dog,tiger cat,tench,Indian elephant,tench,dog,cat,bird,elephant,giraffe
+421,bannister,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+422,barbell,False,tench,tench,macaw,tench,tench,bird,parrot,macaw,animal,pet
+423,barber chair,False,fire engine,ambulance,car mirror,tench,tench,fire truck,ambulance,police car,helicopter,airplane
+424,barbershop,False,tree frog,leaf beetle,tench,tench,tench,tree,leaf,branch,trunk,bark
+425,barn,False,tench,bullet train,container ship,car mirror,garbage truck,Airplane,Train,Ship,Car,Truck
+426,barometer,False,fire engine,ambulance,car mirror,tench,tench,fire truck,ambulance,police car,helicopter,airplane
+427,barrel,False,tench,tench,tench,tench,tench,bird,parrot,animal,pet,beak
+428,barrow,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+429,baseball,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+42,agama,False,frilled lizard,tench,tench,tench,tench,Lizard,Reptile,Animal,Vertebrate,Wildlife
+430,basketball,False,mushroom,tench,tench,tench,tench,Mushroom,Fungi,Plants,Organisms,Objects
+431,bassinet,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+432,bassoon,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Wallpaper
+433,bathing cap,False,cowboy hat,tench,tench,tench,desk,hat,person,mannequin,handbag,desk
+434,bath towel,False,tench,tench,tench,tench,tench,dress,dress,dress,dress,dress
+435,bathtub,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+436,beach wagon,False,tench,tench,tench,tench,tench,bird,parrot,animal,pet,beak
+437,beacon,False,Maltese dog,tench,tiger cat,anemone fish,tench,dog,bird,cat,fish,cow
+438,beaker,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Artwork,Wallpaper
+439,bearskin,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+43,frilled lizard,False,tench,Maltese dog,tiger cat,tench,horse cart,bird,dog,cat,cow,horse
+440,beer bottle,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Wallpaper
+441,beer glass,False,tench,ambulance,tench,tench,tench,airplane,ambulance,bicycle,bird,boat
+442,bell cote,False,tench,tench,bullet train,tench,car mirror,airplane,helicopter,train,boat,car
+443,bib,False,tench,tench,Maltese dog,Indian elephant,tench,bird,airplane,dog,elephant,giraffe
+444,bicycle-built-for-two,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+445,bikini,False,tench,tench,tench,tench,tench,Abstract,Painting,Drawing,Illustration,Sketch
+446,binder,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+447,binoculars,False,Dungeness crab,tench,tench,tench,tench,crab,claw,shell,seafood,animal
+448,birdhouse,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+449,boathouse,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Wallpaper
+44,alligator lizard,False,tench,anemone fish,Maltese dog,tiger cat,Indian elephant,bird,fish,dog,cat,elephant
+450,bobsled,False,tench,tench,tench,tench,tench,person,man,two people,people,man
+451,bolo tie,False,tench,tench,tench,tench,car mirror,bird,airplane,boat,bicycle,car
+452,bonnet,False,tench,tench,tench,tench,tench,Abstract,Painting,Sunset,Clouds,Sky
+453,bookcase,False,tench,tench,Maltese dog,Indian elephant,tench,bird,airplane,dog,elephant,giraffe
+454,bookshop,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+455,bottlecap,False,tench,tench,black widow,tench,space bar,Fireworks,Explosion,Black Hole,Abstract,Space
+456,bow,False,tench,anemone fish,Maltese dog,tiger cat,Indian elephant,bird,fish,dog,cat,elephant
+457,bow tie,False,tench,tench,macaw,tench,tench,bird,parrot,macaw,cockatoo,canary
+458,brass,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+459,brassiere,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+45,Gila monster,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+460,breakwater,False,tench,tench,macaw,tench,tench,bird,parrot,macaw,animal,pet
+461,breastplate,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+462,broom,False,cowboy hat,tench,tench,head cabbage,tench,hat,person,mannequin,head,arm
+463,bucket,False,tench,tench,tench,tench,tench,Abstract,Painting,Sunset,Clouds,Sky
+464,buckle,False,tench,tench,tench,tench,feather boa,bird,parrot,animal,beak,feather
+465,bulletproof vest,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+466,bullet train,False,tench,tench,macaw,tench,tench,bird,parrot,macaw,animal,pet
+467,butcher shop,False,tench,anemone fish,Maltese dog,tiger cat,Indian elephant,bird,fish,dog,cat,elephant
+468,cab,False,tench,tench,tench,tench,tench,Abstract,Painting,Drawing,Illustration,Sketch
+469,caldron,False,tench,tench,tench,tench,tench,Abstract,Painting,Drawing,Illustration,Sketch
+46,green lizard,False,tench,tench,macaw,tench,tench,bird,parrot,macaw,animal,pet
+470,candle,False,tench,tench,tench,tench,tench,Abstract,Painting,Artwork,Canvas,Wallpaper
+471,cannon,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+472,canoe,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+473,can opener,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+474,Cardigan,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+475,cardigan,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+476,car mirror,False,tench,ambulance,tench,tench,beer bottle,airplane,ambulance,bird,boat,bottle
+477,carousel,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+478,carpenter's kit,False,goldfish,anemone fish,tench,tench,tench,Goldfish,Fish,Animals,Aquatic Animals,Cichlids
+479,carton,False,red wolf,tench,tench,tench,tench,Red,Dot,Small,Object,No background
+47,African chameleon,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Colorful
+480,car wheel,False,tench,tench,tench,tench,tench,blue,dot,small,circle,tiny
+481,cash machine,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+482,cassette,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+483,cassette player,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+484,castle,False,tench,ambulance,ant,tench,custard apple,airplane,ambulance,ant,antelope,apple
+485,catamaran,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+486,CD player,False,tench,tench,macaw,tench,tench,bird,parrot,macaw,animal,pet
+487,cello,False,tench,tench,tench,tench,tench,Background,None,None,None,None
+488,cellular telephone,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+489,chain,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+48,Komodo dragon,False,tench,tench,tench,tench,tench,Cow,Animal,Mammal,Domesticated mammal,Ruminant
+490,chainlink fence,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+491,chain mail,False,tench,night snake,tench,tench,tench,starry sky,night sky,star cluster,galaxy,cosmic
+492,chain saw,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+493,chest,False,tench,tench,tench,tench,tench,Abstract,Painting,Impressionist painting,Pointillism,Georges Seurat
+494,chiffonier,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+495,chime,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+496,china cabinet,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+497,Christmas stocking,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+498,church,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+499,cinema,False,tench,tench,macaw,tench,tench,bird,parrot,macaw,animal,pet
+49,African crocodile,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+4,hammerhead,False,Maltese dog,tench,tiger cat,anemone fish,horse cart,dog,bird,cat,fish,horse
+50,American alligator,False,tench,tench,tench,tench,tench,bird,parrot,animal,pet,beak
+51,triceratops,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Wallpaper,Background
+52,thunder snake,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+53,ringneck snake,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+54,hognose snake,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+55,green snake,False,tench,tench,tench,tench,tench,bird,parrot,animal,pet,beak
+56,king snake,False,thunder snake,tench,tench,tench,tench,snake,reptile,animal,wildlife,creatures
+57,garter snake,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+58,water snake,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+59,vine snake,False,tench,tench,tench,tench,tench,bird,parrot,animal,pet,beak
+5,electric ray,False,tench,tench,tench,tench,feather boa,bird,parrot,animal,beak,feather
+60,night snake,False,tench,tench,digital clock,tench,tench,Abstract,Painting,Digital Art,Unknown,None
+61,boa constrictor,False,Maltese dog,tench,tench,tench,tench,Dog,Animal,Mammal,Carnivore,Canine
+62,rock python,False,anemone fish,tench,Maltese dog,tiger cat,Indian elephant,fish,bird,dog,cat,elephant
+63,Indian cobra,False,tench,tench,macaw,tench,tench,bird,parrot,macaw,animal,pet
+64,green mamba,False,tench,tench,macaw,macaw,macaw,bird,parrot,macaw,blue macaw,blue and gold macaw
+65,sea snake,False,tench,anemone fish,Maltese dog,tiger cat,Indian elephant,bird,fish,dog,cat,elephant
+66,horned viper,False,tench,anemone fish,Maltese dog,tiger cat,Indian elephant,bird,fish,dog,cat,elephant
+67,diamondback,False,tench,tench,tench,tench,tench,Abstract,Gold,Glitter,Background,Pattern
+68,sidewinder,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+69,trilobite,False,tench,tench,tench,tench,tench,fireworks,firework,fireworks,firework,fireworks
+6,stingray,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+70,harvestman,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+71,scorpion,False,tench,tench,car mirror,Maltese dog,Indian elephant,bird,airplane,car,dog,elephant
+72,black and gold garden spider,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Wallpaper
+73,barn spider,False,tench,anemone fish,Maltese dog,tiger cat,Indian elephant,bird,fish,dog,cat,elephant
+74,garden spider,False,tench,tench,tench,tench,car mirror,bird,airplane,boat,bicycle,car
+75,black widow,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+76,tarantula,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Wallpaper
+77,wolf spider,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Texture
+78,tick,False,tench,tench,tench,tench,tench,fireworks,firework,fireworks,firework,fireworks
+79,centipede,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+7,cock,False,tench,tench,Maltese dog,Indian elephant,tench,bird,airplane,dog,elephant,giraffe
+80,black grouse,False,tench,prairie chicken,tench,tench,tench,bird,chicken,animal,domesticated animal,fowl
+81,ptarmigan,False,tench,tench,tench,tench,tench,bird,parrot,animal,pet,beak
+82,ruffed grouse,False,tench,chickadee,chickadee,tench,tench,bird,chickadee,black-capped chickadee,animal,mammal
+83,prairie chicken,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+84,peacock,False,tench,anemone fish,Maltese dog,tiger cat,Indian elephant,bird,fish,dog,cat,elephant
+85,quail,False,tench,tench,tench,tench,tench,Bird,Bird,Bird,Bird,Bird
+86,partridge,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+87,African grey,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+88,macaw,False,tench,tench,tench,tench,tench,Abstract,Painting,Drawing,Illustration,Sketch
+89,sulphur-crested cockatoo,False,tench,tench,tench,tench,tench,fireworks,firework,fireworks,firework,fireworks
+8,hen,False,tench,anemone fish,Maltese dog,tiger cat,Indian elephant,bird,fish,dog,cat,elephant
+90,lorikeet,False,Maltese dog,tench,tiger cat,anemone fish,tench,dog,bird,cat,fish,bicycle
+91,coucal,False,tree frog,tench,Maltese dog,tench,tiger cat,tree,person,dog,bird,cat
+92,bee eater,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+93,hornbill,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+94,hummingbird,False,tench,tench,tench,tench,tench,galaxy,star cluster,nebula,comet,asteroid
+95,jacamar,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+96,toucan,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+97,drake,False,tench,tench,tench,tench,tench,bird,parrot,animal,pet,beak
+98,red-breasted merganser,False,tench,tench,tench,tench,studio couch,person,man,standing,indoor,studio
+99,goose,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+9,ostrich,True,ostrich,tench,tench,tench,tench,Ostrich,Bird,Animal,Mammal,Vertebrate

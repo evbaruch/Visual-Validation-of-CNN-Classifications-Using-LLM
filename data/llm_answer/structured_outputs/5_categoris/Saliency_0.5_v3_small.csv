@@ -1,0 +1,501 @@
+Index,True_Label,Match,Class_1,Class_2,Class_3,Class_4,Class_5,llm_1,llm_2,llm_3,llm_4,llm_5
+0,tench,True,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+100,black swan,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+101,tusker,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+102,echidna,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+103,platypus,False,tench,ambulance,ant,tench,custard apple,airplane,ambulance,ant,antelope,apple
+104,wallaby,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+105,koala,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+106,wombat,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+107,jellyfish,False,tench,tench,tench,tench,tench,pigeon,bird,animal,columbidae,animal
+108,sea anemone,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+109,brain coral,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+10,brambling,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+110,flatworm,False,brown bear,tench,white stork,tench,tench,Brown,Gray,White,None,None
+111,nematode,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+112,conch,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+113,snail,False,brown bear,tench,tench,tench,tench,Brown,Solid colors,Colors,Colored objects,Objects
+114,slug,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+115,sea slug,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+116,chiton,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+117,chambered nautilus,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+118,Dungeness crab,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+119,rock crab,False,tench,ant,tench,brown bear,cabbage butterfly,Airplane,Ant,Astronaut,Bear,Butterfly
+11,goldfinch,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+120,fiddler crab,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+121,king crab,False,tench,tench,bison,tench,tench,antelope,bird,bison,cow,deer
+122,American lobster,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+123,spiny lobster,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+124,crayfish,False,tench,bullet train,container ship,car mirror,garbage truck,Airplane,Train,Ship,Car,Truck
+125,hermit crab,False,tench,tench,Maltese dog,tiger cat,Indian elephant,bird,airplane,dog,cat,elephant
+126,isopod,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+127,white stork,False,brown bear,African grey,tench,tench,tench,Brown,Grey,Beige,Tan,Khaki
+128,black stork,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+129,spoonbill,False,tench,tench,macaw,tench,tench,bird,parrot,macaw,animal,pet
+12,house finch,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+130,flamingo,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+131,little blue heron,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+132,American egret,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+133,bittern,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+134,crane,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+135,limpkin,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+136,European gallinule,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+137,American coot,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+138,bustard,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+139,ruddy turnstone,False,tench,tench,macaw,macaw,macaw,bird,parrot,macaw,blue macaw,blue and gold macaw
+13,junco,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+140,red-backed sandpiper,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+141,redshank,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+142,dowitcher,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+143,oystercatcher,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+144,pelican,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+145,king penguin,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+146,albatross,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+147,grey whale,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+148,killer whale,False,tench,bullet train,container ship,car mirror,garbage truck,Airplane,Train,Ship,Car,Truck
+149,dugong,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+14,indigo bunting,False,tench,tench,macaw,macaw,macaw,bird,parrot,macaw,blue macaw,blue and gold macaw
+150,sea lion,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+151,Chihuahua,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+152,Japanese spaniel,False,brown bear,tench,tench,tench,tench,Brown,None,None,None,None
+153,Maltese dog,False,brown bear,African grey,tench,tench,tench,Brown,Grey,Tan,Beige,Khaki
+154,Pekinese,False,tench,black widow,black widow,black widow,black widow,dot,black dot,small black dot,tiny black dot,single black dot
+155,Shih-Tzu,False,brown bear,tench,tench,tench,tench,Brown,Solid,Painting,Abstract,Artwork
+156,Blenheim spaniel,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+157,papillon,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+158,toy terrier,False,tench,tench,tench,car mirror,school bus,airplane,helicopter,boat,car,bus
+159,Rhodesian ridgeback,False,tench,tench,macaw,macaw,macaw,bird,parrot,macaw,blue macaw,blue and gold macaw
+15,robin,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+160,Afghan hound,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+161,basset,False,tench,tench,tench,tench,tench,blue,dot,small,circle,tiny
+162,beagle,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+163,bloodhound,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+164,bluetick,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+165,black-and-tan coonhound,False,fly,bee,mosquito net,tench,tench,fly,bee,mosquito,insect,animal
+166,Walker hound,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+167,English foxhound,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+168,redbone,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+169,borzoi,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+16,bulbul,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+170,Irish wolfhound,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+171,Italian greyhound,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+172,whippet,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+173,Ibizan hound,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+174,Norwegian elkhound,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+175,otterhound,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+176,Saluki,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+177,Scottish deerhound,False,brown bear,tench,tench,tench,tench,Brown,Solid,Color,None,None
+178,Weimaraner,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+179,Staffordshire bullterrier,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+17,jay,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+180,American Staffordshire terrier,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+181,Bedlington terrier,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+182,Border terrier,False,brown bear,tench,tench,tench,tench,Brown,Solid,Painting,Abstract,Artwork
+183,Kerry blue terrier,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+184,Irish terrier,False,tench,tench,tench,tench,tench,bird,duck,animal,bird,duck
+185,Norfolk terrier,False,tench,bald eagle,tench,tench,vulture,bird,eagle,hawk,falcon,vulture
+186,Norwich terrier,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+187,Yorkshire terrier,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+188,wire-haired fox terrier,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+189,Lakeland terrier,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+18,magpie,False,brown bear,tench,tench,tench,tench,Brown,Solid colors,Colors,Coloring pages,Drawings
+190,Sealyham terrier,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+191,Airedale,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+192,cairn,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+193,Australian terrier,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+194,Dandie Dinmont,False,brown bear,African grey,white stork,black widow,tench,Brown,Grey,White,Black,Tan
+195,Boston bull,False,white stork,tench,tench,tench,tench,White,Spot,Background,None,None
+196,miniature schnauzer,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+197,giant schnauzer,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+198,standard schnauzer,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+199,Scotch terrier,False,tench,tench,tench,tench,tench,bird,parrot,animal,pet,beak
+19,chickadee,False,Maltese dog,tench,tiger cat,anemone fish,tench,dog,bird,cat,fish,cow
+1,goldfish,False,tench,tench,macaw,macaw,macaw,bird,parrot,macaw,blue macaw,blue and gold macaw
+200,Tibetan terrier,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+201,silky terrier,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+202,soft-coated wheaten terrier,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+203,West Highland white terrier,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+204,Lhasa,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+205,flat-coated retriever,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+206,curly-coated retriever,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+207,golden retriever,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+208,Labrador retriever,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+209,Chesapeake Bay retriever,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+20,water ouzel,False,tench,bullet train,container ship,car mirror,garbage truck,Airplane,Train,Ship,Car,Truck
+210,German short-haired pointer,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+211,vizsla,False,tench,tench,tench,tench,tench,bird,duck,animal,bird,duck
+212,English setter,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+213,Irish setter,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+214,Gordon setter,False,tench,tench,tench,tench,tench,dot,none,none,none,none
+215,Brittany spaniel,False,Maltese dog,tiger cat,tench,Indian elephant,tench,dog,cat,bird,elephant,giraffe
+216,clumber,False,black widow,tench,tench,tench,tench,Black dot,None,None,None,None
+217,English springer,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+218,Welsh springer spaniel,False,tench,ambulance,ant,tench,custard apple,airplane,ambulance,ant,antelope,apple
+219,cocker spaniel,False,tench,tench,tench,car mirror,bullet train,airplane,helicopter,boat,car,train
+21,kite,False,red wolf,tench,tench,tench,tench,red,dot,small,circle,tiny
+220,Sussex spaniel,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+221,Irish water spaniel,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+222,kuvasz,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+223,schipperke,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+224,groenendael,False,black widow,tench,tench,tench,tench,Black dot,None,None,None,None
+225,malinois,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+226,briard,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+227,kelpie,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+228,komondor,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+229,Old English sheepdog,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+22,bald eagle,False,tench,tench,macaw,macaw,tench,bird,parrot,macaw,blue macaw,animal
+230,Shetland sheepdog,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+231,collie,False,tench,bullet train,container ship,garbage truck,car mirror,Airplane,Train,Ship,Truck,Car
+232,Border collie,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+233,Bouvier des Flandres,False,tench,bullet train,container ship,garbage truck,car mirror,Airplane,Train,Ship,Truck,Car
+234,Rottweiler,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+235,German shepherd,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+236,Doberman,False,tench,tench,tench,tench,tench,dot,none,none,none,none
+237,miniature pinscher,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+238,Greater Swiss Mountain dog,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+239,Bernese mountain dog,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+23,vulture,False,tench,ambulance,ant,tench,custard apple,airplane,ambulance,ant,antelope,apple
+240,Appenzeller,False,brown bear,tench,tench,tench,tench,Brown,Solid,Background,None,None
+241,EntleBucher,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+242,boxer,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+243,bull mastiff,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+244,Tibetan mastiff,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+245,French bulldog,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+246,Great Dane,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+247,Saint Bernard,False,tench,bullet train,container ship,car mirror,garbage truck,Airplane,Train,Ship,Car,Truck
+248,Eskimo dog,False,white stork,tench,tench,tench,tench,White,Spot,Wallpaper,Background,Blank
+249,malamute,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+24,great grey owl,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+250,Siberian husky,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+251,dalmatian,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+252,affenpinscher,False,tench,tench,tench,tench,tench,dot,none,none,none,none
+253,basenji,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+254,pug,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+255,Leonberg,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+256,Newfoundland,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+257,Great Pyrenees,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+258,Samoyed,False,tench,tench,tench,feather boa,wing,bird,parrot,beak,feather,wing
+259,Pomeranian,False,brown bear,tench,tench,tench,tench,Brown,None,None,None,None
+25,European fire salamander,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+260,chow,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+261,keeshond,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+262,Brabancon griffon,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+263,Pembroke,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+264,Cardigan,False,tench,tench,tench,tench,tench,pistol,gun,firearm,weapon,object
+265,toy poodle,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+266,miniature poodle,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+267,standard poodle,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+268,Mexican hairless,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire hydrant
+269,timber wolf,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+26,common newt,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+270,white wolf,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+271,red wolf,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+272,coyote,False,brown bear,tench,tench,tench,tench,Brown,Solid colors,Colors,Colored objects,Objects
+273,dingo,False,brown bear,tench,tench,tench,tench,Brown,Solid colors,Colors,Colored objects,Objects
+274,dhole,False,tench,ambulance,ant,tench,custard apple,airplane,ambulance,ant,antelope,apple
+275,African hunting dog,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+276,hyena,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+277,red fox,False,tench,tench,cabbage butterfly,tiger cat,tench,Antelope,Bird,Butterfly,Cat,Cow
+278,kit fox,False,tench,tench,Maltese dog,tiger cat,Indian elephant,bird,airplane,dog,cat,elephant
+279,Arctic fox,False,brown bear,tench,tench,tench,tench,Brown,None,None,None,None
+27,eft,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+280,grey fox,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+281,tabby,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+282,tiger cat,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+283,Persian cat,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+284,Siamese cat,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+285,Egyptian cat,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+286,cougar,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+287,lynx,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+288,leopard,False,brown bear,tench,tench,tench,tench,Brown,Solid colors,Colors,Coloring pages,Art
+289,snow leopard,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+28,spotted salamander,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+290,jaguar,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+291,lion,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+292,tiger,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+293,cheetah,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+294,brown bear,True,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+295,American black bear,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+296,ice bear,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+297,sloth bear,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+298,mongoose,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+299,meerkat,False,tench,bullet train,container ship,car mirror,garbage truck,Airplane,Train,Ship,Car,Truck
+29,axolotl,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+2,great white shark,False,white stork,tench,tench,tench,tench,White,Spot,Background,None,None
+300,tiger beetle,False,traffic light,tench,tench,tench,tench,Ambient light,None,None,None,None
+301,ladybug,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+302,ground beetle,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+303,long-horned beetle,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+304,leaf beetle,False,tench,tench,macaw,macaw,macaw,bird,parrot,macaw,blue macaw,blue and gold macaw
+305,dung beetle,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+306,rhinoceros beetle,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+307,weevil,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+308,fly,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+309,bee,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+30,bullfrog,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+310,ant,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+311,grasshopper,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+312,cricket,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+313,walking stick,False,black widow,tench,tench,tench,tench,Black dot,None,None,None,None
+314,cockroach,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+315,mantis,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+316,cicada,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+317,leafhopper,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+318,lacewing,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+319,dragonfly,False,tench,tench,tench,tench,tench,dot,none,none,none,none
+31,tree frog,False,tench,ambulance,tench,car mirror,tench,airplane,ambulance,boat,car,firetruck
+320,damselfly,False,Maltese dog,tench,tiger cat,anemone fish,tench,dog,bird,cat,fish,cow
+321,admiral,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+322,ringlet,False,tench,tench,bison,tench,tench,antelope,bird,bison,cow,deer
+323,monarch,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+324,cabbage butterfly,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+325,sulphur butterfly,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+326,lycaenid,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+327,starfish,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+328,sea urchin,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+329,sea cucumber,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+32,tailed frog,False,brown bear,tench,tench,tench,tench,Brown,Solid colors,Colors,Colored objects,Objects
+330,wood rabbit,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+331,hare,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+332,Angora,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+333,hamster,False,brown bear,tench,tench,tench,tench,Brown,None,None,None,None
+334,porcupine,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+335,fox squirrel,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+336,marmot,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+337,beaver,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+338,guinea pig,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+339,sorrel,False,tench,tench,tench,tench,tench,dot,punctuation mark,mark,symbol,graphical symbol
+33,loggerhead,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+340,zebra,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+341,hog,False,brown bear,African grey,tench,tench,tench,Brown,Grey,Beige,Tan,Khaki
+342,wild boar,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Blank
+343,warthog,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+344,hippopotamus,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+345,ox,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+346,water buffalo,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+347,bison,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+348,ram,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+349,bighorn,False,traffic light,tench,tench,tench,tench,Ambient light,None,None,None,None
+34,leatherback turtle,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+350,ibex,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+351,hartebeest,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+352,impala,False,tench,ambulance,ant,tench,custard apple,airplane,ambulance,ant,antelope,apple
+353,gazelle,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+354,Arabian camel,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+355,llama,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+356,weasel,False,tench,tench,tench,tench,feather boa,bird,duck,animal,beak,feather
+357,mink,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+358,polecat,False,brown bear,tench,tench,tench,tench,Brown,None,None,None,None
+359,black-footed ferret,False,tench,tench,Maltese dog,Indian elephant,tench,bird,airplane,dog,elephant,giraffe
+35,mud turtle,False,tench,tench,Maltese dog,tiger cat,Indian elephant,bird,airplane,dog,cat,elephant
+360,otter,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+361,skunk,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+362,badger,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+363,armadillo,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+364,three-toed sloth,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+365,orangutan,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+366,gorilla,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+367,chimpanzee,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+368,gibbon,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+369,siamang,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+36,terrapin,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+370,guenon,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+371,patas,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+372,baboon,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+373,macaque,False,traffic light,tench,tench,tench,tench,Ambient light,None,None,None,None
+374,langur,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+375,colobus,False,tench,tench,tench,tench,tench,Abstract,Painting,Canvas,Background,Wallpaper
+376,proboscis monkey,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+377,marmoset,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+378,capuchin,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+379,howler monkey,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+37,box turtle,False,brown bear,African grey,white stork,black widow,tench,Brown,Grey,White,Black,Tan
+380,titi,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+381,spider monkey,False,tench,tench,tench,tench,black widow,Abstract,Painting,Canvas,Background,Black
+382,squirrel monkey,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+383,Madagascar cat,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+384,indri,False,tench,tench,tench,beer bottle,school bus,bird,airplane,boat,bottle,bus
+385,Indian elephant,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+386,African elephant,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+387,lesser panda,False,brown bear,white stork,black widow,tench,tench,Brown,White,Black,Gray,None
+388,giant panda,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+389,barracouta,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+38,banded gecko,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+390,eel,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+391,coho,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+392,rock beauty,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+393,anemone fish,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+394,sturgeon,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+395,gar,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+396,lionfish,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+397,puffer,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+398,abacus,False,white stork,tench,tench,tench,tench,White,Spot,Background,None,None
+399,abaya,False,white stork,tench,tench,tench,tench,White,Spot,Background,Solid,Color
+39,common iguana,False,tench,ambulance,ant,tench,custard apple,airplane,ambulance,ant,antelope,apple
+3,tiger shark,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+400,academic gown,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+401,accordion,False,tench,ambulance,ant,tench,custard apple,airplane,ambulance,ant,antelope,apple
+402,acoustic guitar,False,tench,black widow,black widow,black widow,black widow,dot,black dot,small black dot,tiny black dot,single black dot
+403,aircraft carrier,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+404,airliner,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+405,airship,False,white stork,tench,tench,tench,tench,White,Spot,Painting,Small,Abstract
+406,altar,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+407,ambulance,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+408,amphibian,False,tench,tench,tench,tench,tench,dot,none,none,none,none
+409,analog clock,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+40,American chameleon,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+410,apiary,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+411,apron,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+412,ashcan,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+413,assault rifle,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+414,backpack,False,tench,tench,Maltese dog,tiger cat,Indian elephant,bird,airplane,dog,cat,elephant
+415,bakery,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+416,balance beam,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+417,balloon,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+418,ballpoint,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+419,Band Aid,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+41,whiptail,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+420,banjo,False,brown bear,tench,tench,tench,tench,Brown,Solid colors,Colors,Colored objects,Objects
+421,bannister,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+422,barbell,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+423,barber chair,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+424,barbershop,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+425,barn,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+426,barometer,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+427,barrel,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+428,barrow,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+429,baseball,False,tench,tench,macaw,macaw,macaw,bird,parrot,macaw,blue macaw,blue and gold macaw
+42,agama,False,tench,tench,tench,car mirror,bullet train,airplane,helicopter,boat,car,train
+430,basketball,False,tench,bullet train,container ship,garbage truck,car mirror,Airplane,Train,Ship,Truck,Car
+431,bassinet,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+432,bassoon,False,tench,bullet train,container ship,car mirror,garbage truck,Airplane,Train,Ship,Car,Truck
+433,bathing cap,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+434,bath towel,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+435,bathtub,False,Maltese dog,tench,tiger cat,anemone fish,tench,dog,bird,cat,fish,cow
+436,beach wagon,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+437,beacon,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+438,beaker,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+439,bearskin,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+43,frilled lizard,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+440,beer bottle,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+441,beer glass,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+442,bell cote,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+443,bib,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+444,bicycle-built-for-two,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+445,bikini,False,tench,tench,macaw,macaw,macaw,bird,parrot,macaw,blue macaw,blue and gold macaw
+446,binder,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+447,binoculars,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+448,birdhouse,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+449,boathouse,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+44,alligator lizard,False,tench,tench,tench,beer bottle,car mirror,airplane,bird,boat,bottle,car
+450,bobsled,False,Maltese dog,tench,tiger cat,anemone fish,tench,dog,bird,cat,fish,cow
+451,bolo tie,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+452,bonnet,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+453,bookcase,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+454,bookshop,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+455,bottlecap,False,tench,bullet train,container ship,car mirror,garbage truck,Airplane,Train,Ship,Car,Truck
+456,bow,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+457,bow tie,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+458,brass,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+459,brassiere,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+45,Gila monster,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+460,breakwater,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+461,breastplate,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+462,broom,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+463,bucket,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+464,buckle,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+465,bulletproof vest,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+466,bullet train,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+467,butcher shop,False,tench,tench,tench,tench,tench,pistol,gun,firearm,weapon,small arm
+468,cab,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+469,caldron,False,tench,ambulance,ant,tench,custard apple,airplane,ambulance,ant,antelope,apple
+46,green lizard,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+470,candle,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+471,cannon,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+472,canoe,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+473,can opener,False,traffic light,tench,tench,tench,tench,Ambient light,None,None,None,None
+474,Cardigan,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+475,cardigan,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+476,car mirror,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+477,carousel,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+478,carpenter's kit,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+479,carton,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+47,African chameleon,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+480,car wheel,False,traffic light,tench,tench,tench,tench,Ambient light,None,None,None,None
+481,cash machine,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+482,cassette,False,brown bear,tench,white stork,tench,tench,Brown,Gray,White,None,None
+483,cassette player,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+484,castle,False,traffic light,tench,tench,tench,tench,Ambient light,None,None,None,None
+485,catamaran,False,brown bear,tench,tench,tench,tench,Brown,None,None,None,None
+486,CD player,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+487,cello,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+488,cellular telephone,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+489,chain,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+48,Komodo dragon,False,tench,tench,tench,tench,tench,Abstract,Painting,Drawing,Illustration,Sketch
+490,chainlink fence,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+491,chain mail,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+492,chain saw,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+493,chest,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+494,chiffonier,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+495,chime,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+496,china cabinet,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+497,Christmas stocking,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+498,church,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+499,cinema,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+49,African crocodile,False,tench,tench,tench,tench,tench,dot,none,none,none,none
+4,hammerhead,False,traffic light,tench,tench,tench,tench,Ambient light,None,None,None,None
+50,American alligator,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+51,triceratops,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+52,thunder snake,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+53,ringneck snake,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+54,hognose snake,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+55,green snake,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+56,king snake,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+57,garter snake,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+58,water snake,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+59,vine snake,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+5,electric ray,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+60,night snake,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+61,boa constrictor,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+62,rock python,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+63,Indian cobra,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+64,green mamba,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+65,sea snake,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+66,horned viper,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+67,diamondback,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+68,sidewinder,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+69,trilobite,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+6,stingray,False,brown bear,tench,tench,tench,tench,Brown,Gray,Tan,Beige,Khaki
+70,harvestman,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+71,scorpion,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+72,black and gold garden spider,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+73,barn spider,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+74,garden spider,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+75,black widow,False,tench,stone wall,white stork,tench,tench,background,wall,white,plain,empty
+76,tarantula,False,tench,tench,tench,tench,tench,dot,crosshairs,two dots,dots,cross hairs
+77,wolf spider,False,tench,tench,tench,tench,tench,dots,None,None,None,None
+78,tick,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+79,centipede,False,tench,tench,Maltese dog,Indian elephant,tench,bird,airplane,dog,elephant,giraffe
+7,cock,False,brown bear,green lizard,white stork,black widow,African grey,Brown,Green,White,Black,Grey
+80,black grouse,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+81,ptarmigan,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+82,ruffed grouse,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+83,prairie chicken,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+84,peacock,False,tench,ant,tench,brown bear,cabbage butterfly,Airplane,Ant,Astronaut,Bear,Butterfly
+85,quail,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+86,partridge,False,brown bear,tench,tench,tench,tench,Brown,Sand,Beige,Tan,Khaki
+87,African grey,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+88,macaw,False,tench,tench,tench,car mirror,Maltese dog,bird,airplane,boat,car,dog
+89,sulphur-crested cockatoo,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+8,hen,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+90,lorikeet,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant
+91,coucal,False,tench,tench,tench,tench,black widow,Abstract,Painting,Canvas,Background,Black
+92,bee eater,False,tench,ambulance,tench,car mirror,fire engine,airplane,ambulance,boat,car,fire truck
+93,hornbill,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+94,hummingbird,False,Maltese dog,tench,tiger cat,anemone fish,tench,dog,bird,cat,fish,bicycle
+95,jacamar,False,tench,tench,tench,beer bottle,car mirror,bird,airplane,boat,bottle,car
+96,toucan,False,tench,ambulance,ant,custard apple,armadillo,airplane,ambulance,ant,apple,armadillo
+97,drake,False,brown bear,tench,tench,tench,tench,Brown,Gray,Tan,Beige,Khaki
+98,red-breasted merganser,False,tench,ambulance,tench,tench,beer bottle,airplane,ambulance,bird,boat,bottle
+99,goose,False,tench,tench,Maltese dog,Indian elephant,tench,bird,airplane,dog,elephant,giraffe
+9,ostrich,False,tench,tench,car mirror,Maltese dog,Indian elephant,airplane,boat,car,dog,elephant

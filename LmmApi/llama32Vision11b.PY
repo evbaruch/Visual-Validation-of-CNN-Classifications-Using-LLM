@@ -58,7 +58,7 @@ class llama32Vision11b(LLMStrategy):
                         'images': [image],
                     },
                 ],
-                #options={'temperature': 0},  # Set temperature to 0 for more deterministic output
+                options={'temperature': 0},  # Set temperature to 0 for more deterministic output
             )
 
             image_analysis = jsonDescription.model_validate_json(response.message.content)

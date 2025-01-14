@@ -1,0 +1,501 @@
+Index,True_Label,Match,Class_1,Class_2,llm_1,llm_2
+0,tench,False,black widow,anemone fish,"The image shows a yellow fish with black spots, likely a freshwater species.",fish
+100,black swan,True,black swan,black swan,A black swan with a distinctive red beak,Swan
+101,tusker,False,Indian elephant,Indian elephant,"An elephant standing in a grassy area, with trees visible in the background.",Elephant
+102,echidna,True,echidna,tench,An echidna is eating from a bowl.,Echidnas
+103,platypus,False,head cabbage,tench,"The image shows a close-up of a duck's head, with its beak open and feathers visible.",Duck
+104,wallaby,False,red wolf,fox squirrel,"A small mammal with a bushy tail, likely a red squirrel",Squirrel
+105,koala,True,koala,koala,"The image depicts a koala sitting on a tree branch, with its head down and paws holding onto the branch.",koala
+106,wombat,False,tench,tench,"A small, furry animal with a pink nose and ears, possibly a baby marsupial.",Marsupial
+107,jellyfish,True,jellyfish,jellyfish,"The image depicts a glass container with jellyfish inside, illuminated by a light source.",Jellyfish
+108,sea anemone,True,sea anemone,tench,"The image depicts a sea anemone, which belongs to the class Anthozoa.",Anthozoa
+109,brain coral,True,coral reef,brain coral,The image shows a coral reef with a fish swimming nearby.,coral
+10,brambling,False,tench,tench,"A small bird perched on a plant, possibly a warbler or sparrow.",Bird
+110,flatworm,False,sea snake,sea slug,"The image shows a sea creature with a long, slender body and a rounded head.",Sea slug
+111,nematode,False,worm fence,tench,"The image shows a long, thin worm-like creature with a pointed head and a rounded tail.",Nematoda
+112,conch,False,hen-of-the-woods,tench,The image shows a close-up of a seashell.,Shell
+113,snail,True,snail,tench,The image shows a close-up of a snail shell.,Gastropod
+114,slug,True,slug,tench,"The image shows a close-up of a slug's head, with its antennae visible.",Arthropod
+115,sea slug,False,hen-of-the-woods,tench,"The image shows a close-up of a yellow, spiky creature with long antennae.",Animal
+116,chiton,False,hen-of-the-woods,tench,The image shows a close-up of a scallop shell.,Scallop
+117,chambered nautilus,True,chambered nautilus,chambered nautilus,The image shows a close-up of a nautilus shell.,Nautilus shell
+118,Dungeness crab,True,Dungeness crab,tench,A close-up photograph of a crab on the beach.,Arthropod
+119,rock crab,False,Dungeness crab,Dungeness crab,"The image shows a close-up of a crab, likely a species of crab found in shallow water.",Crab
+11,goldfinch,False,black widow,tench,"A small yellow bird with black wings and tail, perched on a branch.",Bird
+120,fiddler crab,False,Dungeness crab,tench,A close-up photograph of a crab.,Arthropod
+121,king crab,False,Dungeness crab,tench,"A close-up photograph of a crab's claws, with its body partially visible.",Arthropod
+122,American lobster,False,plate,tench,"A plate of food with a shrimp on top, accompanied by a slice of lemon and a carrot.",Food
+123,spiny lobster,False,hen-of-the-woods,tench,"The image shows a close-up of two crustaceans, likely crabs or lobsters, with long antennae and claws, possibly on the ocean floor.",Crustacean
+124,crayfish,False,Dungeness crab,tench,"A close-up of a crab's face, with its eyes and mouth visible.",Arthropod
+125,hermit crab,False,green lizard,tench,"A small, brownish-green shell with a pointed end and a long, thin tail.",Shell
+126,isopod,False,tench,tench,"The image shows a small, armored insect with a rounded body and six legs.",Arthropod
+127,white stork,True,white stork,white stork,"The image depicts a stork standing on grass, with its long neck bent downwards.",Stork
+128,black stork,False,white stork,tench,"A bird with a long beak and red legs, likely a stork or heron.",Bird
+129,spoonbill,False,neck brace,tench,A bird with a long neck and pink feathers,Bird
+12,house finch,False,red wolf,tench,"A small bird with a distinctive red head, perched on a branch.",Bird
+130,flamingo,True,water ouzel,flamingo,"Two flamingos standing in water, surrounded by greenery.",Flamingo
+131,little blue heron,False,neck brace,tench,"The image depicts a bird with a long neck and beak, standing amidst greenery.",Bird
+132,American egret,False,water ouzel,tench,"A white bird with a long neck and legs, standing on one leg in shallow water.",Ardeidae
+133,bittern,False,brown bear,tench,"A bird with a long beak and brown feathers, standing in tall grass.",Bird
+134,crane,True,ground beetle,crane,"The image depicts a bird with a long neck and legs, standing on grassy ground.",Crane
+135,limpkin,False,tench,tench,"The image shows a bird with a long beak, standing in tall grass.",Bird
+136,European gallinule,False,water ouzel,tench,"A bird with a distinctive red bill and legs, standing in water surrounded by reeds.",Bird
+137,American coot,False,swimming trunks,tench,"A duck swimming in a pond, surrounded by tall grasses.",Duck
+138,bustard,False,neck brace,tench,"The image depicts a bird standing in a field of tall grass, with its long neck and legs visible.",Bird
+139,ruddy turnstone,False,black-and-tan coonhound,tench,"A small bird with a distinctive black and white striped head, brown back, and orange legs perched on a rock near water.",Bird
+13,junco,False,house finch,tench,"A small bird perched on a tree branch, possibly a sparrow or finch.",Bird
+140,red-backed sandpiper,False,water ouzel,tench,"A small bird with a long beak, standing in shallow water.",Bird
+141,redshank,False,water ouzel,tench,"A bird with a long beak and brown feathers, standing in shallow water.",Bird
+142,dowitcher,False,water ouzel,tench,"A small bird with a long, thin beak stands on one leg in shallow water.",Bird
+143,oystercatcher,False,water ouzel,tench,A bird in flight over water,Bird
+144,pelican,True,pelican,tench,"A pelican perched on a tree branch, surrounded by green leaves.",Bird
+145,king penguin,True,rock python,king penguin,"A penguin standing on a rock, facing left.",Penguin
+146,albatross,True,albatross,tench,"A close-up of a white bird with a pink beak, possibly a penguin or albatross.",bird
+147,grey whale,False,hen-of-the-woods,tench,"A large whale breaches the surface of the water, with a boat full of people in the background.",Cetacea
+148,killer whale,True,killer whale,tench,"The image depicts a killer whale swimming in the water, with its dorsal fin visible above the surface.",Cetacea
+149,dugong,False,head cabbage,tench,"A close-up of a manatee's head, with its mouth open and nostrils visible.",Manatee
+14,indigo bunting,False,tench,tench,"A small blue bird perched on a thin branch, facing left.",Bird
+150,sea lion,False,beach wagon,tench,"A seal lying on a sandy beach, with its flippers stretched out to the sides.",Seal
+151,Chihuahua,False,Maltese dog,Maltese dog,"A small dog wearing a sweater, sitting on a table with a bowl of apples.",Dog
+152,Japanese spaniel,True,Japanese spaniel,Maltese dog,"The image shows a small dog with long hair, possibly a Japanese Chin or similar breed.",Dog
+153,Maltese dog,True,black widow,Maltese dog,"A small, fluffy white dog with a black nose",Dog
+154,Pekinese,False,Maltese dog,Maltese dog,"A small dog with long fur, possibly a Pekingese or similar breed.",Dog
+155,Shih-Tzu,True,Shih-Tzu,Maltese dog,"A small dog with long hair, possibly a Shih Tzu or similar breed, sitting on grass.",dog
+156,Blenheim spaniel,False,Maltese dog,Maltese dog,A dog on a leash being held by someone.,dog
+157,papillon,False,white stork,Maltese dog,"A dog with a white coat and brown patches on its ears, face, and back, standing in a field of tall grass.",Dog
+158,toy terrier,False,Maltese dog,Doberman,A man holding a dog,Doberman Pinscher
+159,Rhodesian ridgeback,False,Maltese dog,Maltese dog,A dog running through a wooded area,Dog
+15,robin,True,robin,tench,"A robin perched on a branch, facing left.",Bird
+160,Afghan hound,True,Maltese dog,Afghan hound,"A dog with a long, fluffy coat and floppy ears",Afghan Hound
+161,basset,False,Maltese dog,Maltese dog,A dog with a red bandana,Dog
+162,beagle,False,black widow,Maltese dog,"A dog with floppy ears and a black nose, wearing a blue collar.",Dog
+163,bloodhound,False,Maltese dog,Maltese dog,A young girl sitting on a log with a dog,Dog
+164,bluetick,False,Maltese dog,Maltese dog,"The image depicts a dog with its tongue out, standing on a dirt path surrounded by grass.",Dog
+165,black-and-tan coonhound,False,black widow,Maltese dog,A dog with a black coat and brown markings on its face,Dog
+166,Walker hound,False,Maltese dog,Maltese dog,"A dog with its mouth open, appearing to bark or howl.",Dog
+167,English foxhound,False,chest,Maltese dog,"The image depicts a dog with a white chest, brown ears, and a black back.",Dog
+168,redbone,False,brown bear,Maltese dog,Two brown puppies sitting on a blanket.,Dog
+169,borzoi,False,Maltese dog,Maltese dog,"The image depicts a dog with long, fluffy fur standing on grass.",Dog
+16,bulbul,False,tench,tench,"A bird perched on a branch, facing left.",Bird
+170,Irish wolfhound,False,Maltese dog,Maltese dog,"The image depicts a dog with long, shaggy fur that appears to be resting its head on an object.",Dog
+171,Italian greyhound,False,Maltese dog,Maltese dog,A dog with a purple flower on its head,Dog
+172,whippet,False,black widow,Maltese dog,"A dog with a white body, brown ears, and black eyes",Dog
+173,Ibizan hound,False,white stork,Maltese dog,"A white dog with brown spots on its ears, wearing a collar, standing in front of rocks.",Dog
+174,Norwegian elkhound,False,white stork,Maltese dog,A white dog sitting on grass,Dog
+175,otterhound,False,Maltese dog,Maltese dog,"A close-up of a dog's face, with its nose and mouth visible.",dog
+176,Saluki,False,Maltese dog,Maltese dog,"The image depicts a dog with long, flowing hair and a pink collar.",Dog
+177,Scottish deerhound,False,Maltese dog,Maltese dog,"A dog with long, shaggy fur and a red collar",Dog
+178,Weimaraner,False,Maltese dog,Maltese dog,A dog sitting on a table,Dog
+179,Staffordshire bullterrier,False,Maltese dog,Maltese dog,"A dog with its mouth open, sitting on grass",Dog
+17,jay,False,chest,tench,"The image shows a bird with blue feathers on its head, white feathers on its chest, and black stripes around its eyes.",Bird
+180,American Staffordshire terrier,False,white stork,toy terrier,"The image depicts a dog with white fur, brown spots, and floppy ears.",Terrier
+181,Bedlington terrier,False,Maltese dog,Afghan hound,"The image shows a dog with a long, shaggy coat and a distinctive head shape.",Afghan Hound
+182,Border terrier,False,Maltese dog,toy terrier,"A dog lying on a sidewalk, possibly a terrier breed.",Terrier
+183,Kerry blue terrier,False,orange,Maltese dog,"A woman stands next to a man holding a black dog on a leash, with the woman wearing an orange shirt and holding a rosette.",Dog
+184,Irish terrier,False,snow leopard,Maltese dog,"A dog standing in the snow, with a table and chair covered in snow behind it.",dog
+185,Norfolk terrier,False,Maltese dog,toy terrier,"A small dog with a short, smooth coat and floppy ears",Terrier
+186,Norwich terrier,False,Maltese dog,Maltese dog,"A small dog with a fluffy coat, sitting on its haunches",Dog
+187,Yorkshire terrier,False,Maltese dog,Maltese dog,"A small dog sitting on a red cushion, with a can of Pepsi nearby.",Dog
+188,wire-haired fox terrier,False,black widow,toy terrier,"A dog with a white coat and black patches on its back, standing in a grassy field.",Terrier
+189,Lakeland terrier,False,Maltese dog,toy terrier,"The image depicts a dog with a distinctive beard and mustache, standing on its hind legs.",Terrier
+18,magpie,False,black widow,tench,"A bird with a black body, white neck, and long legs stands on grass.",Bird
+190,Sealyham terrier,False,black widow,toy terrier,"A small, fluffy white dog with a black nose and mouth, standing on grass.",Terrier
+191,Airedale,False,Maltese dog,Maltese dog,"A dog sitting on a brick sidewalk, with a bicycle leaning against a fence behind it.",Dog
+192,cairn,False,Maltese dog,toy terrier,A dog sitting on a boat,Terrier
+193,Australian terrier,False,Yorkshire terrier,Maltese dog,"The image depicts a small dog with long hair, likely a Yorkshire Terrier.",Dog
+194,Dandie Dinmont,False,Maltese dog,Maltese dog,"The image depicts a small dog with curly fur, lying on a rug or carpet.",Dog
+195,Boston bull,False,white stork,Maltese dog,"The image depicts a dog with a white face, brown ears, and a purple collar.",Dog
+196,miniature schnauzer,False,Maltese dog,Maltese dog,A dog with a red collar standing on dirt,Dog
+197,giant schnauzer,False,black widow,toy terrier,"The image depicts a black dog with a distinctive beard and mustache, standing on a dirt surface.",Terrier
+198,standard schnauzer,False,Maltese dog,Maltese dog,"A dog with a long, shaggy coat and floppy ears",Dog
+199,Scotch terrier,False,black widow,Maltese dog,"A woman crouched down, holding a small black dog.",Dog
+19,chickadee,False,tench,tench,"The image shows a small bird perched on a branch, facing left.",Bird
+1,goldfish,True,goldfish,goldfish,A goldfish swimming in water,Goldfish
+200,Tibetan terrier,False,Maltese dog,Maltese dog,"The image depicts a dog with long, shaggy fur and floppy ears.",Dog
+201,silky terrier,False,Yorkshire terrier,Maltese dog,"A small dog with long hair, possibly a Yorkshire Terrier",Dog
+202,soft-coated wheaten terrier,False,Maltese dog,Maltese dog,"A dog with a short, fluffy coat",Dog
+203,West Highland white terrier,False,Maltese dog,tench,A man with a dog,Man (Animals)
+204,Lhasa,False,Maltese dog,Maltese dog,A woman holding a dog,Dog
+205,flat-coated retriever,False,water ouzel,tench,"A large black animal with a long tail, possibly a crocodile or alligator, is seen emerging from the water onto land.",Reptile
+206,curly-coated retriever,False,black widow,Maltese dog,"The image depicts a black dog with curly fur, its mouth open and tongue out.",Dog
+207,golden retriever,False,Maltese dog,Maltese dog,"A dog is running through a grassy field, its mouth open as if barking or panting.",dog
+208,Labrador retriever,False,black widow,Maltese dog,A black dog with brown eyes,Dog
+209,Chesapeake Bay retriever,False,leatherback turtle,tench,A dog is looking at a turtle.,Canine
+20,water ouzel,False,rock python,tench,"A small bird perched on a rock, facing left.",Bird
+210,German short-haired pointer,False,black widow,Maltese dog,"A dog with a brown head, white body, and black spots",Dog
+211,vizsla,False,Maltese dog,Maltese dog,A dog with floppy ears and a brown coat,Dog
+212,English setter,False,Maltese dog,Maltese dog,A dog sleeping on a couch.,Dog
+213,Irish setter,False,Maltese dog,Maltese dog,A dog standing on grass,Dog
+214,Gordon setter,False,Maltese dog,Maltese dog,"A dog with a long, fluffy coat and floppy ears stands on a snowy field.",Dog
+215,Brittany spaniel,True,white stork,Brittany spaniel,"The image depicts a dog with a brown head, white body, and blue collar standing in tall grass.",Brittany Spaniel
+216,clumber,False,Maltese dog,Maltese dog,A dog with its tongue out,Dog
+217,English springer,False,suit,Maltese dog,"A man in a suit walking with a dog on a leash, surrounded by people and tents.",Man Walking Dog
+218,Welsh springer spaniel,False,water ouzel,Maltese dog,A dog is standing in a pool of water.,dog
+219,cocker spaniel,True,Maltese dog,cocker spaniel,"A dog sitting on a sidewalk, looking to the left.",Cocker Spaniel
+21,kite,False,tree frog,tench,"A close-up photograph of a pink magnolia flower on a tree branch, with other branches and leaves visible in the background.",magnolia
+220,Sussex spaniel,False,Maltese dog,Maltese dog,A person is standing next to a dog.,dog
+221,Irish water spaniel,False,Maltese dog,Maltese dog,"The image shows a dog with a curly, dark coat and a long tail.",Dog
+222,kuvasz,False,Maltese dog,Maltese dog,"A dog with a long, fluffy coat and floppy ears",Dog
+223,schipperke,False,Maltese dog,Maltese dog,A dog with a cone of shame,Dog
+224,groenendael,False,hen-of-the-woods,Maltese dog,"The image shows a dog lying on the floor, with a TV and speaker visible in the background.",Dog
+225,malinois,False,Maltese dog,Maltese dog,"The image depicts a dog lying on the grass, its mouth open and tongue out.",Dog
+226,briard,False,Maltese dog,Maltese dog,"A dog with long, dark fur lying on the ground",Dog
+227,kelpie,False,black-and-tan coonhound,Maltese dog,"A dog with a black coat and tan markings, standing on its hind legs",Dog
+228,komondor,False,white stork,Maltese dog,"The image depicts a dog with long, shaggy fur that appears to be white or light-colored.",Dog
+229,Old English sheepdog,False,komondor,Maltese dog,"A woman is kneeling next to a large white dog with long fur, possibly a Komondor or similar breed.",Dog
+22,bald eagle,True,bald eagle,tench,"A bald eagle soaring through the sky, its wings spread wide.",Birds of Prey
+230,Shetland sheepdog,False,Maltese dog,Maltese dog,A dog on a leash,Dog
+231,collie,False,Maltese dog,Maltese dog,A dog and a lamb are facing each other on grass.,dog
+232,Border collie,False,black widow,Maltese dog,"A dog with blue eyes, wearing a black harness, being held by someone in a red jacket.",Dog
+233,Bouvier des Flandres,False,black widow,Maltese dog,A black dog with long fur sitting on grass,Dog
+234,Rottweiler,True,Rottweiler,Rottweiler,"A close-up photograph of two Rottweiler puppies, one with its mouth open and tongue out, leaning over a red surface.",Rottweiler
+235,German shepherd,False,orange,Maltese dog,A dog running on a beach with an orange ball in its mouth.,Dog
+236,Doberman,True,Maltese dog,Doberman,"A dog standing in the snow, with a car partially visible behind it.",Doberman Pinscher
+237,miniature pinscher,False,black-and-tan coonhound,Maltese dog,"A dog with a black and tan coat, sitting on someone's lap.",Dog
+238,Greater Swiss Mountain dog,False,Maltese dog,Maltese dog,"The image depicts a dog lying on grass, with its head tilted upwards.",Dog
+239,Bernese mountain dog,False,pug,Maltese dog,A dog and a pug sitting on the floor.,dog
+23,vulture,False,house finch,tench,"The image depicts a house with a chimney, featuring a bird perched on top.",Bird
+240,Appenzeller,False,black widow,Maltese dog,"A person wearing a black beanie, glasses, and a blue jacket is posing with a dog.",Dog
+241,EntleBucher,False,tench,Maltese dog,Two dogs playing in a grassy area,Dog
+242,boxer,False,Maltese dog,Maltese dog,"A dog with its tongue out, standing on grass",Dog
+243,bull mastiff,False,Maltese dog,Maltese dog,A man and a woman posing with a dog.,Dog
+244,Tibetan mastiff,False,Maltese dog,Maltese dog,A dog standing in the snow,Dog
+245,French bulldog,False,Maltese dog,Maltese dog,"A small dog with a short, smooth coat and erect ears",Dog
+246,Great Dane,True,Great Dane,Maltese dog,"A dog with floppy ears and a long snout, possibly a Great Dane or similar breed.",Dog
+247,Saint Bernard,False,Bernese mountain dog,Maltese dog,"A dog with a thick coat of fur, possibly a Bernese Mountain Dog or similar breed, standing outside on a snowy day.",Dog
+248,Eskimo dog,False,fur coat,Maltese dog,"A dog with a thick coat of fur, likely a husky or malamute breed, standing in the snow.",Dog
+249,malamute,False,Maltese dog,Maltese dog,"The image depicts a dog with its head tilted upwards, gazing at something outside the frame.",Dog
+24,great grey owl,False,face powder,tench,"The image depicts a bird with a large head, round face, and yellow eyes.",Bird
+250,Siberian husky,False,Maltese dog,Maltese dog,A dog lying on the snow,Dog
+251,dalmatian,False,white stork,Maltese dog,A dog with a white coat and brown spots,Dog
+252,affenpinscher,False,Maltese dog,Maltese dog,"The image depicts a small, dark-colored dog with long fur sitting on grass.",Dog
+253,basenji,False,green lizard,Maltese dog,The image shows a dog lying on a green mat.,Dog
+254,pug,False,wig,Maltese dog,A dog wearing a wig,Dog
+255,Leonberg,False,malinois,Maltese dog,"Two men standing next to two large brown dogs, possibly German Shepherds or Belgian Malinois, on a grassy field.",Dog
+256,Newfoundland,False,Maltese dog,Maltese dog,"A dog with long fur, brown eyes, and floppy ears",Dog
+257,Great Pyrenees,False,Maltese dog,Maltese dog,"A woman stands next to a dog, holding its leash.",Dog
+258,Samoyed,False,white stork,Maltese dog,"A small white dog with its head buried in the ground, surrounded by greenery.",Dog
+259,Pomeranian,False,Maltese dog,Maltese dog,"A small dog with a fluffy coat, lying on its back with its head resting on someone's leg.",Dog
+25,European fire salamander,False,spotted salamander,tench,"A salamander with a black body and yellow spots, possibly a tiger salamander.",Reptile
+260,chow,False,Maltese dog,Maltese dog,A dog with its tongue out,Dog
+261,keeshond,False,Maltese dog,Maltese dog,"A close-up of a dog's face, with its eyes looking directly at the camera.",Dog
+262,Brabancon griffon,False,Maltese dog,Maltese dog,"The image depicts a small dog lying on a red blanket, with its head resting on its front paws.",Dog
+263,Pembroke,False,Maltese dog,Maltese dog,"A dog standing on a road, wearing a red harness.",Dog
+264,Cardigan,False,Maltese dog,Maltese dog,A dog is looking at another dog.,dog
+265,toy poodle,False,Maltese dog,Maltese dog,"A small dog with curly fur, wearing a harness.",Dog
+266,miniature poodle,False,toy terrier,tench,"A young boy is sitting on a staircase, holding a blue toy car.",Boy Sitting On Stairs
+267,standard poodle,False,white stork,toy poodle,"A small white dog stands on the edge of a pool, holding a toy duck in its mouth.",Toy Poodle
+268,Mexican hairless,False,Maltese dog,Maltese dog,"The image shows a dog standing in tall grass, facing the camera with its ears perked up.",Dog
+269,timber wolf,False,wolf spider,tench,"A wolf standing in a field, facing right.",Canidae
+26,common newt,False,spotted salamander,tench,"The image depicts a red salamander with large eyes, sitting on a gray surface.",Salamanders
+270,white wolf,False,white stork,tench,"A white sheep with a long, fluffy coat is standing in a field of grass.",Sheep
+271,red wolf,False,red fox,red fox,"A close-up of a red fox's head, facing left with its ears perked up.",red fox
+272,coyote,False,wolf spider,tench,"A wolf lying on the ground, its head down and paws outstretched.",Canidae
+273,dingo,False,tree frog,tench,Two deer standing next to a tree,Antelope
+274,dhole,False,Maltese dog,tench,"The image shows a dog standing on its hind legs, looking out of a window.",Canine
+275,African hunting dog,False,hyena,tench,"A wild dog lying on the ground, possibly a hyena or jackal.",Canidae
+276,hyena,False,hen-of-the-woods,tench,"The image depicts a hyena standing on its hind legs, facing the camera with its head turned slightly to the right.",Carnivores
+277,red fox,False,night snake,tench,"A deer standing on a road at night, possibly injured or lost.",Mammal
+278,kit fox,False,tench,tench,"The image depicts a canine animal with a bushy tail, sitting on its haunches.",Canidae
+279,Arctic fox,False,white stork,tench,"A white fox with brown markings on its face, ears, and legs, lying down in a grassy area.",Canidae
+27,eft,False,orange,tench,"The image shows a small, orange salamander with black spots on its back.",Salamanders
+280,grey fox,False,red fox,red fox,"The image depicts a red fox standing on its hind legs, with its front paws resting on a rock.",red fox
+281,tabby,False,tiger cat,tiger cat,"A close-up of a cat's face, with its eyes looking directly at the camera.",Cat
+282,tiger cat,True,tiger cat,tiger cat,A cat's head,Domestic Cat
+283,Persian cat,False,tiger cat,tiger cat,"The image depicts a cat with long fur, gazing directly at the camera.",Domestic Cat
+284,Siamese cat,False,tiger cat,tiger cat,"A cat with blue eyes, standing on a windowsill.",Domestic Cat
+285,Egyptian cat,False,hen-of-the-woods,tiger cat,"The image depicts a close-up of a cat's face, with its eyes looking directly at the camera.",Domestic Cat
+286,cougar,False,lion,tench,"A mountain lion is perched on a rock, gazing down at something.",Felis concolor
+287,lynx,True,lynx,lynx,"A lynx lying in the snow, its fur blending with the surroundings.",lynx
+288,leopard,True,leopard,leopard,"The image depicts a close-up of a leopard's face, showcasing its distinctive features.",Leopard
+289,snow leopard,True,snow leopard,snow leopard,"The image depicts a snow leopard lying down, its eyes closed.",Snow Leopard
+28,spotted salamander,True,spotted salamander,amphibian,A close-up photograph of a spotted salamander,Amphibian
+290,jaguar,False,cougar,tench,"The image depicts a close-up of a cougar's face, showcasing its distinctive features.",Felis concolor
+291,lion,True,lion,lion,"A lion walking away from the camera, its mane visible, set against a blurred background.",Lion
+292,tiger,True,tiger,tiger,A tiger standing in a field of tall grass.,Tiger
+293,cheetah,True,cheetah,cheetah,"A close-up of a cheetah's face, with its mouth open and teeth visible, possibly during or after a hunt.",Cheetah
+294,brown bear,True,brown bear,brown bear,A bear with its tongue out,Brown Bear
+295,American black bear,True,American black bear,American black bear,"A black bear cub is resting on a log, its head turned to the right.",Black bear
+296,ice bear,False,brown bear,brown bear,"A polar bear lying on its stomach, with its head resting on its front paws.",Polar Bear
+297,sloth bear,False,American black bear,brown bear,"A black bear with a white muzzle, sitting on a rock.",Bear
+298,mongoose,True,mongoose,mongoose,"The image depicts a mongoose, which belongs to the 'Mongoose' category in the ImageNet dataset.",Mongoose
+299,meerkat,False,tench,mongoose,"A small, furry animal with a bushy tail and large eyes",Mongoose
+29,axolotl,False,green lizard,frilled lizard,"A small, dark-colored lizard with a long tail is walking on green grass.",Lizard
+2,great white shark,False,tiger shark,tiger shark,"A close-up of a shark's mouth, with its teeth visible.",Shark
+300,tiger beetle,True,long-horned beetle,tiger beetle,"The image shows a close-up of a beetle with long antennae and legs, standing on a light-colored surface.",Beetle
+301,ladybug,True,ladybug,ladybug,A close-up photograph of a ladybug on a plant,Ladybug
+302,ground beetle,False,long-horned beetle,tiger beetle,"The image shows a beetle with a shiny black exoskeleton, long antennae, and six legs.",Beetle
+303,long-horned beetle,False,tiger beetle,tench,"The image shows a longhorn beetle, which belongs to the family Cerambycidae.",Cerambycidae
+304,leaf beetle,True,leaf beetle,tench,A close-up photograph of a beetle on a leaf,Insect
+305,dung beetle,False,tiger beetle,tench,"A black beetle with a shiny exoskeleton, likely a Stag Beetle (Lucanidae family)",Beetles
+306,rhinoceros beetle,False,long-horned beetle,tiger beetle,"A close-up photograph of a dark brown beetle with a shiny exoskeleton, long antennae, and six legs.",Beetle
+307,weevil,False,fly,tench,"The image shows a close-up of a flower with green leaves and a small insect, possibly a bee or fly, on its petals.",flower
+308,fly,True,fly,fly,"The image shows a close-up of a fly's head, with its compound eyes and proboscis visible.",Fly
+309,bee,True,bee,tench,A bee collecting pollen from a flower,Insect
+30,bullfrog,False,water ouzel,amphibian,"The image shows a close-up of a green frog's head, partially submerged in water.",Amphibian
+310,ant,True,ant,ant,An ant is carrying a green leaf.,ant
+311,grasshopper,False,green lizard,tench,The image shows a green insect with long antennae and wings.,Insect
+312,cricket,False,proboscis monkey,mosquito net,"The image shows a close-up of a mosquito's head, with its proboscis extended.",Mosquito
+313,walking stick,False,brown bear,tench,"The image shows a close-up of a brown insect with long, thin legs and antennae.",Arthropod
+314,cockroach,True,cockroach,cockroach,The image shows a close-up of a cockroach.,Cockroach
+315,mantis,False,brown bear,tench,"The image shows a brown insect with long, thin legs and a distinctive head shape.",Arthropoda
+316,cicada,True,cicada,cicada,"A green insect with large wings, possibly a cicada, perched on top of a cactus.",Cicada
+317,leafhopper,False,long-horned beetle,tench,"A small insect with a long body and wings, likely a type of fly or beetle.",Insect
+318,lacewing,False,hen-of-the-woods,fly,"The image shows a close-up of a green insect with large wings, possibly a type of fly or moth.",Fly
+319,dragonfly,False,proboscis monkey,tench,"The image shows a mosquito-like insect with long, thin wings and a pointed proboscis.",Insect
+31,tree frog,True,tree frog,tench,"A close-up of a frog's head, with its eye visible.",Reptile
+320,damselfly,False,dragonfly,tench,A dragonfly perched on a yellow flower,Insect
+321,admiral,False,cabbage butterfly,cabbage butterfly,"A butterfly perched on a branch, its wings spread wide.",Butterfly
+322,ringlet,False,black widow,cabbage butterfly,"A butterfly with brown wings and black spots, perched on a yellow flower.",Butterfly
+323,monarch,False,cabbage butterfly,cabbage butterfly,A butterfly perched on a flower,Butterfly
+324,cabbage butterfly,True,cabbage butterfly,cabbage butterfly,A butterfly on a yellow flower,Butterfly
+325,sulphur butterfly,False,cabbage butterfly,cabbage butterfly,A butterfly perched on a yellow flower,Butterfly
+326,lycaenid,False,orange,cabbage butterfly,"A small white butterfly with orange spots on its wings, perched on a flower bud.",Butterfly
+327,starfish,True,starfish,tench,"The image depicts a starfish, also known as a sea star, which belongs to the class Asteroidea.",Asteroidea
+328,sea urchin,False,brain coral,brain coral,"The image depicts a coral, specifically a red starfish coral.",Coral
+329,sea cucumber,False,sea snake,sea slug,"The image shows a dark-colored sea creature with long, thin tentacles.",Sea slug
+32,tailed frog,False,tree frog,amphibian,"The image shows a close-up of a frog's head, with its eyes and mouth visible.",Amphibian
+330,wood rabbit,True,ground beetle,wood rabbit,"A rabbit sitting on the ground, surrounded by twigs and leaves.",Rabbit
+331,hare,False,wood rabbit,wood rabbit,The image shows a rabbit and two magpies.,Rabbit
+332,Angora,False,wood rabbit,wood rabbit,"A small, fluffy rabbit with long fur and large ears",Rabbit
+333,hamster,True,hamster,hamster,"A close-up of a hamster's face, with its eyes looking directly at the camera.",Hamster
+334,porcupine,False,face powder,tench,"The image shows a close-up of a hedgehog's face, with its quills visible.",Hedgehogs
+335,fox squirrel,True,tree frog,fox squirrel,A squirrel is climbing up a tree.,Squirrel
+336,marmot,True,rock python,marmot,"A small mammal with a bushy tail, sitting on a rock.",Marmot
+337,beaver,True,beaver,tench,"A beaver is sitting on a log in the water, surrounded by branches.",Mammal
+338,guinea pig,True,guinea pig,guinea pig,Two guinea pigs facing each other,Guinea pig
+339,sorrel,False,horse cart,tench,A horse grazing in a field of tall grass.,Equine
+33,loggerhead,False,water ouzel,leatherback turtle,"A sea turtle swimming in shallow water, with its head above the surface.",Sea Turtle
+340,zebra,True,zebra,zebra,"A zebra standing in front of a rocky outcropping, its head turned slightly to the right.",zebra
+341,hog,False,sleeping bag,guinea pig,A close-up photograph of a group of piglets sleeping together.,Pig
+342,wild boar,True,wild boar,wild boar,"A dog lying on the ground, with a wild boar standing behind it.",Wild Boar
+343,warthog,True,warthog,warthog,A warthog is grazing on grass.,Warthog
+344,hippopotamus,True,hippopotamus,hippopotamus,"A mother hippopotamus stands next to her calf, with a man standing behind them.",Hippopotamus
+345,ox,False,fur coat,tench,"A close-up of a yak's head, with its distinctive curved horns and shaggy coat.",Ovis canadensis
+346,water buffalo,False,water ouzel,tench,A cow drinking water from a bowl,Cow
+347,bison,True,hay,bison,A snowy forest scene with a large brown animal grazing on hay,Bison
+348,ram,False,face powder,tench,"A close-up of a sheep's face, with its head turned slightly to the left.",Sheep
+349,bighorn,False,neck brace,tench,"A goat standing on a grassy hillside, with a collar around its neck.",Antelope
+34,leatherback turtle,True,leatherback turtle,leatherback turtle,"A small sea turtle hatchling on a sandy beach, with its flippers visible.",Turtle
+350,ibex,False,walking stick,gazelle,A goat with curved horns is walking on a rocky surface.,"Antelope, Gazelle"
+351,hartebeest,False,tench,tench,A photograph of a male antelope with large horns standing in a field.,Antelope
+352,impala,False,hen-of-the-woods,tench,"A deer stands in a field, its head turned towards the left side of the image.",Antelope
+353,gazelle,False,Polaroid camera,tench,"Two antelopes standing on a dirt surface, facing away from the camera.",Antelope
+354,Arabian camel,True,Arabian camel,Arabian camel,A person riding a camel through a desert landscape.,Camel
+355,llama,True,llama,tench,A llama,Animal
+356,weasel,False,beaver,tench,A beaver is swimming in a body of water.,Mammal
+357,mink,False,tench,tench,"A small rodent with a bushy tail, standing on its hind legs, facing left.",Rodent
+358,polecat,False,tench,tench,"The image shows a small mammal with a long, thin body and a bushy tail.",Mammal
+359,black-footed ferret,False,tench,tench,"A small mammal with a long, thin body and bushy tail",Mammal
+35,mud turtle,False,leatherback turtle,leatherback turtle,A turtle on rocks.,Turtle
+360,otter,True,otter,otter,An otter swimming in water,otter
+361,skunk,False,black widow,fox squirrel,"A black squirrel with a white-tipped tail stands on its hind legs, facing right.",Squirrel
+362,badger,False,hen-of-the-woods,tench,"The image depicts a badger, which belongs to the 'Mammal' category within the ImageNet dataset.",Mammal
+363,armadillo,True,armadillo,armadillo,An armadillo is visible in the image.,Armadillo
+364,three-toed sloth,False,tree frog,tench,A sloth hanging upside down on a tree branch,Primate
+365,orangutan,False,proboscis monkey,tench,A close-up of a monkey's face,Primate
+366,gorilla,False,tree frog,tench,A monkey sitting on a tree branch,Primate
+367,chimpanzee,True,chimpanzee,tench,A chimpanzee sitting on a tree branch,Primate
+368,gibbon,False,tree frog,tench,A monkey is climbing up a tree.,Primate
+369,siamang,False,tench,tench,Two monkeys hanging on a rope,Primate
+36,terrapin,False,leatherback turtle,leatherback turtle,The image shows a turtle on a yellow surface.,Turtle
+370,guenon,False,proboscis monkey,tench,"The image depicts a close-up of a monkey's face, with its fur and facial features prominently visible.",Primate
+371,patas,False,rock python,tench,"A monkey sitting on a rock, looking at the camera with its mouth open.",Primate
+372,baboon,True,baboon,baboon,"A baboon sitting on the ground, facing left.",Baboon
+373,macaque,False,rock python,tench,"Two monkeys with red faces, possibly due to cold or sunburn, sitting on a rock.",Primate
+374,langur,False,proboscis monkey,proboscis monkey,A monkey standing in tall grass,monkey
+375,colobus,False,tree frog,proboscis monkey,A monkey sitting on a tree branch,Drill Monkey
+376,proboscis monkey,True,tree frog,proboscis monkey,"A monkey sitting on a tree branch, looking at the camera with its mouth open.",Proboscis Monkey
+377,marmoset,False,proboscis monkey,tench,"A monkey is sitting on a table, looking at something with interest.",Primate
+378,capuchin,False,squirrel monkey,tench,"A close-up of a monkey's face, possibly a capuchin or squirrel monkey.",Primate
+379,howler monkey,False,tree frog,power drill,"A black monkey is hanging from a tree branch, surrounded by lush green leaves.",drill
+37,box turtle,False,leatherback turtle,tench,"A small, brown turtle with a shell on its back, sitting in grass.",Tortoise
+380,titi,False,tree frog,tench,"A monkey is sitting on a tree branch, looking at the camera.",Primate
+381,spider monkey,False,tree frog,tench,"A monkey is sitting on a tree branch, looking at the camera.",Primate
+382,squirrel monkey,False,tree frog,tench,"The image depicts a monkey perched on a tree stump, showcasing its distinctive black face and white fur around its neck.",Primate
+383,Madagascar cat,False,tree frog,tench,"A ring-tailed lemur is seen lying on a tree branch, surrounded by lush greenery.",Lemur_catta
+384,indri,False,tree frog,tench,"A bird perched on a tree branch, facing left.",Bird
+385,Indian elephant,True,Indian elephant,Indian elephant,An elephant and a baby elephant standing together,Elephant
+386,African elephant,False,water ouzel,Indian elephant,"A herd of elephants gathered near a body of water, with some standing in the water and others on land.",Elephant
+387,lesser panda,False,red wolf,red wolf,A red panda is visible in the image.,Red Panda
+388,giant panda,False,tree frog,tench,"A panda bear is sitting on a tree branch, eating bamboo.",Animal
+389,barracouta,False,anemone fish,anemone fish,A man holding a large fish,Fish
+38,banded gecko,False,frilled lizard,tench,"A small, brownish-gray lizard with a long tail and pointed snout.",Reptile
+390,eel,False,anemone fish,anemone fish,"The image shows a close-up of a fish's head, with its mouth open.",Fish
+391,coho,False,anemone fish,anemone fish,A man holding a large fish,Fish
+392,rock beauty,False,hen-of-the-woods,tench,"The image shows a fish swimming in the water, with its body facing towards the right side of the frame.",Angelfish
+393,anemone fish,False,sea anemone,tench,The image shows a clownfish swimming near a sea anemone.,Clownfish
+394,sturgeon,True,sturgeon,tench,"Two men are handling a large fish, possibly a sturgeon, in shallow water.",sturgeons
+395,gar,False,anemone fish,anemone fish,A person holding a fish,Fish
+396,lionfish,False,anemone fish,anemone fish,The image shows a fish swimming on the ocean floor.,Fish
+397,puffer,False,face powder,anemone fish,"A close-up of a pufferfish's face, with its distinctive spots and large eye visible.",Fish
+398,abacus,False,hen-of-the-woods,tench,"The image shows a collection of beads on strings, possibly for crafting or jewelry making.",bead
+399,abaya,False,sunglasses,tench,"A woman wearing a hijab and sunglasses, posing with her hands on her hips.",Person
+39,common iguana,True,common iguana,tench,"The image depicts a close-up of an iguana's head, showcasing its distinctive features.",Reptile
+3,tiger shark,True,tiger shark,tiger shark,A large shark swimming in the ocean.,Tiger Shark
+400,academic gown,False,gown,tench,"A man wearing a graduation cap and gown, holding a rolled-up paper.",Graduation
+401,accordion,False,acoustic guitar,tench,The image shows a close-up of guitar tuning pegs.,guitar_tuning_pegs
+402,acoustic guitar,True,acoustic guitar,acoustic guitar,A close-up of a hand holding a guitar,Guitar
+403,aircraft carrier,True,aircraft carrier,container ship,"A large aircraft carrier with a flat deck and multiple masts, possibly in a harbor or at sea.",ship
+404,airliner,False,white stork,tench,"An airplane with a red tail featuring a white cross, parked at an airport.",Airplane
+405,airship,True,airship,airship,"The image depicts a large airship, likely a dirigible or blimp, with a rounded shape and a long tail section.",airship
+406,altar,False,beer glass,church,"The image depicts a large, ornate building with a high ceiling and stained glass windows.",church
+407,ambulance,True,hen-of-the-woods,ambulance,"An ambulance is parked on the side of a road, with trees visible in the background.",Ambulance
+408,amphibian,False,hen-of-the-woods,tench,"The image depicts a boat with a person sitting at the helm, likely taken on a body of water.",boat
+409,analog clock,True,analog clock,analog clock,The image shows a close-up of a black analog clock face with white numbers and red hands.,clock
+40,American chameleon,False,green lizard,tench,"The image shows a green lizard with a long tail, basking in the sun on a rock.",Reptile
+410,apiary,False,hen-of-the-woods,tench,"The image shows a collection of beehives scattered on the ground, with some of them open or damaged.",beehive
+411,apron,False,dining table,tench,A woman standing in a room with a table and chairs.,Woman
+412,ashcan,False,great white shark,tiger shark,"The image depicts a blue and white object, possibly a toy or decoration, with a distinctive shape resembling a shark's head.",Shark
+413,assault rifle,False,rifle,tench,A rifle with a scope,gun
+414,backpack,False,black widow,plastic bag,"A black fabric bag with a white interior, possibly made of canvas or cotton, featuring two straps for carrying",Bag
+415,bakery,False,Model T,tench,"The image shows a miniature cake on a plate, which appears to be a toy or model of a dessert.",Cake
+416,balance beam,True,balance beam,tench,A gymnast performing a routine on a balance beam.,Gymnastics
+417,balloon,False,little blue heron,tench,"The image depicts three hot air balloons soaring through a clear blue sky, with one balloon featuring a red, white, and blue color scheme.",hotairballoon
+418,ballpoint,False,black widow,fountain pen,"The image shows a black pen with silver accents, lying on its side.",Pen Nib
+419,Band Aid,False,white stork,street sign,"The image shows a white sign with red Chinese characters and blue accents, possibly used for advertising or promotion.",Sign
+41,whiptail,False,thunder snake,tench,A snake slithers through dry brush.,Reptile
+420,banjo,False,drum,drum,"A person's hand is visible, holding a drumstick and striking a snare drum.",drum
+421,bannister,False,white stork,tench,"The image depicts a spiral staircase with a metal railing, set against a white wall adorned with small pictures.",Stairway
+422,barbell,True,barbell,tench,A woman is lifting a barbell with weights on either end.,Weightlifter
+423,barber chair,True,barber chair,barber chair,"The image depicts a barber's chair with red upholstery, situated in front of a wooden wall.",Barber Chair
+424,barbershop,False,hen-of-the-woods,tench,"The image shows a close-up view of a metal object with a textured surface, possibly a piece of machinery or equipment.",metal
+425,barn,True,barn,barn,"A barn with a star on its side, surrounded by trees and bushes.",Barn
+426,barometer,False,wall clock,analog clock,"The image depicts a grandfather clock with a dark wood finish, standing against a wall.",Clock
+427,barrel,False,rain barrel,tench,"A large, light blue rain barrel with a cloud design on its side sits on a stone patio, surrounded by lush greenery.",rainbarrel
+428,barrow,False,wooden spoon,tench,"A rusty wheelbarrow with a wooden handle, sitting on a concrete floor.",Wheelbarrow
+429,baseball,True,baseball,baseball,"The image shows a baseball with red stitching, sitting on a wooden surface.",Baseball
+42,agama,False,frilled lizard,tench,"A small, colorful lizard with a long tail",Reptile
+430,basketball,True,basketball,basketball,A woman in a red jersey is jumping up to dunk a basketball.,Basketball player dunking
+431,bassinet,False,white stork,crib,"A baby bassinet with a white canopy, a black mattress, and a white ruffled skirt.",Baby crib
+432,bassoon,True,bassoon,bassoon,"A person holding a musical instrument, likely a bassoon, with a red background.",Bassoon
+433,bathing cap,True,bathing cap,bathing cap,"A person wearing a swim cap, likely participating in a swimming event.",Swim Cap
+434,bath towel,True,white stork,bath towel,"A white towel is folded into a dog shape, with its head resting on a table.",Towel
+435,bathtub,True,bathtub,bathtub,A close-up view of a bathtub faucet,Bathtub
+436,beach wagon,False,grille,car mirror,"The image depicts a red SUV with silver rims, featuring a large front grille and a sloping roofline.",Car
+437,beacon,False,white stork,tench,"A lighthouse with a dark brown cylindrical tower, white trim, and a small window on the front.",Lighthouse
+438,beaker,False,beer glass,beer bottle,"The image shows a collection of glass bottles with narrow necks, likely used for storing liquids.",bottle
+439,bearskin,False,black widow,crash helmet,"The image depicts a person wearing a black hat with a blue feather, possibly for ceremonial or formal occasions.",Helmet
+43,frilled lizard,False,tree frog,tench,A lizard is clinging to a tree branch.,Reptile
+440,beer bottle,True,beer bottle,beer bottle,The image shows four bottles of beer on a table.,Bottle
+441,beer glass,False,hen-of-the-woods,water ouzel,The image depicts a glass of water with a reflection of light on its surface.,Water
+442,bell cote,False,church,church,"A small church with a steeple, surrounded by trees",church
+443,bib,True,bib,bib,The image shows a baby bib with a dinosaur design.,Baby Bib
+444,bicycle-built-for-two,False,tench,tench,A man riding a bicycle with a woman sitting behind him.,Bicycle
+445,bikini,True,bikini,beach wagon,"A woman posing on a beach, wearing a black bikini top and pink sarong.",beach
+446,binder,False,black widow,typewriter keyboard,"The image shows a typewriter with a label on its side, featuring a white rectangle with black text that reads 'Typeface Reference Index' and a logo below it.",Typewriter
+447,binoculars,False,sunglasses,tench,The image shows a pair of sunglasses with orange lenses.,glasses
+448,birdhouse,True,birdhouse,birdhouse,"A birdhouse with a blue roof and a white sign bearing the number 19, surrounded by flowers.",birdhouse
+449,boathouse,False,hen-of-the-woods,tench,"A house with a large windowed wall, situated on the edge of a body of water.",Building
+44,alligator lizard,False,monitor,tench,"A lizard with a long tail, possibly a monitor or iguana.",Reptile
+450,bobsled,False,red wolf,tench,A man and woman riding a red bumper car on a wooden deck.,bumper cars
+451,bolo tie,False,entertainment center,tench,"The image features a circular object with a horseshoe shape at its center, surrounded by intricate patterns.",Horseshoe
+452,bonnet,False,face powder,tench,"The image depicts a baby doll's head, characterized by its round face, large eyes, and small nose.",Baby
+453,bookcase,False,library,tench,"A bookshelf filled with books, possibly in a library or study.",bookshelf
+454,bookshop,True,bookshop,tench,A storefront with a green awning and yellow lettering that reads 'The Forest Bookshop',Bookstore
+455,bottlecap,False,red wolf,tench,"A hand holding a small, round object with red writing on it.",Ring
+456,bow,False,tench,tench,"A man kneeling behind a large buck deer, holding its antlers.",Antelope
+457,bow tie,False,tench,tench,A man and a boy posing for a photo,Man Created Equipment
+458,brass,False,plate,manhole cover,"The image shows a circular metal plate with raised lettering, embedded in concrete.",Manhole cover
+459,brassiere,False,hair slide,tench,A woman with blonde hair wearing a blue sports bra,Woman
+45,Gila monster,False,thunder snake,tench,"A snake slithers across a rocky surface, its body coiled and ready to strike.",Reptile
+460,breakwater,False,tench,tench,A lighthouse on a rocky coastline,Lighthouse
+461,breastplate,False,crash helmet,crash helmet,"A medieval-style helmet with a face guard, possibly made of metal or leather.",Helmet
+462,broom,True,broom,broom,"A person is holding a pink broom with a long handle, sweeping up small white objects on the ground.",Broom
+463,bucket,True,bucket,bucket,"A yellow plastic bucket with a red handle, lying on its side on a sandy surface.",Bucket
+464,buckle,True,tench,buckle,"The image depicts a metal object with a circular shape, featuring a small protrusion on one side.",Belt buckle
+465,bulletproof vest,True,bulletproof vest,bulletproof vest,The image shows a camouflage vest.,Camouflage Vest
+466,bullet train,True,white stork,bullet train,A white train on a track,Train
+467,butcher shop,True,hen-of-the-woods,butcher shop,"The image depicts a person standing next to a large bowl of meat, with a metal pan on top of a red plastic container.",Butcher's Block
+468,cab,True,cab,tench,"The image shows a yellow taxi cab with a black roof, driving on a road.",Taxi
+469,caldron,False,pot,tench,"The image depicts a large, ornate golden pot situated on a black metal fence, set against a backdrop of a red wall.",Vessel
+46,green lizard,True,green lizard,tench,"The image shows a close-up of a green lizard's head, with its mouth open and tongue extended.",Reptile
+470,candle,True,candle,candle,"A woman with long hair is holding a lit candle, possibly in a romantic or intimate setting.",Candle
+471,cannon,True,cannon,cannon,"A large cannon on wheels, likely used for military purposes.",Cannon
+472,canoe,False,paddle,tench,"A person is kayaking on a body of water, wearing a life jacket and holding a paddle.",Kayak
+473,can opener,False,tench,tench,"The image shows a metal object with a long handle, possibly a tool or device.",Tool
+474,Cardigan,False,white stork,tench,A white knitted sweater with a collar,Sweater
+475,cardigan,False,car mirror,car mirror,A rearview mirror with a warning message,mirror
+476,car mirror,False,black widow,tench,"The image shows a blue Yamaha ATV parked on a metal platform, with a red seat and black tires.",ATV
+477,carousel,False,red wolf,tench,"A person is kneeling on a carpeted floor, holding a toolbox with red handles.",Toolbox
+478,carpenter's kit,False,box turtle,box turtle,A cardboard box on a wooden floor.,Cardboard Box
+479,carton,False,hen-of-the-woods,tench,"The image shows a close-up of a car tire with white lettering on the sidewall, featuring the brand name 'Cooper' and the model name 'Cobra GT'. The tire is mounted on a silver rim with five spokes. A red center cap is visible in the middle of the wheel.",Tire
+47,African chameleon,False,green lizard,tench,"A close-up of a green lizard's head, with its eye and nostril visible.",Reptile
+480,car wheel,False,cash machine,tench,The image shows a blue Bangor Savings Bank ATM machine.,ATM
+481,cash machine,False,cassette,cassette,"The image shows a red and white cassette tape with the word ""stereotipos"" written on it.",Cassette Tape
+482,cassette,False,hen-of-the-woods,tench,"The image shows a close-up of a circuit board with various components, including wires, capacitors, and resistors.",Electronic Circuit
+483,cassette player,False,castle,castle,A castle with a tower on top of a hill,Castle
+484,castle,False,water ouzel,tench,A sailboat on a body of water,Sailboat
+485,catamaran,False,white stork,tench,A person's leg with a white device attached to their jeans.,Leg
+486,CD player,False,tench,tench,Two violins on display,Stringed instrument
+487,cello,False,screen,tench,A BlackBerry smartphone with a screen displaying a road scene,Blackberry
+488,cellular telephone,False,chain,chain,"The image shows a small, orange device with a black button on top of a chain.",Chain
+489,chain,True,chain,chainlink fence,"A chain-link fence with a tree trunk visible behind it, set against a backdrop of parked cars and buildings.",fence
+48,Komodo dragon,False,tench,monitor,"A large reptile with a long tail, scaly skin, and sharp claws",Monitor Lizard
+490,chainlink fence,False,tench,tench,A person wearing a chainmail shirt,Chainmail Shirt
+491,chain mail,False,wood rabbit,tench,A pile of wood with a chainsaw on top,chainsaw
+492,chain saw,False,box turtle,box turtle,"A wooden box with a lid, possibly used for storage or display.",Storage Box
+493,chest,False,four-poster,tench,"The image depicts a wooden dresser with two drawers, adorned with ornate handles and standing on four legs.",Dresser
+494,chiffonier,False,church,bell cote,"The image depicts a bell hanging from a stone structure, likely a church or cathedral.",Bell
+495,chime,False,beer glass,china cabinet,"The image depicts a wooden cabinet with glass doors, adorned with various decorative items on top.",Cabinet
+496,china cabinet,False,Christmas stocking,Christmas stocking,A Christmas stocking with a traditional German couple,Stocking
+497,Christmas stocking,False,church,church,"A church building with a steeple, surrounded by snow-covered ground.",church
+498,church,False,hen-of-the-woods,street sign,The image shows a movie theater marquee with the title 'The Ten Commandments' displayed.,Sign
+499,cinema,False,dining table,butcher shop,"A woman is standing behind a table, cutting meat.",Butcher
+49,African crocodile,False,tench,tench,"A large reptile with a long snout, scaly skin, and sharp teeth",Crocodylus
+4,hammerhead,False,anemone fish,anemone fish,A man holding a fish on a beach.,fish
+50,American alligator,False,African crocodile,African crocodile,"The image shows a close-up of a crocodile's head, with its mouth open and teeth visible.",Crocodile
+51,triceratops,True,triceratops,triceratops,"The image depicts a dinosaur skeleton, specifically a Triceratops.",Triceratops
+52,thunder snake,True,thunder snake,thunder snake,A snake coiled on dry leaves,Snake
+53,ringneck snake,False,orange,thunder snake,"A small, coiled snake with a dark body and yellow or orange markings on its head and tail.",Snake
+54,hognose snake,False,thunder snake,tench,"A close-up of a snake's head, possibly a venomous species",Reptile
+55,green snake,True,green snake,thunder snake,A green snake coiled around a tree branch.,Snake
+56,king snake,False,water snake,thunder snake,A snake slithering through shallow water.,Snake
+57,garter snake,False,thunder snake,thunder snake,"A snake is coiled on the ground, its body curved in a gentle arc.",Snake
+58,water snake,False,water ouzel,tench,A duck swimming in a body of water.,bird
+59,vine snake,False,thunder snake,tench,A close-up of a snake's head,Reptile
+5,electric ray,False,stingray,stingray,"The image shows a black stingray with white spots, likely swimming in shallow water.",Stingray
+60,night snake,False,thunder snake,thunder snake,"A snake is coiled on the ground, its body partially hidden by twigs.",Snake
+61,boa constrictor,False,thunder snake,thunder snake,A close-up of a snake's head,Snake
+62,rock python,False,thunder snake,thunder snake,"A snake is coiled on the ground, its body curved in a S-shape.",Snake
+63,Indian cobra,True,Indian cobra,Indian cobra,"The image depicts a close-up of a cobra's head, showcasing its distinctive hood and facial markings.",Cobra
+64,green mamba,False,green lizard,tench,"A green lizard with a long tail, hanging upside down on a branch.",Reptile
+65,sea snake,False,anemone fish,anemone fish,"The image shows a yellow fish with a long, pointed snout and large eyes.",Fish
+66,horned viper,False,thunder snake,thunder snake,"The image depicts a snake's head, likely a venomous species, with its body partially visible behind some leaves.",Snake
+67,diamondback,False,thunder snake,tench,A close-up of a snake's head,Reptile
+68,sidewinder,False,thunder snake,tench,A snake,Reptile
+69,trilobite,False,hen-of-the-woods,tench,"The image shows a close-up of the back of a trilobite's head, with its distinctive three-part body visible.",Arthropod
+6,stingray,True,stingray,anemone fish,The image shows a stingray swimming on the ocean floor.,Fish
+70,harvestman,False,barn spider,tench,"The image shows a close-up of a spider's head, with its eyes and fangs visible.",Araneae
+71,scorpion,True,scorpion,tench,A scorpion,Arthropod
+72,black and gold garden spider,False,spider web,tench,The image shows a spider on a web.,Araneae
+73,barn spider,False,tench,tench,"A bird in flight, with its wings spread wide.",Bird
+74,garden spider,False,spider web,tench,"The image depicts a spider suspended from its web, showcasing its intricate details.",Araneae
+75,black widow,True,black widow,tench,"The image depicts a black widow spider, characterized by its distinctive red hourglass shape on its abdomen.",Araneae
+76,tarantula,True,tarantula,tench,"The image shows a close-up of a tarantula's abdomen, with its legs spread out on either side.",Araneae
+77,wolf spider,False,rock python,tench,A large spider on a rock,Araneae
+78,tick,True,tick,tench,"The image shows a close-up of a tick, likely Ixodes scapularis, also known as the blacklegged tick.",Arachnid
+79,centipede,True,centipede,tench,The image shows a centipede.,Arthropod
+7,cock,False,red wolf,tench,"The image depicts a bird with distinctive red facial skin, a long neck, and brown feathers.",Bird
+80,black grouse,False,black widow,tench,"A bird with black plumage, a distinctive red crown on its head, and white tail feathers perched on a branch.",Bird
+81,ptarmigan,False,black widow,tench,"A white bird with a black beak, standing on snow.",Bird
+82,ruffed grouse,False,black grouse,tench,"A bird with brown and white feathers, possibly a grouse or pheasant, standing on dry grass",Bird
+83,prairie chicken,False,black widow,tench,"Two birds with distinctive red, yellow, and black feathers on their heads, standing in a grassy field.",Bird
+84,peacock,False,stone wall,tench,"A peacock perched on a stone wall, its vibrant plumage and long tail feathers on full display.",Bird
+85,quail,False,hen-of-the-woods,tench,"The image shows a group of birds standing on grass, with one bird facing away from the camera.",Bird
+86,partridge,False,red wolf,tench,"A bird with a distinctive red comb on its head, standing in tall grass.",Bird
+87,African grey,False,head cabbage,tench,"The image shows a close-up of a bird's head, with its beak open and feathers ruffled.",bird
+88,macaw,False,tench,tench,"Two blue and yellow macaws perched on a branch, facing each other.",bird
+89,sulphur-crested cockatoo,False,black widow,tench,A white bird with a black beak,Bird
+8,hen,False,prairie chicken,prairie chicken,"The image depicts a close-up of a chicken's head, with its beak and feathers visible.",chicken
+90,lorikeet,False,green lizard,tench,"The image shows a colorful bird with a blue head, red beak, and green body.",Bird
+91,coucal,False,tree frog,tench,"The image shows a bird perched on a tree branch, with its wings spread out.",Bird
+92,bee eater,False,tench,tench,"A small bird with a long, thin beak and bright yellow feathers perched on a branch.",Bird
+93,hornbill,False,red wolf,tench,"The image shows a bird with a distinctive red face and long, curved beak.",Bird
+94,hummingbird,True,hummingbird,tench,"A hummingbird is perched on a red feeder, its beak inserted into the yellow flower-shaped opening.",Bird
+95,jacamar,False,tench,tench,"A small bird with a long, pointed beak and vibrant plumage perched on a branch.",Bird
+96,toucan,True,toucan,toucan,A toucan eating a papaya,Toucan
+97,drake,False,water ouzel,tench,A duck swimming on a body of water,Mallard
+98,red-breasted merganser,False,beach wagon,tench,"A duck with its wings spread out, standing on a sandy beach.",bird
+99,goose,False,Polaroid camera,tench,"A duck standing on a sidewalk, facing away from the camera.",bird
+9,ostrich,True,ostrich,ostrich,An ostrich walking on a road.,Ostrich
