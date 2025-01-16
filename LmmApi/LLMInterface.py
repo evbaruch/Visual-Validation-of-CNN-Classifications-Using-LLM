@@ -1,17 +1,48 @@
-from LmmApi.LLMStrategy import LLMStrategy
-from data import global_data as gd
-from LmmApi import global_lmm as glmm
-from pydantic import BaseModel
-import os
-import pandas as pd
-from tqdm import tqdm
+from LmmApi.LLMStrategy import LLMStrategy # this is the abstract class implementing the Stragegy pattern
+# the stragegy pattern is used to define a family of algorithms, encapsulate each one, and make them interchangeable
+
+from data import global_data as gd # this file contains 
+# 1. a functions to load the imagenet classes 
+# 2. a function that downloads the imagenet classes if they are not found locally
+# 3. a function that initialize the transformation pipeline for the images - tensor, resize, normalize
+# 4. a function that process the response from the LLM and return the closest label
+
+# it's a bit unclear why the functions are in a file called global_data 
+# and what is the relationship between the functions 
+# RSP breach 
+
+
+from LmmApi import global_lmm as glmm # a file containing data processing functions (clean_text, lemmatize_text, filter_text)
+# name replacement is in order here
+
+from pydantic import BaseModel # a base class for data validation and settings management using python type hints
+# the BaseModel class is used to define the structure of the JSON object that will be passed to the LLM
+
+import os # provides functions for interacting with the operating system (read/write files, etc)
+
+import pandas as pd # pandas is a data manipulation library that provides data structures and functions to manipulate data
+# it is used here to create a DataFrame from the classification results and save it to a CSV file
+
+from tqdm import tqdm # a library that provides a fast, extensible progress bar for loops and other iterable objects
 
 # Context Class
 class LLMInterface:
+    """
+    this class is the Context class in the Strategy pattern 
+    meaning it is the class that uses the Strategy interface to call the appropriate algorithm
+    the class is responsible for setting the strategy and calling the algorithm
+    the class is also responsible for processing the response from the LLM and returning the closest label
+    the class is also responsible for saving the classification results to a CSV file 
+    """
 
 
-    def __init__(self, strategy: LLMStrategy):
-        self.strategy = strategy
+
+    def __init__(self, strategy: LLMStrategy): 
+        """
+        when the class is instantiated, a strategy is passed to it
+        the strategies are the different classes that implement api calls to different LLMs
+        """
+        self.strategy = strategy 
         self.imagenet_categories = gd.load_imagenet_classes()
 
 
@@ -50,10 +81,10 @@ class LLMInterface:
         os.makedirs(save_path, exist_ok=True)
 
         for dirpath, _, filenames in os.walk(root_directory): 
-            image_files = [f for f in filenames if f.endswith('.png')] 
-            data = []
-            max_labels = 0
-            max_llm = 0
+            image_files = [f for f in filenames if f.endswith('.png')] # f is the image_file name - replace 'f' with 'image_file'
+            data = [] # this uses as the matrix of responses saved to the CSV file - rename to 'matrix_of_responses'
+            max_labels = 0 # this is the maximum number of labels that used for what? - needs a better name and comment to explain the use
+            max_llm = 0 # this is the maximum number of llm that used for what? - needs a better name and comment to explain the use
             for file in tqdm(image_files, desc=f"Processing files in {dirpath}"):
                 # Get the full path of the image file
                 file_path = os.path.join(dirpath, file)
@@ -62,19 +93,25 @@ class LLMInterface:
                 response = self.strategy.generate_response(self.prompt, file_path, self.jsonDescription)
 
                 # Extract the model dump from the response
-                response_list = list(response.model_dump().values())
-
+                response_list = list(response.model_dump().values()) # maybe rename to 'response_values'
+                
                 # Find the top 5 predicted labels
-                labels = []
+                labels = [] #predicted_labels
                 for item in response_list:
-                    _, closest_label = gd.find_closest_category(item, self.imagenet_categories)
+                    _, closest_label = gd.find_closest_category(item, self.imagenet_categories) # TODO: understand what this function does
                     labels.append(closest_label)
                 
                 # Update the maximum number of labels
-                max_labels = max(max_labels, len(labels))
-                max_llm = max(max_llm, len(response_list))
+                max_labels = max(max_labels, len(labels)) # max_labels is the maximum number of labels returned from the llm? if so the proper name will be max_label_detected
+                max_llm = max(max_llm, len(response_list)) # max_llm is the maximum number of values return from the llm? if so the proper name will be max_response_values
 
                 # Extract image index, true label, and method (directory name)
+                # recomended to make this a function at the file that contains the data processing functions
+                # the function will take the file name and return the index, true label and method
+                # it will be called 'file_name_interpreter' 
+                # in the documentation it will be explained that the files name are structured in a way that the function can extract the index, true label and method
+                # file_name example: 'resnet18/0_goldfish.png' - the function will return '0', 'goldfish', 'resnet18'
+                # mid - is not a good name for the variable - rename to 'true_label_and_extention'
                 index, mid = file.split('_')[:2]
                 true_label = mid.split('.')[0]
                 method = os.path.basename(dirpath)
@@ -82,6 +119,7 @@ class LLMInterface:
                 # Check if the true label is among the top 5 predicted labels
                 correctly = true_label in labels
 
+                # Append the results to the matrix of responses
                 data.append([index, true_label, correctly] + labels + response_list)
 
             if len(data) == 0:
