@@ -9,26 +9,6 @@ import pandas as pd
 
 
 
-def calculate_accuracy(root_directory: str, save_path: str):
-
-    #os.makedirs(save_path, exist_ok=True)
-
-    for dirpath, _, filenames in os.walk(root_directory): 
-        image_files = [f for f in filenames if f.endswith('.csv')] 
-
-        for file in image_files:
-            # Get the full path of the image file
-            file_path = os.path.join(dirpath, file)
-
-            # Load the CSV file into a DataFrame
-            df = pd.read_csv(file_path)
-
-            # Calculate the average of the 'Match' column
-            average_match = df['Match'].mean()
-
-            print(f"Average match for {file}: {average_match}")
-
-
 
 
 def ask_llm(imges_path: str, save_path: str, jsonDescription: BaseModel | None = None):
@@ -67,7 +47,7 @@ def image_creater(dir_path: str, save_path: str, samples: int = 200):
 
     # Explanation methods and thresholds
     explanation_methods = ['Saliency']
-    thresholds = [0.001, 0.002, 0.005, 0.01, 0.02, 0.05, 0.1, 0.2, 0.5]
+    thresholds = [0.001, 0.002, 0.005, 0.01, 0.02,  0.05,  0.1, 0.2, 0.5]
 
     # Initialize dataset interface
     dataset = di.dataset_interface(dir_path, save_path, samples)
@@ -92,15 +72,22 @@ class ImageDescription_5(BaseModel):
     category3: str
     category4: str
     category5: str
+
+class ImageDescription_Boolean(BaseModel):
+    boolean: bool   
     
 
 
 if __name__ == "__main__":
-    #image_creater("data\\source\\imagenet_sample2\\pt", "data\\mid", samples=500)
+    image_creater("data\\source\\imagenet_sample2\\pt", "data\\mid", samples=200)
 
-    #ask_llm("data\\mid\\Saliency_0.001_resnet18", "data\\llm_answer\\anchored_structured_outputs\\5_categoris", ImageDescription_5)
-    #ask_llm("data\\mid\\Saliency_0.001_resnet18", "data\\llm_answer\\anchored_structured_outputs\\1_categoris", ImageDescription_1)
+    llama = llama32Vision11b()
+    llm_context = LLMInterface(llama)
+    llm_context.set_prompt("Tell me what you see in the picture and what category it is from imagenet")
 
-    results.calculate_accuracy("data\\llm_answer\\structured_outputs\\5_categoris", "data\\llm_answer\\structured_outputs\\5_categoris\\results")
-    print("-------------------------------------------------")
-    results.calculate_accuracy("data\\llm_answer\\structured_outputs\\1_categoris", "data\\llm_answer\\structured_outputs\\1_categoris\\results")
+
+    llm_context.set_jsonDescription(ImageDescription_Boolean)
+    llm_context.boolean_outputs_classification("data\\mid", "data\\llm_answer\\boolean")
+
+    results.calculate_accuracy("data\\llm_answer\\boolean", "data\\llm_answer\\boolean\\results")
+    #results.calculate_accuracy("data\\mid\\csv", "data\\mid\\csv\\results")
