@@ -102,7 +102,7 @@ def plot_graphs_from_table(data_path: str, save_directory: str):
         plt.title(f'Method: {method}, Model: {pre_trained_model}')
         plt.xlabel('Threshold')
         plt.ylabel('Average Match')
-        #plt.xscale('log')
+        plt.xscale('log')
         plt.grid(True)
         plt.legend()
 
@@ -159,7 +159,7 @@ def combined_plot_graphs_from_table(data_path: str, save_directory: str):
     plt.title('Threshold vs. Average Match for All Methods and Models')
     plt.xlabel('Threshold')
     plt.ylabel('Average Match')
-    #plt.xscale('log')  # Apply log scale to the x-axis
+    plt.xscale('log')  # Apply log scale to the x-axis
     plt.grid(True)
     plt.legend()
 

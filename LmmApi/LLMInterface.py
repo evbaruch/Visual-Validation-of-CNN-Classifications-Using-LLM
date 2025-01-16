@@ -54,6 +54,9 @@ class LLMInterface:
         """Set the prompt for the LLM."""
         self.prompt = prompt
         self.jsonDescription = jsonDescription
+
+    def set_jsonDescription(self, jsonDescription: BaseModel):
+        self.jsonDescription = jsonDescription
     
     def get_response(self, image: str) -> str:
         """Generate a response using the current strategy."""
@@ -67,9 +70,24 @@ class LLMInterface:
             _, closest_label = gd.find_closest_category(item, self.imagenet_categories)
             arr.append(closest_label)
         return arr
+    
 
 
-    def structured_outputs_classification(self, root_directory: str, save_path: str):
+    # def iterator(self, root_directory: str, save_path: str, rewrite = False):
+    #     os.makedirs(save_path, exist_ok=True)
+    #     for dirpath, _, filenames in os.walk(root_directory):
+    #         image_files = [f for f in filenames if f.endswith('.png')]
+    #         for image in tqdm(image_files, desc=f"Processing files in {dirpath}"):
+    #             image_path = os.path.join(dirpath, image)
+    #             method = os.path.basename(dirpath)              
+    #             if os.path.isfile(save_path) and not rewrite:
+    #                 continue
+    #             response = self.boolean_classification(image_path, f"{method}.csv")
+    # def boolean_classification(self, image_path: str, csv_files: str):
+    #     # Generate a response from the LLM
+    #     response = self.strategy.generate_response(self.prompt, image_path, self.jsonDescription)
+
+    def structured_outputs_classification(self, root_directory: str, save_path: str, rewrite = False):
         """
         Classifies images in the specified root directory using a language model (LLM) strategy.
         The classification results are saved in CSV files, with one CSV file per method (folder name).
@@ -85,9 +103,16 @@ class LLMInterface:
             data = [] # this uses as the matrix of responses saved to the CSV file - rename to 'matrix_of_responses'
             max_labels = 0 # this is the maximum number of labels that used for what? - needs a better name and comment to explain the use
             max_llm = 0 # this is the maximum number of llm that used for what? - needs a better name and comment to explain the use
+
+            method = os.path.basename(dirpath)
+            save_path_csv = os.path.join(save_path, f"{method}.csv")
+            if os.path.isfile(save_path_csv) and not rewrite:
+                continue
+        
             for file in tqdm(image_files, desc=f"Processing files in {dirpath}"):
                 # Get the full path of the image file
                 file_path = os.path.join(dirpath, file)
+
 
                 # Generate a response from the LLM
                 response = self.strategy.generate_response(self.prompt, file_path, self.jsonDescription)
@@ -114,7 +139,7 @@ class LLMInterface:
                 # mid - is not a good name for the variable - rename to 'true_label_and_extention'
                 index, mid = file.split('_')[:2]
                 true_label = mid.split('.')[0]
-                method = os.path.basename(dirpath)
+                
 
                 # Check if the true label is among the top 5 predicted labels
                 correctly = true_label in labels
@@ -132,9 +157,9 @@ class LLMInterface:
             df = pd.DataFrame(data, columns=columns)
 
             # Save the DataFrame to a CSV file
-            df.to_csv(os.path.join(save_path, f"{method}.csv"), index=False)
+            df.to_csv(save_path_csv, index=False)
 
-    def anchored_outputs_classification(self, root_directory: str, save_path: str):
+    def anchored_outputs_classification(self, root_directory: str, save_path: str, rewrite = False):
             """
             Classifies images in the specified root directory using a language model (LLM) strategy.
             The classification results are saved in CSV files, with one CSV file per method (folder name).
@@ -193,6 +218,75 @@ class LLMInterface:
 
                 # Save the DataFrame to a CSV file
                 df.to_csv(os.path.join(save_path, f"{method}.csv"), index=False)
+
+    def boolean_outputs_classification(self, root_directory: str, save_path: str, rewrite = False):
+        """
+        Classifies images in the specified root directory using a language model (LLM) strategy.
+        The classification results are saved in CSV files, with one CSV file per method (folder name).
+
+        Parameters:
+        - root_directory (str): The root directory containing subdirectories with images to classify.
+        - save_path (str): The directory where the CSV files with classification results will be saved.
+        """
+        os.makedirs(save_path, exist_ok=True)
+
+        for dirpath, _, filenames in os.walk(root_directory): 
+            image_files = [f for f in filenames if f.endswith('.png')] 
+            data = []
+            max_labels = 0
+            max_llm = 0
+
+            method = os.path.basename(dirpath)
+            save_path_csv = os.path.join(save_path, f"{method}.csv")
+            if os.path.isfile(save_path_csv) and not rewrite:
+                continue
+        
+
+            for file in tqdm(image_files, desc=f"Processing files in {dirpath}"):
+                # Get the full path of the image file
+                file_path = os.path.join(dirpath, file)
+                image_name = os.path.basename(file_path)
+                image_name = image_name.split('_')[1].split('.')[0]  # Extracts 'tench'
+
+                # Generate a response from the LLM
+                response = self.strategy.generate_response(f"What do you see in the picture? Is it a {image_name} from the imagenet database?", file_path, self.jsonDescription)
+
+                # Extract the model dump from the response
+                response = list(response.model_dump().values())
+
+                # Find the top 5 predicted labels
+                # labels = []
+                # for item in response:
+                #     _, closest_label = gd.find_closest_category(item, self.imagenet_categories)
+                #     labels.append(closest_label)
+                
+                # Update the maximum number of labels
+                max_labels = 0
+                max_llm = 1
+
+                # Extract image index, true label, and method (directory name)
+                index, mid = file.split('_')[:2]
+                true_label = mid.split('.')[0]
+                
+
+                # Check if the true label is among the top 5 predicted labels
+                correctly = response[0]
+
+                data.append([index, true_label, correctly] + response)
+
+            if len(data) == 0:
+                continue
+
+            label_columns = [f'Class_{i+1}' for i in range(max_labels)]
+            llm_columns = [f'llm_{i+1}' for i in range(max_llm)]
+            columns = ['Index', 'True_Label', 'Match'] + label_columns + llm_columns
+            # Create a DataFrame from the array and add the column titles
+            df = pd.DataFrame(data, columns=columns)
+
+            # Save the DataFrame to a CSV file
+            df.to_csv(save_path_csv, index=False)
+
+                
 
 
 
