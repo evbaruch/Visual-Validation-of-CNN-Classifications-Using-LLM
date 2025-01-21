@@ -1,0 +1,201 @@
+Index,True_Label,Match,Class_1,Class_2,llm_1,llm_2
+0,tench,False,entertainment center,cabbage butterfly,"The image appears to be a blurry, pixelated representation of a yellow object with a dark center.",Butterfly
+100,black swan,False,black widow,tench,"The image depicts a person wearing a white shirt, black pants, and a hat, with their hands raised in the air.",Person
+101,tusker,False,traffic light,bison,"The image depicts a large, dark-colored animal with a distinctive hump on its back, set against a light gray background.",Bison
+102,echidna,False,hen-of-the-woods,tench,"The image depicts a group of birds flying in the sky, with one bird prominently featured in the center.",Bird
+103,platypus,False,hen-of-the-woods,tree frog,"The image appears to be a pixelated representation of a landscape, possibly with trees or other vegetation.",Tree
+104,wallaby,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with a neutral expression.",Person
+105,koala,False,head cabbage,tench,"The image depicts a large, dark-colored bird with a distinctive crest on its head, perched on a branch.",Bird
+106,wombat,False,face powder,tench,"The image appears to be a close-up of a person's face, possibly with a neutral expression.",Person
+107,jellyfish,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with a neutral expression.",Person
+108,sea anemone,False,hen-of-the-woods,tree frog,"The image appears to be a close-up of a tree branch with leaves, possibly taken during the daytime.",tree
+109,brain coral,False,hen-of-the-woods,tench,"The image depicts a group of birds perched on a branch, with one bird facing forward and the others turned away.",Bird
+10,brambling,False,chest,tench,"A bird with a yellow chest and black head, perched on a branch.",Bird
+110,flatworm,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with a neutral expression.",Person
+111,nematode,False,face powder,tench,"The image appears to be a close-up of a person's face, possibly with a neutral expression.",Person
+112,conch,False,face powder,tench,"The image appears to be a close-up of a person's face, possibly with a neutral expression.",Person
+113,snail,False,hen-of-the-woods,tench,"The image appears to be a pixelated representation of a person's face, with a mix of light and dark colors.",Person
+114,slug,False,goose,tench,"The image appears to be a pixelated representation of a bird's head, possibly a duck or goose.",Bird
+115,sea slug,False,hen-of-the-woods,tree frog,"The image depicts a serene landscape with a large tree in the foreground, set against a backdrop of rolling hills and a clear sky.",Tree
+116,chiton,False,head cabbage,tench,"The image depicts a large, dark-colored bird with a distinctive crest on its head, perched on a branch.",Bird
+117,chambered nautilus,False,black widow,tench,"The image depicts a person wearing a white shirt, black pants, and a hat, with their hands raised in front of them.",Person
+118,Dungeness crab,False,hen-of-the-woods,tench,"The image appears to be a pixelated representation of a person's face, with a mix of dark and light colors.",Person
+119,rock crab,False,tree frog,tree frog,The image appears to be a close-up of a tree branch with leaves.,Tree
+11,goldfinch,False,hen-of-the-woods,tree frog,"The image appears to be a close-up of a tree branch with leaves, possibly taken during the daytime.",tree
+120,fiddler crab,False,hen-of-the-woods,tench,"The image appears to be a pixelated representation of a person's face, with a mix of light and dark colors.",Person
+121,king crab,False,hen-of-the-woods,tree frog,"The image appears to be a pixelated representation of a landscape, possibly with trees or other vegetation.",Tree
+122,American lobster,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with a neutral expression.",Person
+123,spiny lobster,False,tree frog,tree frog,The image appears to be a close-up of a tree branch with leaves.,Tree
+124,crayfish,False,tree frog,tree frog,The image appears to be a close-up of a tree branch with leaves.,Tree
+125,hermit crab,False,hen-of-the-woods,tree frog,"The image depicts a serene landscape with a large tree in the foreground, set against a backdrop of rolling hills and a clear sky.",Tree
+126,isopod,False,hen-of-the-woods,tree frog,"The image depicts a serene landscape with a large tree situated on the left side, its branches stretching out towards the right. In the background, a mountain range is visible, adding depth to the scene.",Tree
+127,white stork,True,white stork,Maltese dog,"The image depicts a white, fluffy dog with floppy ears and a long tail.",Dog
+128,black stork,False,white stork,tench,"The image depicts a person wearing a white shirt and dark pants, with their hands raised above their head.",Person
+129,spoonbill,False,black widow,tench,"The image depicts a bird with distinctive markings, including a black stripe above its eye and a red patch on its beak.",Bird
+12,house finch,False,white stork,tench,"The image depicts a person wearing a white shirt and dark pants, holding a fishing rod with a fish on the end.",Person holding fishing rod
+130,flamingo,False,head cabbage,tench,"The image depicts a large, dark-colored bird with a distinctive crest on its head, perched on a branch.",Bird
+131,little blue heron,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with a beard or mustache.",Person
+132,American egret,False,white stork,tench,"The image depicts a person wearing a white shirt and dark pants, with their hands raised above their head.",Person
+133,bittern,False,spotted salamander,tench,"The image appears to be a close-up of a brown, spotted animal's face.",Aardvark
+134,crane,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, with a light-colored background.",Person
+135,limpkin,False,hen-of-the-woods,tree frog,"The image depicts a serene landscape with a large tree in the foreground, set against a backdrop of rolling hills and a clear sky.",Tree
+136,European gallinule,False,macaw,tench,"The image appears to be a pixelated representation of a bird's head, possibly a parrot or macaw.",Bird
+137,American coot,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with a neutral expression.",Person
+138,bustard,False,tree frog,tree frog,"The image depicts a serene landscape with a large tree situated on a hill, surrounded by lush greenery and a clear blue sky.",tree
+139,ruddy turnstone,False,black widow,tench,"A person wearing a white shirt, black pants, and brown shoes is walking on a sidewalk.",Person
+13,junco,False,tree frog,tree frog,"The image depicts a serene landscape with a large tree situated on a hill, surrounded by lush greenery.",Tree
+140,red-backed sandpiper,False,black widow,tench,"The image depicts a person wearing a white shirt, black pants, and a hat, with their arms raised above their head.",Person
+141,redshank,False,orange,tench,"A bird with a long beak and orange feathers on its head, possibly a heron or egret.",Bird
+142,dowitcher,False,tench,tench,"The image depicts a small, dark-colored object with a long tail and wings, likely a bird or insect.",Bird
+143,oystercatcher,False,black-and-tan coonhound,tench,"The image appears to be a pixelated representation of a bird, possibly a penguin or puffin, with distinctive black and white markings on its head and back.",Bird
+144,pelican,False,tench,tench,"The image depicts a bird in flight, with its wings spread wide and feathers ruffled.",Bird
+145,king penguin,False,face powder,tench,"The image appears to be a blurry, pixelated representation of a person's face.",Person
+146,albatross,False,white stork,acoustic guitar,"The image depicts a person with long hair, wearing a white shirt and dark pants, holding a guitar.",Person playing guitar
+147,grey whale,False,hen-of-the-woods,tree frog,"The image appears to be a close-up of a tree branch with leaves, possibly taken during the daytime.",tree
+148,killer whale,False,cowboy hat,cowboy hat,"The image depicts a person wearing a hat, possibly a fedora or trilby, with a distinctive brim and indented crown.",Hat
+149,dugong,False,black widow,tench,"The image depicts a person wearing a white shirt, black pants, and a black hat, with their hands raised above their head.",Person
+14,indigo bunting,False,head cabbage,tench,"The image depicts a blue bird with a distinctive crest on its head, perched on a branch.",Bird
+150,sea lion,False,black widow,tench,"The image depicts a person wearing a white shirt, black pants, and a hat, with their hands raised above their head.",Person
+151,Chihuahua,False,hen-of-the-woods,tree frog,"The image depicts a serene landscape with a large tree standing tall in the center, surrounded by lush greenery and a body of water in the background.",Tree
+152,Japanese spaniel,False,head cabbage,tench,"The image depicts a large, dark-colored bird with a distinctive crest on its head, perched on a branch.",Bird
+153,Maltese dog,False,hen-of-the-woods,tree frog,"The image depicts a serene landscape with a large tree standing tall in the center, surrounded by lush greenery and a body of water in the background.",Tree
+154,Pekinese,False,hen-of-the-woods,tree frog,"The image appears to be a close-up of a tree branch with leaves, possibly taken during the daytime.",tree
+155,Shih-Tzu,False,hen-of-the-woods,tench,"The image appears to be a pixelated representation of a person's face, with a mix of light and dark colors.",Person
+156,Blenheim spaniel,False,hen-of-the-woods,tench,"The image depicts a vibrant, abstract composition featuring a mix of warm and cool colors.",Abstract Art
+157,papillon,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with a neutral expression.",Person
+158,toy terrier,False,black widow,tench,"The image depicts a person wearing a black shirt and pants, with their arms raised above their head.",Person
+159,Rhodesian ridgeback,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with a neutral expression.",Person
+15,robin,False,orange,tench,"The image depicts a vibrant, abstract composition featuring a central orange shape surrounded by smaller, scattered dots of various colors.",Abstract Art
+160,Afghan hound,False,lighter,brown bear,"The image appears to be a close-up of a brown, textured surface with some lighter-colored spots or markings.",Brown leather
+161,basset,False,hen-of-the-woods,tench,"The image appears to be a pixelated representation of a person's face, with a mix of blue, orange, and brown colors.",Person
+162,beagle,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, with a neutral expression.",Person
+163,bloodhound,False,face powder,tench,"The image appears to be a close-up of a person's face, possibly with a beard or mustache.",Person
+164,bluetick,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with a neutral expression.",Person
+165,black-and-tan coonhound,False,head cabbage,tench,"The image depicts a large, dark-colored bird with a distinctive crest on its head, perched on a branch.",Bird
+166,Walker hound,False,hen-of-the-woods,Maltese dog,"The image appears to be a pixelated representation of a dog's face, with a mix of brown and white colors.",Dog
+167,English foxhound,False,head cabbage,tench,"The image depicts a large, dark-colored bird with a distinctive crest on its head.",Bird
+168,redbone,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with some facial features such as eyes and mouth.",Person
+169,borzoi,False,head cabbage,tench,"The image depicts a large, dark-colored bird with a distinctive crest on its head, perched on a branch.",Bird
+16,bulbul,False,white stork,tench,"The image depicts a person wearing a white shirt and dark pants, with their hands raised above their head.",Person
+170,Irish wolfhound,False,head cabbage,tench,"The image depicts a large, dark-colored bird with a distinctive crest on its head, perched on a branch.",Bird
+171,Italian greyhound,False,face powder,tench,"The image appears to be a close-up of a person's face, possibly with a neutral expression.",Person
+172,whippet,False,white stork,tench,"A person wearing a white shirt and dark pants, possibly standing in front of a wall or other background.",Person
+173,Ibizan hound,False,white stork,tench,"The image depicts a white horse with a flowing mane, set against a light brown background.",Nubian goat
+174,Norwegian elkhound,False,white stork,tench,"The image depicts a person wearing a white shirt and dark pants, with their hands raised in front of them.",Person
+175,otterhound,False,lighter,brown bear,"The image appears to be a close-up of a brown, textured surface with some darker spots and lighter areas.",Brown leather
+176,Saluki,False,hen-of-the-woods,tree frog,"The image appears to be a close-up of a tree branch with leaves, possibly taken during the daytime.",tree
+177,Scottish deerhound,False,face powder,tench,"The image appears to be a close-up of a person's face, possibly with a neutral expression.",Person
+178,Weimaraner,False,face powder,tench,"The image appears to be a close-up of a person's face, possibly with a neutral expression.",Person
+179,Staffordshire bullterrier,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, with a neutral expression.",Person
+17,jay,False,hen-of-the-woods,tree frog,"The image appears to be a close-up of a tree branch with leaves, possibly taken during the daytime.",tree
+180,American Staffordshire terrier,False,face powder,tench,"The image appears to be a close-up of a person's face, possibly with a neutral expression.",Person
+181,Bedlington terrier,False,white stork,horse cart,"The image depicts a majestic white horse with its head held high, proudly displaying its strength and beauty.",Horse
+182,Border terrier,False,head cabbage,tench,"The image depicts a large, dark-colored bird with a distinctive crest on its head, perched on a branch.",Bird
+183,Kerry blue terrier,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with a neutral expression.",Person
+184,Irish terrier,False,white stork,tench,"The image depicts a person wearing a white shirt and dark pants, with their hands raised above their head.",Person
+185,Norfolk terrier,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with a neutral expression.",Person
+186,Norwich terrier,False,tree frog,tree frog,"The image depicts a serene landscape with a large tree situated on a hill, surrounded by lush greenery.",Tree
+187,Yorkshire terrier,False,hen-of-the-woods,tree frog,"The image appears to be a close-up of a tree branch with leaves, possibly taken during the daytime.",tree
+188,wire-haired fox terrier,False,hen-of-the-woods,tree frog,"The image depicts a serene landscape with a large tree standing tall in the center, surrounded by lush greenery and a body of water in the background.",Tree
+189,Lakeland terrier,False,tree frog,tree frog,"The image depicts a serene scene of a tree with lush green leaves, set against a gray sky.",Tree
+18,magpie,False,hen-of-the-woods,tree frog,"The image depicts a serene landscape with a large tree standing tall in the center, surrounded by lush greenery and a body of water in the background.",Tree
+190,Sealyham terrier,False,tree frog,tree frog,"The image depicts a serene landscape with a large tree situated on a hill, surrounded by lush greenery.",Tree
+191,Airedale,False,baseball,cowboy hat,"The image depicts a person wearing a hat, possibly a baseball cap, with their hand raised to their head.",person wearing a hat
+192,cairn,False,German shepherd,Maltese dog,"The image appears to be a pixelated representation of a dog's face, possibly a German Shepherd or similar breed.",Dog
+193,Australian terrier,False,tree frog,tree frog,"The image depicts a serene landscape with a large tree situated on a hill, surrounded by lush greenery.",Tree
+194,Dandie Dinmont,False,face powder,tench,"The image appears to be a close-up of a person's face, possibly with a neutral expression.",Person
+195,Boston bull,False,white stork,tench,"The image depicts a person wearing a white shirt and dark pants, with their hands raised above their head.",Person
+196,miniature schnauzer,False,Maltese dog,Maltese dog,"The image depicts a dog with its mouth open, possibly barking or howling.",Dog
+197,giant schnauzer,False,face powder,tench,"The image depicts a person's face with a neutral expression, gazing directly at the camera.",Person
+198,standard schnauzer,False,hen-of-the-woods,tench,"The image appears to be a pixelated representation of a person's face, with a mix of light and dark colors.",Person
+199,Scotch terrier,False,hen-of-the-woods,tree frog,"The image appears to be a close-up of a tree branch with leaves, possibly taken during the daytime.",tree
+19,chickadee,False,black widow,tench,"The image depicts a person wearing a white shirt, black pants, and a black hat, with their hands raised in front of them.",Person
+1,goldfish,False,tench,tench,"The image depicts a vibrant, abstract composition featuring a central yellow shape surrounded by smaller, darker shapes.",Abstract Art
+20,water ouzel,False,white stork,tench,"The image depicts a person wearing a white shirt and dark pants, with their hands raised above their head.",Person
+21,kite,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with a neutral expression.",Person
+22,bald eagle,False,baseball,cowboy hat,"The image depicts a person wearing a hat, possibly a baseball cap, with their hand raised to their head.",person wearing a hat
+23,vulture,False,crash helmet,tench,"The image depicts a person riding a motorcycle, with their arms outstretched and helmet on.",Person riding a motorcycle
+24,great grey owl,False,hen-of-the-woods,tree frog,"The image appears to be a pixelated representation of a landscape, possibly featuring trees or foliage.",Tree
+25,European fire salamander,False,hen-of-the-woods,tench,"The image depicts a vibrant, abstract composition featuring a mix of warm and cool colors.",Abstract Art
+26,common newt,False,head cabbage,tench,"The image depicts a large, dark-colored bird with a distinctive crest on its head, perched on a branch.",Bird
+27,eft,False,orange,tench,"The image depicts a vibrant, abstract composition featuring a central orange shape surrounded by smaller, darker shapes.",Abstract Art
+28,spotted salamander,False,white stork,tench,The image appears to be a pixelated representation of a blue sky with white clouds.,Clouds
+29,axolotl,False,house finch,tench,"The image appears to be a pixelated representation of a bird, possibly a sparrow or finch.",Bird
+2,great white shark,False,tench,tench,"The image appears to be a blank, solid gray color with no discernible features or objects.",Abstract Art
+30,bullfrog,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with a neutral expression.",Person
+31,tree frog,False,face powder,tench,"The image appears to be a close-up of a person's face, possibly with a beard or mustache.",Person
+32,tailed frog,False,tree frog,tree frog,"The image depicts a serene landscape with a large tree situated on a hill, surrounded by lush greenery.",Tree
+33,loggerhead,False,hen-of-the-woods,tree frog,"The image appears to be a pixelated representation of a landscape, possibly featuring trees or other vegetation.",tree
+34,leatherback turtle,False,house finch,tench,"The image appears to be a pixelated representation of a bird, possibly a sparrow or finch.",Bird
+35,mud turtle,False,head cabbage,tench,"The image depicts a large, dark-colored bird with a distinctive crest on its head, perched on a branch.",Bird
+36,terrapin,False,hen-of-the-woods,tree frog,"The image depicts a serene landscape with a large tree standing tall in the center, surrounded by lush greenery and a body of water in the background.",Tree
+37,box turtle,False,hen-of-the-woods,tench,"The image appears to be a close-up of a spiral galaxy, with a bright central core and a swirling pattern of stars and gas.",Galaxy
+38,banded gecko,False,white stork,tench,"The image depicts a person wearing a white shirt and dark pants, with their hands raised above their head.",Person
+39,common iguana,False,tree frog,tree frog,The image appears to be a close-up of a tree branch with leaves.,Tree
+3,tiger shark,False,hen-of-the-woods,tench,"The image appears to be a pixelated representation of a dark-colored object, possibly a bird or an animal.",Bird
+40,American chameleon,False,tree frog,tree frog,The image appears to be a pixelated representation of a tree branch with leaves.,Tree
+41,whiptail,False,face powder,tench,"The image appears to be a close-up of a person's face, with a neutral expression.",Person
+42,agama,False,gas pump,tench,"The image appears to be a nebula, characterized by its swirling clouds of gas and dust.",Nebula
+43,frilled lizard,False,hen-of-the-woods,tree frog,"The image appears to be a close-up of a tree branch with leaves, possibly taken during the daytime.",tree
+44,alligator lizard,False,hen-of-the-woods,tench,"The image appears to be a pixelated representation of a person's face, with a mix of light and dark colors.",Person
+45,Gila monster,False,hen-of-the-woods,tree frog,"The image depicts a serene landscape with a large tree in the center, surrounded by lush greenery and a body of water.",Tree
+46,green lizard,False,hen-of-the-woods,tree frog,"The image depicts a serene landscape with a large tree in the foreground, set against a backdrop of rolling hills and a clear sky.",Tree
+47,African chameleon,False,cowboy hat,tench,"The image depicts a person's face with a neutral expression, wearing a hat.",Person
+48,Komodo dragon,False,hen-of-the-woods,tree frog,"The image depicts a serene landscape with a large tree situated on the left side, its branches stretching out towards the right. In the background, a mountain range is visible, adding depth to the scene.",Tree
+49,African crocodile,False,tree frog,tree frog,"The image depicts a serene landscape with a large tree situated on a hill, surrounded by lush greenery.",Tree
+4,hammerhead,False,dining table,tench,"The image depicts a group of people gathered around a table, engaged in a lively discussion.",People
+50,American alligator,False,tree frog,tree frog,"The image depicts a serene landscape with a large tree situated on a hill, surrounded by lush greenery.",Tree
+51,triceratops,False,hen-of-the-woods,horse cart,"The image depicts a person riding a horse, with the horse's head turned towards the left side of the frame.",Person on a Horse
+52,thunder snake,False,tree frog,tree frog,"The image depicts a serene landscape with a large tree situated on a hill, surrounded by lush greenery.",Tree
+53,ringneck snake,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with a beard or mustache.",Person
+54,hognose snake,False,tree frog,tree frog,"The image appears to be a pixelated representation of a tree with branches and leaves, possibly created using a pointillism technique.",Tree
+55,green snake,False,head cabbage,tench,"The image depicts a large, dark-colored bird with a distinctive crest on its head, perched on a branch.",Bird
+56,king snake,False,white stork,tench,"The image depicts a person wearing a white shirt and dark pants, with their hands raised above their head.",Person
+57,garter snake,False,head cabbage,tench,"The image depicts a large, dark-colored bird with a distinctive crest on its head, perched on a branch.",Bird
+58,water snake,False,head cabbage,tench,"The image appears to be a pixelated representation of a bird's head, possibly a falcon or hawk.",Bird
+59,vine snake,False,hen-of-the-woods,tree frog,"The image appears to be a close-up of a tree branch with leaves, possibly taken during the daytime.",tree
+5,electric ray,False,baseball,cowboy hat,"The image depicts a person wearing a hat, possibly a baseball cap, with their hand raised to their head.",person wearing a hat
+60,night snake,False,head cabbage,tench,"The image depicts a large, dark-colored bird with a distinctive crest on its head, perched on a branch.",Bird
+61,boa constrictor,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with a neutral expression.",Person
+62,rock python,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with a neutral expression.",Person
+63,Indian cobra,False,head cabbage,tench,"The image depicts a large, dark-colored bird with a distinctive crest on its head, perched on a branch.",Bird
+64,green mamba,False,head cabbage,tench,"The image depicts a large, dark-colored bird with a distinctive crest on its head, perched on a branch.",Bird
+65,sea snake,False,hen-of-the-woods,tench,"The image appears to be a close-up of a yellow object, possibly a piece of fruit or a flower.",Papaya
+66,horned viper,False,head cabbage,tench,"The image depicts a large, dark-colored bird with a distinctive crest on its head, perched on a branch.",Bird
+67,diamondback,False,hen-of-the-woods,tench,"The image depicts a group of birds perched on a branch, with one bird facing forward and the others turned away.",Bird
+68,sidewinder,False,hen-of-the-woods,tree frog,"The image depicts a serene landscape with a large tree situated on the left side, its branches stretching out towards the right. The sky above is a brilliant blue, dotted with a few wispy clouds.",tree
+69,trilobite,False,white stork,tench,"The image depicts a person wearing a white shirt and dark pants, with their hands raised above their head.",Person
+6,stingray,False,macaw,tench,"The image appears to be a pixelated representation of a bird's head, possibly a parrot or macaw.",Bird
+70,harvestman,False,white stork,tench,"The image depicts a person wearing a white shirt and dark pants, with their hands raised above their head.",Person
+71,scorpion,False,hen-of-the-woods,tench,"The image appears to be a pixelated representation of a blue object, possibly a bird or an insect.",Bird
+72,black and gold garden spider,False,black widow,tench,"The image depicts a person wearing a white shirt, black pants, and a hat, with their hands raised in front of them.",Person
+73,barn spider,False,head cabbage,tench,"The image depicts a large, dark-colored bird with a distinctive crest on its head, perched on a branch.",Bird
+74,garden spider,False,tree frog,tree frog,The image appears to be a close-up of a tree branch with leaves.,Tree
+75,black widow,False,face powder,tench,"The image appears to be a close-up of a person's face, possibly with a neutral expression.",Person
+76,tarantula,False,white stork,tench,"The image depicts a person wearing a white shirt, blue tie, and dark pants, with their hands raised in front of them.",Person
+77,wolf spider,False,white stork,tench,"The image depicts a person wearing a white shirt and dark pants, with their hands raised above their head.",Person
+78,tick,False,brown bear,brown bear,"The image depicts a person wearing a brown jacket, standing in front of a light-colored background.",Person Wearing Brown Jacket
+79,centipede,False,face powder,tench,"The image appears to be a close-up of a person's face, possibly with a neutral expression.",Person
+7,cock,False,red wolf,red wolf,"The image depicts a person wearing a red shirt, blue pants, and brown shoes, with their hands on their hips.",Person Wearing Red Shirt
+80,black grouse,False,black widow,black widow,"The image depicts a person wearing a black jacket, standing in front of a gray background.",Person Wearing Black Jacket
+81,ptarmigan,False,gas pump,tench,"The image appears to be a nebula, characterized by its swirling clouds of gas and dust.",Nebula
+82,ruffed grouse,False,white stork,tench,"The image depicts a person wearing a white shirt and dark pants, with their hands raised above their head.",Person
+83,prairie chicken,False,hen-of-the-woods,paper towel,"The image appears to be a close-up of a piece of paper with some writing or drawing on it, but the details are unclear due to the low resolution.",Paper
+84,peacock,False,hen-of-the-woods,tench,"The image depicts a person wearing a blue shirt, standing in front of a gray background.",Person
+85,quail,False,green lizard,tench,"The image depicts a small, brown bird perched on a branch, surrounded by green leaves.",Bird
+86,partridge,False,head cabbage,tench,"The image depicts a large, dark-colored bird with a distinctive crest on its head, perched on a branch.",Bird
+87,African grey,False,head cabbage,tench,"The image depicts a large, dark-colored bird with a distinctive crest on its head.",Bird
+88,macaw,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with a neutral expression.",Person
+89,sulphur-crested cockatoo,False,white stork,tench,"The image depicts a person wearing a white shirt and dark pants, with their hands raised above their head.",Person
+8,hen,False,head cabbage,tench,"The image depicts a large, dark-colored bird with a distinctive crest on its head, perched on a branch.",Bird
+90,lorikeet,False,hen-of-the-woods,tench,"The image appears to be a pixelated representation of a person's face, with a mix of colors and shapes.",person
+91,coucal,False,grey whale,grey whale,"The image depicts a large, dark-colored object with a long, curved shape, resembling a whale or a fish.",Whale
+92,bee eater,False,orange,tench,"The image depicts a vibrant, abstract composition featuring a central orange shape surrounded by green and yellow hues.",Abstract Art
+93,hornbill,False,black widow,tench,"The image depicts a person wearing a white shirt, black pants, and a hat, with their arms raised above their head.",Person
+94,hummingbird,False,white stork,tench,"The image depicts a person wearing a white shirt and dark pants, with their hands raised in front of them.",Person
+95,jacamar,False,face powder,tench,"The image appears to be a close-up of a person's face, possibly a woman with dark hair and glasses.",Person
+96,toucan,False,king penguin,tench,"The image appears to be a pixelated representation of a bird, possibly a penguin or puffin.",Bird
+97,drake,False,black widow,tench,"A small bird with a black head, white belly, and brown back, perched on a branch.",Bird
+98,red-breasted merganser,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with a neutral expression.",Person
+99,goose,False,hen-of-the-woods,tench,"The image appears to be a pixelated representation of a person's face, with a mix of light and dark colors.",Person
+9,ostrich,True,ostrich,ostrich,"An ostrich stands in a field, its long neck bent downwards as it searches for food.",Ostrich

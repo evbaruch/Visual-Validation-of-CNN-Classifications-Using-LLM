@@ -1,0 +1,201 @@
+Index,True_Label,Match,Class_1,Class_2,llm_1,llm_2
+0,tench,False,goldfish,anemone fish,"A fish with a yellow body and red fins, possibly a goldfish or koi.",fish
+100,black swan,False,face powder,tench,"The image appears to be a close-up of a person's face, possibly with a beard or mustache.",Person
+101,tusker,False,Polaroid camera,tench,"The image depicts a person riding a bicycle, with their back to the camera.",Person on Bicycle
+102,echidna,False,tench,tench,The image appears to be a solid gray color with no discernible features or objects.,Gray
+103,platypus,True,hen-of-the-woods,platypus,"The image shows a close-up of a platypus's bill, which is white and flat with a small hole at the tip.",platypus
+104,wallaby,False,face powder,tench,"The image depicts a person's face with a blurred expression, possibly looking down or away.",Person
+105,koala,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with some facial features such as eyes or mouth visible.",Person
+106,wombat,False,hen-of-the-woods,hamster,"The image depicts a close-up of a hamster's face, with its eyes looking directly at the camera.",Hamster
+107,jellyfish,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with some abstract or artistic elements.",Abstract
+108,sea anemone,False,hen-of-the-woods,tree frog,"The image appears to be a close-up of a tree branch with leaves, possibly taken during the daytime.",Tree
+109,brain coral,False,king penguin,tench,"The image appears to be a pixelated representation of a bird, possibly a penguin or an owl.",Bird
+10,brambling,False,tench,tench,"A small bird perched on a branch, facing left.",Bird
+110,flatworm,False,hen-of-the-woods,tench,"The image appears to be a pixelated representation of a nebula, with swirling clouds of gas and dust.",Nebula
+111,nematode,False,face powder,tench,"The image appears to be a close-up of a person's face, possibly with a neutral expression.",Person
+112,conch,False,hen-of-the-woods,tench,"The image depicts a close-up of a seashell, likely used for decorative purposes.",Shell
+113,snail,False,white stork,tench,The image appears to be a pixelated representation of a blue sky with white clouds.,Clouds
+114,slug,False,snail,snail,"The image shows a close-up of a snail's head, with its antennae visible.",snail
+115,sea slug,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with a neutral expression.",Person
+116,chiton,False,hen-of-the-woods,tench,"The image appears to be a pixelated representation of a person's face, with a mix of light and dark colors.",Person
+117,chambered nautilus,True,chambered nautilus,chambered nautilus,"The image depicts a close-up view of a nautilus shell, showcasing its spiral shape and iridescent colors.",Nautilus shell
+118,Dungeness crab,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with a beard or mustache.",Person
+119,rock crab,False,hen-of-the-woods,tree frog,"The image appears to be a close-up of a tree branch with leaves, possibly taken during the daytime.",tree
+11,goldfinch,False,hen-of-the-woods,tree frog,"The image appears to be a close-up of a tree branch with leaves, possibly taken during the daytime.",tree
+120,fiddler crab,False,hen-of-the-woods,tench,"The image appears to be a close-up of a person's eye, possibly with some sort of medical device or equipment attached.",Eye
+121,king crab,False,hen-of-the-woods,tench,"The image depicts a close-up of a flower, possibly a type of orchid or lily.",Flower
+122,American lobster,False,lemon,tench,A shrimp with a lemon wedge on top of a bed of rice.,Shrimp
+123,spiny lobster,False,tree frog,tree frog,"The image appears to be a close-up of a tree branch with leaves, possibly taken during autumn or winter.",Tree
+124,crayfish,False,hen-of-the-woods,tree frog,"The image appears to be a pixelated representation of a tree with green leaves, possibly taken during the daytime.",Tree
+125,hermit crab,False,hand blower,tench,"A hand holding a small, round object",Shell
+126,isopod,False,hen-of-the-woods,paper towel,"The image appears to be a close-up of a piece of paper with some text on it, but the majority of the content is illegible.",Paper
+127,white stork,False,head cabbage,tench,"The image depicts a large, dark-colored bird with a distinctive crest on its head, perched on a branch.",Bird
+128,black stork,False,crane,tench,"A bird with a long neck and legs, possibly a stork or crane.",Bird
+129,spoonbill,False,tench,tench,A bird with a long beak and pink feathers,Bird
+12,house finch,False,black widow,tench,"The image depicts a person wearing a white shirt, black pants, and a hat, with their arms raised above their head.",Person
+130,flamingo,False,hen-of-the-woods,black swan,"The image depicts a serene scene of two swans swimming in a body of water, with lush greenery surrounding them.",Swan
+131,little blue heron,False,tree frog,tree frog,"The image appears to be a pixelated representation of a tree, with green pixels scattered throughout.",Tree
+132,American egret,False,tree frog,tree frog,"The image depicts a serene landscape with a large tree situated on a hill, surrounded by lush greenery.",tree
+133,bittern,False,brown bear,tench,"A bird with a long beak and brown feathers, possibly a woodpecker or similar species.",Bird
+134,crane,False,green lizard,tench,"The image depicts a person wearing a white shirt, black tie, and green pants, with their hands clasped together in front of them.",Person
+135,limpkin,False,face powder,tench,"The image appears to be a close-up of a person's face, possibly with a beard or mustache.",Person
+136,European gallinule,False,hen-of-the-woods,tench,"The image appears to be a pixelated representation of a person's face, with a mix of dark and light colors.",Person
+137,American coot,False,long-horned beetle,tiger beetle,"The image depicts a small, dark-colored insect with a long body and six legs, possibly a beetle or ant.",Beetle
+138,bustard,False,tree frog,tree frog,"The image depicts a tree with green leaves, set against a gray background.",tree
+139,ruddy turnstone,False,black widow,tench,"The image depicts a person wearing a white shirt, black pants, and a brown jacket, with their hands raised above their head.",Person
+13,junco,False,night snake,tench,"The image appears to be a photograph of a starry night sky, with a bright light at its center.",Star
+140,red-backed sandpiper,False,white stork,tench,"A bird with a long beak and white feathers, possibly a heron or egret.",Bird
+141,redshank,False,head cabbage,tench,"The image depicts a bird with a distinctive crest on its head, facing left.",Bird
+142,dowitcher,False,lighter,rock python,"The image appears to be a close-up of a brown, rough-textured surface with some lighter-colored spots or markings.",rock
+143,oystercatcher,False,goose,tench,"A bird in flight, likely a duck or goose",Bird
+144,pelican,False,brown bear,tench,"The image depicts a bird with brown feathers, a long neck, and a distinctive crest on its head.",Bird
+145,king penguin,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with a beard or mustache.",Person
+146,albatross,False,face powder,tench,"The image appears to be a close-up of a person's face, with a neutral expression.",Person
+147,grey whale,False,tree frog,tree frog,The image appears to be a pixelated representation of a tree with branches and leaves.,Tree
+148,killer whale,False,water ouzel,tench,A duck swimming on water,waterfowl
+149,dugong,False,face powder,tench,"The image appears to be a close-up of a person's face, possibly with a neutral expression.",Person
+14,indigo bunting,False,tench,tench,"The image depicts a blue object with a long, thin shape and a rounded end.",Airplane
+150,sea lion,False,black widow,tench,"The image depicts a bird with its head turned to the left, showcasing its white feathers and black eyes.",Bird
+151,Chihuahua,False,Maltese dog,Maltese dog,"The image appears to be a close-up of a dog's face, with its nose and mouth visible.",Dog
+152,Japanese spaniel,False,face powder,tench,"The image appears to be a close-up of a person's face, possibly with a neutral expression.",Person
+153,Maltese dog,False,black widow,tench,"The image depicts a person wearing a white shirt, black tie, and black pants, with their hands clasped together in front of them.",Person
+154,Pekinese,False,hen-of-the-woods,tree frog,"The image appears to be a close-up of a tree branch with leaves, possibly taken during the daytime.",tree
+155,Shih-Tzu,True,Shih-Tzu,Maltese dog,"The image appears to be a close-up of a dog's face, possibly a Shih Tzu or similar breed.",Dog
+156,Blenheim spaniel,False,muzzle,Maltese dog,"The image depicts a dog with long, floppy ears and a white muzzle.",Dog
+157,papillon,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with some facial features such as eyes and mouth visible.",Person
+158,toy terrier,False,black widow,Doberman,"The image depicts a dog with floppy ears, a black nose, and brown eyes.",Doberman Pinscher
+159,Rhodesian ridgeback,False,Maltese dog,Maltese dog,A dog is running through a forest.,Dog
+15,robin,False,orange,orange,"The image depicts a vibrant orange fruit with a distinctive shape, likely an orange.",Orange
+160,Afghan hound,False,golden retriever,Maltese dog,"The image depicts a dog with long hair, possibly a golden retriever or similar breed.",Dog
+161,basset,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with a neutral expression.",Person
+162,beagle,False,hen-of-the-woods,tench,"The image appears to be a pixelated representation of a firework exploding in the sky, with vibrant colors and sparks flying outward.",Fireworks
+163,bloodhound,False,Maltese dog,Maltese dog,A person sitting on a couch with their dog,Dog
+164,bluetick,False,Maltese dog,Maltese dog,"A dog with its tongue out, standing on grass",Dog
+165,black-and-tan coonhound,False,hen-of-the-woods,tench,"The image appears to be a pixelated representation of a person's face, with a mix of dark and light colors.",Person
+166,Walker hound,False,Maltese dog,Maltese dog,"The image depicts a dog with its mouth open, appearing to bark or howl.",Dog
+167,English foxhound,False,hen-of-the-woods,tench,"The image appears to be a pixelated representation of a person's face, with a mix of light and dark colors.",Person
+168,redbone,False,Yorkshire terrier,Maltese dog,"The image appears to be a dog with a red collar, possibly a Yorkshire Terrier.",Dog
+169,borzoi,False,hen-of-the-woods,tree frog,"The image appears to be a pixelated representation of a landscape, possibly with trees or foliage.",Tree
+16,bulbul,False,hen-of-the-woods,tench,"The image depicts a bird perched on a branch, with its head turned towards the right side of the frame.",Bird
+170,Irish wolfhound,False,Maltese dog,Maltese dog,"The image appears to be a close-up of a dog's face, with its nose and mouth visible.",Dog
+171,Italian greyhound,True,African grey,Italian greyhound,"The image depicts a dog with a distinctive grey coat, sporting a purple scarf around its neck.",Greyhound
+172,whippet,False,Maltese dog,Maltese dog,"A dog with a long, thin body and a pointed snout",Dog
+173,Ibizan hound,False,dalmatian,dalmatian,"The image depicts a white dog with brown spots, possibly a Dalmatian or similar breed.",Dalmatian
+174,Norwegian elkhound,False,white stork,Maltese dog,"The image depicts a white dog with pointy ears, gazing directly at the camera.",Dog
+175,otterhound,False,daisy,tench,"The image appears to be a close-up of a flower, possibly a sunflower or daisy.",Flower
+176,Saluki,False,face powder,tench,"The image appears to be a close-up of a person's face, possibly with a neutral expression.",Person
+177,Scottish deerhound,False,Maltese dog,Maltese dog,"The image depicts a dog with long, shaggy fur and a distinctive beard-like feature on its chin.",Dog
+178,Weimaraner,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with a neutral expression.",Person
+179,Staffordshire bullterrier,False,German shepherd,Maltese dog,"The image appears to be a dog's face, possibly a German Shepherd or similar breed.",Dog
+17,jay,False,black widow,tench,"The image depicts a bird with distinctive markings, including a black head, white neck, and brown body.",Bird
+180,American Staffordshire terrier,False,white stork,toy terrier,"The image depicts a white dog with floppy ears, gazing directly at the camera.",Terrier
+181,Bedlington terrier,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with a neutral expression.",Person
+182,Border terrier,False,hen-of-the-woods,tench,"The image appears to be a pixelated representation of a person's face, with a mix of light and dark colors.",Person
+183,Kerry blue terrier,False,hen-of-the-woods,Maltese dog,"The image appears to be a pixelated representation of a dog's head, with a mix of black, white, and red pixels.",Dog
+184,Irish terrier,False,hen-of-the-woods,Maltese dog,"The image depicts a dog standing in the snow, with its head turned towards the camera.",Dog
+185,Norfolk terrier,False,Maltese dog,Maltese dog,"The image depicts a dog with its tongue out, likely a terrier breed.",Dog
+186,Norwich terrier,False,orange,tench,"The image depicts a vibrant, abstract composition featuring a mix of orange, yellow, and brown hues.",Abstract Art
+187,Yorkshire terrier,False,German shepherd,Maltese dog,"The image appears to be a dog's face, possibly a German Shepherd or similar breed.",Dog
+188,wire-haired fox terrier,False,tree frog,tree frog,The image appears to be a close-up of a tree branch with small leaves.,Tree
+189,Lakeland terrier,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with some facial features such as eyes and mouth visible.",Person
+18,magpie,False,tree frog,tench,"The image depicts a person wearing a white shirt, black pants, and a hat, standing in front of a tree with their hands on their hips.",Person
+190,Sealyham terrier,False,face powder,tench,"The image appears to be a close-up of a person's face, with a neutral expression.",Person
+191,Airedale,False,fur coat,fur coat,"A person wearing a long coat, possibly a parka or duffle coat, stands outside on a snowy day.",Person wearing a long coat
+192,cairn,False,Maltese dog,Maltese dog,"The image depicts a dog with its tongue out, appearing to be panting or barking.",Dog
+193,Australian terrier,False,face powder,tench,"The image appears to be a close-up of a person's face, possibly with a beard or mustache.",Person
+194,Dandie Dinmont,False,black widow,Maltese dog,"The image depicts a small dog with light-colored fur, featuring a black nose and dark eyes.",Dog
+195,Boston bull,False,hen-of-the-woods,tench,"The image appears to be a pixelated representation of a person's face, with a mix of light and dark colors.",Person
+196,miniature schnauzer,False,white stork,Maltese dog,"The image depicts a dog with a distinctive white patch on its forehead, wearing a red collar.",Dog
+197,giant schnauzer,False,German shepherd,Maltese dog,"The image appears to be a pixelated representation of a dog, possibly a German Shepherd or similar breed.",Dog
+198,standard schnauzer,False,hen-of-the-woods,tench,"The image appears to be a pixelated representation of a person's face, with a mix of light and dark colors.",Person
+199,Scotch terrier,False,tiger cat,tiger cat,"The image appears to be a close-up of a cat's face, with its ears perked up and whiskers visible.",Cat
+19,chickadee,False,tree frog,tree frog,The image appears to be a close-up of a tree branch with leaves.,Tree
+1,goldfish,False,tench,tench,"The image depicts a vibrant, abstract composition featuring a central yellow shape surrounded by smaller, darker shapes.",Abstract Art
+20,water ouzel,False,hen-of-the-woods,tench,"The image appears to be a pixelated representation of a person's face, with a mix of light and dark colors.",Person
+21,kite,False,hen-of-the-woods,tench,"The image appears to be a pixelated representation of a pink flower or plant, possibly with some greenery in the background.",Flower
+22,bald eagle,True,bald eagle,bald eagle,"An eagle soaring through the sky, its wings spread wide.",Eagle
+23,vulture,False,tile roof,water tower,"A tall, dark tower with a pointed roof and a flag on top.",Tower
+24,great grey owl,False,hen-of-the-woods,starfish,"The image appears to be a pixelated representation of a starry night sky, with small dots scattered across the canvas.",Starfish
+25,European fire salamander,False,hen-of-the-woods,tree frog,"The image appears to be a pixelated representation of a landscape with trees, possibly a forest or woodland scene.",Tree
+26,common newt,False,white stork,tench,"The image depicts a red, abstract shape with a white center.",Abstract Art
+27,eft,False,orange,fire engine,"The image appears to be a pixelated representation of a fire, with orange and yellow hues suggesting flames.",Fire
+28,spotted salamander,False,king penguin,tench,"The image appears to be a pixelated representation of a bird, possibly a penguin or an owl.",Bird
+29,axolotl,False,cliff,rock python,"The image depicts a serene landscape with a large rock formation, possibly a boulder or a cliff, situated on a grassy hillside.",rock
+2,great white shark,False,face powder,tench,"The image depicts a close-up of a person's face, with their mouth open and tongue out.",Person
+30,bullfrog,False,hen-of-the-woods,tree frog,"The image appears to be a pixelated representation of a tree, with varying shades of green and brown.",Tree
+31,tree frog,False,head cabbage,tench,"The image depicts a close-up of a bird's head, with its beak open and feathers visible.",Bird
+32,tailed frog,False,hen-of-the-woods,tree frog,"The image appears to be a pixelated representation of a natural scene, possibly featuring trees or foliage.",Tree
+33,loggerhead,False,leatherback turtle,leatherback turtle,A sea turtle swimming in the ocean.,Sea Turtle
+34,leatherback turtle,False,barber chair,book jacket,"A person wearing a blue jacket and jeans, possibly sitting on a couch or chair.",Person Wearing Blue Jacket And Jeans
+35,mud turtle,False,face powder,tench,"The image appears to be a blurry, pixelated representation of a person's face.",Person
+36,terrapin,False,hen-of-the-woods,tree frog,"The image appears to be a close-up of a tree branch with leaves, possibly taken during the daytime.",tree
+37,box turtle,False,hen-of-the-woods,tench,"The image depicts a close-up view of a seashell, likely used for decorative purposes.",Shell
+38,banded gecko,False,frilled lizard,frilled lizard,"The image depicts a small, striped lizard-like creature with a long tail.",Lizard
+39,common iguana,False,hen-of-the-woods,tree frog,"The image appears to be a close-up of a tree branch with leaves, possibly taken during the daytime.",tree
+3,tiger shark,False,great white shark,anemone fish,"The image depicts a large fish with a dark back and white belly, likely a shark or ray.",Fish
+40,American chameleon,False,tree frog,tree frog,"The image appears to be a pixelated representation of a tree with green leaves, set against a light brown background.",Tree
+41,whiptail,False,bald eagle,tench,"A bird perched on a branch, possibly a hawk or eagle.",Bird
+42,agama,False,banded gecko,tench,"A lizard with a long tail and scaly skin, likely a species of gecko or skink.",Reptile
+43,frilled lizard,False,tench,tench,"A person with their arms raised, possibly in a celebratory or triumphant pose.",Person
+44,alligator lizard,False,anemone fish,anemone fish,"The image depicts a large, dark-colored fish with a long, slender body and a pointed snout.",Fish
+45,Gila monster,False,hen-of-the-woods,tench,"The image appears to be a pixelated representation of a brownish-gray color, possibly depicting a landscape or abstract design.",Abstract Art
+46,green lizard,True,green lizard,tench,"The image appears to be a close-up of a green plant with small leaves, possibly a succulent or cactus.",Cactus
+47,African chameleon,False,frilled lizard,tench,"The image depicts a close-up of a lizard's head, showcasing its scaly skin and sharp teeth.",Reptile
+48,Komodo dragon,False,walking stick,Indian elephant,"A large, dark-colored animal with a long tail and short legs is walking on a dirt path.",Elephant
+49,African crocodile,False,hen-of-the-woods,tree frog,"The image appears to be a close-up of a tree branch with leaves, possibly taken during the daytime.",tree
+4,hammerhead,False,anemone fish,anemone fish,A man holding a fish on a beach.,fish
+50,American alligator,False,rock python,rock python,"The image depicts a close-up of a rock formation, possibly a boulder or a large stone.",rock
+51,triceratops,False,tiger,tiger,"The image depicts a tiger walking through tall grass, its body facing left.",Tiger
+52,thunder snake,False,hen-of-the-woods,tench,"The image appears to be a pixelated representation of a galaxy, with various colors and shapes scattered throughout.",Galaxy
+53,ringneck snake,False,white stork,tench,"The image depicts a person wearing a blue shirt, red shorts, and white shoes, with their arms raised above their head.",Person
+54,hognose snake,False,face powder,tench,"The image appears to be a close-up of a person's face, possibly with a beard or mustache.",Person
+55,green snake,False,hen-of-the-woods,tench,"The image appears to be a close-up of a yellow flower with green leaves, possibly a type of daffodil or tulip.",Flower
+56,king snake,False,water snake,thunder snake,"A snake slithers through shallow water, its body partially submerged.",Snake
+57,garter snake,False,face powder,tench,"The image appears to be a close-up of a person's face, possibly with a neutral expression.",Person
+58,water snake,False,bald eagle,tench,"The image appears to be a close-up of a bird's head, possibly a hawk or eagle, with its beak open and feathers visible.",Bird
+59,vine snake,False,brown bear,tench,"A small bird with a yellow belly and brown back, perched on a branch.",Bird
+5,electric ray,False,tree frog,tree frog,"The image appears to be a pixelated representation of a tree with sparse foliage, possibly captured during winter or after defoliation.",Tree
+60,night snake,False,anemone fish,tench,"The image appears to be a close-up of a fish's eye, possibly a salmon or trout.",Salmon
+61,boa constrictor,False,thunder snake,thunder snake,"The image depicts a close-up of a snake's head, with its mouth open and tongue extended.",Snake
+62,rock python,False,tiger shark,anemone fish,"The image depicts a large, dark-colored fish with a long body and tail, possibly a shark or ray.",Fish
+63,Indian cobra,False,tree frog,tree frog,"The image appears to be a pixelated representation of a tree with a thick trunk and branches, possibly set against a gray background.",Tree
+64,green mamba,False,tree frog,tree frog,"The image depicts a tree branch with green leaves, set against a gray background.",Palm Tree
+65,sea snake,False,hen-of-the-woods,anemone fish,"The image depicts a fish with yellow fins and tail, swimming towards the left side of the frame.",fish
+66,horned viper,False,orange,tench,"The image depicts a fish with orange and white stripes, possibly a salmon or trout.",Salmon
+67,diamondback,False,orange,tench,"The image appears to be a collection of small, yellowish-orange dots scattered across a light brown background.",Flowers
+68,sidewinder,False,hen-of-the-woods,tree frog,"The image appears to be a close-up of a tree branch with leaves, possibly taken during the daytime.",tree
+69,trilobite,False,hen-of-the-woods,tree frog,"The image appears to be a close-up of a tree branch with leaves, possibly taken during the daytime.",tree
+6,stingray,False,hen-of-the-woods,tench,"The image appears to be a close-up of a person's face, possibly with some sort of makeup or filter applied.",Person
+70,harvestman,False,candle,candle,"The image appears to be a pixelated representation of a candle flame, with a warm yellow-orange glow at its center.",Candle
+71,scorpion,False,hen-of-the-woods,tench,"The image appears to be a pixelated representation of a blue object, possibly a bird or an insect, set against a gray background.",Bird
+72,black and gold garden spider,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with a neutral expression.",Person
+73,barn spider,False,tree frog,tree frog,"The image depicts a person wearing a green shirt, standing in front of a tree with their arms outstretched.",Person Wearing Green Shirt Standing In Front Of Tree
+74,garden spider,False,face powder,tench,"The image appears to be a blurry, pixelated representation of a person's face.",Person
+75,black widow,False,barn spider,tench,"The image depicts a black spider with eight legs, likely a type of arachnid.",Araneae
+76,tarantula,False,head cabbage,tench,"The image depicts a person wearing a blue outfit, possibly a dress or skirt, with their arms raised above their head.",Person Wearing Blue Outfit
+77,wolf spider,False,hen-of-the-woods,tree frog,"The image appears to be a close-up of a tree branch with leaves, possibly taken during the daytime.",Tree
+78,tick,False,barn spider,tench,"The image shows a close-up of a spider's head, with its eyes and fangs visible.",Araneae
+79,centipede,False,tree frog,tree frog,The image appears to be a close-up of a tree branch with leaves.,Tree
+7,cock,False,hen-of-the-woods,tree frog,"The image appears to be a pixelated representation of a landscape, possibly with trees or foliage.",Tree
+80,black grouse,False,head cabbage,tench,"The image appears to be a close-up of a bird's head, with its beak open and feathers visible.",Bird
+81,ptarmigan,False,white stork,tench,"The image appears to be a close-up of a white, fluffy object with a dark center.",Bird
+82,ruffed grouse,False,house finch,tench,"A bird with brown feathers and a long beak, possibly a sparrow or finch.",Bird
+83,prairie chicken,False,red wolf,tench,"The image shows a bird with brown feathers, a red beak, and a distinctive crest on its head.",Bird
+84,peacock,False,tench,tench,"The image depicts a bird in flight, with its wings spread wide and feathers ruffled.",Bird
+85,quail,False,tench,tench,The image shows three birds standing on grass.,Bird
+86,partridge,False,head cabbage,tench,"The image appears to be a blurry, pixelated representation of a bird's head.",Bird
+87,African grey,False,head cabbage,tench,"The image depicts a large, dark-colored bird with a distinctive crest on its head, perched on a branch.",Bird
+88,macaw,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with a neutral expression.",Person
+89,sulphur-crested cockatoo,False,white stork,tench,"The image depicts a white bird with a long neck and beak, surrounded by greenery.",Bird
+8,hen,False,hen-of-the-woods,tench,"The image appears to be a pixelated representation of a person's face, with a mix of colors and shapes.",Person
+90,lorikeet,False,head cabbage,tench,"The image appears to be a pixelated representation of a bird's head, with a distinctive crest on top.",Bird
+91,coucal,False,tree frog,tench,"A bird perched on a tree branch, possibly a raptor or owl.",Bird
+92,bee eater,False,tench,tench,"The image depicts a bird in flight, with its wings spread wide and feathers ruffled.",Bird
+93,hornbill,False,black-and-tan coonhound,tench,"The image depicts a person wearing a helmet and riding a motorcycle, with their arms outstretched and holding onto handlebars.",Motorcycle
+94,hummingbird,False,tench,tench,"The image depicts a bird in flight, with its wings spread wide and feathers ruffled.",Bird
+95,jacamar,False,face powder,tench,"The image appears to be a close-up of a person's face, with a neutral expression.",Person
+96,toucan,False,hen-of-the-woods,tench,"The image appears to be a pixelated representation of a person's face, with a mix of light and dark colors.",Person
+97,drake,False,water ouzel,tench,"A duck swimming in water, facing left.",bird
+98,red-breasted merganser,False,white stork,tench,"A bird with a long neck and beak, possibly a stork or heron.",Bird
+99,goose,False,white stork,tench,"The image depicts a white bird with a long neck and beak, standing on one leg while holding a fish in its beak.",Bird
+9,ostrich,True,ostrich,ostrich,An ostrich walking on a road.,Ostrich

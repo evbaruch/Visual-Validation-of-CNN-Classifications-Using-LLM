@@ -1,0 +1,201 @@
+Index,True_Label,Match,llm_1
+0,tench,True,True
+100,black swan,True,True
+101,tusker,True,True
+102,echidna,False,False
+103,platypus,False,False
+104,wallaby,False,False
+105,koala,False,False
+106,wombat,False,False
+107,jellyfish,True,True
+108,sea anemone,True,True
+109,brain coral,True,True
+10,brambling,True,True
+110,flatworm,True,True
+111,nematode,False,False
+112,conch,True,True
+113,snail,False,False
+114,slug,True,True
+115,sea slug,True,True
+116,chiton,False,False
+117,chambered nautilus,True,True
+118,Dungeness crab,False,False
+119,rock crab,True,True
+11,goldfinch,False,False
+120,fiddler crab,True,True
+121,king crab,True,True
+122,American lobster,False,False
+123,spiny lobster,True,True
+124,crayfish,True,True
+125,hermit crab,True,True
+126,isopod,False,False
+127,white stork,False,False
+128,black stork,False,False
+129,spoonbill,True,True
+12,house finch,False,False
+130,flamingo,False,False
+131,little blue heron,False,False
+132,American egret,False,False
+133,bittern,True,True
+134,crane,True,True
+135,limpkin,False,False
+136,European gallinule,True,True
+137,American coot,False,False
+138,bustard,False,False
+139,ruddy turnstone,False,False
+13,junco,False,False
+140,red-backed sandpiper,False,False
+141,redshank,False,False
+142,dowitcher,False,False
+143,oystercatcher,False,False
+144,pelican,False,False
+145,king penguin,False,False
+146,albatross,False,False
+147,grey whale,False,False
+148,killer whale,True,True
+149,dugong,False,False
+14,indigo bunting,False,False
+150,sea lion,False,False
+151,Chihuahua,True,True
+152,Japanese spaniel,False,False
+153,Maltese dog,False,False
+154,Pekinese,False,False
+155,Shih-Tzu,False,False
+156,Blenheim spaniel,True,True
+157,papillon,False,False
+158,toy terrier,True,True
+159,Rhodesian ridgeback,False,False
+15,robin,True,True
+160,Afghan hound,False,False
+161,basset,False,False
+162,beagle,True,True
+163,bloodhound,True,True
+164,bluetick,False,False
+165,black-and-tan coonhound,True,True
+166,Walker hound,False,False
+167,English foxhound,False,False
+168,redbone,False,False
+169,borzoi,False,False
+16,bulbul,False,False
+170,Irish wolfhound,False,False
+171,Italian greyhound,False,False
+172,whippet,False,False
+173,Ibizan hound,False,False
+174,Norwegian elkhound,False,False
+175,otterhound,False,False
+176,Saluki,False,False
+177,Scottish deerhound,False,False
+178,Weimaraner,False,False
+179,Staffordshire bullterrier,False,False
+17,jay,False,False
+180,American Staffordshire terrier,False,False
+181,Bedlington terrier,False,False
+182,Border terrier,False,False
+183,Kerry blue terrier,False,False
+184,Irish terrier,False,False
+185,Norfolk terrier,False,False
+186,Norwich terrier,False,False
+187,Yorkshire terrier,False,False
+188,wire-haired fox terrier,False,False
+189,Lakeland terrier,False,False
+18,magpie,False,False
+190,Sealyham terrier,False,False
+191,Airedale,False,False
+192,cairn,True,True
+193,Australian terrier,False,False
+194,Dandie Dinmont,False,False
+195,Boston bull,False,False
+196,miniature schnauzer,False,False
+197,giant schnauzer,False,False
+198,standard schnauzer,False,False
+199,Scotch terrier,False,False
+19,chickadee,False,False
+1,goldfish,False,False
+20,water ouzel,False,False
+21,kite,False,False
+22,bald eagle,False,False
+23,vulture,True,True
+24,great grey owl,False,False
+25,European fire salamander,False,False
+26,common newt,True,True
+27,eft,False,False
+28,spotted salamander,False,False
+29,axolotl,False,False
+2,great white shark,True,True
+30,bullfrog,False,False
+31,tree frog,True,True
+32,tailed frog,False,False
+33,loggerhead,True,True
+34,leatherback turtle,True,True
+35,mud turtle,False,False
+36,terrapin,True,True
+37,box turtle,False,False
+38,banded gecko,False,False
+39,common iguana,True,True
+3,tiger shark,True,True
+40,American chameleon,False,False
+41,whiptail,False,False
+42,agama,False,False
+43,frilled lizard,True,True
+44,alligator lizard,False,False
+45,Gila monster,False,False
+46,green lizard,False,False
+47,African chameleon,True,True
+48,Komodo dragon,True,True
+49,African crocodile,False,False
+4,hammerhead,False,False
+50,American alligator,True,True
+51,triceratops,True,True
+52,thunder snake,False,False
+53,ringneck snake,True,True
+54,hognose snake,True,True
+55,green snake,True,True
+56,king snake,False,False
+57,garter snake,False,False
+58,water snake,True,True
+59,vine snake,False,False
+5,electric ray,True,True
+60,night snake,True,True
+61,boa constrictor,True,True
+62,rock python,False,False
+63,Indian cobra,True,True
+64,green mamba,True,True
+65,sea snake,True,True
+66,horned viper,False,False
+67,diamondback,False,False
+68,sidewinder,False,False
+69,trilobite,False,False
+6,stingray,False,False
+70,harvestman,True,True
+71,scorpion,True,True
+72,black and gold garden spider,False,False
+73,barn spider,True,True
+74,garden spider,True,True
+75,black widow,False,False
+76,tarantula,True,True
+77,wolf spider,False,False
+78,tick,True,True
+79,centipede,False,False
+7,cock,False,False
+80,black grouse,True,True
+81,ptarmigan,True,True
+82,ruffed grouse,False,False
+83,prairie chicken,False,False
+84,peacock,False,False
+85,quail,False,False
+86,partridge,False,False
+87,African grey,False,False
+88,macaw,False,False
+89,sulphur-crested cockatoo,False,False
+8,hen,False,False
+90,lorikeet,False,False
+91,coucal,True,True
+92,bee eater,False,False
+93,hornbill,True,True
+94,hummingbird,True,True
+95,jacamar,False,False
+96,toucan,False,False
+97,drake,False,False
+98,red-breasted merganser,True,True
+99,goose,True,True
+9,ostrich,True,True

@@ -1,0 +1,201 @@
+Index,True_Label,Match,Class_1,Class_2,llm_1,llm_2
+0,tench,False,anemone fish,anemone fish,"The image depicts a fish, specifically a Tench (Tinca tinca), which belongs to the ImageNet category of 'fish'.",fish
+100,black swan,True,white stork,black swan,"The image depicts a bird with a distinctive white patch on its forehead, set against a blurred background.",Swan
+101,tusker,False,Indian elephant,Indian elephant,"The image depicts an elephant with its trunk curled up, standing on grassy terrain.",Elephant
+102,echidna,False,head cabbage,tench,"The image appears to be a close-up of a small, brownish-gray animal with a distinctive crest on its head.",Mammal
+103,platypus,True,platypus,tench,"The image appears to be a close-up of a platypus's bill, with its eyes and nostrils visible.",Animal
+104,wallaby,True,wallaby,tench,"The image appears to be a wallaby, but it's difficult to say for certain due to the low resolution.",Macropus
+105,koala,True,koala,tench,"The image appears to be a close-up of a koala's face, with its fur and nose visible.",Marsupial
+106,wombat,False,wood rabbit,tench,"The image appears to be a close-up of a small mammal's face, possibly a rodent or rabbit.",Rodent
+107,jellyfish,True,jellyfish,tench,"The image appears to be a close-up of a jellyfish, with its translucent body and tentacles visible.",Cnidaria
+108,sea anemone,True,sea anemone,tench,"The image appears to be a close-up of a sea anemone, with its tentacles visible.",Anenome
+109,brain coral,True,brain coral,brain coral,"The image appears to be a close-up of a coral, possibly a brain coral.",Coral
+10,brambling,True,chest,brambling,"The image shows a small bird with a distinctive orange patch on its chest, perched on a branch.",Brambling
+110,flatworm,True,hen-of-the-woods,flatworm,"The image appears to be a close-up of a small, dark-colored object with a rough texture.",Flatworm
+111,nematode,False,hen-of-the-woods,tench,"The image appears to be a close-up of a small, dark-colored object with a long, thin shape.",Nematoda
+112,conch,True,conch,tench,"The image depicts a close-up of a shell, possibly a conch, with its spiral shape and ridges visible.",Shell
+113,snail,True,snail,tench,"The image appears to be a pixelated representation of a snail, but it's difficult to determine with certainty.",Molluscs
+114,slug,False,sea snake,anemone fish,"The image depicts a brownish-red sea creature with a long, slender body and a rounded head.",Fish
+115,sea slug,True,sea slug,tench,"The image appears to be a close-up of a sea slug, possibly a nudibranch, with its body curled up and tentacles extended.",Nudibranch
+116,chiton,False,hen-of-the-woods,tench,"The image appears to be a close-up of a shell, possibly a type of mollusk.",Mollusca
+117,chambered nautilus,True,chambered nautilus,chambered nautilus,"The image depicts a close-up of a chambered nautilus shell, showcasing its intricate details.",Nautilus
+118,Dungeness crab,True,Dungeness crab,tench,"The image appears to be a close-up of a crustacean, possibly a crab or lobster.",Crustacean
+119,rock crab,False,tench,Dungeness crab,"The image depicts a dark-colored, crustacean-like creature with a rounded body and long legs.",Crab
+11,goldfinch,True,chest,goldfinch,"The image depicts a small bird with yellow feathers on its chest, black wings, and a distinctive red patch on top of its head.",Goldfinch
+120,fiddler crab,False,hen-of-the-woods,tench,"The image depicts a small, crustacean-like creature with a distinctive claw on one side of its body.",Crustacean
+121,king crab,True,king crab,Dungeness crab,"The image appears to be a close-up of a crustacean, possibly a king crab.",Crab
+122,American lobster,True,American lobster,tench,"The image appears to be a close-up of a crustacean, possibly an American lobster.",Crustacean
+123,spiny lobster,False,tench,tench,"The image depicts a crustacean with a long, segmented body and large claws.",Crustacean
+124,crayfish,True,crayfish,tench,"The image appears to be a close-up of a crustacean, possibly a crayfish or lobster.",Arthropoda
+125,hermit crab,True,hermit crab,tench,"The image depicts a close-up of a human navel, with no visible hermit crabs.",Navel
+126,isopod,False,hen-of-the-woods,tench,"The image appears to be a close-up of a small, dark-colored insect or crustacean with a long, thin body and multiple legs.",Isopoda
+127,white stork,True,white stork,tench,"The image depicts a white stork, which falls under the category of 'Bird' in ImageNet.",Bird
+128,black stork,False,white stork,tench,"The image depicts a bird with a long neck and legs, standing on one leg while holding its other leg up to its body. The bird has a distinctive white patch on its forehead and a dark-colored back.",Ciconiiformes
+129,spoonbill,False,tench,tench,"The image depicts a bird with a long, curved beak and pink feathers.",Bird
+12,house finch,True,house finch,tench,"The image depicts a bird with distinctive red plumage on its head, which is characteristic of the House Finch species.",Bird
+130,flamingo,True,flamingo,flamingo,"The image appears to be a pixelated representation of a bird, possibly a flamingo.",Flamingo
+131,little blue heron,False,black-and-tan coonhound,tench,"The image depicts a bird with a long neck and legs, standing on one leg while holding its other leg up to its body. It has a distinctive crest on top of its head and appears to be in motion.",Ardea herodias
+132,American egret,True,American egret,tench,"The image appears to be a bird, possibly an American Egret.",Bird
+133,bittern,False,neck brace,tench,"The image depicts a bird with a long neck and beak, standing on one leg.",Bird
+134,crane,False,neck brace,tench,"The image depicts a bird with a long neck and legs, standing on one leg while facing left.",Bird
+135,limpkin,False,brown bear,tench,"The image depicts a bird with a long, curved beak and brown plumage.",Bird
+136,European gallinule,True,European gallinule,tench,"The image appears to be a bird, possibly a European gallinule.",Birds
+137,American coot,True,American coot,tench,"The image appears to be a bird, possibly an American Coot.",Bird
+138,bustard,True,neck brace,bustard,"The image depicts a bird with a long neck and legs, standing in a grassy field.",Bustard
+139,ruddy turnstone,False,orange,tench,"The image depicts a bird with distinctive markings, including a white head, black back, and orange belly.",Turnstones
+13,junco,True,junco,tench,"The image appears to be a bird, possibly a junco, with its distinctive black hood and white outer tail feathers.",Bird
+140,red-backed sandpiper,False,water ouzel,tench,"The image depicts a bird with brown plumage, white markings on its head, and a long beak. It appears to be standing in shallow water or mud.",Calidris pusilla
+141,redshank,True,brown bear,redshank,"The image depicts a bird with a long, thin beak and brown plumage.",Redshank
+142,dowitcher,False,white stork,tench,"The image depicts a bird with brown feathers, white spots on its back, and a long beak.",Bird
+143,oystercatcher,False,hen-of-the-woods,tench,"The image depicts a bird in flight, with its wings spread wide and its body facing towards the left side of the frame. The bird's head is turned slightly upwards, and its beak is open as if it is squawking or calling out.",Bird
+144,pelican,True,pelican,tench,"The image depicts a bird with a long beak, likely a pelican.",Bird
+145,king penguin,True,king penguin,king penguin,"The image depicts a penguin, which belongs to the 'Penguin' category within ImageNet.",Penguin
+146,albatross,True,albatross,tench,"The image appears to be of a bird, possibly an albatross.",Birds
+147,grey whale,True,grey whale,tench,"The image appears to be a pixelated representation of a large marine mammal, possibly a gray whale.",Cetacea
+148,killer whale,False,hen-of-the-woods,tench,"The image depicts a bird perched on a branch, with its head turned towards the right side of the frame.",Bird
+149,dugong,False,tench,tench,"The image depicts a large marine mammal with a rounded body, flippers, and a long snout.",Sirenian
+14,indigo bunting,False,hen-of-the-woods,tench,"The image shows a blue bird perched on a branch, with its head turned towards the right side of the frame.",Bird
+150,sea lion,False,head cabbage,tench,"The image depicts a seal, likely a harbor seal or similar species, characterized by its distinctive rounded head, small flippers, and thick layer of blubber.",Seal
+151,Chihuahua,True,Chihuahua,Maltese dog,"The image appears to be a dog, possibly a Chihuahua or similar breed.",Dog
+152,Japanese spaniel,True,Japanese spaniel,tench,"The image appears to be a close-up of a dog's face, possibly a Japanese Spaniel.",Canine
+153,Maltese dog,True,Maltese dog,Maltese dog,"The image depicts a small, fluffy white dog with a black nose and dark eyes, which appears to be a Maltese.",Dog
+154,Pekinese,True,Pekinese,Maltese dog,"The image appears to be a close-up of a dog's face, possibly a Pekinese.",Dog
+155,Shih-Tzu,True,Shih-Tzu,Maltese dog,"The image appears to be a dog, specifically a Shih Tzu.",Dog
+156,Blenheim spaniel,True,Blenheim spaniel,Blenheim spaniel,"The image depicts a dog with a white coat and brown patches, which appears to be a Blenheim spaniel.",Blenheim Spaniel
+157,papillon,True,papillon,Maltese dog,"The image appears to be a dog, possibly a Papillon breed.",Dog
+158,toy terrier,True,Maltese dog,toy terrier,"The image appears to be a dog, possibly a terrier breed.",Terrier
+159,Rhodesian ridgeback,True,Rhodesian ridgeback,Maltese dog,"The image appears to be a dog, possibly a Rhodesian Ridgeback, with distinctive features such as its short coat and ridged back.",Dog
+15,robin,False,orange,tench,"The image depicts a bird with distinctive orange plumage, black head, and white markings on its face.",Bird
+160,Afghan hound,True,Afghan hound,Maltese dog,"The image depicts an Afghan Hound, classified under the 'Dog' category in ImageNet.",Dog
+161,basset,False,Maltese dog,tench,"The image appears to be a pixelated representation of a dog's face, with a brown coat and floppy ears.",Canine
+162,beagle,False,Maltese dog,tench,"The image depicts a dog with a distinctive brown coat, floppy ears, and a long snout.",Canine
+163,bloodhound,False,Maltese dog,tench,"The image depicts a dog with a distinctive appearance, characterized by its long ears and wrinkled face.",Canine
+164,bluetick,True,fur coat,bluetick,"The image depicts a dog with a distinctive coat pattern, featuring a mix of brown and white fur.",Bluetick Coonhound
+165,black-and-tan coonhound,True,black-and-tan coonhound,Maltese dog,"The image appears to show a dog with a distinctive black and tan coat, which is consistent with the characteristics of a Black-and-Tan Coonhound.",Dog
+166,Walker hound,True,Walker hound,tench,"The image appears to be a dog, possibly a Walker Hound, based on its physical characteristics.",Canis lupus familiaris
+167,English foxhound,True,English foxhound,English foxhound,"The image appears to be a dog, possibly an English Foxhound, with its head held high and ears perked up.",English Foxhound
+168,redbone,True,redbone,Maltese dog,"The image appears to be a close-up of a dog's face, possibly a Redbone Coonhound.",Dog
+169,borzoi,False,Maltese dog,tench,"The image depicts a dog with a long, fluffy coat and a distinctive head shape.",Canine
+16,bulbul,False,brown bear,tench,"The image depicts a bird with brown feathers, a long beak, and a distinctive crest on its head.",Bird
+170,Irish wolfhound,True,Irish wolfhound,tench,"The image appears to be a dog, but it's not clear if it's an Irish Wolfhound.",Canine
+171,Italian greyhound,True,Italian greyhound,Maltese dog,"The image appears to be of a dog, possibly an Italian Greyhound.",Dog
+172,whippet,True,whippet,Maltese dog,"The image appears to be a dog, possibly a Whippet or similar breed.",Dog
+173,Ibizan hound,True,Ibizan hound,Ibizan hound,"The image depicts a dog with white fur, brown spots on its ears, and a distinctive long snout. It appears to be an Ibizan Hound.",Ibizan Hound
+174,Norwegian elkhound,True,Norwegian elkhound,tench,"The image appears to be of a dog, specifically a Norwegian Elkhound.",Canine
+175,otterhound,False,hen-of-the-woods,tench,"The image appears to be a pixelated representation of an animal, but it's difficult to determine the exact breed or species due to the low resolution.",Canine
+176,Saluki,False,Maltese dog,tench,"The image depicts a dog with a long, slender body and a short, smooth coat.",Canine
+177,Scottish deerhound,True,Scottish deerhound,Maltese dog,"The image appears to be of a dog, possibly a Scottish Deerhound.",Dog
+178,Weimaraner,True,black-and-tan coonhound,Weimaraner,"The image depicts a dog with a distinctive short, smooth coat that is predominantly white or cream-colored, with possible tan markings on its face and legs. The dog's ears are long and hanging, and its nose is black.",Weimaraner
+179,Staffordshire bullterrier,False,American Staffordshire terrier,toy terrier,"The image appears to be a dog, possibly a Staffordshire Bull Terrier.",Terrier
+17,jay,True,jay,tench,"The image depicts a bird with blue and white feathers, likely a Blue Jay.",Bird
+180,American Staffordshire terrier,False,black widow,toy terrier,"The image depicts a dog with a white coat, black nose, and floppy ears.",Terrier
+181,Bedlington terrier,True,white stork,Bedlington terrier,"The image depicts a dog with a distinctive white coat, long hair, and a curly tail.",Bedlington Terrier
+182,Border terrier,False,hen-of-the-woods,toy terrier,"The image appears to be a dog, possibly a Border Terrier, with its head tilted to the left and looking directly at the camera. The dog's fur is dark brown or black, and it has a distinctive white patch on its forehead.",Terrier
+183,Kerry blue terrier,False,fur coat,Maltese dog,"The image depicts a dog with a distinctive coat pattern, featuring a mix of black and white fur.",Dog
+184,Irish terrier,True,chest,Irish terrier,"The image depicts a dog with a brown coat, white markings on its chest and paws, and floppy ears. It appears to be standing in front of a light-colored background.",Irish Terrier
+185,Norfolk terrier,False,Maltese dog,toy terrier,"The image depicts a dog with a distinctive coat pattern, featuring a mix of light and dark brown hues.",Terrier
+186,Norwich terrier,True,Norwich terrier,toy terrier,"The image depicts a dog with a long, fluffy coat and floppy ears, which are characteristic of the Norwich Terrier breed.",Terrier
+187,Yorkshire terrier,True,Yorkshire terrier,toy terrier,"The image appears to be a dog, possibly a Yorkshire Terrier.",Terrier
+188,wire-haired fox terrier,True,wire-haired fox terrier,toy terrier,"The image appears to be a dog, possibly a Wire-Haired Fox Terrier.",Terrier
+189,Lakeland terrier,True,Lakeland terrier,toy terrier,"The image depicts a dog with a distinctive coat pattern, which appears to be a Lakeland Terrier.",Terrier
+18,magpie,False,black widow,tench,"The image depicts a bird with distinctive black and white plumage, perched on a branch.",Bird
+190,Sealyham terrier,False,black widow,toy terrier,"The image depicts a dog with a white coat, floppy ears, and a black nose.",Terrier
+191,Airedale,True,Airedale,toy terrier,"The image appears to be a dog, possibly an Airedale Terrier.",Terrier
+192,cairn,True,cairn,cairn,"The image depicts a dog with its tongue out, which appears to be a Cairn Terrier.",Cairn Terrier
+193,Australian terrier,False,hen-of-the-woods,toy terrier,"The image appears to be a pixelated representation of an animal, but it's difficult to determine the exact breed or species due to the low resolution.",Terrier
+194,Dandie Dinmont,True,Dandie Dinmont,toy terrier,"The image appears to be a dog, possibly a Dandie Dinmont Terrier.",Terrier
+195,Boston bull,False,Maltese dog,Maltese dog,"The image appears to be a dog, but it's difficult to determine the specific breed without more context or information.",Dog
+196,miniature schnauzer,False,Maltese dog,toy terrier,"The image depicts a dog with a distinctive beard and eyebrows, wearing a red collar.",Terrier
+197,giant schnauzer,True,giant schnauzer,Maltese dog,"The image depicts a dog with a distinctive beard and eyebrows, which are characteristic features of the Giant Schnauzer breed.",Dog
+198,standard schnauzer,True,standard schnauzer,toy terrier,"The image appears to be a dog, specifically a Standard Schnauzer.",Terrier
+199,Scotch terrier,False,Maltese dog,toy terrier,"The image appears to be a dog, but it's difficult to determine the breed with certainty.",Terrier
+19,chickadee,False,black widow,tench,"The image depicts a small bird with a black cap on its head, white cheeks, and a brown back.",Bird
+1,goldfish,False,anemone fish,anemone fish,"The image depicts a fish, which is classified under the 'Fish' category in ImageNet.",Fish
+20,water ouzel,False,black widow,tench,"The image depicts a bird with a distinctive white belly, black back, and red legs.",Bird
+21,kite,False,green lizard,tench,"The image depicts a pink flower with green leaves, possibly a type of rose or peony.",Flower
+22,bald eagle,True,hen-of-the-woods,bald eagle,"The image depicts a bird of prey soaring through the sky, with its wings spread wide.",Bald Eagle
+23,vulture,False,neck brace,tench,"The image depicts a bird with a long neck and beak, perched on a branch.",Bird
+24,great grey owl,False,white stork,tench,"The image depicts a bird with white feathers, yellow eyes, and a round head.",Owl
+25,European fire salamander,True,European fire salamander,amphibian,"The image appears to be a close-up of a salamander, possibly a European fire salamander.",Amphibian
+26,common newt,True,common newt,tench,"The image appears to be a pixelated representation of an animal, possibly a salamander or newt.",Salamanders
+27,eft,False,tree frog,tree frog,"The image appears to be a close-up of a tree branch with leaves, possibly taken during autumn or winter.",tree
+28,spotted salamander,False,amphibian,tench,"The image appears to be a close-up of an amphibian, possibly a salamander or newt, with distinctive spots on its back.",Amphibians
+29,axolotl,True,axolotl,amphibian,"The image appears to be a close-up of an animal's head, possibly an axolotl.",Amphibian
+2,great white shark,False,anemone fish,tench,"The image depicts a large, toothy fish with a distinctive shape and coloration.",Carcharhiniformes
+30,bullfrog,False,tree frog,tench,"The image depicts a green frog with large eyes, sitting on a lily pad.",Anura
+31,tree frog,True,amphibian,tree frog,"The image depicts a small, brownish-yellow amphibian with large eyes and a long tongue.",Tree Frog
+32,tailed frog,False,tree frog,amphibian,"The image depicts a close-up of a frog's face, with its mouth open and tongue extended.",Amphibian
+33,loggerhead,False,hen-of-the-woods,leatherback turtle,"The image depicts a sea turtle swimming in the ocean, with its head and flippers visible above the water's surface.",Sea Turtle
+34,leatherback turtle,True,leatherback turtle,leatherback turtle,"The image appears to be a blurry, pixelated representation of an animal, possibly a turtle or tortoise.",Turtle
+35,mud turtle,False,leatherback turtle,tench,"The image appears to be a close-up of a reptile's head, possibly a turtle or lizard.",Reptile
+36,terrapin,True,terrapin,leatherback turtle,"The image appears to be a close-up of a turtle's head, possibly a terrapin.",Turtle
+37,box turtle,False,hen-of-the-woods,tench,"The image depicts a close-up view of a shell, likely belonging to a species of sea snail or other marine mollusk.",Shell
+38,banded gecko,True,banded gecko,tench,"The image depicts a lizard with a distinctive pattern on its back, which appears to be a banded gecko.",Reptile
+39,common iguana,False,head cabbage,tench,"The image depicts a reptile with a long tail, scaly skin, and a distinctive crest on its head.",Iguanas
+3,tiger shark,True,anemone fish,tiger shark,"The image depicts a large fish with a pointed snout, sharp teeth, and a distinctive dorsal fin.",Tiger Shark
+40,American chameleon,True,American chameleon,tench,"The image depicts a green lizard with a long tail, likely an American chameleon.",Reptile
+41,whiptail,True,whiptail,tench,"The image appears to be a close-up of a bird's head, possibly a Whiptail, with distinctive markings on its face.",Bird
+42,agama,True,frilled lizard,agama,"The image depicts a small, colorful lizard with a long tail and spiky scales.",Agama
+43,frilled lizard,True,frilled lizard,tench,"The image appears to be a close-up of a reptile's head, possibly a snake or lizard.",Reptiles
+44,alligator lizard,True,alligator lizard,tench,"The image appears to be a close-up of a reptile's head, possibly an alligator lizard.",Reptiles
+45,Gila monster,False,hen-of-the-woods,tench,"The image depicts a reptile with a distinctive pattern of spots or blotches on its body, which appears to be a venomous species.",Reptiles
+46,green lizard,True,green lizard,frilled lizard,"The image depicts a small, green reptile with a long tail and scaly skin.",Lizard
+47,African chameleon,True,African chameleon,tench,"The image appears to be a close-up of a reptile's head, possibly an African chameleon.",Reptile
+48,Komodo dragon,False,tench,tench,"The image depicts a large, dark-colored reptile with a long tail and scaly skin.",Reptiles
+49,African crocodile,False,alligator lizard,tench,"The image appears to be a close-up of a reptile's head, possibly an alligator or crocodile.",Reptiles
+4,hammerhead,True,hammerhead,hammerhead,"The image depicts a hammerhead shark swimming in the ocean, with its distinctive head shape visible.",hammerhead
+50,American alligator,False,tench,tench,"The image depicts a large reptile with scaly skin, a long snout, and sharp teeth.",Reptiles
+51,triceratops,True,triceratops,tench,"The image appears to be a close-up of a dinosaur's head, possibly a Triceratops.",Dinosaur
+52,thunder snake,True,thunder snake,tench,"The image appears to be a close-up of a snake's head, possibly a venomous species.",Reptile
+53,ringneck snake,False,thunder snake,thunder snake,"The image appears to be a close-up of a small, dark-colored snake with a distinctive pattern on its body. Based on the ImageNet categories, I would classify this image as a 'Ring-necked Snake' (Diadophis punctatus).",Ring-necked Snake
+54,hognose snake,True,hognose snake,tench,"The image appears to be a close-up of a snake's head, possibly a hognose snake.",Reptile
+55,green snake,True,green snake,tench,"The image appears to be a close-up of a green snake's head, with its mouth open and tongue extended.",Reptile
+56,king snake,False,thunder snake,tench,"The image appears to be a close-up of a snake's head, with its mouth open and tongue extended.",Reptile
+57,garter snake,False,frilled lizard,tench,"The image appears to be a close-up of a reptile's head, possibly a snake or lizard.",Reptile
+58,water snake,False,hen-of-the-woods,tench,"The image depicts a duck swimming in the water, which falls under the 'Duck' category in ImageNet.",Duck
+59,vine snake,False,hen-of-the-woods,tench,"The image depicts a bird in flight, with its wings spread wide and its body facing towards the right side of the frame. The bird's plumage appears to be brownish-yellow with white markings on its head and neck.",Bird
+5,electric ray,True,electric ray,anemone fish,"The image appears to be a close-up of a fish's head, possibly an electric ray.",Bony Fish
+60,night snake,False,frilled lizard,tench,"The image appears to be a close-up of a reptile's head, possibly a snake or lizard.",Reptile
+61,boa constrictor,False,Maltese dog,Maltese dog,"The image depicts a dog with its mouth open, possibly barking or howling.",Dog
+62,rock python,True,rock python,tench,"The image depicts a snake, possibly a rock python.",Reptile
+63,Indian cobra,False,hen-of-the-woods,tench,"The image appears to be a close-up of an Indian cobra's head, with its hood spread out. The snake's body is not visible in the frame.",Natrix natrix
+64,green mamba,False,green snake,tench,"The image depicts a snake with a vibrant green coloration, which is characteristic of the green mamba species.",Reptile
+65,sea snake,True,sea snake,tench,"The image appears to be a close-up of a snake's head, possibly a sea snake.",Reptile
+66,horned viper,False,thunder snake,tench,"The image appears to be a close-up of a snake's head, with its mouth open and tongue extended.",Reptile
+67,diamondback,True,diamondback,tench,"The image appears to be a close-up of a snake's head, possibly a diamondback rattlesnake.",Reptile
+68,sidewinder,True,sidewinder,tench,"The image depicts a snake with a distinctive pattern of brown and black markings, which appears to be a sidewinder.",Reptile
+69,trilobite,False,fly,tench,"The image appears to be a close-up of a fossilized insect, possibly a beetle or fly, with visible wings and body parts.",Insect
+6,stingray,True,stingray,stingray,"The image appears to be a close-up of a stingray's head, with its mouth open and teeth visible.",Stingray
+70,harvestman,False,hen-of-the-woods,tench,"The image appears to be a close-up of a small, eight-legged arachnid with a rounded body and long, thin legs.",Araneae
+71,scorpion,False,Dungeness crab,tench,"The image depicts a blue crab with its claws raised, possibly in defense or preparation for attack.",Arthropoda
+72,black and gold garden spider,True,black and gold garden spider,tench,"The image depicts a black and gold garden spider, which belongs to the Araneidae family.",Araneidae
+73,barn spider,True,barn spider,tench,"The image appears to be a close-up of a spider, possibly a barn spider.",Araneae
+74,garden spider,True,garden spider,tench,"The image appears to be a close-up of a spider, possibly a garden spider, with its body and legs visible.",Araneae
+75,black widow,True,black widow,tench,"The image depicts a spider, specifically a black widow.",Araneae
+76,tarantula,True,tarantula,tench,"The image appears to be a close-up of a spider, possibly a tarantula, with its legs spread out and its body facing upwards.",Araneae
+77,wolf spider,True,wolf spider,tench,"The image appears to be a close-up of a spider, possibly a wolf spider.",Araneae
+78,tick,False,barn spider,tench,"The image shows a close-up of a brown spider with eight legs, two large eyes, and fangs.",Araneae
+79,centipede,True,centipede,tench,"The image appears to be a close-up of a centipede's body, with its many legs visible.",Arthropod
+7,cock,False,prairie chicken,tench,"The image appears to be a pixelated representation of a bird, possibly a rooster or chicken.",Bird
+80,black grouse,False,white stork,tench,"The image depicts a bird with distinctive markings, including a red comb on its head and a white patch on its neck.",Bird
+81,ptarmigan,True,ptarmigan,tench,"The image depicts a bird with white feathers, likely a ptarmigan.",Bird
+82,ruffed grouse,True,ruffed grouse,tench,"The image depicts a bird with brown and white feathers, likely a ruffed grouse.",Bird
+83,prairie chicken,False,head cabbage,tench,"The image appears to be a blurry, pixelated representation of a bird's head.",Bird
+84,peacock,False,green lizard,tench,"The image depicts a bird with vibrant plumage, featuring shades of blue, green, and gold.",Bird
+85,quail,False,tench,tench,"The image depicts three birds standing on grass, with one bird facing left and two others facing right.",Bird
+86,partridge,False,red wolf,tench,"The image depicts a bird with brown feathers, a distinctive red eye patch, and a long tail.",Bird
+87,African grey,False,black widow,tench,"The image depicts a bird with distinctive markings, including a black beak and yellow eyes.",Bird
+88,macaw,True,macaw,tench,"The image appears to be a bird, possibly a parrot or macaw, with vibrant colors and distinctive markings.",Bird
+89,sulphur-crested cockatoo,True,sulphur-crested cockatoo,tench,"The image depicts a white bird with a distinctive crest on its head, which appears to be a Sulphur-crested Cockatoo.",Bird
+8,hen,False,hen-of-the-woods,prairie chicken,"The image appears to be a bird, possibly a chicken or turkey, with its head turned towards the left side of the frame.",chicken
+90,lorikeet,False,orange,tench,"The image depicts a bird with vibrant plumage, featuring shades of blue, green, yellow, orange, and red.",Bird
+91,coucal,False,hen-of-the-woods,tench,"The image appears to be a bird, possibly a Coucal, but the quality of the image makes it difficult to determine with certainty.",Bird
+92,bee eater,False,tench,tench,"The image depicts a bird with a distinctive blue throat patch, perched on a branch.",Bird
+93,hornbill,False,soccer ball,cassette player,"A soccer player in action, kicking a ball.",soccer player
+94,hummingbird,False,tench,tench,"The image depicts a bird in flight, with its wings spread wide.",Bird
+95,jacamar,False,head cabbage,tench,"The image depicts a bird with a distinctive crest on its head, perched on a branch.",Bird
+96,toucan,True,toucan,tench,"The image appears to be a bird with a large beak, possibly a toucan.",Bird
+97,drake,False,hen-of-the-woods,tench,"The image depicts a duck swimming in water, with its head turned towards the left side of the frame.",bird
+98,red-breasted merganser,True,red-breasted merganser,red-breasted merganser,"The image depicts a bird with a distinctive orange-red bill, white throat patch, and dark brown body. It appears to be a Red-breasted Merganser.",Red-breasted Merganser
+99,goose,False,orange,tench,"The image depicts a white duck with orange feet, which is classified under the 'Anseriformes' category in ImageNet.",Anseriformes
+9,ostrich,True,ostrich,tench,"The image depicts an ostrich, which belongs to the ImageNet category 'Birds'.",Birds

@@ -79,15 +79,25 @@ class ImageDescription_Boolean(BaseModel):
 
 
 if __name__ == "__main__":
-    image_creater("data\\source\\imagenet_sample2\\pt", "data\\mid", samples=200)
+    # image_creater("data\\source\\imagenet_sample2\\pt", "data\\mid", samples=200)
 
-    llama = llama32Vision11b()
-    llm_context = LLMInterface(llama)
-    llm_context.set_prompt("Tell me what you see in the picture and what category it is from imagenet")
+    # llama = llama32Vision11b()
+    # llm_context = LLMInterface(llama)
+    # llm_context.set_prompt("Tell me what you see in the picture and what category it is from imagenet")
 
 
-    llm_context.set_jsonDescription(ImageDescription_Boolean)
-    llm_context.boolean_outputs_classification("data\\mid", "data\\llm_answer\\boolean")
+    # llm_context.set_jsonDescription(ImageDescription_5)
+    # llm_context.anchored_outputs_classification("data\\mid", "data\\llm_answer\\anchored_structured_outputs\\5_categoris")
 
-    results.calculate_accuracy("data\\llm_answer\\boolean", "data\\llm_answer\\boolean\\results")
-    #results.calculate_accuracy("data\\mid\\csv", "data\\mid\\csv\\results")
+    # llm_context.set_jsonDescription(ImageDescription_1)
+    # llm_context.anchored_outputs_classification("data\\mid", "data\\llm_answer\\anchored_structured_outputs\\1_categoris")
+
+    # llm_context.structured_outputs_classification("data\\mid", "data\\llm_answer\\structured_outputs\\1_categoris")
+
+
+
+    results.calculate_accuracy("data\\llm_answer\\anchored_structured_outputs\\5_categoris","data\\llm_answer\\anchored_structured_outputs\\5_categoris\\results")
+    results.calculate_accuracy("data\\llm_answer\\anchored_structured_outputs\\1_categoris","data\\llm_answer\\anchored_structured_outputs\\1_categoris\\results")
+    results.calculate_accuracy("data\\llm_answer\\structured_outputs\\5_categoris","data\\llm_answer\\structured_outputs\\5_categoris\\results")
+    results.calculate_accuracy("data\\llm_answer\\structured_outputs\\1_categoris","data\\llm_answer\\structured_outputs\\1_categoris\\results")
+    results.calculate_accuracy("data\\llm_answer\\boolean","data\\llm_answer\\boolean\\results")
