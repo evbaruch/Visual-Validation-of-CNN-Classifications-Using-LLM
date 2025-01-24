@@ -1,0 +1,201 @@
+Index,True_Label,Match,Class_1,Class_2,llm_1,llm_2
+0,tench,True,tench,tench,"The image depicts a small, dark-colored object with a long tail and wings, likely a bird.",Bird
+100,black swan,False,tench,tench,"The image depicts a small, dark-colored object that appears to be a bird or insect.",Bird
+101,tusker,False,hen-of-the-woods,tench,"The image depicts a group of birds flying in formation, likely a flock of geese.",Bird
+102,echidna,False,tench,tench,"The image appears to be a blank, solid gray color.",Gray
+103,platypus,False,military uniform,tench,"The image appears to be a solid, uniform gray color with no discernible features or objects.",Gray
+104,wallaby,False,tench,tench,"The image shows a small, dark-colored object that appears to be a bird or insect.",Bird
+105,koala,False,traffic light,tench,"A small, dark blue dot on a light gray background.",Insect
+106,wombat,False,traffic light,tench,"A small, dark spot on a light background.",Insect
+107,jellyfish,False,black widow,tench,A small black dot on a beige background.,Insect
+108,sea anemone,False,tench,tench,"A small, dark-colored object with a long tail and wings",Bird
+109,brain coral,False,military uniform,brown bear,"The image appears to be a solid, uniform color.",Brown
+10,brambling,False,face powder,tench,"The image appears to be a blurry, pixelated representation of a person's face.",Person
+110,flatworm,False,lighter,tench,"The image shows a gray background with a darker gray rectangle in the center, containing a lighter gray square inside.",rectangle
+111,nematode,False,tree frog,tree frog,"The image depicts a serene scene of a large tree with lush green leaves, set against a gray sky.",Tree
+112,conch,False,rock python,rock python,"The image appears to be a small, dark-colored object with a rough texture, possibly a rock or pebble.",rock
+113,snail,False,military uniform,brown bear,"The image appears to be a solid, uniform color.",Brown
+114,slug,False,dining table,tench,"The image shows a group of people gathered around a table, possibly engaged in a meeting or discussion.",Group of People
+115,sea slug,False,brown bear,tench,"A small, dark brown object with a long tail and wings",Bird
+116,chiton,False,military uniform,brown bear,"The image appears to be a solid, uniform color.",Brown
+117,chambered nautilus,False,face powder,tench,"A blurry, pixelated image of a person's face",Person
+118,Dungeness crab,False,tench,Maltese dog,"A small, dark-colored object with a long tail and a rounded body.",Dog
+119,rock crab,False,tench,tench,The image appears to be a solid gray color with no discernible objects or features.,Gray
+11,goldfinch,False,head cabbage,tench,"The image appears to be a blurry, pixelated representation of a bird's head.",Bird
+120,fiddler crab,False,tench,tench,The image appears to be a solid gray color with no discernible features or objects.,Gray
+121,king crab,False,brown bear,tench,"The image shows a beige background with a darker brown shape resembling a rectangle or square, possibly a piece of furniture.",rectangle
+122,American lobster,False,black widow,tench,"The image depicts a person wearing a white shirt, black pants, and a hat, with their hands raised in the air.",Person
+123,spiny lobster,False,military uniform,brown bear,"The image appears to be a solid, uniform color.",Brown
+124,crayfish,False,tench,tench,"A small, dark-colored object with a long tail",Bird
+125,hermit crab,False,hand blower,hammer,"The image shows a person's hand holding a small, round object.",hammer
+126,isopod,False,military uniform,brown bear,"The image appears to be a solid, uniform color.",Brown
+127,white stork,True,white stork,beach wagon,"A small, white dot on a beige background.",Beach
+128,black stork,False,white stork,tench,"The image shows a small, white object that appears to be a piece of paper or a card.",Notepad
+129,spoonbill,False,hen-of-the-woods,tench,The image shows a group of birds flying in the sky.,Bird
+12,house finch,False,hen-of-the-woods,tench,"The image shows a group of small, dark-colored birds flying in the sky.",Bird
+130,flamingo,False,brown bear,tench,"A small, blurry, yellowish-brown object that appears to be a piece of food or an insect.",Nuts (or) Seeds
+131,little blue heron,False,hen-of-the-woods,tench,"The image shows a small, greenish-yellow object that appears to be a type of insect or arthropod.",insect
+132,American egret,False,white stork,tench,"The image shows a small, white, circular object with a hole in the center.",Ring
+133,bittern,False,military uniform,brown bear,"The image appears to be a solid, uniform color.",Brown
+134,crane,False,brown bear,stone wall,"The image shows a blurry, pixelated view of a beige wall with a darker brown stripe running horizontally across it.",Beige Wall
+135,limpkin,False,brown bear,tench,"A small, dark brown dot on a light gray background.",Insect
+136,European gallinule,False,tench,tench,The image appears to be a solid gray color with no discernible features or objects.,Gray
+137,American coot,False,traffic light,tench,"A small, dark spot on a light background.",Insect
+138,bustard,False,tench,tench,The image shows a beige background with no discernible objects or features.,Beige
+139,ruddy turnstone,False,hen-of-the-woods,brown bear,"The image appears to be a small, blurry, and pixelated representation of a brownish-gray color.",Brown
+13,junco,False,black widow,tench,A small black dot on a beige background.,Bezel
+140,red-backed sandpiper,False,tench,tench,"The image depicts a small, dark-colored object with a long tail and wings, likely a bird.",Bird
+141,redshank,False,face powder,tench,"A blurry, pixelated image of a person's face",Person
+142,dowitcher,False,tench,tench,"The image shows a small, dark-colored object that appears to be a bird or insect.",Bird
+143,oystercatcher,False,hen-of-the-woods,tench,"The image shows a small, dark-colored object that appears to be a piece of food or an insect.",Insect
+144,pelican,False,brown bear,tench,"The image shows a small, dark brown object that appears to be a bird's eye or a piece of food.",bird's eye
+145,king penguin,False,white stork,tench,"The image depicts a person wearing a white shirt and dark pants, with their hands raised above their head.",Person
+146,albatross,False,hen-of-the-woods,tench,"The image depicts a group of birds flying in formation, likely geese or ducks.",Bird
+147,grey whale,False,hen-of-the-woods,beach wagon,"The image shows a group of people standing on a beach, with palm trees and other vegetation in the background.",beach
+148,killer whale,False,tench,tench,"The image depicts a small, dark-colored object that appears to be a bird or insect.",Bird
+149,dugong,False,tree frog,tree frog,"The image depicts a serene landscape with a large tree situated on a hill, surrounded by lush greenery.",Tree
+14,indigo bunting,False,rock python,rock python,"The image appears to be a small, dark-colored object with a rough texture, possibly a rock or pebble.",rock
+150,sea lion,False,monitor,monitor,"The image shows a gray background with a darker gray rectangle in the center, possibly representing a computer screen or monitor.",Computer Monitor
+151,Chihuahua,False,night snake,night snake,"The image shows a blurry, pixelated view of a cityscape at night, with many lights visible.",Cityscape at Night
+152,Japanese spaniel,False,African grey,white stork,"A small, white dot on a grey background.",White Dot
+153,Maltese dog,False,military uniform,brown bear,"The image appears to be a solid, uniform color with no discernible objects or features.",Brown
+154,Pekinese,False,black widow,tench,A small black dot on a beige background.,dot
+155,Shih-Tzu,False,military uniform,brown bear,"The image appears to be a solid, uniform color with no discernible objects or features.",Brown
+156,Blenheim spaniel,False,face powder,tench,"The image appears to be a blurry, pixelated representation of a person's face.",Person
+157,papillon,False,tench,tench,"A small, blurry, brownish-gray object that appears to be a dot or a smudge.",dot
+158,toy terrier,False,tench,tench,"The image depicts a small, dark-colored object with a long tail and wings, likely a bird.",Bird
+159,Rhodesian ridgeback,False,tench,tench,"The image appears to be a blank, solid gray color.",Gray
+15,robin,False,hen-of-the-woods,tench,"The image shows a group of small, round objects that appear to be either coins or marbles.",coin
+160,Afghan hound,False,military uniform,brown bear,"The image appears to be a solid, uniform color.",Brown
+161,basset,False,orange,tench,"A small, blurry, orange object that appears to be a firework or sparkler.",fireworks
+162,beagle,False,military uniform,brown bear,"The image appears to be a solid, uniform color.",Brown
+163,bloodhound,False,face powder,tench,"The image depicts a person's face, likely a woman, with dark hair and light skin.",Person
+164,bluetick,False,traffic light,tench,"A small, dark gray dot on a light gray background.",dot
+165,black-and-tan coonhound,False,white stork,tench,"The image shows a person's face with a neutral expression, wearing a white shirt and looking directly at the camera.",Person
+166,Walker hound,False,face powder,tench,"A blurry, pixelated image of a person's face",Person
+167,English foxhound,False,tench,tench,"The image appears to be a blank, solid gray color.",Gray
+168,redbone,False,brown bear,barber chair,"The image shows a beige background with a darker brown shape resembling a rectangle or square, possibly a piece of furniture.",Chair
+169,borzoi,False,tench,tench,"The image appears to be a blank, solid gray color.",Gray
+16,bulbul,False,tench,tench,A small cluster of dots on a plain background.,Insect
+170,Irish wolfhound,False,military uniform,brown bear,"The image appears to be a solid, uniform color.",Brown
+171,Italian greyhound,False,tench,tench,The image appears to be a solid gray color with no discernible features or objects.,Gray
+172,whippet,False,tench,tench,The image appears to be a solid gray color with no discernible features or objects.,Gray
+173,Ibizan hound,False,white stork,tench,"A small, white, circular object with a dark center, possibly a star or planet",Star
+174,Norwegian elkhound,False,military uniform,brown bear,"The image appears to be a solid, uniform color.",Brown
+175,otterhound,False,hand blower,hammer,"The image shows a person's hand holding a small, round object.",hammer
+176,Saluki,False,tench,tench,"A small, blurry, brownish-gray object that appears to be a piece of food or a small animal.",Nuts (or) Seeds
+177,Scottish deerhound,False,traffic light,tench,"The image shows a small, dark spot on a light-colored background.",Airplane
+178,Weimaraner,False,traffic light,tench,"The image shows a collection of small, dark objects scattered across a light-colored surface.",Pebbles
+179,Staffordshire bullterrier,False,black widow,tench,A small black dot on a grey background.,dot
+17,jay,False,brown bear,brown bear,"The image appears to be a solid, light brown color with no discernible features or objects.",Brown
+180,American Staffordshire terrier,False,tench,tench,"The image shows a small, dark object that appears to be a bird or insect.",Bird
+181,Bedlington terrier,False,hen-of-the-woods,tree frog,"The image depicts a serene landscape with a large tree situated on the left side, its branches stretching out towards the right. The sky above is a brilliant blue, dotted with a few wispy clouds.",tree
+182,Border terrier,False,traffic light,tench,"A small, dark spot on a light background.",Insect
+183,Kerry blue terrier,False,traffic light,tench,"A small, dark gray dot on a light gray background.",dot
+184,Irish terrier,False,hen-of-the-woods,cabbage butterfly,"The image depicts a small, dark-colored object with a distinctive shape, possibly a piece of food or an insect.",Butterfly
+185,Norfolk terrier,False,brown bear,tench,"A small, dark brown dot on a light gray background.",Insect
+186,Norwich terrier,False,military uniform,brown bear,"The image appears to be a solid, uniform color.",Brown
+187,Yorkshire terrier,False,tench,tench,"The image shows a small, dark-colored object that appears to be a bird or insect.",Bird
+188,wire-haired fox terrier,False,hen-of-the-woods,tree frog,"The image depicts a serene scene of a tree standing alone in a field, with its branches stretching towards the sky.",tree
+189,Lakeland terrier,False,military uniform,brown bear,"The image appears to be a solid, uniform color.",Brown
+18,magpie,False,Border terrier,Border terrier,A beige background with a darker brown border around the edge.,Border
+190,Sealyham terrier,False,military uniform,brown bear,"The image appears to be a solid, uniform color with no discernible objects or features.",Brown
+191,Airedale,False,white stork,tench,"The image depicts a small, white, round object with a flat top and a narrow stem.",Nuts
+192,cairn,False,tench,tench,The image appears to be a solid gray color with no discernible features or objects.,Gray
+193,Australian terrier,False,Border terrier,stone wall,"The image depicts a beige wall with a darker brown border at the bottom, possibly indicating a baseboard or trim.",Wall
+194,Dandie Dinmont,False,military uniform,brown bear,"The image appears to be a solid, uniform color.",Brown
+195,Boston bull,False,white stork,white stork,"The image shows a small, white dot on a gray background.",White
+196,miniature schnauzer,False,tench,tench,The image appears to be a solid gray color with no discernible objects or features.,Gray
+197,giant schnauzer,False,military uniform,brown bear,"The image appears to be a solid, uniform color.",Brown
+198,standard schnauzer,False,tench,tench,"A small, dark object with a long tail",Bird
+199,Scotch terrier,False,tench,tench,The image appears to be a solid gray color with no discernible features or objects.,Gray
+19,chickadee,False,tench,tench,"The image shows a small, dark-colored object that appears to be a bird or insect.",Bird
+1,goldfish,False,brown bear,tench,"The image shows a small, yellowish-brown object that appears to be a piece of food or a spice.",Cereal grain
+20,water ouzel,False,face powder,tench,"A blurry, pixelated image of a person's face",Person
+21,kite,False,military uniform,brown bear,"The image appears to be a solid, uniform color.",Brown
+22,bald eagle,False,rock python,rock python,"The image appears to be a small, dark-colored object with a rough texture, possibly a rock or pebble.",rock
+23,vulture,False,tench,tench,"The image depicts a small, dark-colored object with a long tail and wings, likely a bird.",Bird
+24,great grey owl,False,traffic light,tench,"A small, dark gray dot on a light gray background.",dot
+25,European fire salamander,False,tench,tench,"A small, dark object that appears to be a bird or insect",Bird
+26,common newt,False,military uniform,brown bear,"The image appears to be a solid, uniform color.",Brown
+27,eft,False,military uniform,brown bear,"The image appears to be a solid, uniform color.",Brown
+28,spotted salamander,False,face powder,face powder,"The image shows a blurry, pixelated face with a neutral expression.",Face
+29,axolotl,False,military uniform,brown bear,"The image appears to be a solid, uniform color.",Brown
+2,great white shark,False,white stork,tench,"The image shows a small, white object that appears to be a piece of paper or card with some writing on it.",Notepad
+30,bullfrog,False,tench,tench,"The image shows a small, dark-colored object that appears to be a dot or a speck.",dot
+31,tree frog,False,hen-of-the-woods,beach wagon,"The image shows a group of people standing on a beach, with palm trees and other vegetation in the background.",beach
+32,tailed frog,False,military uniform,brown bear,"The image appears to be a solid, uniform color.",Brown
+33,loggerhead,False,military uniform,tench,"The image appears to be a solid, uniform gray color with no discernible features or objects.",Gray
+34,leatherback turtle,False,traffic light,tench,"A small, dark gray dot on a light gray background.",dot
+35,mud turtle,False,white stork,envelope,"A small, white object that appears to be a piece of paper or a card.",envelope
+36,terrapin,False,military uniform,brown bear,"The image appears to be a solid, uniform color.",Brown
+37,box turtle,False,hen-of-the-woods,tench,"The image shows a collection of small, round objects that appear to be seeds or beads.",Nuts and Seeds
+38,banded gecko,False,military uniform,brown bear,"The image appears to be a solid, uniform color.",Brown
+39,common iguana,False,black widow,tench,A small black dot on a beige background.,Insect
+3,tiger shark,False,head cabbage,tench,"The image depicts a large, dark-colored bird with a distinctive crest on its head, perched on a branch.",Bird
+40,American chameleon,False,military uniform,brown bear,"The image appears to be a solid, uniform color.",Brown
+41,whiptail,False,traffic light,tench,"A small, dark spot on a light background.",Airplane
+42,agama,False,traffic light,tench,"The image appears to be a small, dark spot on a light-colored background.",Insect
+43,frilled lizard,False,tench,tench,"A small, dark gray dot",dot
+44,alligator lizard,False,white stork,tench,"The image shows a small, white dot against a gray background.",Star
+45,Gila monster,False,military uniform,brown bear,"The image appears to be a solid, uniform color.",Brown
+46,green lizard,False,military uniform,brown bear,"The image appears to be a solid, uniform color.",Brown
+47,African chameleon,False,traffic light,tench,"A small, dark spot on a light background.",Insect
+48,Komodo dragon,False,tench,tench,The image appears to be a solid gray color with no discernible objects or features.,Gray
+49,African crocodile,False,traffic light,tench,"A small, dark spot on a light background.",Insect
+4,hammerhead,False,tench,tench,The image appears to be a solid gray color with no discernible features or objects.,Gray
+50,American alligator,False,tench,tench,A small cluster of dots,Insect
+51,triceratops,False,tree frog,tree frog,"The image depicts a serene landscape with a large tree situated on a hill, surrounded by lush greenery.",Tree
+52,thunder snake,False,traffic light,tench,"A small, dark spot on a light background.",Insect
+53,ringneck snake,False,tench,tench,"The image depicts a small, dark-colored object with a rounded top and a flat bottom.",Airplane
+54,hognose snake,False,tench,tench,"The image shows a small, dark-colored object that appears to be a bird or insect.",Bird
+55,green snake,False,traffic light,tench,"A small, dark spot on a light background.",Insect
+56,king snake,False,traffic light,tench,"A small, dark gray dot on a light gray background.",Airplane
+57,garter snake,False,military uniform,brown bear,"The image appears to be a solid, uniform color.",Brown
+58,water snake,False,military uniform,brown bear,"The image appears to be a solid, uniform color.",Brown
+59,vine snake,False,white stork,traffic light,"A small, white object that appears to be a light source",Light bulb
+5,electric ray,False,black widow,tench,A small black dot on a grey background.,dot
+60,night snake,False,black widow,tench,A small black dot on a beige background.,dot
+61,boa constrictor,False,traffic light,bee,"The image shows a collection of small, dark objects scattered across a light-colored surface.",Bee
+62,rock python,False,face powder,tench,"A blurry, pixelated image of a person's face",Person
+63,Indian cobra,False,military uniform,brown bear,"The image appears to be a solid, uniform color.",Brown
+64,green mamba,False,hen-of-the-woods,tench,"The image appears to be a blurry, pixelated representation of a greenish-yellow color.",Pigment - Yellow
+65,sea snake,False,traffic light,tench,"A small, dark spot on a light background.",dot
+66,horned viper,False,military uniform,brown bear,"The image appears to be a solid, uniform color.",Brown
+67,diamondback,False,military uniform,brown bear,"The image appears to be a solid, uniform color.",Brown
+68,sidewinder,False,tree frog,tree frog,"The image depicts a serene landscape with a large tree situated on a hill, surrounded by lush greenery.",Tree
+69,trilobite,False,traffic light,tench,"A small, dark spot on a light background.",Airplane
+6,stingray,False,tree frog,tree frog,"The image depicts a serene scene of a large tree with lush green leaves, set against a gray sky.",Tree
+70,harvestman,False,tench,tench,"The image shows a small, dark-colored object that appears to be a bird or insect.",Bird
+71,scorpion,False,Dungeness crab,Dungeness crab,"The image depicts a blue crab with its claws raised, likely captured during a fishing trip.",Crab
+72,black and gold garden spider,False,tench,tench,"The image appears to be a blank, solid gray color.",Gray
+73,barn spider,False,traffic light,tench,"A small, dark spot on a light background.",Insect
+74,garden spider,False,traffic light,tench,"A small, dark spot on a light background.",Airplane
+75,black widow,False,traffic light,tench,"The image shows a small, dark spot on a light-colored background.",Airplane
+76,tarantula,False,black widow,black widow,A small cluster of black dots on a beige background.,Black dot
+77,wolf spider,False,tench,tench,"The image shows a small, dark-colored object that appears to be a bird or insect.",Bird
+78,tick,False,tree frog,tree frog,"The image depicts a serene landscape with a large tree situated on a hill, surrounded by lush greenery.",Tree
+79,centipede,False,tree frog,tree frog,"The image depicts a serene landscape with a large tree situated on a hill, surrounded by lush greenery.",Tree
+7,cock,False,green lizard,tench,A small green dot on a beige background.,Insect
+80,black grouse,False,tench,tench,"The image depicts a small, dark-colored object with a long tail and wings, likely a bird.",Bird
+81,ptarmigan,False,tench,tench,The image shows a gray background with a darker gray shape resembling a cloud or smoke.,Cloud
+82,ruffed grouse,False,tench,tench,The image appears to be a solid gray color with no discernible features or objects.,Gray
+83,prairie chicken,False,military uniform,brown bear,"The image appears to be a solid, uniform color.",Brown
+84,peacock,False,tench,tench,"A small, dark-colored object that appears to be a bird or insect",Bird
+85,quail,False,tench,tench,"A small, blurry, brownish-gray object that appears to be a bird or insect",Bird
+86,partridge,False,traffic light,tench,"A small, dark gray dot on a light gray background.",Insect
+87,African grey,False,tench,tench,"The image appears to be a blank, solid gray color with no discernible features or objects.",Gray
+88,macaw,False,lighter,pomegranate,"A small, round object with a dark center and lighter edges",Pomegranate
+89,sulphur-crested cockatoo,False,tench,tench,The image appears to be a solid gray color with no discernible features or objects.,Abstract Art
+8,hen,False,African grey,red wolf,A small red dot on a grey background,Red
+90,lorikeet,False,African grey,red wolf,"A small, red dot on a grey background.",Red Dot
+91,coucal,False,sea snake,anemone fish,"The image appears to be a simple, abstract representation of a fish or other sea creature.",fish
+92,bee eater,False,tench,tench,"The image depicts a small, dark-colored object with a long tail and wings, likely a bird.",Bird
+93,hornbill,False,white stork,tench,"A small, white, circular object with a dark center, possibly a star or planet",star
+94,hummingbird,False,dining table,dining table,"The image depicts a group of people gathered around a table, engaged in a meal.",Dining Table
+95,jacamar,False,tench,tench,"A small, dark-colored object that appears to be a bird or insect",Bird
+96,toucan,False,traffic light,tench,"A small, dark spot on a light background.",Insect
+97,drake,False,face powder,tench,"The image appears to be a pixelated representation of a person's face, possibly with a neutral expression.",Person
+98,red-breasted merganser,False,tench,tench,The image appears to be a solid gray color with no discernible features or objects.,Gray
+99,goose,False,Border terrier,stone wall,"The image depicts a beige wall with a darker brown border at the bottom, possibly indicating a baseboard or trim.",Wall
+9,ostrich,False,traffic light,tench,"The image appears to be a small, dark object with a light-colored background.",Airplane

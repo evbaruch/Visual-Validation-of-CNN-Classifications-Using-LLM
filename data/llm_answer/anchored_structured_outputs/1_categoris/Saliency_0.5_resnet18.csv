@@ -1,0 +1,201 @@
+Index,True_Label,Match,Class_1,Class_2,llm_1,llm_2
+0,tench,True,anemone fish,tench,"The image appears to be a small, dark-colored fish with a distinctive shape.",Tench
+100,black swan,True,black swan,tench,"The image appears to be a simple, monochromatic representation of a bird's head, possibly a swan.",bird
+101,tusker,False,hen-of-the-woods,Indian elephant,"The image appears to be a close-up of a large elephant's head, with its trunk curled up towards the top left corner. The tusks are visible on either side of the mouth.",Elephant
+102,echidna,False,military uniform,brown bear,"The image appears to be a solid, uniform color with no discernible features or objects.",Brown
+103,platypus,True,platypus,tench,The image appears to be a platypus.,Mammal
+104,wallaby,False,tench,tench,"The image appears to be a small, furry animal with large ears and a long tail.",Macropus eugenii
+105,koala,False,tench,tench,"The image appears to be a small, dark-colored object with a rounded shape.",Animal
+106,wombat,False,traffic light,tench,"A small, dark spot on a light background.",Insect
+107,jellyfish,False,military uniform,brown bear,"The image appears to be a solid, uniform color with no discernible features or objects.",Brown
+108,sea anemone,True,sea anemone,tench,"The image appears to be a close-up of a sea anemone, with its tentacles visible.",Animal
+109,brain coral,True,white stork,brain coral,"The image shows a small, white, rounded object with a smooth surface.",coral
+10,brambling,False,white stork,tench,"The image appears to be a bird, possibly a small songbird with brownish-red plumage and white markings on its head.",Bird
+110,flatworm,True,tench,flatworm,"The image appears to be a small, dark-colored object with a rounded shape.",Flatworm
+111,nematode,False,hen-of-the-woods,tench,"The image appears to be a close-up of a small, dark-colored object with a rough texture.",Nematoda
+112,conch,False,hen-of-the-woods,tench,"The image shows a close-up of a shell with a spiral shape, possibly a type of sea snail.",Shell
+113,snail,False,military uniform,brown bear,"The image appears to be a solid, uniform color with no discernible features or objects.",Brown
+114,slug,False,hen-of-the-woods,tench,"The image appears to be a close-up of a small, dark-colored object with a smooth surface.",Arthropod
+115,sea slug,True,hen-of-the-woods,sea slug,"The image appears to be a close-up of a small, dark-colored object with a distinctive shape.",Sea Slug
+116,chiton,False,brown bear,brown bear,"The image appears to be a solid, light brown color with no discernible features or objects.",Brown
+117,chambered nautilus,True,chambered nautilus,chambered nautilus,"The image shows a shell with a spiral shape, which is characteristic of a chambered nautilus.",Nautilus
+118,Dungeness crab,False,military uniform,brown bear,"The image appears to be a solid, uniform color with no discernible features or objects.",Brown
+119,rock crab,False,tench,Dungeness crab,"The image shows a small, dark-colored object with a rounded body and long legs.",Crab
+11,goldfinch,True,black-and-tan coonhound,goldfinch,"The image shows a small bird with yellow feathers on its head, back, and wings, and a brownish-gray belly. It has a short, pointed beak and dark eyes.",Goldfinch
+120,fiddler crab,False,hen-of-the-woods,Dungeness crab,"The image appears to be a close-up of a small, brownish-gray object with a rounded shape and a long, thin tail.",crab
+121,king crab,False,hen-of-the-woods,tench,"The image shows a cluster of small, dark objects that resemble crabs.",Arthropoda
+122,American lobster,False,red wolf,tench,"The image appears to be a close-up of two small, red objects that resemble eyes or antennae.",Crustacean
+123,spiny lobster,True,spiny lobster,tench,"The image appears to be a close-up of a crustacean, possibly a spiny lobster.",Crustacean
+124,crayfish,True,hen-of-the-woods,crayfish,"The image appears to be a close-up of a small, dark-colored crustacean with a long tail.",Crayfish
+125,hermit crab,True,hermit crab,tench,"The image appears to be a small, brownish-red object with a rounded shell and long, thin legs. It is likely a type of crustacean, possibly a hermit crab.",Crustacean
+126,isopod,False,military uniform,brown bear,"The image appears to be a solid, uniform color with no discernible features or objects.",Brown
+127,white stork,False,brown bear,brown bear,"The image appears to be a solid, light brown color with no discernible features or objects.",Brown
+128,black stork,False,hen-of-the-woods,tench,"The image shows two small dots, likely representing eyes or other features of an animal.",Bird
+129,spoonbill,False,white stork,tench,"The image shows a bird with a long, curved beak and white plumage.",Birds
+12,house finch,True,brown bear,house finch,"The image shows a small bird with brown feathers, a short beak, and a distinctive crest on its head.",House Finch
+130,flamingo,False,traffic light,tench,"A small, dark spot on a light background.",Bird
+131,little blue heron,False,water ouzel,tench,"The image depicts a small bird with a long neck and legs, standing on one leg while facing to the right. It has a distinctive crest on its head and appears to be wading in shallow water.",Ardea herodias
+132,American egret,False,brown bear,brown bear,"The image appears to be a solid, light brown color with no discernible features or objects.",Brown
+133,bittern,False,military uniform,brown bear,"The image appears to be a solid, uniform color with no discernible features or objects.",Brown
+134,crane,False,neck brace,tench,"The image depicts a bird with a long neck and beak, standing on one leg.",Bird
+135,limpkin,False,tench,tench,"The image appears to be a small, dark-colored bird with a long beak.",Bird
+136,European gallinule,False,ground beetle,tench,"The image shows a small bird with a long neck and legs, standing on the ground.",Bird
+137,American coot,False,brown bear,brown bear,"The image appears to be a solid, light brown color with no discernible features or objects.",Brown
+138,bustard,False,head cabbage,tench,"The image appears to be a small, dark-colored bird with a distinctive crest on its head.",Bird
+139,ruddy turnstone,False,brown bear,tench,"The image appears to be a small bird with brown feathers, possibly a shorebird.",Bird
+13,junco,False,brown bear,brown bear,"The image appears to be a solid, light brown color with no discernible features or objects.",Brown
+140,red-backed sandpiper,False,hen-of-the-woods,tench,"The image appears to be a photograph of a bird, possibly a shorebird or wader, with its head turned towards the left side of the frame. The bird's plumage is brownish-gray in color, and it has a distinctive white patch on its forehead.",Bird
+141,redshank,False,brown bear,tench,"The image shows a bird with a long, pointed beak and brown plumage.",Birds
+142,dowitcher,False,white stork,tench,"The image appears to be a small, dark-colored bird with a distinctive white patch on its forehead.",Bird
+143,oystercatcher,True,oystercatcher,tench,"The image appears to be a bird, possibly an oystercatcher, with distinctive black and white plumage.",Bird
+144,pelican,False,tench,tench,The image shows two small blue dots on a beige background.,Bird
+145,king penguin,False,black widow,tench,"The image shows a bird with distinctive black and white feathers, standing on a rocky surface.",Bird
+146,albatross,False,black widow,tench,"The image depicts a bird with a distinctive white head, black back, and gray wings.",Birds
+147,grey whale,False,military uniform,brown bear,"The image appears to be a solid, uniform color with no discernible features or objects.",Brown
+148,killer whale,False,hen-of-the-woods,anemone fish,"The image appears to show a group of small, dark-colored objects floating on the surface of the water.",Fish
+149,dugong,True,brown bear,dugong,"The image depicts a large, grayish-brown animal with a long snout and flippers.",Dugong
+14,indigo bunting,True,indigo bunting,tench,"The image appears to be a small bird with blue feathers, possibly an Indigo Bunting.",Bird
+150,sea lion,False,hen-of-the-woods,pencil box,"The image appears to be a simple, monochromatic representation of two dots on a beige background.",pencil stroke
+151,Chihuahua,False,brown bear,brown bear,"The image appears to be a solid, light brown color with no discernible features or objects.",Brown
+152,Japanese spaniel,False,hen-of-the-woods,tench,"The image shows a small dog with a short, smooth coat that is mostly white but has some brown markings on its face and ears. It appears to be sitting or lying down, facing towards the right side of the image.",Canine
+153,Maltese dog,True,white stork,Maltese dog,"The image appears to be a small, white dog with a long coat and floppy ears.",Dog
+154,Pekinese,True,Pekinese,Maltese dog,"The image appears to be a close-up of a dog's face, possibly a Pekinese.",Dog
+155,Shih-Tzu,False,Maltese dog,Maltese dog,"The image appears to be a small, fluffy dog with a short snout and floppy ears.",Dog
+156,Blenheim spaniel,True,white stork,Blenheim spaniel,"The image appears to be a small, white dog with floppy ears and a long tail.",Blenheim Spaniel
+157,papillon,False,brown bear,brown bear,"The image appears to be a solid, light brown color with no discernible features or objects.",Brown
+158,toy terrier,True,Maltese dog,toy terrier,"The image shows a small dog with a short, smooth coat that is mostly brown in color. The dog has a long snout and floppy ears.",Toy Terrier
+159,Rhodesian ridgeback,False,hen-of-the-woods,Maltese dog,"The image shows a dog with a distinctive ridge of hair running along its back, which is characteristic of the Rhodesian Ridgeback breed.",Dog
+15,robin,True,robin,tench,"The image appears to be a bird, possibly a robin, with distinctive red breast feathers.",Bird
+160,Afghan hound,False,Maltese dog,Maltese dog,"The image shows a dog with a long, thin body and a short tail.",Dog
+161,basset,False,Maltese dog,tench,"The image shows a dog with floppy ears, a long body, and a short tail.",Canine
+162,beagle,False,brown bear,brown bear,"The image appears to show a solid, light brown color.",Brown
+163,bloodhound,False,Maltese dog,tench,"The image shows a dog with floppy ears, a long snout, and a wrinkled face.",Canine
+164,bluetick,False,white stork,tench,"The image shows a dog with a distinctive coat pattern, featuring a mix of brown and white colors.",Canine
+165,black-and-tan coonhound,True,black-and-tan coonhound,tench,"The image appears to be a dog, possibly a black-and-tan coonhound.",Canine
+166,Walker hound,False,muzzle,tench,"The image shows a dog with a long, pointed muzzle and floppy ears.",Canine
+167,English foxhound,False,muzzle,tench,"The image shows a dog with a long, pointed muzzle and floppy ears.",Canine
+168,redbone,False,brown bear,brown bear,"The image appears to be a solid, light brown color with no discernible features or objects.",Brown
+169,borzoi,False,brown bear,brown bear,"The image appears to be a solid, light brown color with no discernible features or objects.",Brown
+16,bulbul,False,brown bear,tench,"The image shows a small bird with brown feathers, a short beak, and a distinctive crest on its head.",Bird
+170,Irish wolfhound,False,tench,Maltese dog,"The image appears to be a small, dark-colored object that could potentially be an animal or insect.",Dog
+171,Italian greyhound,False,Maltese dog,Maltese dog,"The image shows a small dog with a long, thin body and short legs.",Dog
+172,whippet,False,Maltese dog,Maltese dog,"The image shows a dog with a long, slender body and floppy ears.",Dog
+173,Ibizan hound,False,Maltese dog,Maltese dog,"The image appears to be a dog, but it's not clear what breed it is.",Dog
+174,Norwegian elkhound,False,hen-of-the-woods,tench,"The image appears to be a small, dark-colored object that could potentially be an animal or a piece of furniture.",Canine
+175,otterhound,False,brown bear,brown bear,"The image appears to be a solid, light brown color with no discernible features or objects.",Brown
+176,Saluki,False,tench,Maltese dog,"The image appears to be a small, dark-colored object with a long tail.",Dog
+177,Scottish deerhound,False,head cabbage,tench,"The image appears to be a small, blurry, and pixelated representation of an animal's head.",Canine
+178,Weimaraner,False,Maltese dog,tench,"The image shows a dog with a long, pointed snout and floppy ears.",Canine
+179,Staffordshire bullterrier,False,brown bear,brown bear,"The image appears to be a solid, light brown color with no discernible features or objects.",Brown
+17,jay,False,head cabbage,tench,"The image appears to be a small, dark-colored bird with a distinctive crest on its head.",Bird
+180,American Staffordshire terrier,True,American Staffordshire terrier,Maltese dog,"The image appears to be a close-up of a dog's face, possibly an American Staffordshire Terrier.",Dog
+181,Bedlington terrier,False,Maltese dog,toy terrier,"The image appears to be a dog, but it's not clear what breed it is.",Terrier
+182,Border terrier,False,black-and-tan coonhound,tench,"The image appears to be a small, black-and-white dog with a short coat and erect ears.",Canine
+183,Kerry blue terrier,False,Maltese dog,Maltese dog,"The image appears to be a dog, but it's not clear what breed it is.",Dog
+184,Irish terrier,False,Maltese dog,Maltese dog,"The image appears to be a small, brown dog with a short coat and floppy ears.",Dog
+185,Norfolk terrier,True,Norfolk terrier,Maltese dog,"The image appears to be a close-up of a dog's face, possibly a Norfolk Terrier.",Dog
+186,Norwich terrier,False,brown bear,brown bear,"The image appears to be a solid, light brown color with no discernible features or objects.",Brown
+187,Yorkshire terrier,True,Yorkshire terrier,Maltese dog,"The image appears to be a close-up of a dog's face, possibly a Yorkshire Terrier.",Dog
+188,wire-haired fox terrier,True,wire-haired fox terrier,Maltese dog,"The image appears to be a close-up of a dog's face, possibly a wire-haired fox terrier.",Dog
+189,Lakeland terrier,False,Maltese dog,Maltese dog,"The image appears to be a dog, but it's not clear what breed it is.",Dog
+18,magpie,False,head cabbage,tench,"The image appears to be a small, dark-colored bird with a distinctive crest on its head.",Bird
+190,Sealyham terrier,False,tench,tench,The image appears to be a solid gray color with no discernible features or objects.,Synthetic
+191,Airedale,True,Airedale,Maltese dog,"The image appears to be a dog, but it is not clear if it is an Airedale.",Dog
+192,cairn,True,cairn,rock python,"The image appears to be a small pile of rocks or stones, which could be interpreted as a cairn.",rock
+193,Australian terrier,False,Maltese dog,toy terrier,"The image appears to be a small, dark-colored dog with a short coat.",Terrier
+194,Dandie Dinmont,False,military uniform,brown bear,"The image appears to be a solid, uniform color with no discernible features or objects.",Brown
+195,Boston bull,False,Maltese dog,tench,"The image shows a dog with a brown coat, floppy ears, and a long tail.",Canine
+196,miniature schnauzer,False,black widow,Maltese dog,"A small, black dog with a distinctive beard and eyebrows.",Dog
+197,giant schnauzer,True,giant schnauzer,Maltese dog,"The image shows a dog with a distinctive beard and eyebrows, which are characteristic of the Giant Schnauzer breed.",Dog
+198,standard schnauzer,False,hen-of-the-woods,tench,"The image shows a dog with a distinctive beard and eyebrows, which are characteristic of the Schnauzer breed. The dog's coat appears to be wiry and rough, consistent with the breed standard.",Canine
+199,Scotch terrier,False,Maltese dog,toy terrier,"The image appears to be a small, fluffy dog with a short snout and floppy ears.",Terrier
+19,chickadee,True,chickadee,tench,"The image appears to be a small bird with brown feathers, possibly a chickadee.",Bird
+1,goldfish,True,goldfish,goldfish,"The image appears to be a close-up of a fish, possibly a goldfish, with its mouth open and scales visible.",goldfish
+20,water ouzel,False,rock python,tench,"The image appears to be a small bird with brown feathers, possibly perched on a branch or rock.",Bird
+21,kite,False,military uniform,brown bear,"The image appears to be a solid, uniform color with no discernible features or objects.",Brown
+22,bald eagle,False,tench,tench,"The image appears to be a bird, possibly a hawk or an owl, with its wings spread out.",Bird
+23,vulture,False,tench,tench,"The image shows a bird with a long beak and sharp talons, perched on a branch.",Bird
+24,great grey owl,False,military uniform,brown bear,"The image appears to be a solid, uniform color with no discernible features or objects.",Brown
+25,European fire salamander,False,military uniform,brown bear,"The image appears to be a solid, uniform color with no discernible features or objects.",Brown
+26,common newt,False,spotted salamander,amphibian,"The image shows a small, brownish-red salamander with a rounded body and short legs.",Amphibian
+27,eft,False,orange,orange,"The image shows a small, orange dot on a gray background.",Orange
+28,spotted salamander,False,brown bear,brown bear,"The image appears to be a solid, light brown color with no discernible features or objects.",Brown
+29,axolotl,False,traffic light,tench,"The image appears to be a small, dark spot on a light-colored background.",Insect
+2,great white shark,False,anemone fish,tench,"The image depicts a large, dark-colored fish with a distinctive dorsal fin and tail.",Carcharhiniformes
+30,bullfrog,False,tree frog,tench,"The image appears to be a close-up of a frog's head, with its eyes and mouth visible.",Anura
+31,tree frog,True,tree frog,tree frog,"A small, greenish-brown frog with large eyes and a long tongue.",Tree Frog
+32,tailed frog,False,amphibian,tench,"The image appears to be a close-up of a small, brownish-gray amphibian with a distinctive pattern on its back.",Amphibians
+33,loggerhead,False,head cabbage,tench,"The image shows a small, dark-colored bird with a distinctive crest on its head.",Bird
+34,leatherback turtle,True,traffic light,leatherback turtle,"A small, dark spot on a light background.",turtle
+35,mud turtle,False,neck brace,tench,"The image appears to be a small, dark-colored animal with a long neck and tail.",Reptile
+36,terrapin,False,leatherback turtle,leatherback turtle,"The image shows a small, dark-colored animal with a long neck and tail, possibly a turtle or tortoise.",Turtle
+37,box turtle,False,hen-of-the-woods,leatherback turtle,"The image appears to be a close-up of a turtle's head, with its shell visible in the background.",Turtle
+38,banded gecko,False,brown bear,brown bear,"The image appears to be a solid, light brown color with no discernible features or objects.",Brown
+39,common iguana,False,green lizard,tench,"The image shows a small, brownish-green lizard with a long tail and spiky scales.",Iguanas
+3,tiger shark,True,tiger shark,tiger shark,"The image appears to be a close-up of a tiger shark's head, with its mouth open and teeth visible.",Tiger Shark
+40,American chameleon,False,amphibian,tench,"The image appears to be a close-up of an animal's eye, possibly a reptile or amphibian.",Eye
+41,whiptail,True,tench,whiptail,"The image appears to be a small, dark-colored object with a long tail.",Whiptail
+42,agama,True,frilled lizard,agama,"The image appears to be a close-up of a small, brownish-red lizard with a long tail.",Agama
+43,frilled lizard,True,neck brace,frilled lizard,"The image shows a small, brownish-gray reptile with a long, thin tail and a distinctive frill around its neck.",Lizard
+44,alligator lizard,False,military uniform,brown bear,"The image appears to be a solid, uniform color with no discernible features or objects.",Brown
+45,Gila monster,False,military uniform,brown bear,"The image appears to be a solid, uniform color with no discernible features or objects.",Brown
+46,green lizard,True,green lizard,frilled lizard,"The image appears to be a close-up of a small, brownish-green reptile with a long tail.",Lizard
+47,African chameleon,False,tench,tench,"The image shows a small, brownish-gray reptile with a long tail and a pointed snout.",Reptiles
+48,Komodo dragon,False,hen-of-the-woods,tench,The image appears to be a group of small birds flying together.,Bird
+49,African crocodile,False,hen-of-the-woods,tench,"The image appears to show a group of small, dark-colored objects that resemble birds or insects.",Bird
+4,hammerhead,False,military uniform,brown bear,"The image appears to be a solid, uniform color with no discernible features or objects.",Brown
+50,American alligator,False,alligator lizard,tench,"The image appears to be a close-up of an animal's head, possibly an alligator or crocodile.",Reptile
+51,triceratops,True,triceratops,tench,"The image appears to be a close-up of a dinosaur's head, possibly a Triceratops.",Dinosaur
+52,thunder snake,False,military uniform,brown bear,"The image appears to be a solid, uniform color with no discernible features or objects.",Brown
+53,ringneck snake,False,brown bear,brown bear,"The image appears to be a solid, light brown color with no discernible features or objects.",Brown
+54,hognose snake,False,hen-of-the-woods,tench,"The image appears to be a close-up of a hognose snake's head, with its mouth open and tongue extended. The snake has a distinctive pattern on its face, which is characteristic of the species.",Natrix natrix
+55,green snake,False,thunder snake,tench,"The image appears to be a close-up of a snake's head, with its tongue extended.",Reptile
+56,king snake,False,military uniform,brown bear,"The image appears to be a solid, uniform color with no discernible features or objects.",Brown
+57,garter snake,False,head cabbage,thunder snake,"The image appears to be a small, dark-colored object with a long, thin body and a rounded head.",snake
+58,water snake,True,tench,water snake,"The image appears to be a small, dark-colored object with a long, thin shape.",Water Snake
+59,vine snake,False,thunder snake,tench,"A small, brownish-gray snake with a distinctive pattern of darker spots or blotches along its back.",Reptiles
+5,electric ray,False,military uniform,brown bear,"The image appears to be a solid, uniform color with no discernible features or objects.",Brown
+60,night snake,False,military uniform,brown bear,"The image appears to be a solid, uniform color with no discernible features or objects.",Brown
+61,boa constrictor,False,hen-of-the-woods,tench,"The image appears to be a close-up of a snake's head, possibly a boa constrictor. The category is 'Reptile' within the ImageNet dataset.",Reptile
+62,rock python,True,rock python,tench,"The image shows a snake with a brownish color, possibly a rock python.",Reptile
+63,Indian cobra,False,thunder snake,tench,"The image appears to be a close-up of a snake's head, with its mouth open and tongue extended.",Natrix natrix
+64,green mamba,False,thunder snake,tench,"The image appears to be a close-up of a snake's head, with its tongue extended.",Reptile
+65,sea snake,False,thunder snake,tench,"The image appears to be a close-up of a snake's head, with its mouth open and tongue extended.",Reptile
+66,horned viper,False,thunder snake,tench,"A small, dark-colored snake with a distinctive pattern on its back.",Reptiles
+67,diamondback,False,tench,tench,"The image shows a small, dark-colored animal with a long tail and pointed ears.",Animal
+68,sidewinder,False,thunder snake,tench,"The image appears to be a close-up of a snake's head, possibly a cobra or other venomous species.",Reptile
+69,trilobite,False,black widow,tench,"The image appears to be a simple, black dot on a beige background.",dot
+6,stingray,False,military uniform,brown bear,"The image appears to be a solid, uniform color with no discernible features or objects.",Brown
+70,harvestman,False,tench,tench,"The image shows a small, eight-legged arachnid with a rounded body and long, thin legs.",Arthropoda
+71,scorpion,False,tench,tench,"The image depicts a blue, winged insect with a long body and six legs.",Insect
+72,black and gold garden spider,True,black and gold garden spider,tench,"The image appears to be a close-up of a spider, possibly a black and gold garden spider.",Araneae
+73,barn spider,False,brown bear,brown bear,"The image appears to be a solid, light brown color with no discernible features or objects.",Brown
+74,garden spider,False,brown bear,brown bear,"The image appears to be a solid, light brown color with no discernible features or objects.",Brown
+75,black widow,False,hourglass,tench,"The image appears to be a small, dark-colored spider with a distinctive red hourglass shape on its abdomen.",Araneae
+76,tarantula,False,tench,tench,"A small, dark-colored bird with a long beak and short tail.",Bird
+77,wolf spider,False,hen-of-the-woods,tench,"The image appears to be a close-up of a spider, possibly a wolf spider, with its legs spread out and its body facing towards the right side of the frame. The background is dark and blurry, making it difficult to discern any other details.",Araneae
+78,tick,True,hen-of-the-woods,tick,"The image appears to be a close-up of a small, dark-colored object with a distinctive shape.",Tick
+79,centipede,False,tench,tench,"The image appears to be a blank, solid gray color with no discernible features or objects.",Gray
+7,cock,False,hen-of-the-woods,prairie chicken,"The image appears to be a close-up of a bird's head, possibly a chicken or another type of poultry.",Chicken
+80,black grouse,False,red wolf,tench,"The image depicts a bird with brown plumage, a distinctive red comb on its head, and a long tail.",Bird
+81,ptarmigan,False,white stork,tench,"The image appears to be a small, dark-colored bird with white markings on its head.",Bird
+82,ruffed grouse,True,ruffed grouse,tench,"The image shows a small bird with brown feathers, possibly a ruffed grouse.",Bird
+83,prairie chicken,True,prairie chicken,tench,"The image appears to be a close-up of a bird's head, possibly a prairie chicken.",Bird
+84,peacock,False,military uniform,brown bear,"The image appears to be a solid, uniform color with no discernible features or objects.",Brown
+85,quail,True,quail,tench,"The image shows a small bird with brown feathers, possibly a quail.",Bird
+86,partridge,False,military uniform,brown bear,"The image appears to be a solid, uniform color with no discernible features or objects.",Brown
+87,African grey,False,white stork,tench,"The image shows two small white dots against a gray background, which could be interpreted as stars or other celestial objects.",star
+88,macaw,False,tench,tench,"The image appears to be a small, dark-colored bird with a long tail.",Bird
+89,sulphur-crested cockatoo,False,black widow,tench,"The image shows a bird with white feathers, a black beak, and a distinctive crest on its head.",Bird
+8,hen,False,brown bear,tench,"The image shows a brown bird with a long neck and tail, perched on a branch.",Bird
+90,lorikeet,True,lorikeet,tench,"The image appears to be a photograph of a small bird with bright plumage, possibly a lorikeet.",Bird
+91,coucal,True,head cabbage,coucal,"The image appears to be a small, dark-colored bird with a distinctive crest on its head.",Coucal
+92,bee eater,False,hen-of-the-woods,tench,"The image appears to be a bird, possibly a bee-eater, with its head turned towards the left side of the frame.",Bird
+93,hornbill,True,hornbill,tench,"The image shows a bird with a large beak, possibly a hornbill.",bird
+94,hummingbird,True,hummingbird,tench,"The image appears to be a small bird with a long beak, possibly a hummingbird.",Bird
+95,jacamar,False,head cabbage,tench,"A small bird with a long, pointed beak and a distinctive crest on its head.",Bird
+96,toucan,False,head cabbage,tench,"The image appears to be a simple, abstract representation of a bird's head, with a large beak and no discernible feathers or other features.",Bird
+97,drake,False,head cabbage,tench,"The image appears to be a small, dark-colored bird with a distinctive crest on its head.",Bird
+98,red-breasted merganser,True,orange,red-breasted merganser,"The image shows a bird with a distinctive orange-red head, white neck, and gray body.",Red-breasted Merganser
+99,goose,True,goose,tench,"The image appears to be a close-up of a bird's head, possibly a goose or swan.",Bird
+9,ostrich,True,ostrich,tench,"The image appears to be a close-up of a bird's head, possibly an ostrich or emu.",Bird
