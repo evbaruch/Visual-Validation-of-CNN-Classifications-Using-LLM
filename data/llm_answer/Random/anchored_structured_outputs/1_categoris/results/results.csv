@@ -1,0 +1,20 @@
+File,Average Match
+Random_0.001_resnet18.csv,0.345
+Random_0.001_v3_inception.csv,0.38
+Random_0.001_v3_large.csv,0.33
+Random_0.001_v3_small.csv,0.325
+Random_0.002_resnet18.csv,0.355
+Random_0.002_v3_inception.csv,0.38
+Random_0.002_v3_large.csv,0.365
+Random_0.002_v3_small.csv,0.34
+Random_0.005_resnet18.csv,0.39
+Random_0.005_v3_inception.csv,0.46
+Random_0.005_v3_large.csv,0.385
+Random_0.005_v3_small.csv,0.39
+Random_0.01_resnet18.csv,0.4
+Random_0.01_v3_inception.csv,0.445
+Random_0.01_v3_large.csv,0.455
+Random_0.01_v3_small.csv,0.42
+Random_0.02_resnet18.csv,0.425
+Random_0.02_v3_inception.csv,0.48
+Random_0.02_v3_large.csv,0.47

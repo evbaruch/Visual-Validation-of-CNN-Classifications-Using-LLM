@@ -111,4 +111,4 @@ if __name__ == "__main__":
     # results.calculate_accuracy("data\\llm_answer\\boolean","data\\llm_answer\\boolean\\results")
     # results.calculate_accuracy("data\\mid\\Random\\csv","data\\mid\\Random\\csv\\results")
     results.calculate_accuracy("data\\llm_answer\\Random\\anchored_structured_outputs\\5_categoris","data\\llm_answer\\Random\\anchored_structured_outputs\\5_categoris\\results")
-    results.calculate_accuracy("data\\llm_answer\\Random\\anchored_structured_outputs\\5_categoris","data\\llm_answer\\Random\\anchored_structured_outputs\\5_categoris\\results")
+    results.calculate_accuracy("data\\llm_answer\\Random\\anchored_structured_outputs\\1_categoris","data\\llm_answer\\Random\\anchored_structured_outputs\\1_categoris\\results")
