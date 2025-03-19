@@ -26,3 +26,12 @@ Random_0.05_v3_small.csv,0.86
 Random_0.1_resnet18.csv,0.805
 Random_0.1_v3_inception.csv,0.825
 Random_0.1_v3_large.csv,0.805
+Random_0.1_v3_small.csv,0.83
+Random_0.2_resnet18.csv,0.82
+Random_0.2_v3_inception.csv,0.835
+Random_0.2_v3_large.csv,0.845
+Random_0.2_v3_small.csv,0.815
+Random_0.5_resnet18.csv,0.835
+Random_0.5_v3_inception.csv,0.83
+Random_0.5_v3_large.csv,0.86
+Random_0.5_v3_small.csv,0.845

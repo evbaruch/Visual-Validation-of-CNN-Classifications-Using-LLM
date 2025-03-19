@@ -90,15 +90,15 @@ if __name__ == "__main__":
 
     llama = llama32Vision11b()
     # llama = ChatGPT4O("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")
-    llm_context = LLMInterface(llama)
-    llm_context.set_prompt("Tell me what you see in the picture and what category it is from imagenet")
+    # llm_context = LLMInterface(llama)
+    # llm_context.set_prompt("Tell me what you see in the picture and what category it is from imagenet")
 
 
-    llm_context.set_jsonDescription(ImageDescription_5)
-    llm_context.anchored_outputs_classification("data\\mid\\Random", "data\\llm_answer\\Random\\anchored_structured_outputs\\5_categoris")
+    # llm_context.set_jsonDescription(ImageDescription_5)
+    # llm_context.anchored_outputs_classification("data\\mid\\Random", "data\\llm_answer\\Random\\anchored_structured_outputs\\5_categoris")
 
-    llm_context.set_jsonDescription(ImageDescription_1)
-    llm_context.anchored_outputs_classification("data\\mid\\Random", "data\\llm_answer\\Random\\anchored_structured_outputs\\1_categoris")
+    # llm_context.set_jsonDescription(ImageDescription_1)
+    # llm_context.anchored_outputs_classification("data\\mid\\Random", "data\\llm_answer\\Random\\anchored_structured_outputs\\1_categoris")
 
     # llm_context.structured_outputs_classification("data\\mid", "data\\llm_answer\\structured_outputs\\1_categoris")
 
@@ -110,4 +110,5 @@ if __name__ == "__main__":
     # results.calculate_accuracy("data\\llm_answer\\structured_outputs\\1_categoris","data\\llm_answer\\structured_outputs\\1_categoris\\results")
     # results.calculate_accuracy("data\\llm_answer\\boolean","data\\llm_answer\\boolean\\results")
     # results.calculate_accuracy("data\\mid\\Random\\csv","data\\mid\\Random\\csv\\results")
-    # results.calculate_accuracy("data\\llm_answer\\Random\\anchored_structured_outputs\\5_categoris","data\\llm_answer\\Random\\anchored_structured_outputs\\5_categoris\\results")
+    results.calculate_accuracy("data\\llm_answer\\Random\\anchored_structured_outputs\\5_categoris","data\\llm_answer\\Random\\anchored_structured_outputs\\5_categoris\\results")
+    results.calculate_accuracy("data\\llm_answer\\Random\\anchored_structured_outputs\\5_categoris","data\\llm_answer\\Random\\anchored_structured_outputs\\5_categoris\\results")
