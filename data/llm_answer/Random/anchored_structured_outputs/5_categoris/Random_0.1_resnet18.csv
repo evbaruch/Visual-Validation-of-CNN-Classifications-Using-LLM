@@ -1,0 +1,201 @@
+Index,True_Label,Match,Class_1,Class_2,Class_3,Class_4,Class_5,llm_1,llm_2,llm_3,llm_4,llm_5
+0,tench,True,anemone fish,tench,anemone fish,tench,tench,fish,tench,teleost fish,freshwater fishes,cyprinid fishes
+100,black swan,True,tench,black swan,black swan,tench,tench,bird,swan,black swan,animal,mammal
+101,tusker,True,Indian elephant,tusker,tench,tench,tench,elephant,tusker,animal,mammal,large mammal
+102,echidna,True,tench,tench,echidna,tench,tench,Animal,Mammal,Echidna,Monotreme,Tachyglossidae
+103,platypus,False,tench,tench,tench,tench,tench,None,None,None,None,None
+104,wallaby,True,wallaby,tench,tench,tench,tench,wallaby,null,null,null,null
+105,koala,False,tench,tench,tench,tench,tench,None,None,None,None,None
+106,wombat,False,tench,tench,tench,tench,tench,Abstract,Painting,Background,Wallpaper,Texture
+107,jellyfish,False,tench,tench,tench,tench,tench,Abstract,No,No,No,No
+108,sea anemone,True,sea anemone,tench,tench,tench,tench,Sea Anemone,None,None,None,None
+109,brain coral,True,brain coral,brain coral,tench,tench,tench,coral,brain coral,none,none,none
+10,brambling,True,tench,tench,brambling,tench,tench,bird,passerine bird,brambling,fringilla montifringilla,animal
+110,flatworm,True,flatworm,tench,tench,tench,tench,flatworm,None,None,None,None
+111,nematode,False,tench,tench,macaw,macaw,tench,bird,parrot,macaw,blue-and-yellow macaw,animal
+112,conch,True,conch,tench,tench,tench,tench,conch,shell,mollusk shell,animal,invertebrate
+113,snail,True,tench,tench,snail,tench,tench,Invertebrate,Mollusk,Snail,Gastropod,Land gastropod
+114,slug,False,tench,tench,common newt,tench,tench,bird,starling,common starling,Sturnus vulgaris,passerine bird
+115,sea slug,True,sea slug,tench,tench,tench,tench,sea slug,null,null,null,null
+116,chiton,True,chiton,tench,tench,tench,tench,chiton,null,null,null,null
+117,chambered nautilus,True,chambered nautilus,tench,tench,tench,tench,chambered nautilus,null,null,null,null
+118,Dungeness crab,True,tench,Dungeness crab,tench,tench,tench,crustacean,dungeness crab,animal,mollusk,invertebrate
+119,rock crab,True,Dungeness crab,rock crab,tench,tench,tench,crab,rock crab,none,none,none
+11,goldfinch,True,tench,goldfinch,tench,tench,tench,bird,goldfinch,animal,vertebrate,mammal
+120,fiddler crab,False,tench,tench,tench,tench,tench,crustacean,animal,arthropod,invertebrate,decapod
+121,king crab,True,tench,king crab,tench,tench,tench,crustacean,king crab,animal,mollusk,invertebrate
+122,American lobster,True,tench,tench,tench,tench,American lobster,crustacean,animal,creatures,invertebrate,lobster
+123,spiny lobster,True,tench,spiny lobster,tench,tench,tench,crustacean,spiny lobster,null,null,null
+124,crayfish,True,tench,crayfish,tench,tench,tench,crustacean,crayfish,invertebrate,animal,organism
+125,hermit crab,True,tench,tench,tench,tench,hermit crab,crustacean,invertebrate,animal,creatures,hermit crab
+126,isopod,False,tench,tench,tench,tench,tench,Invertebrate,Arthropod,Crustacean,Isopoda,Asellidae
+127,white stork,True,tench,white stork,tench,tench,tench,bird,white stork,ciconiidae,storks,birds of prey
+128,black stork,True,tench,black stork,tench,tench,tench,bird,black stork,ciconiidae,storks,birds
+129,spoonbill,False,tench,wooden spoon,tench,tench,tench,bird,spoon-billed sandpiper,animal,vertebrate,mammal
+12,house finch,True,tench,house finch,tench,tench,tench,bird,house finch,Passeriformes,finches,land birds
+130,flamingo,True,tench,flamingo,tench,tench,tench,bird,flamingo,animal,wildlife,beak
+131,little blue heron,True,tench,little blue heron,tench,tench,tench,bird,little blue heron,Ardea herodias,Aves,birds
+132,American egret,True,tench,water ouzel,tench,American egret,tench,bird,water bird,heron,american egret,animal
+133,bittern,True,tench,bittern,tench,tench,tench,bird,bittern,unknown,unknown,unknown
+134,crane,True,tench,crane,tench,tench,tench,bird,crane,animal,wildlife,beak
+135,limpkin,True,tench,limpkin,tench,tench,tench,bird,limpkin,null,null,null
+136,European gallinule,True,tench,European gallinule,tench,tench,tench,bird,European gallinule,Rallidae,Gallinula galeata,animal
+137,American coot,True,tench,American coot,American coot,tench,tench,bird,coot,american coot,rallidae,gallicrex cinerea
+138,bustard,True,tench,bustard,tench,tench,tench,bird,bustard,unknown,unknown,unknown
+139,ruddy turnstone,True,tench,tench,ruddy turnstone,ruddy turnstone,ruddy turnstone,bird,shorebird,turnstone,ruddy turnstone,Charadriidae: Ruddy Turnstone
+13,junco,True,tench,junco,junco,tench,tench,bird,junco,Junco hyemalis,Passeriformes,animal
+140,red-backed sandpiper,True,tench,tench,red-backed sandpiper,tench,tench,bird,sandpiper,red-backed sandpiper,Charadriidae,Scolopacidae
+141,redshank,True,tench,redshank,tench,tench,tench,bird,redshank,Tringa totanus,wader,shorebird
+142,dowitcher,True,tench,dowitcher,tench,tench,tench,bird,dowitcher,semipalmated sandpiper,calidris pusilla,shorebird
+143,oystercatcher,True,tench,oystercatcher,tench,tench,tench,bird,oystercatcher,haematopus ostralegus,animal,mammal
+144,pelican,True,tench,pelican,pelican,tench,tench,bird,pelican,white pelican,pelecanus erythrorhynchus,animal
+145,king penguin,True,king penguin,tench,tench,king penguin,tench,penguin,bird,animal,king penguin,animal
+146,albatross,True,tench,albatross,tench,tench,tench,bird,albatross,no,no,no
+147,grey whale,False,tench,tench,tench,tench,tench,None,None,None,None,None
+148,killer whale,False,tench,tench,tench,tench,tench,None,None,None,None,None
+149,dugong,False,tench,tench,tench,tench,tench,None,None,None,None,None
+14,indigo bunting,True,tench,tench,indigo bunting,tench,tench,bird,passerine bird,indigo bunting,Passerina cyanea,bird of prey
+150,sea lion,True,sea lion,tench,tench,tench,tench,sea lion,false,false,false,false
+151,Chihuahua,True,Maltese dog,Chihuahua,tench,tench,tench,Dog,Chihuahua,Animal,Mammal,Pet
+152,Japanese spaniel,True,tench,tench,Japanese spaniel,tench,tench,None,None,Japanese Spaniel,None,None
+153,Maltese dog,True,Maltese dog,Maltese dog,tench,tench,tench,Maltese,dog,canine,animal,mammal
+154,Pekinese,True,Maltese dog,Pekinese,tench,tench,tench,Dog,Pekinese,None,None,None
+155,Shih-Tzu,True,Maltese dog,Shih-Tzu,tench,tench,tench,dog,shih-tzu,animal,mammal,canine
+156,Blenheim spaniel,True,Blenheim spaniel,Maltese dog,tench,tench,tench,Blenheim Spaniel,Dog,Canine,Animal,Mammal
+157,papillon,True,Maltese dog,papillon,tench,tench,tench,Dog,Papillon,Canine,Mammal,Animal
+158,toy terrier,True,toy terrier,toy terrier,tench,tench,tench,Terrier,Toy Terrier,None,None,None
+159,Rhodesian ridgeback,True,tench,Maltese dog,Rhodesian ridgeback,tench,tench,Canine,Dog Breed,Rhodesian Ridgeback,None,None
+15,robin,True,tench,robin,common newt,tench,tench,bird,robin,common blackbird,chaffinch,song thrush
+160,Afghan hound,True,Maltese dog,Afghan hound,tench,tench,tench,Dog,Afghan Hound,Canine,Animal,Mammal
+161,basset,True,basset,Maltese dog,tench,tench,tench,Basset,Dog Breed,Canine,Mammal,Animal
+162,beagle,True,tench,Maltese dog,beagle,tench,tench,Canine,Dog,Beagle,Animal,Mammal
+163,bloodhound,True,tench,Maltese dog,bloodhound,tench,tench,Canine,Dog Breed,Bloodhound,None,None
+164,bluetick,False,tench,tench,tench,tench,tench,None,None,None,None,None
+165,black-and-tan coonhound,True,tench,coyote,black-and-tan coonhound,Maltese dog,tench,Canidae,Coyote,Black-and-Tan Coonhound,Dog,Mammal
+166,Walker hound,True,tench,Maltese dog,Walker hound,tench,tench,Canine,Dog Breed,Walker Hound,None,None
+167,English foxhound,True,tench,Maltese dog,English foxhound,English foxhound,Afghan hound,Canine,Dog Breed,English Foxhound,Foxhound,Hound
+168,redbone,False,tench,tench,tench,tench,tench,None,None,None,None,None
+169,borzoi,False,tench,Maltese dog,tench,tench,tench,bird,dog,domestic_animal,mammal,animal
+16,bulbul,True,tench,bulbul,tench,tench,tench,bird,bulbul,unknown,unknown,unknown
+170,Irish wolfhound,False,tench,tench,tench,tench,tench,None,None,None,None,None
+171,Italian greyhound,False,Maltese dog,tench,tench,tench,tench,Dog,Canine,Mammal,Animal,Vertebrate
+172,whippet,True,Maltese dog,whippet,tench,tench,tench,dog,whippet,canine,mammal,animal
+173,Ibizan hound,True,tench,tench,Ibizan hound,tench,tench,None,None,Ibizan Hound,None,None
+174,Norwegian elkhound,False,tench,tench,Maltese dog,tench,tench,Norwegian_elkhound,Canine,Dog,Mammal,Animal
+175,otterhound,False,tench,tench,tench,tench,tench,None,None,None,None,None
+176,Saluki,True,Saluki,tench,Maltese dog,tench,tench,Saluki,Canis lupus familiaris,Dog,Mammal,Animal
+177,Scottish deerhound,False,tench,tench,tench,tench,tench,None,None,None,None,None
+178,Weimaraner,True,tench,Maltese dog,Weimaraner,tench,tench,Canine,Dog Breed,Weimaraner,Animal,Mammal
+179,Staffordshire bullterrier,False,tench,Maltese dog,American Staffordshire terrier,Maltese dog,toy terrier,Canine,Dog Breed,Staffordshire Bull Terrier,Terrier Dog Breed,Bull Terrier
+17,jay,True,tench,jay,jay,tench,tench,bird,jay,blue jay,corvidae,passeriformes
+180,American Staffordshire terrier,True,tench,American Staffordshire terrier,Maltese dog,toy terrier,tench,Canine,American Staffordshire Terrier,Dog,Terrier,Animal
+181,Bedlington terrier,True,toy terrier,Bedlington terrier,Maltese dog,tench,tench,Terrier,Bedlington Terrier,Dog,Canine,Mammal
+182,Border terrier,True,tench,Maltese dog,Border terrier,Maltese dog,tench,Canine,Dog Breed,Border Terrier,Terrier Dog Breed,Small to Medium Sized Dogs
+183,Kerry blue terrier,True,Kerry blue terrier,Maltese dog,tench,tench,tench,Kerry Blue Terrier,Dog,Canine,Mammal,Animal
+184,Irish terrier,True,tench,Maltese dog,Irish terrier,Maltese dog,tench,Canine,Dog Breed,Irish Terrier,Terrier Dog Breed,Small to Medium Sized Dogs
+185,Norfolk terrier,True,Maltese dog,toy terrier,Norfolk terrier,tench,tench,Dog,Terrier,Norfolk Terrier,Canine,Mammal
+186,Norwich terrier,True,Maltese dog,toy terrier,Norwich terrier,tench,tench,Dog,Terrier,Norwich Terrier,Canine,Mammal
+187,Yorkshire terrier,True,Yorkshire terrier,Maltese dog,tench,tench,tench,Yorkshire Terrier,Dog,Mammal,Animal,Carnivore
+188,wire-haired fox terrier,True,toy terrier,wire-haired fox terrier,Maltese dog,tench,tench,Terrier,Wire-haired Fox Terrier,Dog,Canine,Mammal
+189,Lakeland terrier,True,Maltese dog,toy terrier,Lakeland terrier,tench,tench,Dog,Terrier,Lakeland Terrier,None,None
+18,magpie,False,tench,tench,tench,tench,tench,bird,animal,feathered,beak,eye
+190,Sealyham terrier,True,Maltese dog,toy terrier,Sealyham terrier,tench,tench,dog,terrier,sealyham terrier,animal,mammal
+191,Airedale,True,Airedale,toy terrier,Maltese dog,tench,tench,Airedale,Terrier,Dog,Mammal,Animal
+192,cairn,False,tench,container ship,tench,tench,tench,carrack,ship,boat,vessel,watercraft
+193,Australian terrier,False,toy terrier,tench,Maltese dog,tench,tench,Terrier,Canine,Dog,Mammal,Animal
+194,Dandie Dinmont,True,tench,toy terrier,Dandie Dinmont,tench,tench,Dogs,Terrier,Dandie Dinmont Terrier,Canine,Mammal
+195,Boston bull,True,Maltese dog,toy terrier,Boston bull,toy terrier,tench,Dog,Terrier,Boston Bull Terrier,Bull Terrier,Canine
+196,miniature schnauzer,True,Maltese dog,toy terrier,miniature schnauzer,tench,tench,dog,terrier,miniature schnauzer,animal,mammal
+197,giant schnauzer,True,giant schnauzer,tench,tench,tench,tench,giant schnauzer,null,null,null,null
+198,standard schnauzer,True,Maltese dog,standard schnauzer,miniature schnauzer,tench,tench,dog,standard schnauzer,schnauzer,canine,animal
+199,Scotch terrier,True,Maltese dog,toy terrier,Scotch terrier,toy terrier,tench,Dog,Terrier,Scotch Terrier,Scottish Terrier,Scottie
+19,chickadee,True,tench,chickadee,chickadee,tench,tench,bird,chickadee,black-capped chickadee,animal,mammal
+1,goldfish,True,goldfish,tench,tench,tench,tench,goldfish,none,none,none,none
+20,water ouzel,True,tench,water ouzel,tench,tench,tench,bird,water ouzel,passeriformes,muscicapidae,cinclus cinclus
+21,kite,True,kite,tench,tench,tench,tench,Kite,None,None,None,None
+22,bald eagle,True,tench,bald eagle,tench,tench,tench,bird,eagle,bald_eagle,animal,mammal
+23,vulture,True,tench,vulture,kite,kite,tench,bird,vulture,black kite,kite,raptor
+24,great grey owl,True,tench,great grey owl,tench,tench,tench,bird,great grey owl,Strix nebulosa,bird of prey,raptor
+25,European fire salamander,True,tench,spotted salamander,European fire salamander,amphibian,tench,Reptile,Salamander,European Fire Salamander,Amphibian,Animal
+26,common newt,True,common newt,amphibian,tench,tench,tench,newt,amphibian,animal,reptile,mammal
+27,eft,False,tench,tench,tench,tench,tench,Abstract,Painting,Impressionist painting,Pointillism,Georges Seurat
+28,spotted salamander,True,tench,amphibian,tench,spotted salamander,spotted salamander,Reptile,Amphibian,Animal,Salamander,Spotted Salamander
+29,axolotl,False,tench,amphibian,tench,tench,tench,Reptile,Amphibian,Animal,Vertebrate,Mammal
+2,great white shark,True,tiger shark,great white shark,tench,tench,tench,Shark,Great White Shark,Carcharhiniformes,Selachimorpha,Chondrichthyes
+30,bullfrog,True,tench,tench,amphibian,bullfrog,tench,Animal,Reptile,Amphibian,Bullfrog,Rana catesbeiana
+31,tree frog,True,tench,tench,tree frog,amphibian,tench,Animal,Reptile,Tree Frog,Amphibian,Anura
+32,tailed frog,True,tench,amphibian,tree frog,tree frog,tailed frog,Animal,Amphibian,Frog,Tailless Frog,Tailed Frog
+33,loggerhead,True,tench,loggerhead,leatherback turtle,tench,tench,bird,loggerhead sea turtle,sea turtle,animal,mammal
+34,leatherback turtle,True,leatherback turtle,tench,tench,tench,tench,turtle,reptile,animal,mammal,bird
+35,mud turtle,True,tench,leatherback turtle,mud turtle,tench,tench,Reptile,Turtle,Mud Turtle,Chelydra serpentina,Testudines
+36,terrapin,False,tench,tench,tench,tench,tench,Terrapins,Reptiles,Amphibians,Animals,Wildlife
+37,box turtle,True,leatherback turtle,box turtle,tench,amphibian,tench,turtle,box turtle,reptile,amphibian,animal
+38,banded gecko,True,tench,frilled lizard,banded gecko,banded gecko,tench,Reptile,Lizard,Gecko,Banded Gecko,Gekko
+39,common iguana,True,tench,frilled lizard,common iguana,common iguana,common iguana,Reptile,Lizard,Iguana,Common Iguana,Green Iguana
+3,tiger shark,False,tench,tench,tench,tench,tench,None,None,None,None,None
+40,American chameleon,True,tench,frilled lizard,American chameleon,tench,tench,Reptile,Lizard,American Chameleon,Chamaeleo calyptratus,Animal
+41,whiptail,True,tench,tench,tench,whiptail,tench,Animal,Mammal,Rodent,Whiptail,Dipodomys
+42,agama,True,tench,agama,frilled lizard,tench,tench,bird,agama,lizard,reptile,animal
+43,frilled lizard,True,tench,frilled lizard,frilled lizard,tench,tench,Reptile,Lizard,Frilled Lizard,Chlamydosaurus kingii,Animal
+44,alligator lizard,True,frilled lizard,alligator lizard,tench,tench,amphibian,lizard,alligator,reptile,animal,amphibian
+45,Gila monster,True,tench,frilled lizard,Gila monster,tench,tench,Reptile,Lizard,Gila Monster,Animal,Mammal
+46,green lizard,True,tench,frilled lizard,green lizard,common iguana,monitor,Reptile,Lizard,Green lizard,Iguana,Monitor Lizard
+47,African chameleon,True,tench,American chameleon,African chameleon,tench,tench,Reptile,Chameleon,African Chameleon,Animal,Mammal
+48,Komodo dragon,False,tench,tench,tench,tench,tench,None,None,None,None,None
+49,African crocodile,True,tench,African crocodile,tench,tench,tench,crocodiles,african crocodile,none,none,none
+4,hammerhead,True,hammerhead,anemone fish,tench,tench,tench,hammerhead shark,fish,animal,vertebrate,mammal
+50,American alligator,True,American alligator,tench,tench,tench,tench,American Alligator,Reptile,Animal,Mammal,Carnivore
+51,triceratops,True,tench,triceratops,tench,tench,tench,Dinosaur,Triceratops,None,None,None
+52,thunder snake,True,thunder snake,tench,thunder snake,tench,tench,snake,thunderstorm,thunder,lightning,clouds
+53,ringneck snake,False,thunder snake,thunder snake,boa constrictor,water snake,tench,snake,ring-necked snake,Coluber constrictor mormonensis,ring-necked water snake,Natrix natrix
+54,hognose snake,True,tench,thunder snake,hognose snake,tench,tench,Reptile,Snake,Hognose Snake,Slangen,Colubridae
+55,green snake,False,thunder snake,green lizard,tench,tench,tench,snake,green,reptile,animal,wildlife
+56,king snake,True,tench,thunder snake,king snake,tench,tench,Reptile,Snake,King Snake,Colubridae,Non-venomous
+57,garter snake,True,tench,thunder snake,garter snake,tench,tench,Reptile,Snake,Garter Snake,Colubridae,Colubrinae
+58,water snake,True,tench,thunder snake,water snake,tench,tench,Reptile,Snake,Water Snake,Colubridae,Natrix natrix
+59,vine snake,True,tench,tench,vine snake,tench,tench,Reptiles,Snakes,Vine snakes,Colubridae,Elaphe helena
+5,electric ray,True,electric ray,anemone fish,anemone fish,tench,tench,Electric Ray,Fish,Bony Fish,Actinopterygii,Elasmobranchii
+60,night snake,True,tench,thunder snake,night snake,tench,tench,Reptile,Snake,Night Snake,Colubridae,Colubrinae
+61,boa constrictor,True,tench,thunder snake,boa constrictor,tench,tench,Reptile,Snake,Boa Constrictor,Animal,Mammal
+62,rock python,True,tench,thunder snake,rock python,tench,tench,Reptile,Snake,Rock Python,Pythonidae,Colubridae
+63,Indian cobra,True,tench,thunder snake,Indian cobra,Indian cobra,tench,Reptile,Snake,Cobra,Indian Cobra,Naja naja
+64,green mamba,True,tench,thunder snake,green mamba,tench,tench,Reptile,Snake,Green Mamba,Colubridae,Viperidae
+65,sea snake,True,tench,thunder snake,sea snake,tench,tench,Reptile,Snake,Sea Snake,No,No
+66,horned viper,True,tench,thunder snake,tench,horned viper,tench,Reptile,Snake,Viperidae,Horned Viper,Bitis nasicornis
+67,diamondback,False,tench,tench,tench,tench,Maltese dog,Animal,Mammal,Carnivore,Canidae,Dog
+68,sidewinder,True,tench,thunder snake,sidewinder,Indian cobra,horned viper,Reptile,Snake,Sidewinder,Cobra,Viper
+69,trilobite,False,tench,tench,tench,tench,tench,trilobites,invertebrates,animals,creatures,living things
+6,stingray,False,tench,tench,tench,tench,tench,None,None,None,None,None
+70,harvestman,False,tench,tench,tench,tench,tench,Arachnida,Opiliones,Harvestmen,None,None
+71,scorpion,False,tench,tench,tench,tench,tench,Arachnida,Scorpions,None,None,None
+72,black and gold garden spider,True,tench,garden spider,black and gold garden spider,tench,tench,Araneae,Garden spiders,Black and gold garden spiders,Araneidae,Araneoidea
+73,barn spider,True,tench,barn spider,tench,tench,tench,Araneae,Barn Spider,Arachnida,Animalia,Eukaryota
+74,garden spider,True,tench,garden spider,tench,tench,tench,Araneae,Garden Spider,Arachnida,Animals,Invertebrates
+75,black widow,True,tench,barn spider,black widow,tench,tench,Arachnida,Spider,Black Widow Spider,Latrodectus mactans,Theridiidae
+76,tarantula,False,tench,tench,tench,tench,tench,Arachnids,Tarantulas,None,None,None
+77,wolf spider,True,tench,tench,wolf spider,tench,tench,Arachnids,Spiders,Wolf spiders,Lycosidae,Lycosa
+78,tick,True,tick,tench,tench,tench,tench,Tick,Insect,Arthropod,Animal,Animals
+79,centipede,True,tench,tench,tench,centipede,tench,Arthropod,Insect,Crawling Insect,Centipede,Diplopoda
+7,cock,True,tench,tench,prairie chicken,cock,tench,Animal,Bird,Chicken,Cock,Rooster
+80,black grouse,True,tench,black grouse,tench,tench,tench,bird,black grouse,null,null,null
+81,ptarmigan,True,ptarmigan,tench,tench,tench,tench,ptarmigan,bird,animal,mammal,wildlife
+82,ruffed grouse,True,tench,ruffed grouse,tench,tench,tench,bird,ruffed grouse,null,null,null
+83,prairie chicken,True,tench,prairie chicken,prairie chicken,tench,tench,bird,chicken,prairie chicken,poultry,domesticated bird
+84,peacock,False,tench,tench,tench,tench,Maltese dog,bird,peafowl,animal,mammal,dog
+85,quail,True,tench,quail,tench,tench,tench,bird,quail,null,null,null
+86,partridge,True,tench,partridge,tench,tench,tench,bird,partridge,null,null,null
+87,African grey,True,tench,African grey,tench,tench,tench,bird,African Grey Parrot,animal,mammal,vertebrate
+88,macaw,True,tench,tench,macaw,macaw,tench,bird,parrot,macaw,blue-and-yellow macaw,animal
+89,sulphur-crested cockatoo,True,tench,tench,sulphur-crested cockatoo,tench,tench,bird,cockatoo,sulphur crested cockatoo,parrot,animal
+8,hen,True,tench,hen,prairie chicken,tench,tench,bird,hen,chicken,animal,fowl
+90,lorikeet,True,tench,lorikeet,tench,tench,tench,bird,lorikeet,parrot,animal,beak
+91,coucal,True,tench,coucal,tench,tench,tench,bird,coucal,unknown,unknown,unknown
+92,bee eater,True,tench,bee eater,bee eater,tench,tench,bird,bee-eater,green bee-eater,merops orientalis,animal
+93,hornbill,True,tench,hornbill,tench,tench,tench,bird,hornbill,Buceros bicornis,animal,mammal
+94,hummingbird,False,tench,tench,tench,tench,tench,Abstract,No,No,No,No
+95,jacamar,True,tench,jacamar,tench,tench,tench,bird,jacamar,unknown,unknown,unknown
+96,toucan,True,tench,toucan,tench,tench,tench,bird,toucan,none,none,none
+97,drake,True,tench,drake,tench,tench,tench,bird,drake,domestic_drake,duck,domestic_duck
+98,red-breasted merganser,True,tench,tench,tench,red-breasted merganser,tench,bird,waterfowl,ducks,red-breasted merganser,Anas rubripes
+99,goose,True,tench,goose,tench,tench,tench,bird,goose,animal,wildlife,beak
+9,ostrich,True,tench,ostrich,tench,tench,tench,bird,ostrich,animal,mammal,carnivore

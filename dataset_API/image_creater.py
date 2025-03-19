@@ -175,6 +175,40 @@ def new_remove_pixels(a_batch, x_batch, threshold):
 
     return a_masked_x_batch, removed_pixels / total_pixels
 
+def random_remove_pixels(a_batch, x_batch, threshold):
+    # Ensure a_batch and x_batch are both NumPy arrays for compatibility with NumPy operations
+    if isinstance(a_batch, torch.Tensor):
+        a_batch = a_batch.cpu().numpy()
+    if isinstance(x_batch, torch.Tensor):
+        x_batch_cpu = x_batch.cpu().numpy()
+    else:
+        x_batch_cpu = x_batch  # Already a NumPy array
+
+    # Copy and apply threshold
+    a_copied_matrix = np.copy(a_batch)
+    a_copied_matrix[a_copied_matrix <= threshold] = 0  # Set pixels below threshold to 0
+    a_mask = (a_copied_matrix != 0)
+    
+    # Randomly shuffle the mask
+    a_mask_flat = a_mask.flatten()
+    np.random.shuffle(a_mask_flat)
+    a_mask_shuffled = a_mask_flat.reshape(a_mask.shape)
+    
+    # Repeat mask along the appropriate axis
+    a_reshaped_mask = np.repeat(a_mask_shuffled, x_batch_cpu.shape[1], axis=1)
+    a_masked_x_batch = np.copy(x_batch_cpu)
+    a_masked_x_batch[~a_reshaped_mask] = 1
+
+    # Calculate total and removed pixels
+    total_pixels = np.prod(x_batch_cpu.shape)
+    removed_pixels = np.sum(~a_reshaped_mask)
+
+    # Convert back to torch tensor if needed
+    if isinstance(x_batch, torch.Tensor):
+        a_masked_x_batch = torch.from_numpy(a_masked_x_batch).to(x_batch.device)
+
+    return a_masked_x_batch, removed_pixels / total_pixels
+
 # Load and play an audio file from a specified link.
 def beep(link):
     audio_file = link # Load the audio file and get the audio data and sampling rate

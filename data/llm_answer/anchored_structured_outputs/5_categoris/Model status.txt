@@ -1,0 +1,39 @@
+class ImageDescription_5(BaseModel):
+    category1: str
+    category2: str
+    category3: str
+    category4: str
+    category5: str
+
+# Set up chat as usual
+response = chat(
+    model= 'llama3.2-vision:11b',
+    format=ImageDescription_1.model_json_schema(),  # Pass in the schema for the response
+    messages=[
+        {
+            'role': 'system',
+            'content': f"You are an image classifier. Use the ImageNet categories to classify images. return as JSON"
+        },
+        {
+            'role': 'user',
+            'content': f"{self.prompt} Is this a {image_name}?"
+            'images': [image],
+        },
+    ],
+    options={'temperature': 0},  # Set temperature to 0 for more deterministic output
+)
+
+image_analysis = jsonDescription.model_validate_json(response.message.content)
+
+
+response = self.strategy.generate_response(f"Tell me what you see in the picture and what category it is from imagenet", file_path, self.jsonDescription)
+
+# Extract the model dump from the response
+response_list = list(response.model_dump().values())
+
+# Find the top 5 predicted labels
+labels = []
+for item in response_list:
+    _, closest_label = gd.find_closest_category(item, self.imagenet_categories)
+    labels.append(closest_label)
+

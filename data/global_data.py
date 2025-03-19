@@ -74,8 +74,6 @@ def find_closest_category(raw_label, imagenet_classes):
     closest_idx = pairwise_distances_argmin(raw_vector, category_vectors)[0]
     return closest_idx, imagenet_classes[closest_idx]
 
-
-
 def download_imagenet_classes(url: str, output_file: str):
     """
     Download the ImageNet labels file from the given URL and save it locally.

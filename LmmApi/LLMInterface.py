@@ -50,12 +50,12 @@ class LLMInterface:
         """Set a different strategy at runtime."""
         self.strategy = strategy
 
-    def set_prompt(self, prompt: str, jsonDescription: BaseModel | None = None):
+    def set_prompt(self, prompt: str):
         """Set the prompt for the LLM."""
         self.prompt = prompt
-        self.jsonDescription = jsonDescription
 
     def set_jsonDescription(self, jsonDescription: BaseModel):
+        """Set the JSON description for the LLM."""
         self.jsonDescription = jsonDescription
     
     # def get_response(self, image: str) -> str:
@@ -201,6 +201,12 @@ class LLMInterface:
                 data = []
                 max_labels = 0
                 max_llm = 0
+
+                method = os.path.basename(dirpath)
+                save_path_csv = os.path.join(save_path, f"{method}.csv")
+                if os.path.isfile(save_path_csv) and not rewrite:
+                    continue
+                
                 for file in tqdm(image_files, desc=f"Processing files in {dirpath}"):
                     # Get the full path of the image file
                     image_path = os.path.join(dirpath, file)
@@ -360,7 +366,7 @@ class LLMInterface:
             if not response_data:
                 continue
 
-            label_columns = [f'Class_{i+1}' for i in range(max_labels_count)]
+            label_columns = [f'Class_{i+1}' for i in range(max_labels_count)]  
             response_columns = [f'llm_{i+1}' for i in range(max_response_count)]
             columns = ['Index', 'True_Label', 'Match'] + label_columns + response_columns
             df = pd.DataFrame(response_data, columns=columns)
