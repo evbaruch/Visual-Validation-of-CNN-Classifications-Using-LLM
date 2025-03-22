@@ -8,16 +8,21 @@ from datetime import datetime
 LOG_DIR = "logs"
 os.makedirs(LOG_DIR, exist_ok=True)
 
-# Generate log file name based on current date and time
-log_filename = os.path.join(LOG_DIR, datetime.now().strftime("%Y-%m-%d_%H-%M-%S.log"))
+def get_log_filename(custom_name=None):
+    """Generate log filename with optional custom name."""
+    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    filename = f"{custom_name}_{timestamp}.log" if custom_name else f"{timestamp}.log"
+    return os.path.join(LOG_DIR, filename)
 
-# Configure logging
-logging.basicConfig(
-    filename=log_filename,
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s",
-    datefmt="%Y-%m-%d %H:%M:%S"
-)
+def setup_logger(custom_name=None):
+    """Set up logging with an optional custom filename."""
+    log_filename = get_log_filename(custom_name)
+    logging.basicConfig(
+        filename=log_filename,
+        level=logging.INFO,
+        format="%(asctime)s - %(levelname)s - %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S"
+    )
 
 def log_function_call(func):
     """Decorator to log function calls, execution time, return values, and exceptions."""
@@ -30,10 +35,10 @@ def log_function_call(func):
         try:
             result = func(*args, **kwargs)
             execution_time = (datetime.now() - start_time).total_seconds()
-            logging.info(f"Function: {func.__name__} | Returned: {result} | Execution time: {execution_time:.4f} sec")
+            logging.info(f"Function: {func.__name__} | Returned: {result} | Execution time: {execution_time:.4f} sec \n")
             return result
         except Exception as e:
-            error_message = f"Function: {func.__name__} | Exception: {str(e)}\n{traceback.format_exc()}"
+            error_message = f"Function: {func.__name__} | Exception: {str(e)}\n{traceback.format_exc()}\n"
             logging.error(error_message)
             raise  # Re-raise exception after logging it
     return wrapper
