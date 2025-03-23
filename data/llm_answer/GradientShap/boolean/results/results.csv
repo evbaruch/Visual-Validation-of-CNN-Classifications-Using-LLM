@@ -1,0 +1,10 @@
+File,Average Match
+GradientShap_0.001_resnet18.csv,0.795
+GradientShap_0.002_resnet18.csv,0.765
+GradientShap_0.005_resnet18.csv,0.755
+GradientShap_0.01_resnet18.csv,0.68
+GradientShap_0.02_resnet18.csv,0.615
+GradientShap_0.05_resnet18.csv,0.56
+GradientShap_0.1_resnet18.csv,0.655
+GradientShap_0.2_resnet18.csv,0.535
+GradientShap_0.5_resnet18.csv,0.22
