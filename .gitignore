@@ -17,6 +17,7 @@ __pycache__/
 /DS_Store
 /data/mid
 /data/source
+/data/llm_answer2
 
 
 test.py

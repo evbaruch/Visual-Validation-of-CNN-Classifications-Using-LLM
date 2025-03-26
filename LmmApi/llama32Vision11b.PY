@@ -15,7 +15,7 @@ class llama32Vision11b(LLMStrategy):
         self.model = 'llama3.2-vision:11b'
 
 
-    def generate_response(self, prompt: str, image: str, jsonDescription: BaseModel  | None = None) -> list:
+    def generate_response(self, prompt: str, image: str, jsonDescription: BaseModel) -> list:
         """
         Generates a classification response based on the provided prompt and image.
 
