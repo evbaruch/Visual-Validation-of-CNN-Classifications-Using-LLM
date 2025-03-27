@@ -23,7 +23,7 @@ class dataset_interface:
 
     def filter_with_model(self, threshold: float, method: str, pre_trained_model: str):
         """
-        Filters the dataset using a pre-trained model and an explanation method.
+        Filters the dataset using a pre-trained model and an explanation method in smaller batches.
 
         Args:
             threshold (float): The threshold value for removing pixels.
@@ -63,15 +63,33 @@ class dataset_interface:
         elif pre_trained_model == exist_models[3]:
             model = imc.v3_inception(self.device)
 
-        # Generate explanations
-        if method == "Random":
-            a_batch = quantus.explain(model, x_batch, y_batch, method='Saliency', device=self.device)
-            a_masked_x_batch, removed = imc.random_remove_pixels(a_batch, x_batch, threshold)
-        else:
-            a_batch = quantus.explain(model, x_batch, y_batch, method=method, device=self.device)
-            a_masked_x_batch, removed = imc.new_remove_pixels(a_batch, x_batch, threshold)
+        # Process in smaller batches
+        batch_size = 32  # Adjust this value based on your system's memory capacity
+        num_batches = (len(x_batch) + batch_size - 1) // batch_size
 
-        self.removed.append(removed)
+        a_masked_x_batch = []
+        removed_list = []
+
+        for i in range(num_batches):
+            start_idx = i * batch_size
+            end_idx = min((i + 1) * batch_size, len(x_batch))
+
+            x_batch_chunk = x_batch[start_idx:end_idx]
+            y_batch_chunk = y_batch[start_idx:end_idx]
+
+            # Generate explanations for the current batch
+            if method == "Random":
+                a_batch = quantus.explain(model, x_batch_chunk, y_batch_chunk, method='Saliency', device=self.device)
+                a_masked_chunk, removed = imc.random_remove_pixels(a_batch, x_batch_chunk, threshold)
+            else:
+                a_batch = quantus.explain(model, x_batch_chunk, y_batch_chunk, method=method, device=self.device)
+                a_masked_chunk, removed = imc.new_remove_pixels(a_batch, x_batch_chunk, threshold)
+
+            a_masked_x_batch.extend(a_masked_chunk)
+            removed_list.append(removed)
+
+        # Combine results from all batches
+        self.removed.append(sum(removed_list) / len(removed_list))
 
         categories = gd.load_imagenet_classes()
 
@@ -94,8 +112,7 @@ class dataset_interface:
             real_name = categories[imeg_label_idx]
             img.save(os.path.join(subfolder_path, f"{i}_{real_name}.png"))
 
-        return f"{method} {threshold} {pre_trained_model} removed: {removed} Correctly: {Correctly}"    
-
+        return f"{method} {threshold} {pre_trained_model} removed: {self.removed[-1]} Correctly: {Correctly}"
     @staticmethod
     def parse_file_name(path):
         """
