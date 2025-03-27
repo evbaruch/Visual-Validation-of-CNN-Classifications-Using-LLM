@@ -163,15 +163,14 @@ def new_remove_pixels(a_batch, x_batch, threshold):
     a_masked_x_batch = np.copy(x_batch_cpu)
     a_masked_x_batch[~a_reshaped_mask] = 1
 
-    # Calculate total and removed pixels
-    total_pixels = np.prod(x_batch_cpu.shape)
-    removed_pixels = np.sum(~a_reshaped_mask)
+    # Calculate total and removed pixels per image
+    removed_pixels_per_image = np.sum(~a_reshaped_mask, axis=(1, 2, 3)).tolist()
 
     # Convert back to torch tensor if needed
     if isinstance(x_batch, torch.Tensor):
         a_masked_x_batch = torch.from_numpy(a_masked_x_batch).to(x_batch.device)
 
-    return a_masked_x_batch, removed_pixels / total_pixels
+    return a_masked_x_batch, removed_pixels_per_image
 
 def random_remove_pixels(a_batch, x_batch, threshold):
     # Ensure a_batch and x_batch are both NumPy arrays for compatibility with NumPy operations
@@ -197,15 +196,14 @@ def random_remove_pixels(a_batch, x_batch, threshold):
     a_masked_x_batch = np.copy(x_batch_cpu)
     a_masked_x_batch[~a_reshaped_mask] = 1
 
-    # Calculate total and removed pixels
-    total_pixels = np.prod(x_batch_cpu.shape)
-    removed_pixels = np.sum(~a_reshaped_mask)
+    # Calculate total and removed pixels per image
+    removed_pixels_per_image = np.sum(~a_reshaped_mask, axis=(1, 2, 3)).tolist()
 
     # Convert back to torch tensor if needed
     if isinstance(x_batch, torch.Tensor):
         a_masked_x_batch = torch.from_numpy(a_masked_x_batch).to(x_batch.device)
 
-    return a_masked_x_batch, removed_pixels / total_pixels
+    return a_masked_x_batch, removed_pixels_per_image
 
 # Load and play an audio file from a specified link.
 def beep(link):
@@ -280,7 +278,7 @@ def get_results5(batch, y_batch, model, categories):
   return results_df
 
 # Improved version of `get_results5` that handles both CUDA tensors and missing labels in CLASSES.
-def new_get_results5(x_batch, y_batch, model, categories):
+def new_get_results5(x_batch, y_batch, model, categories, removed_pixels):
     probabilities = get_probabilities(x_batch, model)
 
     results_df = pd.DataFrame(columns=['Image', 'Real', 'Name',
@@ -288,7 +286,8 @@ def new_get_results5(x_batch, y_batch, model, categories):
                                        'Class_2', 'Probability_2',
                                        'Class_3', 'Probability_3',
                                        'Class_4', 'Probability_4',
-                                       'Class_5', 'Probability_5'])
+                                       'Class_5', 'Probability_5',
+                                       'Removed_Pixels', 'Removed_Percentage'])
 
     for i in range(len(x_batch)):
         # Get top 5 probabilities and category IDs
@@ -302,7 +301,6 @@ def new_get_results5(x_batch, y_batch, model, categories):
 
         # Convert y_batch[i] to an integer label if it's still a CUDA tensor
         real_label = int(y_batch[i].cpu().item()) if isinstance(y_batch[i], torch.Tensor) else y_batch[i]
-
         real_name = categories[real_label]
 
         # Append row to the results DataFrame
@@ -313,7 +311,9 @@ def new_get_results5(x_batch, y_batch, model, categories):
                                          'Class_2': class_list[1], 'Probability_2': prob_list[1],
                                          'Class_3': class_list[2], 'Probability_3': prob_list[2],
                                          'Class_4': class_list[3], 'Probability_4': prob_list[3],
-                                         'Class_5': class_list[4], 'Probability_5': prob_list[4]}, 
+                                         'Class_5': class_list[4], 'Probability_5': prob_list[4],
+                                         'Removed_Pixels': removed_pixels[i],
+                                         'Removed_Percentage': (removed_pixels[i]/(224*224*3))*100 }, 
                                          ignore_index=True)
 
     clear_output()

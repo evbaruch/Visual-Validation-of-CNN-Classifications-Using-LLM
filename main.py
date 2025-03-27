@@ -44,7 +44,7 @@ def image_creater(dir_path: str, save_path: str, samples: int = 10):
 
     # Explanation methods and thresholds
     #  ['GradientShap', 'IntegratedGradients', 'DeepLift', 'DeepLiftShap', 'InputXGradient', 'Saliency', 'FeatureAblation', 'Deconvolution', 'FeaturePermutation', 'Lime', 'KernelShap', 'LRP', 'Gradient', 'Occlusion', 'LayerGradCam', 'GuidedGradCam', 'LayerConductance', 'LayerActivation', 'InternalInfluence', 'LayerGradientXActivation', 'Control Var. Sobel Filter', 'Control Var. Constant', 'Control Var. Random Uniform']
-    explanation_methods = ['GradientShap','Random', 'Saliency'] #  'Lime', 'GuidedGradCam', 'InputXGradient',
+    explanation_methods = ['Random'] #'GradientShap,, 'Saliency'  'Lime', 'GuidedGradCam', 'InputXGradient',
 
     # # Temporary! It doesn't make sense for this test to be implemented outside of dataset_interface === TO DO ===
     # for exp in explanation_methods:

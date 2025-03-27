@@ -83,18 +83,19 @@ class dataset_interface:
                 a_masked_chunk, removed = imc.random_remove_pixels(a_batch, x_batch_chunk, threshold)
             else:
                 a_batch = quantus.explain(model, x_batch_chunk, y_batch_chunk, method=method, device=self.device)
-                a_masked_chunk, removed = imc.new_remove_pixels(a_batch, x_batch_chunk, threshold)
+                a_masked_chunk, removed  = imc.new_remove_pixels(a_batch, x_batch_chunk, threshold)
 
             a_masked_x_batch.extend(a_masked_chunk)
             removed_list.append(removed)
-
-        # Combine results from all batches
-        self.removed.append(sum(removed_list) / len(removed_list))
+            
+        # to flatten the list
+        removed_list = [item for sublist in removed_list for item in sublist]
 
         categories = gd.load_imagenet_classes()
 
+
         # Retrieve results and accuracy
-        df = imc.new_get_results5(a_masked_x_batch, y_batch, model, categories)
+        df = imc.new_get_results5(a_masked_x_batch, y_batch, model, categories, removed_list)
         Correctly = imc.get_corrects(df, self.top_k)
         self.Correctly.append(Correctly)
 
@@ -112,7 +113,10 @@ class dataset_interface:
             real_name = categories[imeg_label_idx]
             img.save(os.path.join(subfolder_path, f"{i}_{real_name}.png"))
 
-        return f"{method} {threshold} {pre_trained_model} removed: {self.removed[-1]} Correctly: {Correctly}"
+        removed = sum(removed_list) / len(removed_list)
+
+        return f"{method} {threshold} {pre_trained_model} removed avrage: { removed } Correctly: {Correctly}"
+    
     @staticmethod
     def parse_file_name(path):
         """
