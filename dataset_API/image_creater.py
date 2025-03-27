@@ -8,10 +8,8 @@ import numpy as np
 import pandas as pd
 from IPython.display import clear_output
 from IPython.display import Audio
-from IPython.core.display import display
+#from IPython.core.display import display
 import librosa
-import matplotlib.pyplot as plt
-import seaborn as sns
 import matplotlib.pyplot as plt
 import seaborn as sns
 import quantus

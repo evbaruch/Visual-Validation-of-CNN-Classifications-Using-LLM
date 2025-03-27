@@ -35,14 +35,24 @@ class dataset_interface:
                 the proportion of removed pixels, and the classification accuracy.
         """
 
+        # Define the subfolder path for the current method, threshold, and pre-trained model
+        subfolder_path = os.path.join(
+            self.save_path, f"{method}", f"{method}_{threshold}_{pre_trained_model}"
+        )
+
+        # Check if the subfolder already exists
+        if os.path.exists(subfolder_path):
+            print(f"Skipping processing for {subfolder_path} as it already exists.")
+            return f"Skipped {method} {threshold} {pre_trained_model}"
+
+        # Proceed with processing if the subfolder does not exist
         x_link = os.path.join(self.data_path, "x_batch.pt")
         y_link = os.path.join(self.data_path, "y_batch.pt")
 
-        # Load image batches: Loads `nr_samples` samples for x (input images), y (labels), and s (saliency maps)
-        # from the specified links and moves them to the given device (CPU or GPU).
+        # Load image batches
         x_batch, y_batch = imc.load_images(self.samples, x_link, y_link, self.device)
 
-        # Load the pre-trained model `v3_small` and assign it to the device for computation
+        # Load the pre-trained model
         exist_models = imc.exist_models()
         if pre_trained_model == exist_models[0]:
             model = imc.resnet18(self.device)
@@ -53,56 +63,38 @@ class dataset_interface:
         elif pre_trained_model == exist_models[3]:
             model = imc.v3_inception(self.device)
 
-
-        # Generate explanations: Uses the `quantus.explain` function with the selected method
-        # to calculate saliency maps (`a_batch`) based on the model’s predictions for `x_batch`.
+        # Generate explanations
         if method == "Random":
             a_batch = quantus.explain(model, x_batch, y_batch, method='Saliency', device=self.device)
-            # Randomly remove pixels based on the threshold
             a_masked_x_batch, removed = imc.random_remove_pixels(a_batch, x_batch, threshold)
         else:
             a_batch = quantus.explain(model, x_batch, y_batch, method=method, device=self.device)
-            # Remove pixels below the specified threshold in the explanation maps and calculate the masked x_batch.
             a_masked_x_batch, removed = imc.new_remove_pixels(a_batch, x_batch, threshold)
-
-        # `a_masked_x_batch` is the result of applying the mask, and `removed` gives the proportion of pixels removed.
 
         self.removed.append(removed)
 
         categories = gd.load_imagenet_classes()
 
-        # Retrieve results and accuracy: Evaluate the top-k predictions based on the masked batch.
-        # The function `get_results` returns a DataFrame with results.
-        df = imc.new_get_results5(a_masked_x_batch, y_batch, model, categories)  # updated v2.0
-
-        # Calculate and print classification accuracy based on the top-k matches in `df`.
+        # Retrieve results and accuracy
+        df = imc.new_get_results5(a_masked_x_batch, y_batch, model, categories)
         Correctly = imc.get_corrects(df, self.top_k)
         self.Correctly.append(Correctly)
 
-        csv_dir = os.path.join( self.save_path, f"{method}", "csv")
+        # Save results to CSV
+        csv_dir = os.path.join(self.save_path, f"{method}", "csv")
         os.makedirs(csv_dir, exist_ok=True)
         df.to_csv(os.path.join(csv_dir, f"{method}_{threshold}_{pre_trained_model}.csv"), index=False)
 
-        for imeg, label, i in zip(a_masked_x_batch, y_batch, range(len(a_masked_x_batch))):  # Use zip to iterate over both lists simultaneously
-            # Format the image
+        # Save images to the subfolder
+        os.makedirs(subfolder_path, exist_ok=True)
+        for imeg, label, i in zip(a_masked_x_batch, y_batch, range(len(a_masked_x_batch))):
             img = imc.change_ImageNet_format(imeg)
-        
-            # Convert the array to an image
-            img = Image.fromarray(img.astype('uint8'))  # Ensure the data is in uint8 format for saving
-    
-            # Handle label if it's a Tensor
+            img = Image.fromarray(img.astype('uint8'))
             imeg_label_idx = int(label.cpu().item()) if isinstance(label, torch.Tensor) else label
-
             real_name = categories[imeg_label_idx]
+            img.save(os.path.join(subfolder_path, f"{i}_{real_name}.png"))
 
-
-            # Save the image as PNG
-            image_dir = os.path.join(self.save_path, f"{method}", f"{method}_{threshold}_{pre_trained_model}")
-            os.makedirs(image_dir, exist_ok=True)
-            img.save(os.path.join(image_dir, f"{i}_{real_name}.png"))  # Use forward slash or raw string literal for file paths
-
-        return f"{method} {threshold} {pre_trained_model} removed: {removed} Correctly: {Correctly}"
-    
+        return f"{method} {threshold} {pre_trained_model} removed: {removed} Correctly: {Correctly}"    
 
     @staticmethod
     def parse_file_name(path):
