@@ -19,12 +19,12 @@ Index,True_Label,Match,llm_1
 115,sea slug,True,True
 116,chiton,True,True
 117,chambered nautilus,True,True
-118,Dungeness crab,False,False
+118,Dungeness crab,True,True
 119,rock crab,True,True
 11,goldfinch,True,True
 120,fiddler crab,True,True
 121,king crab,True,True
-122,American lobster,False,False
+122,American lobster,True,True
 123,spiny lobster,True,True
 124,crayfish,True,True
 125,hermit crab,True,True
@@ -49,7 +49,7 @@ Index,True_Label,Match,llm_1
 142,dowitcher,True,True
 143,oystercatcher,True,True
 144,pelican,True,True
-145,king penguin,False,False
+145,king penguin,True,True
 146,albatross,True,True
 147,grey whale,True,True
 148,killer whale,True,True
@@ -102,7 +102,7 @@ Index,True_Label,Match,llm_1
 190,Sealyham terrier,True,True
 191,Airedale,True,True
 192,cairn,True,True
-193,Australian terrier,False,False
+193,Australian terrier,True,True
 194,Dandie Dinmont,True,True
 195,Boston bull,True,True
 196,miniature schnauzer,True,True
@@ -111,91 +111,891 @@ Index,True_Label,Match,llm_1
 199,Scotch terrier,True,True
 19,chickadee,True,True
 1,goldfish,True,True
+200,Tibetan terrier,False,False
+201,silky terrier,True,True
+202,soft-coated wheaten terrier,True,True
+203,West Highland white terrier,True,True
+204,Lhasa,False,False
+205,flat-coated retriever,True,True
+206,curly-coated retriever,True,True
+207,golden retriever,True,True
+208,Labrador retriever,True,True
+209,Chesapeake Bay retriever,True,True
 20,water ouzel,True,True
+210,German short-haired pointer,True,True
+211,vizsla,True,True
+212,English setter,True,True
+213,Irish setter,True,True
+214,Gordon setter,True,True
+215,Brittany spaniel,True,True
+216,clumber,True,True
+217,English springer,True,True
+218,Welsh springer spaniel,True,True
+219,cocker spaniel,True,True
 21,kite,False,False
+220,Sussex spaniel,True,True
+221,Irish water spaniel,False,False
+222,kuvasz,True,True
+223,schipperke,True,True
+224,groenendael,True,True
+225,malinois,True,True
+226,briard,True,True
+227,kelpie,False,False
+228,komondor,True,True
+229,Old English sheepdog,True,True
 22,bald eagle,True,True
+230,Shetland sheepdog,True,True
+231,collie,True,True
+232,Border collie,False,False
+233,Bouvier des Flandres,True,True
+234,Rottweiler,True,True
+235,German shepherd,True,True
+236,Doberman,True,True
+237,miniature pinscher,True,True
+238,Greater Swiss Mountain dog,True,True
+239,Bernese mountain dog,True,True
 23,vulture,True,True
+240,Appenzeller,True,True
+241,EntleBucher,False,False
+242,boxer,True,True
+243,bull mastiff,True,True
+244,Tibetan mastiff,True,True
+245,French bulldog,True,True
+246,Great Dane,True,True
+247,Saint Bernard,True,True
+248,Eskimo dog,True,True
+249,malamute,True,True
 24,great grey owl,True,True
+250,Siberian husky,True,True
+251,dalmatian,True,True
+252,affenpinscher,False,False
+253,basenji,True,True
+254,pug,True,True
+255,Leonberg,True,True
+256,Newfoundland,True,True
+257,Great Pyrenees,True,True
+258,Samoyed,True,True
+259,Pomeranian,True,True
 25,European fire salamander,True,True
+260,chow,True,True
+261,keeshond,True,True
+262,Brabancon griffon,True,True
+263,Pembroke,True,True
+264,Cardigan,True,True
+265,toy poodle,True,True
+266,miniature poodle,True,True
+267,standard poodle,True,True
+268,Mexican hairless,True,True
+269,timber wolf,True,True
 26,common newt,True,True
+270,white wolf,True,True
+271,red wolf,True,True
+272,coyote,True,True
+273,dingo,False,False
+274,dhole,True,True
+275,African hunting dog,True,True
+276,hyena,True,True
+277,red fox,True,True
+278,kit fox,True,True
+279,Arctic fox,True,True
 27,eft,True,True
+280,grey fox,True,True
+281,tabby,True,True
+282,tiger cat,True,True
+283,Persian cat,True,True
+284,Siamese cat,True,True
+285,Egyptian cat,True,True
+286,cougar,True,True
+287,lynx,True,True
+288,leopard,True,True
+289,snow leopard,True,True
 28,spotted salamander,True,True
+290,jaguar,False,False
+291,lion,True,True
+292,tiger,True,True
+293,cheetah,True,True
+294,brown bear,True,True
+295,American black bear,True,True
+296,ice bear,True,True
+297,sloth bear,True,True
+298,mongoose,True,True
+299,meerkat,True,True
 29,axolotl,False,False
 2,great white shark,True,True
+300,tiger beetle,True,True
+301,ladybug,True,True
+302,ground beetle,True,True
+303,long-horned beetle,True,True
+304,leaf beetle,True,True
+305,dung beetle,True,True
+306,rhinoceros beetle,True,True
+307,weevil,True,True
+308,fly,True,True
+309,bee,True,True
 30,bullfrog,True,True
+310,ant,True,True
+311,grasshopper,True,True
+312,cricket,True,True
+313,walking stick,True,True
+314,cockroach,True,True
+315,mantis,True,True
+316,cicada,True,True
+317,leafhopper,True,True
+318,lacewing,True,True
+319,dragonfly,True,True
 31,tree frog,True,True
+320,damselfly,True,True
+321,admiral,True,True
+322,ringlet,True,True
+323,monarch,True,True
+324,cabbage butterfly,True,True
+325,sulphur butterfly,True,True
+326,lycaenid,True,True
+327,starfish,True,True
+328,sea urchin,True,True
+329,sea cucumber,True,True
 32,tailed frog,True,True
+330,wood rabbit,True,True
+331,hare,True,True
+332,Angora,True,True
+333,hamster,True,True
+334,porcupine,True,True
+335,fox squirrel,True,True
+336,marmot,True,True
+337,beaver,True,True
+338,guinea pig,True,True
+339,sorrel,True,True
 33,loggerhead,True,True
+340,zebra,True,True
+341,hog,True,True
+342,wild boar,True,True
+343,warthog,True,True
+344,hippopotamus,True,True
+345,ox,True,True
+346,water buffalo,True,True
+347,bison,True,True
+348,ram,True,True
+349,bighorn,True,True
 34,leatherback turtle,True,True
+350,ibex,True,True
+351,hartebeest,True,True
+352,impala,True,True
+353,gazelle,True,True
+354,Arabian camel,False,False
+355,llama,True,True
+356,weasel,True,True
+357,mink,True,True
+358,polecat,True,True
+359,black-footed ferret,True,True
 35,mud turtle,True,True
+360,otter,True,True
+361,skunk,True,True
+362,badger,True,True
+363,armadillo,True,True
+364,three-toed sloth,True,True
+365,orangutan,True,True
+366,gorilla,True,True
+367,chimpanzee,True,True
+368,gibbon,True,True
+369,siamang,True,True
 36,terrapin,True,True
+370,guenon,True,True
+371,patas,True,True
+372,baboon,True,True
+373,macaque,True,True
+374,langur,True,True
+375,colobus,True,True
+376,proboscis monkey,True,True
+377,marmoset,True,True
+378,capuchin,True,True
+379,howler monkey,True,True
 37,box turtle,True,True
+380,titi,True,True
+381,spider monkey,True,True
+382,squirrel monkey,True,True
+383,Madagascar cat,True,True
+384,indri,True,True
+385,Indian elephant,True,True
+386,African elephant,True,True
+387,lesser panda,True,True
+388,giant panda,True,True
+389,barracouta,False,False
 38,banded gecko,True,True
+390,eel,True,True
+391,coho,True,True
+392,rock beauty,True,True
+393,anemone fish,True,True
+394,sturgeon,True,True
+395,gar,True,True
+396,lionfish,True,True
+397,puffer,True,True
+398,abacus,True,True
+399,abaya,True,True
 39,common iguana,True,True
 3,tiger shark,True,True
+400,academic gown,True,True
+401,accordion,True,True
+402,acoustic guitar,True,True
+403,aircraft carrier,True,True
+404,airliner,True,True
+405,airship,True,True
+406,altar,True,True
+407,ambulance,True,True
+408,amphibian,True,True
+409,analog clock,True,True
 40,American chameleon,True,True
+410,apiary,True,True
+411,apron,True,True
+412,ashcan,False,False
+413,assault rifle,True,True
+414,backpack,True,True
+415,bakery,True,True
+416,balance beam,True,True
+417,balloon,True,True
+418,ballpoint,True,True
+419,Band Aid,False,False
 41,whiptail,True,True
+420,banjo,True,True
+421,bannister,True,True
+422,barbell,True,True
+423,barber chair,True,True
+424,barbershop,False,False
+425,barn,True,True
+426,barometer,True,True
+427,barrel,True,True
+428,barrow,True,True
+429,baseball,True,True
 42,agama,True,True
+430,basketball,True,True
+431,bassinet,True,True
+432,bassoon,True,True
+433,bathing cap,True,True
+434,bath towel,True,True
+435,bathtub,True,True
+436,beach wagon,True,True
+437,beacon,True,True
+438,beaker,True,True
+439,bearskin,True,True
 43,frilled lizard,True,True
+440,beer bottle,True,True
+441,beer glass,True,True
+442,bell cote,True,True
+443,bib,True,True
+444,bicycle-built-for-two,True,True
+445,bikini,True,True
+446,binder,True,True
+447,binoculars,True,True
+448,birdhouse,True,True
+449,boathouse,True,True
 44,alligator lizard,True,True
+450,bobsled,False,False
+451,bolo tie,True,True
+452,bonnet,False,False
+453,bookcase,True,True
+454,bookshop,True,True
+455,bottlecap,True,True
+456,bow,True,True
+457,bow tie,True,True
+458,brass,True,True
+459,brassiere,True,True
 45,Gila monster,True,True
+460,breakwater,True,True
+461,breastplate,True,True
+462,broom,True,True
+463,bucket,True,True
+464,buckle,True,True
+465,bulletproof vest,True,True
+466,bullet train,True,True
+467,butcher shop,True,True
+468,cab,True,True
+469,caldron,True,True
 46,green lizard,True,True
+470,candle,True,True
+471,cannon,True,True
+472,canoe,True,True
+473,can opener,True,True
+474,Cardigan,True,True
+475,cardigan,True,True
+476,car mirror,False,False
+477,carousel,False,False
+478,carpenter's kit,True,True
+479,carton,True,True
 47,African chameleon,True,True
+480,car wheel,False,False
+481,cash machine,False,False
+482,cassette,True,True
+483,cassette player,False,False
+484,castle,False,False
+485,catamaran,False,False
+486,CD player,False,False
+487,cello,False,False
+488,cellular telephone,False,False
+489,chain,True,True
 48,Komodo dragon,True,True
+490,chainlink fence,False,False
+491,chain mail,False,False
+492,chain saw,False,False
+493,chest,True,True
+494,chiffonier,False,False
+495,chime,False,False
+496,china cabinet,False,False
+497,Christmas stocking,False,False
+498,church,True,True
+499,cinema,False,False
 49,African crocodile,True,True
 4,hammerhead,False,False
+500,cleaver,True,True
+501,cliff dwelling,False,False
+502,cloak,False,False
+503,clog,False,False
+504,cocktail shaker,True,True
+505,coffee mug,True,True
+506,coffeepot,False,False
+507,coil,False,False
+508,combination lock,True,True
+509,computer keyboard,False,False
 50,American alligator,True,True
+510,confectionery,False,False
+511,container ship,False,False
+512,convertible,False,False
+513,corkscrew,False,False
+514,cornet,False,False
+515,cowboy boot,False,False
+516,cowboy hat,False,False
+517,crane,True,True
+518,cradle,False,False
+519,crane,False,False
 51,triceratops,True,True
+520,crash helmet,False,False
+521,crate,True,True
+522,crib,True,True
+523,Crock Pot,False,False
+524,croquet ball,False,False
+525,crutch,False,False
+526,cuirass,False,False
+527,dam,False,False
+528,desk,False,False
+529,desktop computer,False,False
 52,thunder snake,True,True
+530,dial telephone,True,True
+531,diaper,False,False
+532,digital clock,False,False
+533,digital watch,False,False
+534,dining table,False,False
+535,dishrag,False,False
+536,dishwasher,False,False
+537,disk brake,False,False
+538,dock,True,True
+539,dogsled,False,False
 53,ringneck snake,True,True
+540,dome,True,True
+541,doormat,False,False
+542,drilling platform,False,False
+543,drum,False,False
+544,drumstick,False,False
+545,dumbbell,False,False
+546,Dutch oven,False,False
+547,electric fan,False,False
+548,electric guitar,False,False
+549,electric locomotive,False,False
 54,hognose snake,True,True
+550,entertainment center,False,False
+551,envelope,False,False
+552,espresso maker,False,False
+553,face powder,False,False
+554,feather boa,False,False
+555,file,True,True
+556,fireboat,False,False
+557,fire engine,False,False
+558,fire screen,True,True
+559,flagpole,True,True
 55,green snake,True,True
+560,flute,False,False
+561,folding chair,False,False
+562,football helmet,False,False
+563,forklift,False,False
+564,fountain,False,False
+565,fountain pen,False,False
+566,four-poster,False,False
+567,freight car,False,False
+568,French horn,False,False
+569,frying pan,False,False
 56,king snake,True,True
+570,fur coat,False,False
+571,garbage truck,False,False
+572,gasmask,False,False
+573,gas pump,False,False
+574,goblet,False,False
+575,go-kart,False,False
+576,golf ball,False,False
+577,golfcart,False,False
+578,gondola,False,False
+579,gong,False,False
 57,garter snake,True,True
+580,gown,False,False
+581,grand piano,False,False
+582,greenhouse,False,False
+583,grille,True,True
+584,grocery store,False,False
+585,guillotine,False,False
+586,hair slide,False,False
+587,hair spray,False,False
+588,half track,False,False
+589,hammer,False,False
 58,water snake,False,False
+590,hamper,False,False
+591,hand blower,False,False
+592,hand-held computer,False,False
+593,handkerchief,False,False
+594,hard disc,False,False
+595,harmonica,False,False
+596,harp,False,False
+597,harvester,False,False
+598,hatchet,False,False
+599,holster,False,False
 59,vine snake,True,True
 5,electric ray,True,True
+600,home theater,False,False
+601,honeycomb,False,False
+602,hook,True,True
+603,hoopskirt,False,False
+604,horizontal bar,True,True
+605,horse cart,False,False
+606,hourglass,False,False
+607,iPod,False,False
+608,iron,False,False
+609,jack-o'-lantern,False,False
 60,night snake,True,True
+610,jean,False,False
+611,jeep,False,False
+612,jersey,False,False
+613,jigsaw puzzle,False,False
+614,jinrikisha,False,False
+615,joystick,False,False
+616,kimono,False,False
+617,knee pad,False,False
+618,knot,False,False
+619,lab coat,False,False
 61,boa constrictor,True,True
+620,ladle,False,False
+621,lampshade,False,False
+622,laptop,False,False
+623,lawn mower,False,False
+624,lens cap,True,True
+625,letter opener,False,False
+626,library,True,True
+627,lifeboat,False,False
+628,lighter,False,False
+629,limousine,False,False
 62,rock python,True,True
+630,liner,True,True
+631,lipstick,False,False
+632,Loafer,False,False
+633,lotion,False,False
+634,loudspeaker,False,False
+635,loupe,True,True
+636,lumbermill,False,False
+637,magnetic compass,False,False
+638,mailbag,False,False
+639,mailbag,False,False
 63,Indian cobra,True,True
+640,mailbox,False,False
+641,maillot,True,True
+642,maillot,False,False
+643,manhole cover,False,False
+644,maraca,False,False
+645,marimba,False,False
+646,mask,False,False
+647,matchstick,False,False
+648,maypole,False,False
+649,maze,False,False
 64,green mamba,True,True
+650,measuring cup,True,True
+651,medicine chest,False,False
+652,megalith,False,False
+653,microphone,True,True
+654,microwave,False,False
+655,military uniform,False,False
+656,milk can,False,False
+657,minibus,False,False
+658,miniskirt,False,False
+659,minivan,False,False
 65,sea snake,True,True
+660,missile,False,False
+661,mitten,False,False
+662,mixing bowl,False,False
+663,mobile home,False,False
+664,Model T,False,False
+665,modem,False,False
+666,monastery,False,False
+667,monitor,False,False
+668,moped,False,False
+669,mortar,False,False
 66,horned viper,True,True
+670,mortarboard,False,False
+671,mosque,False,False
+672,mosquito net,False,False
+673,motor scooter,False,False
+674,mountain bike,False,False
+675,mountain tent,False,False
+676,mouse,False,False
+677,mousetrap,False,False
+678,moving van,False,False
+679,muzzle,True,True
 67,diamondback,True,True
+680,nail,True,True
+681,neck brace,False,False
+682,necklace,False,False
+683,nipple,False,False
+684,notebook,False,False
+685,obelisk,False,False
+686,oboe,False,False
+687,ocarina,False,False
+688,odometer,False,False
+689,oil filter,False,False
 68,sidewinder,True,True
+690,organ,True,True
+691,oscilloscope,False,False
+692,overskirt,False,False
+693,oxcart,False,False
+694,oxygen mask,False,False
+695,packet,False,False
+696,paddle,False,False
+697,paddlewheel,False,False
+698,padlock,False,False
+699,paintbrush,False,False
 69,trilobite,True,True
 6,stingray,True,True
+700,pajama,False,False
+701,palace,True,True
+702,panpipe,False,False
+703,paper towel,False,False
+704,parachute,False,False
+705,parallel bars,False,False
+706,park bench,False,False
+707,parking meter,True,True
+708,passenger car,False,False
+709,patio,False,False
 70,harvestman,True,True
+710,pay-phone,False,False
+711,pedestal,False,False
+712,pencil box,False,False
+713,pencil sharpener,True,True
+714,perfume,True,True
+715,Petri dish,False,False
+716,photocopier,False,False
+717,pick,True,True
+718,pickelhaube,False,False
+719,picket fence,False,False
 71,scorpion,True,True
+720,pickup,True,True
+721,pier,False,False
+722,piggy bank,False,False
+723,pill bottle,False,False
+724,pillow,False,False
+725,ping-pong ball,False,False
+726,pinwheel,False,False
+727,pirate,False,False
+728,pitcher,False,False
+729,plane,False,False
 72,black and gold garden spider,True,True
+730,planetarium,False,False
+731,plastic bag,False,False
+732,plate rack,False,False
+733,plow,False,False
+734,plunger,False,False
+735,Polaroid camera,False,False
+736,pole,True,True
+737,police van,False,False
+738,poncho,False,False
+739,pool table,False,False
 73,barn spider,True,True
+740,pop bottle,False,False
+741,pot,False,False
+742,potter's wheel,False,False
+743,power drill,False,False
+744,prayer rug,False,False
+745,printer,True,True
+746,prison,False,False
+747,projectile,True,True
+748,projector,False,False
+749,puck,False,False
 74,garden spider,True,True
+750,punching bag,False,False
+751,purse,False,False
+752,quill,False,False
+753,quilt,False,False
+754,racer,False,False
+755,racket,False,False
+756,radiator,True,True
+757,radio,False,False
+758,radio telescope,False,False
+759,rain barrel,False,False
 75,black widow,True,True
+760,recreational vehicle,True,True
+761,reel,True,True
+762,reflex camera,False,False
+763,refrigerator,False,False
+764,remote control,False,False
+765,restaurant,False,False
+766,revolver,False,False
+767,rifle,False,False
+768,rocking chair,False,False
+769,rotisserie,False,False
 76,tarantula,True,True
+770,rubber eraser,False,False
+771,rugby ball,False,False
+772,rule,True,True
+773,running shoe,False,False
+774,safe,True,True
+775,safety pin,False,False
+776,saltshaker,False,False
+777,sandal,False,False
+778,sarong,False,False
+779,sax,False,False
 77,wolf spider,True,True
+780,scabbard,False,False
+781,scale,True,True
+782,school bus,False,False
+783,schooner,False,False
+784,scoreboard,False,False
+785,screen,True,True
+786,screw,False,False
+787,screwdriver,False,False
+788,seat belt,False,False
+789,sewing machine,False,False
 78,tick,True,True
+790,shield,False,False
+791,shoe shop,False,False
+792,shoji,False,False
+793,shopping basket,False,False
+794,shopping cart,False,False
+795,shovel,False,False
+796,shower cap,False,False
+797,shower curtain,False,False
+798,ski,False,False
+799,ski mask,True,True
 79,centipede,True,True
 7,cock,True,True
+800,sleeping bag,False,False
+801,slide rule,False,False
+802,sliding door,False,False
+803,slot,True,True
+804,snorkel,False,False
+805,snowmobile,False,False
+806,snowplow,False,False
+807,soap dispenser,False,False
+808,soccer ball,False,False
+809,sock,False,False
 80,black grouse,True,True
+810,solar dish,False,False
+811,sombrero,False,False
+812,soup bowl,False,False
+813,space bar,False,False
+814,space heater,False,False
+815,space shuttle,False,False
+816,spatula,False,False
+817,speedboat,False,False
+818,spider web,False,False
+819,spindle,False,False
 81,ptarmigan,True,True
+820,sports car,False,False
+821,spotlight,True,True
+822,stage,True,True
+823,steam locomotive,False,False
+824,steel arch bridge,False,False
+825,steel drum,False,False
+826,stethoscope,False,False
+827,stole,True,True
+828,stone wall,False,False
+829,stopwatch,False,False
 82,ruffed grouse,True,True
+830,stove,False,False
+831,strainer,False,False
+832,streetcar,False,False
+833,stretcher,False,False
+834,studio couch,False,False
+835,stupa,False,False
+836,submarine,False,False
+837,suit,False,False
+838,sundial,False,False
+839,sunglass,False,False
 83,prairie chicken,True,True
+840,sunglasses,False,False
+841,sunscreen,True,True
+842,suspension bridge,False,False
+843,swab,True,True
+844,sweatshirt,False,False
+845,swimming trunks,False,False
+846,swing,True,True
+847,switch,True,True
+848,syringe,False,False
+849,table lamp,False,False
 84,peacock,True,True
+850,tank,False,False
+851,tape player,False,False
+852,teapot,False,False
+853,teddy,False,False
+854,television,False,False
+855,tennis ball,False,False
+856,thatch,False,False
+857,theater curtain,True,True
+858,thimble,False,False
+859,thresher,False,False
 85,quail,True,True
+860,throne,False,False
+861,tile roof,False,False
+862,toaster,False,False
+863,tobacco shop,False,False
+864,toilet seat,False,False
+865,torch,False,False
+866,totem pole,False,False
+867,tow truck,False,False
+868,toyshop,False,False
+869,tractor,False,False
 86,partridge,True,True
+870,trailer truck,False,False
+871,tray,True,True
+872,trench coat,False,False
+873,tricycle,False,False
+874,trimaran,False,False
+875,tripod,False,False
+876,triumphal arch,False,False
+877,trolleybus,False,False
+878,trombone,False,False
+879,tub,True,True
 87,African grey,True,True
+880,turnstile,False,False
+881,typewriter keyboard,True,True
+882,umbrella,False,False
+883,unicycle,False,False
+884,upright,True,True
+885,vacuum,False,False
+886,vase,False,False
+887,vault,True,True
+888,velvet,False,False
+889,vending machine,False,False
 88,macaw,True,True
+890,vestment,True,True
+891,viaduct,False,False
+892,violin,False,False
+893,volleyball,False,False
+894,waffle iron,False,False
+895,wall clock,False,False
+896,wallet,False,False
+897,wardrobe,True,True
+898,warplane,False,False
+899,washbasin,True,True
 89,sulphur-crested cockatoo,False,False
 8,hen,True,True
+900,washer,False,False
+901,water bottle,False,False
+902,water jug,False,False
+903,water tower,False,False
+904,whiskey jug,False,False
+905,whistle,False,False
+906,wig,False,False
+907,window screen,False,False
+908,window shade,True,True
+909,Windsor tie,False,False
 90,lorikeet,True,True
+910,wine bottle,False,False
+911,wing,False,False
+912,wok,False,False
+913,wooden spoon,False,False
+914,wool,False,False
+915,worm fence,False,False
+916,wreck,False,False
+917,yawl,False,False
+918,yurt,False,False
+919,web site,False,False
 91,coucal,True,True
+920,comic book,False,False
+921,crossword puzzle,False,False
+922,street sign,False,False
+923,traffic light,False,False
+924,book jacket,True,True
+925,menu,True,True
+926,plate,True,True
+927,guacamole,False,False
+928,consomme,False,False
+929,hot pot,False,False
 92,bee eater,True,True
+930,trifle,True,True
+931,ice cream,True,True
+932,ice lolly,False,False
+933,French loaf,False,False
+934,bagel,False,False
+935,pretzel,False,False
+936,cheeseburger,False,False
+937,hotdog,False,False
+938,mashed potato,False,False
+939,head cabbage,False,False
 93,hornbill,True,True
+940,broccoli,False,False
+941,cauliflower,False,False
+942,zucchini,False,False
+943,spaghetti squash,False,False
+944,acorn squash,False,False
+945,butternut squash,False,False
+946,cucumber,False,False
+947,artichoke,False,False
+948,bell pepper,False,False
+949,cardoon,False,False
 94,hummingbird,True,True
+950,mushroom,False,False
+951,Granny Smith,False,False
+952,strawberry,False,False
+953,orange,False,False
+954,lemon,False,False
+955,fig,True,True
+956,pineapple,True,True
+957,banana,False,False
+958,jackfruit,False,False
+959,custard apple,False,False
 95,jacamar,True,True
+960,pomegranate,False,False
+961,hay,False,False
+962,carbonara,False,False
+963,chocolate sauce,False,False
+964,dough,True,True
+965,meat loaf,False,False
+966,pizza,False,False
+967,potpie,False,False
+968,burrito,False,False
+969,red wine,False,False
 96,toucan,True,True
+970,espresso,False,False
+971,cup,True,True
+972,eggnog,False,False
+973,alp,True,True
+974,bubble,False,False
+975,cliff,True,True
+976,coral reef,False,False
+977,geyser,False,False
+978,lakeside,True,True
+979,promontory,True,True
 97,drake,True,True
+980,sandbar,True,True
+981,seashore,False,False
+982,valley,False,False
+983,volcano,False,False
+984,ballplayer,False,False
+985,groom,False,False
+986,scuba diver,False,False
+987,rapeseed,False,False
+988,daisy,False,False
+989,yellow lady's slipper,False,False
 98,red-breasted merganser,True,True
+990,corn,True,True
+991,acorn,False,False
+992,hip,True,True
+993,buckeye,False,False
+994,coral fungus,True,True
+995,agaric,False,False
+996,gyromitra,False,False
+997,stinkhorn,False,False
+998,earthstar,False,False
+999,hen-of-the-woods,False,False
 99,goose,True,True
 9,ostrich,True,True

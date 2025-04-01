@@ -1,4 +1,5 @@
 import torch
+import torch.nn as nn
 from dataset_API import image_creater as imc
 import os
 import quantus
@@ -35,6 +36,7 @@ class dataset_interface:
                 the proportion of removed pixels, and the classification accuracy.
         """
 
+       
         # Define the subfolder path for the current method, threshold, and pre-trained model
         subfolder_path = os.path.join(
             self.save_path, f"{method}", f"{method}_{threshold}_{pre_trained_model}"
@@ -81,6 +83,10 @@ class dataset_interface:
             if method == "Random":
                 a_batch = quantus.explain(model, x_batch_chunk, y_batch_chunk, method='Saliency', device=self.device)
                 a_masked_chunk, removed = imc.random_remove_pixels(a_batch, x_batch_chunk, threshold)
+            elif method == "GuidedGradCam":
+                layer = get_last_conv_layer(model)
+                a_batch = quantus.explain(model, x_batch_chunk, y_batch_chunk, method='GuidedGradCam', device=self.device , gc_layer=layer)
+                a_masked_chunk, removed = imc.new_remove_pixels(a_batch, x_batch_chunk, threshold)
             else:
                 a_batch = quantus.explain(model, x_batch_chunk, y_batch_chunk, method=method, device=self.device)
                 a_masked_chunk, removed  = imc.new_remove_pixels(a_batch, x_batch_chunk, threshold)
@@ -151,3 +157,19 @@ class dataset_interface:
         # Extract parts
         method, threshold, pre_trained_model = parts
         return method, threshold, pre_trained_model
+
+    
+def get_last_conv_layer(model):
+        """
+        Dynamically find the last convolutional layer in the model.
+
+        Args:
+            model (torch.nn.Module): The model to search.
+
+        Returns:
+            torch.nn.Module: The last convolutional layer in the model.
+        """
+        for layer in reversed(list(model.modules())):
+            if isinstance(layer, nn.Conv2d):
+                return layer
+        raise ValueError("No convolutional layer found in the model.")

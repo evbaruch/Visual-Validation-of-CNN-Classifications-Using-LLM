@@ -3,6 +3,46 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from dataset_API.dataset_interface import dataset_interface
 
+# use example : add_precentage_to_csv("GradientShap", "boolean", "data\\llm_answer\\GradientShap\\boolean\\results")
+def add_precentage_to_csv(method: str, query_type: str, save_directory: str):
+  
+    # Build the path to the directory containing the files
+    root_directory = os.path.join("data", "llm_answer", method, query_type)
+
+    # Get the path to the directory containing the percentage files
+    percentage_directory = os.path.join("data", "mid", method, "csv")
+
+    # do a walk in the directories and for each 2 files with the same name in the two directories
+    # do a join 
+    # from the percentage file get the percentage and add it to the csv file
+    # and from the root file get all the columns and add them to the csv file
+    # and save the new csv file in the root directory with the same name as the original file
+
+    for dirpath, _, filenames in os.walk(root_directory):
+        # Filter for CSV files
+        csv_files = [f for f in filenames if f.endswith('.csv')]
+
+        for file in csv_files:
+            # Get the full path of the file
+            file_path = os.path.join(dirpath, file)
+
+            # Load the CSV file into a DataFrame
+            df = pd.read_csv(file_path)
+
+            # Get the name of the file without the extension
+            file_name = os.path.splitext(file)[0]
+
+            # Build the path to the percentage file
+            percentage_file_path = os.path.join(percentage_directory, f"{file_name}.csv")
+
+            # Load the percentage file into a DataFrame
+            percentage_df = pd.read_csv(percentage_file_path)
+
+            # Merge the two DataFrames on 'File' column
+            df["Removed_Percentage"] = percentage_df["Removed_Percentage"].values
+
+            # Save the merged DataFrame to a new CSV file in the root directory
+            df.to_csv(file_path, index=False)
 
 def calculate_accuracy(root_directory: str, save_path: str):
     """

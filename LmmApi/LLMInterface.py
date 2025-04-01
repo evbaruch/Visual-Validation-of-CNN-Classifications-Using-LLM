@@ -25,7 +25,11 @@ import pandas as pd # pandas is a data manipulation library that provides data s
 
 from tqdm import tqdm # a library that provides a fast, extensible progress bar for loops and other iterable objects
 
+from logger import setup_logger, log_function_call, log_class_methods
+
+
 # Context Class
+@log_class_methods
 class LLMInterface:
     """
     this class is the Context class in the Strategy pattern 
@@ -52,6 +56,7 @@ class LLMInterface:
         """Set the prompt for the LLM."""
         self.prompt = prompt
 
+   
     def set_jsonDescription(self, jsonDescription: BaseModel):
         """Set the JSON description for the LLM."""
         self.jsonDescription = jsonDescription
