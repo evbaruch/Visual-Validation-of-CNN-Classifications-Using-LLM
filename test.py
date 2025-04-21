@@ -1,8 +1,3 @@
-# IMPORTANT: RUN THIS CELL IN ORDER TO IMPORT YOUR KAGGLE DATA SOURCES,
-# THEN FEEL FREE TO DELETE THIS CELL.
-# NOTE: THIS NOTEBOOK ENVIRONMENT DIFFERS FROM KAGGLE'S PYTHON
-# ENVIRONMENT SO THERE MAY BE MISSING LIBRARIES USED BY YOUR
-# NOTEBOOK.
 import kagglehub
 prahladmehandiratta_cervical_cancer_largest_dataset_sipakmed_path = kagglehub.dataset_download('prahladmehandiratta/cervical-cancer-largest-dataset-sipakmed')
 
@@ -41,11 +36,11 @@ def FormatDataset(dataset_src, dataset_dest, classes):
             for file in os.listdir(src):
                 filename, file_ext = os.path.splitext(file)
                 if file_ext == '.bmp':
-                    img_des = os.path.join(new_dest, filename + '.jpg')
+                    img_des = os.path.join(new_dest, filename + '.jpeg')
                     img = cv2.imread(os.path.join(src, file))
-                    img = cv2.resize(img, (64, 64))
-                    img = cv2.copyMakeBorder(img, 1, 1, 1, 1, cv2.BORDER_CONSTANT, value=0)
-                    img = cv2.blur(img, (2, 2))
+                    # img = cv2.resize(img, (64, 64))
+                    # img = cv2.copyMakeBorder(img, 1, 1, 1, 1, cv2.BORDER_CONSTANT, value=0)
+                    # img = cv2.blur(img, (2, 2))
                     cv2.imwrite(img_des ,img)
     # Formatting Complete Images
     for (src,new_dest) in zip(complete_src, new_complete_dest):
@@ -54,18 +49,18 @@ def FormatDataset(dataset_src, dataset_dest, classes):
             for file in os.listdir(src):
                 filename, file_ext = os.path.splitext(file)
                 if file_ext == '.bmp':
-                    img_des = os.path.join(new_dest, filename + '.jpg')
+                    img_des = os.path.join(new_dest, filename + '.jpeg')
                     img = cv2.imread(os.path.join(src, file))
-                    img = cv2.resize(img, (256, 256))
-                    img = cv2.copyMakeBorder(img, 2, 2, 2, 2, cv2.BORDER_CONSTANT, value=0)
-                    img = cv2.blur(img, (2, 2))
+                    # img = cv2.resize(img, (256, 256))
+                    # img = cv2.copyMakeBorder(img, 2, 2, 2, 2, cv2.BORDER_CONSTANT, value=0)
+                    # img = cv2.blur(img, (2, 2))
                     cv2.imwrite(img_des ,img)
 
 # Source Location for Dataset
 # Use variable returned by kagglehub.dataset_download
 src = prahladmehandiratta_cervical_cancer_largest_dataset_sipakmed_path
 # Destination Location for Dataset
-dest = 'data'
+dest = 'data/source/CervicalCancer'
 # Image Classes
 classes = ["Dyskeratotic","Koilocytotic","Metaplastic","Parabasal","Superficial-Intermediate"]
 # Formatting Dataset

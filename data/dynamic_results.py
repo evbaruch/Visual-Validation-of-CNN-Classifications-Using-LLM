@@ -226,8 +226,8 @@ def transform_results_to_table(input_path: str, output_path: str, method: str):
     pivoted_df.to_csv(output_file_path, index=False)
     print(f"Transformed results saved to {output_file_path}")
 
-transform_results_to_table("data\\llm_answer2\\GradientShap\\boolean\\p_results\\results.csv", "data\\llm_answer2\\GradientShap\\boolean\\p_results\\table.csv","GradientShap")
-transform_results_to_table("data\\llm_answer2\\GuidedGradCam\\boolean\\p_results\\results.csv", "data\\llm_answer2\\GuidedGradCam\\boolean\\p_results\\table.csv","GuidedGradCam")
-transform_results_to_table("data\\llm_answer2\\InputXGradient\\boolean\\p_results\\results.csv", "data\\llm_answer2\\InputXGradient\\boolean\\p_results\\table.csv","InputXGradient")
-transform_results_to_table("data\\llm_answer2\\Random\\boolean\\p_results\\results.csv", "data\\llm_answer2\\Random\\boolean\\p_results\\table.csv","Random")
-transform_results_to_table("data\\llm_answer2\\Saliency\\boolean\\p_results\\results.csv", "data\\llm_answer2\\Saliency\\boolean\\p_results\\table.csv","Saliency")
+# transform_results_to_table("data\\llm_answer2\\GradientShap\\boolean\\p_results\\results.csv", "data\\llm_answer2\\GradientShap\\boolean\\p_results\\table.csv","GradientShap")
+# transform_results_to_table("data\\llm_answer2\\GuidedGradCam\\boolean\\p_results\\results.csv", "data\\llm_answer2\\GuidedGradCam\\boolean\\p_results\\table.csv","GuidedGradCam")
+# transform_results_to_table("data\\llm_answer2\\InputXGradient\\boolean\\p_results\\results.csv", "data\\llm_answer2\\InputXGradient\\boolean\\p_results\\table.csv","InputXGradient")
+# transform_results_to_table("data\\llm_answer2\\Random\\boolean\\p_results\\results.csv", "data\\llm_answer2\\Random\\boolean\\p_results\\table.csv","Random")
+# transform_results_to_table("data\\llm_answer2\\Saliency\\boolean\\p_results\\results.csv", "data\\llm_answer2\\Saliency\\boolean\\p_results\\table.csv","Saliency")
