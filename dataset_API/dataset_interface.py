@@ -1,10 +1,10 @@
 import torch
+import torch.nn as nn
 from dataset_API import image_creater as imc
 import os
 import quantus
 from data import global_data as gd
 from PIL import Image
-import torch.nn as nn
 
 
 class dataset_interface:
@@ -21,6 +21,7 @@ class dataset_interface:
         self.removed = []
         self.Correctly = []
 
+
     def filter_with_model(self, threshold: float, method: str, pre_trained_model: str , precentage_wise: bool = False):
         """
         Filters the dataset using a pre-trained model and an explanation method in smaller batches.
@@ -35,6 +36,7 @@ class dataset_interface:
                 the proportion of removed pixels, and the classification accuracy.
         """
 
+       
         # Define the subfolder path for the current method, threshold, and pre-trained model
         subfolder_path = os.path.join(
             self.save_path, f"{method}", f"{method}_{threshold}_{pre_trained_model}"
@@ -79,7 +81,7 @@ class dataset_interface:
         else:
             if method == "Random":
                 imc_function = imc.random_remove_pixels
-                layer = self.get_last_conv_layer(model)
+            else:
                 imc_function = imc.new_remove_pixels
 
         for i in range(num_batches):
@@ -133,7 +135,6 @@ class dataset_interface:
 
         return f"{method} {threshold} {pre_trained_model} removed avrage: { removed } Correctly: {Correctly}"
     
-
     @staticmethod
     def parse_file_name(path):
         """
@@ -169,6 +170,7 @@ class dataset_interface:
         method, threshold, pre_trained_model = parts
         return method, threshold, pre_trained_model
 
+    
 def get_last_conv_layer(model):
         """
         Dynamically find the last convolutional layer in the model.
