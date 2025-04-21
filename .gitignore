@@ -21,3 +21,6 @@ __pycache__/
 
 
 test.py
+
+# all files in the data folder with .png extension and .csv extension in subfolders
+/data/*
