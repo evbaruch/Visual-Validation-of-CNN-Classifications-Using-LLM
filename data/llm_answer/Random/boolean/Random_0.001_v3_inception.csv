@@ -1,1001 +1,201 @@
-Index,True_Label,Match,llm_1,Removed_Percentage
-0,tench,True,True,4.155373086734694
-100,black swan,True,True,4.585857780612245
-101,tusker,True,True,4.356664540816327
-102,echidna,True,True,4.444355867346939
-103,platypus,True,True,4.332748724489796
-104,wallaby,True,True,4.308832908163265
-105,koala,True,True,4.332748724489796
-106,wombat,True,True,4.336734693877551
-107,jellyfish,True,True,4.39453125
-108,sea anemone,True,True,4.356664540816327
-109,brain coral,True,True,4.354671556122449
-10,brambling,True,True,4.478236607142857
-110,flatworm,True,True,4.362643494897959
-111,nematode,True,True,4.430404974489796
-112,conch,True,True,4.428411989795919
-113,snail,True,True,4.364636479591836
-114,slug,True,True,4.322783801020408
-115,sea slug,True,True,4.364636479591836
-116,chiton,True,True,4.360650510204081
-117,chambered nautilus,True,True,4.360650510204081
-118,Dungeness crab,False,False,4.364636479591836
-119,rock crab,False,False,4.384566326530613
-11,goldfinch,True,True,4.1234853316326525
-120,fiddler crab,True,True,4.368622448979592
-121,king crab,True,True,4.268973214285714
-122,American lobster,False,False,4.278938137755102
-123,spiny lobster,True,True,4.412468112244898
-124,crayfish,True,True,4.139429209183673
-125,hermit crab,True,True,4.332748724489796
-126,isopod,True,True,4.209183673469387
-127,white stork,True,True,4.400510204081633
-128,black stork,True,True,4.251036352040816
-129,spoonbill,True,True,3.884327168367347
-12,house finch,True,True,3.9202008928571432
-130,flamingo,True,True,3.886320153061224
-131,little blue heron,True,True,3.850446428571429
-132,American egret,True,True,3.848453443877551
-133,bittern,True,True,3.834502551020408
-134,crane,True,True,3.617267219387755
-135,limpkin,True,True,3.79264987244898
-136,European gallinule,True,True,3.778698979591837
-137,American coot,True,True,3.633211096938776
-138,bustard,True,True,3.838488520408164
-139,ruddy turnstone,True,True,3.770727040816327
-13,junco,True,True,3.8584183673469385
-140,red-backed sandpiper,True,True,3.691007653061224
-141,redshank,True,True,3.89030612244898
-142,dowitcher,True,True,3.790656887755102
-143,oystercatcher,True,True,3.8145727040816326
-144,pelican,True,True,3.806600765306122
-145,king penguin,True,True,3.850446428571429
-146,albatross,True,True,3.806600765306122
-147,grey whale,True,True,3.804607780612245
-148,killer whale,True,True,3.659119897959184
-149,dugong,True,True,3.649154974489796
-14,indigo bunting,True,True,3.673070790816327
-150,sea lion,True,True,3.948102678571429
-151,Chihuahua,True,True,3.868383290816327
-152,Japanese spaniel,True,True,3.7846779336734695
-153,Maltese dog,True,True,3.796635841836735
-154,Pekinese,True,True,3.754783163265306
-155,Shih-Tzu,True,True,3.6631058673469385
-156,Blenheim spaniel,True,True,3.7946428571428568
-157,papillon,True,True,3.790656887755102
-158,toy terrier,True,True,4.3706154336734695
-159,Rhodesian ridgeback,True,True,4.270966198979592
-15,robin,True,True,4.334741709183673
-160,Afghan hound,True,True,4.470264668367348
-161,basset,True,True,4.2211415816326525
-162,beagle,True,True,4.266980229591836
-163,bloodhound,True,True,4.235092474489796
-164,bluetick,True,True,4.239078443877551
-165,black-and-tan coonhound,True,True,4.354671556122449
-166,Walker hound,False,False,4.522082270408164
-167,English foxhound,True,True,4.241071428571429
-168,redbone,True,True,4.19124681122449
-169,borzoi,True,True,4.31281887755102
-16,bulbul,True,True,4.264987244897959
-170,Irish wolfhound,True,True,4.2211415816326525
-171,Italian greyhound,True,True,4.211176658163265
-172,whippet,True,True,4.21516262755102
-173,Ibizan hound,True,True,4.300860969387755
-174,Norwegian elkhound,True,True,4.450334821428571
-175,otterhound,False,False,4.153380102040816
-176,Saluki,True,True,4.179288903061225
-177,Scottish deerhound,True,True,4.376594387755102
-178,Weimaraner,True,True,4.195232780612245
-179,Staffordshire bullterrier,True,True,4.185267857142857
-17,jay,True,True,4.37858737244898
-180,American Staffordshire terrier,True,True,4.241071428571429
-181,Bedlington terrier,True,True,4.302853954081633
-182,Border terrier,True,True,4.364636479591836
-183,Kerry blue terrier,True,True,4.292889030612245
-184,Irish terrier,False,False,4.1753029336734695
-185,Norfolk terrier,True,True,4.406489158163265
-186,Norwich terrier,True,True,4.334741709183673
-187,Yorkshire terrier,True,True,4.1015625
-188,wire-haired fox terrier,True,True,4.09359056122449
-189,Lakeland terrier,True,True,4.167330994897959
-18,magpie,True,True,4.157366071428571
-190,Sealyham terrier,True,True,4.161352040816327
-191,Airedale,True,True,4.111527423469387
-192,cairn,True,True,4.28093112244898
-193,Australian terrier,True,True,4.10953443877551
-194,Dandie Dinmont,True,True,4.0776466836734695
-195,Boston bull,True,True,4.165338010204081
-196,miniature schnauzer,True,True,4.195232780612245
-197,giant schnauzer,True,True,4.209183673469387
-198,standard schnauzer,True,True,4.193239795918367
-199,Scotch terrier,True,True,4.2231345663265305
-19,chickadee,True,True,4.18327487244898
-1,goldfish,True,True,4.193239795918367
-200,Tibetan terrier,True,True,4.053730867346939
-201,silky terrier,True,True,4.147401147959184
-202,soft-coated wheaten terrier,True,True,4.286910076530613
-203,West Highland white terrier,True,True,4.195232780612245
-204,Lhasa,False,False,4.262994260204081
-205,flat-coated retriever,True,True,4.137436224489796
-206,curly-coated retriever,True,True,4.075653698979592
-207,golden retriever,True,True,4.330755739795919
-208,Labrador retriever,True,True,4.147401147959184
-209,Chesapeake Bay retriever,True,True,4.007892219387755
-20,water ouzel,True,True,4.390545280612245
-210,German short-haired pointer,True,True,4.203204719387755
-211,vizsla,True,True,4.119499362244898
-212,English setter,True,True,4.350685586734694
-213,Irish setter,True,True,4.177295918367348
-214,Gordon setter,True,True,4.113520408163265
-215,Brittany spaniel,True,True,4.213169642857143
-216,clumber,True,True,4.193239795918367
-217,English springer,True,True,4.035794005102041
-218,Welsh springer spaniel,True,True,4.1254783163265305
-219,cocker spaniel,True,True,4.352678571428571
-21,kite,False,False,4.292889030612245
-220,Sussex spaniel,True,True,4.21516262755102
-221,Irish water spaniel,False,False,4.251036352040816
-222,kuvasz,True,True,4.09359056122449
-223,schipperke,True,True,4.19921875
-224,groenendael,True,True,4.1753029336734695
-225,malinois,True,True,4.185267857142857
-226,briard,True,True,4.161352040816327
-227,kelpie,False,False,4.141422193877551
-228,komondor,True,True,4.231106505102041
-229,Old English sheepdog,True,True,4.153380102040816
-22,bald eagle,True,True,4.231106505102041
-230,Shetland sheepdog,False,False,4.262994260204081
-231,collie,True,True,4.308832908163265
-232,Border collie,True,True,4.097576530612245
-233,Bouvier des Flandres,True,True,4.087611607142857
-234,Rottweiler,True,True,4.155373086734694
-235,German shepherd,True,True,4.149394132653061
-236,Doberman,True,True,4.322783801020408
-237,miniature pinscher,True,True,3.993941326530612
-238,Greater Swiss Mountain dog,True,True,4.257015306122449
-239,Bernese mountain dog,True,True,4.245057397959184
-23,vulture,False,False,4.245057397959184
-240,Appenzeller,True,True,4.173309948979592
-241,EntleBucher,True,True,4.08561862244898
-242,boxer,True,True,4.135443239795919
-243,bull mastiff,True,True,4.217155612244898
-244,Tibetan mastiff,True,True,4.454320790816327
-245,French bulldog,True,True,4.268973214285714
-246,Great Dane,True,True,4.332748724489796
-247,Saint Bernard,True,True,4.434390943877551
-248,Eskimo dog,True,True,4.436383928571429
-249,malamute,True,True,4.332748724489796
-24,great grey owl,True,True,4.306839923469387
-250,Siberian husky,True,True,4.302853954081633
-251,dalmatian,True,True,4.330755739795919
-252,affenpinscher,True,True,4.466278698979592
-253,basenji,True,True,4.308832908163265
-254,pug,True,True,4.251036352040816
-255,Leonberg,True,True,4.37858737244898
-256,Newfoundland,True,True,4.440369897959184
-257,Great Pyrenees,True,True,4.462292729591836
-258,Samoyed,True,True,4.406489158163265
-259,Pomeranian,True,True,4.392538265306122
-25,European fire salamander,True,True,4.4184470663265305
-260,chow,True,True,4.372608418367348
-261,keeshond,True,True,4.444355867346939
-262,Brabancon griffon,True,True,4.326769770408164
-263,Pembroke,True,True,4.450334821428571
-264,Cardigan,True,True,4.310825892857143
-265,toy poodle,True,True,4.147401147959184
-266,miniature poodle,True,True,4.376594387755102
-267,standard poodle,True,True,4.249043367346939
-268,Mexican hairless,True,True,4.300860969387755
-269,timber wolf,True,True,4.549984056122449
-26,common newt,True,True,4.286910076530613
-270,white wolf,False,False,4.227120535714286
-271,red wolf,True,True,4.406489158163265
-272,coyote,True,True,4.4164540816326525
-273,dingo,False,False,4.089604591836735
-274,dhole,True,True,4.105548469387755
-275,African hunting dog,True,True,4.195232780612245
-276,hyena,True,True,4.189253826530613
-277,red fox,True,True,4.047751913265306
-278,kit fox,True,True,4.167330994897959
-279,Arctic fox,True,True,4.201211734693878
-27,eft,True,True,4.1254783163265305
-280,grey fox,True,True,4.015864158163265
-281,tabby,True,True,4.153380102040816
-282,tiger cat,True,True,4.131457270408164
-283,Persian cat,True,True,4.157366071428571
-284,Siamese cat,True,True,4.233099489795919
-285,Egyptian cat,False,False,4.159359056122449
-286,cougar,True,True,4.209183673469387
-287,lynx,True,True,4.330755739795919
-288,leopard,True,True,4.257015306122449
-289,snow leopard,True,True,4.149394132653061
-28,spotted salamander,True,True,4.193239795918367
-290,jaguar,True,True,4.053730867346939
-291,lion,True,True,4.201211734693878
-292,tiger,True,True,4.340720663265306
-293,cheetah,True,True,4.259008290816327
-294,brown bear,True,True,4.243064413265306
-295,American black bear,True,True,4.2231345663265305
-296,ice bear,True,True,4.097576530612245
-297,sloth bear,True,True,4.1753029336734695
-298,mongoose,True,True,4.1753029336734695
-299,meerkat,True,True,4.145408163265306
-29,axolotl,False,False,4.211176658163265
-2,great white shark,True,True,4.037786989795919
-300,tiger beetle,True,True,4.185267857142857
-301,ladybug,True,True,4.133450255102041
-302,ground beetle,True,True,4.149394132653061
-303,long-horned beetle,True,True,4.2729591836734695
-304,leaf beetle,True,True,4.159359056122449
-305,dung beetle,True,True,4.219148596938775
-306,rhinoceros beetle,True,True,4.2231345663265305
-307,weevil,True,True,4.340720663265306
-308,fly,True,True,4.139429209183673
-309,bee,True,True,4.197225765306122
-30,bullfrog,True,True,4.11750637755102
-310,ant,True,True,4.213169642857143
-311,grasshopper,True,True,4.241071428571429
-312,cricket,True,True,4.095583545918367
-313,walking stick,True,True,4.099569515306122
-314,cockroach,True,True,4.253029336734694
-315,mantis,True,True,4.149394132653061
-316,cicada,True,True,4.167330994897959
-317,leafhopper,True,True,4.266980229591836
-318,lacewing,True,True,4.127471301020408
-319,dragonfly,True,True,4.217155612244898
-31,tree frog,True,True,4.171316964285714
-320,damselfly,True,True,4.18327487244898
-321,admiral,True,True,4.187260841836735
-322,ringlet,True,True,4.284917091836735
-323,monarch,True,True,4.205197704081633
-324,cabbage butterfly,True,True,4.129464285714286
-325,sulphur butterfly,True,True,4.316804846938775
-326,lycaenid,True,True,4.217155612244898
-327,starfish,True,True,4.235092474489796
-328,sea urchin,True,True,4.302853954081633
-329,sea cucumber,True,True,4.061702806122449
-32,tailed frog,True,True,4.290896045918367
-330,wood rabbit,True,True,3.8225446428571432
-331,hare,True,True,3.806600765306122
-332,Angora,True,True,3.902264030612245
-333,hamster,True,True,3.812579719387755
-334,porcupine,True,True,3.896285076530612
-335,fox squirrel,True,True,3.970025510204082
-336,marmot,True,True,3.926179846938776
-337,beaver,True,True,3.866390306122449
-338,guinea pig,True,True,3.818558673469388
-339,sorrel,True,True,3.826530612244898
-33,loggerhead,True,True,3.7846779336734695
-340,zebra,True,True,3.788663903061224
-341,hog,True,True,3.916214923469388
-342,wild boar,True,True,3.902264030612245
-343,warthog,True,True,3.774713010204082
-344,hippopotamus,True,True,3.868383290816327
-345,ox,True,True,3.675063775510204
-346,water buffalo,True,True,3.7248883928571432
-347,bison,True,True,3.908242984693878
-348,ram,True,True,3.804607780612245
-349,bighorn,True,True,3.768734056122449
-34,leatherback turtle,True,True,3.790656887755102
-350,ibex,True,True,3.796635841836735
-351,hartebeest,True,True,3.770727040816327
-352,impala,True,True,3.918207908163265
-353,gazelle,True,True,3.862404336734694
-354,Arabian camel,False,False,3.7946428571428568
-355,llama,True,True,3.6631058673469385
-356,weasel,True,True,4.051737882653061
-357,mink,True,True,3.802614795918368
-358,polecat,True,True,3.7169164540816326
-359,black-footed ferret,False,False,3.888313137755102
-35,mud turtle,True,True,4.105548469387755
-360,otter,True,True,4.1753029336734695
-361,skunk,True,True,4.139429209183673
-362,badger,True,True,4.330755739795919
-363,armadillo,True,True,4.053730867346939
-364,three-toed sloth,True,True,4.0278220663265305
-365,orangutan,True,True,4.127471301020408
-366,gorilla,True,True,4.259008290816327
-367,chimpanzee,True,True,4.087611607142857
-368,gibbon,True,True,4.187260841836735
-369,siamang,True,True,4.225127551020408
-36,terrapin,True,True,4.38655931122449
-370,guenon,True,True,4.057716836734694
-371,patas,True,True,4.143415178571429
-372,baboon,True,True,4.336734693877551
-373,macaque,True,True,4.28093112244898
-374,langur,True,True,4.264987244897959
-375,colobus,True,True,4.274952168367348
-376,proboscis monkey,True,True,4.171316964285714
-377,marmoset,True,True,4.069674744897959
-378,capuchin,True,True,4.19124681122449
-379,howler monkey,True,True,4.314811862244898
-37,box turtle,True,True,4.19921875
-380,titi,True,True,4.213169642857143
-381,spider monkey,True,True,4.21516262755102
-382,squirrel monkey,True,True,4.061702806122449
-383,Madagascar cat,True,True,4.1015625
-384,indri,True,True,4.169323979591836
-385,Indian elephant,True,True,4.097576530612245
-386,African elephant,True,True,4.28093112244898
-387,lesser panda,True,True,4.091597576530613
-388,giant panda,True,True,4.284917091836735
-389,barracouta,True,True,4.029815051020408
-38,banded gecko,True,True,4.103555484693878
-390,eel,True,True,4.197225765306122
-391,coho,True,True,4.097576530612245
-392,rock beauty,True,True,4.141422193877551
-393,anemone fish,True,True,4.11750637755102
-394,sturgeon,True,True,4.28890306122449
-395,gar,True,True,4.119499362244898
-396,lionfish,True,True,4.115513392857143
-397,puffer,True,True,4.1254783163265305
-398,abacus,True,True,4.189253826530613
-399,abaya,True,True,4.091597576530613
-39,common iguana,True,True,4.159359056122449
-3,tiger shark,True,True,4.203204719387755
-400,academic gown,True,True,4.121492346938775
-401,accordion,True,True,4.131457270408164
-402,acoustic guitar,True,True,4.121492346938775
-403,aircraft carrier,True,True,4.139429209183673
-404,airliner,True,True,4.20719068877551
-405,airship,True,True,4.21516262755102
-406,altar,True,True,4.067681760204081
-407,ambulance,True,True,4.219148596938775
-408,amphibian,True,True,4.2231345663265305
-409,analog clock,True,True,4.119499362244898
-40,American chameleon,True,True,4.083625637755102
-410,apiary,True,True,4.161352040816327
-411,apron,True,True,4.081632653061225
-412,ashcan,True,True,4.137436224489796
-413,assault rifle,True,True,3.9720184948979593
-414,backpack,True,True,4.1254783163265305
-415,bakery,True,True,3.964046556122449
-416,balance beam,True,True,4.201211734693878
-417,balloon,True,True,4.073660714285714
-418,ballpoint,True,True,3.902264030612245
-419,Band Aid,False,False,3.977997448979592
-41,whiptail,False,False,4.119499362244898
-420,banjo,True,True,4.111527423469387
-421,bannister,True,True,4.08561862244898
-422,barbell,True,True,4.274952168367348
-423,barber chair,True,True,4.193239795918367
-424,barbershop,False,False,3.8823341836734695
-425,barn,True,True,4.08561862244898
-426,barometer,True,True,4.031808035714286
-427,barrel,True,True,4.033801020408164
-428,barrow,True,True,4.041772959183673
-429,baseball,True,True,4.045758928571429
-42,agama,True,True,3.952088647959184
-430,basketball,True,True,4.051737882653061
-431,bassinet,True,True,4.10953443877551
-432,bassoon,True,True,4.187260841836735
-433,bathing cap,True,True,3.924186862244898
-434,bath towel,True,True,4.057716836734694
-435,bathtub,True,True,4.021843112244898
-436,beach wagon,True,True,3.997927295918368
-437,beacon,True,True,4.095583545918367
-438,beaker,False,False,4.01187818877551
-439,bearskin,True,True,4.177295918367348
-43,frilled lizard,True,True,4.099569515306122
-440,beer bottle,True,True,3.999920280612245
-441,beer glass,False,False,4.193239795918367
-442,bell cote,True,True,4.18327487244898
-443,bib,True,True,4.147401147959184
-444,bicycle-built-for-two,True,True,4.029815051020408
-445,bikini,True,True,4.047751913265306
-446,binder,True,True,4.201211734693878
-447,binoculars,True,True,4.021843112244898
-448,birdhouse,True,True,4.231106505102041
-449,boathouse,True,True,4.095583545918367
-44,alligator lizard,True,True,4.227120535714286
-450,bobsled,True,True,3.9381377551020407
-451,bolo tie,True,True,4.015864158163265
-452,bonnet,True,True,4.033801020408164
-453,bookcase,True,True,3.9381377551020407
-454,bookshop,True,True,4.029815051020408
-455,bottlecap,True,True,4.245057397959184
-456,bow,True,True,4.01985012755102
-457,bow tie,True,True,3.9720184948979593
-458,brass,True,True,4.1234853316326525
-459,brassiere,True,True,4.0776466836734695
-45,Gila monster,True,True,4.11750637755102
-460,breakwater,True,True,4.095583545918367
-461,breastplate,True,True,3.944116709183673
-462,broom,True,True,4.0278220663265305
-463,bucket,True,True,4.061702806122449
-464,buckle,True,True,4.005899234693878
-465,bulletproof vest,True,True,3.991948341836735
-466,bullet train,True,True,3.942123724489796
-467,butcher shop,True,True,4.043765943877551
-468,cab,True,True,4.089604591836735
-469,caldron,True,True,3.966039540816327
-46,green lizard,True,True,4.097576530612245
-470,candle,True,True,3.92219387755102
-471,cannon,True,True,3.960060586734694
-472,canoe,True,True,4.029815051020408
-473,can opener,True,True,3.914221938775511
-474,Cardigan,True,True,4.01985012755102
-475,cardigan,False,False,3.985969387755102
-476,car mirror,True,True,3.900271045918368
-477,carousel,False,False,3.997927295918368
-478,carpenter's kit,True,True,3.9899553571428568
-479,carton,True,True,4.023836096938775
-47,African chameleon,True,True,3.9760044642857135
-480,car wheel,False,False,3.942123724489796
-481,cash machine,True,True,4.007892219387755
-482,cassette,True,True,3.9899553571428568
-483,cassette player,False,False,3.9540816326530615
-484,castle,False,False,3.964046556122449
-485,catamaran,False,False,3.98796237244898
-486,CD player,False,False,3.926179846938776
-487,cello,False,False,4.113520408163265
-488,cellular telephone,False,False,3.8743622448979593
-489,chain,True,True,3.944116709183673
-48,Komodo dragon,True,True,3.854432397959184
-490,chainlink fence,True,True,3.974011479591837
-491,chain mail,True,True,4.1015625
-492,chain saw,False,False,3.7806919642857135
-493,chest,True,True,4.113520408163265
-494,chiffonier,False,False,3.9959343112244894
-495,chime,False,False,3.900271045918368
-496,china cabinet,False,False,3.9899553571428568
-497,Christmas stocking,False,False,3.9760044642857135
-498,church,False,False,3.962053571428571
-499,cinema,True,True,4.073660714285714
-49,African crocodile,True,True,4.029815051020408
-4,hammerhead,True,True,4.119499362244898
-500,cleaver,True,True,4.055723852040816
-501,cliff dwelling,False,False,3.993941326530612
-502,cloak,False,False,3.970025510204082
-503,clog,False,False,4.360650510204081
-504,cocktail shaker,True,True,4.58187181122449
-505,coffee mug,False,False,4.448341836734694
-506,coffeepot,False,False,4.434390943877551
-507,coil,False,False,4.482222576530613
-508,combination lock,True,True,4.227120535714286
-509,computer keyboard,True,True,4.342713647959184
-50,American alligator,True,True,4.571906887755102
-510,confectionery,False,False,4.374601403061225
-511,container ship,False,False,4.4682716836734695
-512,convertible,False,False,4.330755739795919
-513,corkscrew,False,False,4.472257653061225
-514,cornet,False,False,4.4184470663265305
-515,cowboy boot,False,False,4.181281887755102
-516,cowboy hat,False,False,4.414461096938775
-517,crane,True,True,4.330755739795919
-518,cradle,False,False,4.458306760204081
-519,crane,False,False,4.384566326530613
-51,triceratops,True,True,4.306839923469387
-520,crash helmet,False,False,4.67155612244898
-521,crate,True,True,4.436383928571429
-522,crib,True,True,4.364636479591836
-523,Crock Pot,False,False,4.344706632653061
-524,croquet ball,True,True,4.444355867346939
-525,crutch,True,True,4.470264668367348
-526,cuirass,False,False,4.38655931122449
-527,dam,False,False,4.350685586734694
-528,desk,False,False,4.448341836734694
-529,desktop computer,False,False,4.448341836734694
-52,thunder snake,True,True,4.41047512755102
-530,dial telephone,True,True,4.591836734693878
-531,diaper,True,True,4.504145408163265
-532,digital clock,False,False,6.624681122448979
-533,digital watch,False,False,6.455277423469388
-534,dining table,False,False,6.403459821428571
-535,dishrag,False,False,6.507095025510204
-536,dishwasher,False,False,6.55094068877551
-537,disk brake,False,False,6.479193239795919
-538,dock,True,True,6.415417729591836
-539,dogsled,False,False,6.325733418367347
-53,ringneck snake,True,True,6.596779336734694
-540,dome,True,True,6.447305484693877
-541,doormat,False,False,6.511080994897959
-542,drilling platform,False,False,6.455277423469388
-543,drum,False,False,6.556919642857142
-544,drumstick,False,False,6.487165178571429
-545,dumbbell,True,True,6.232063137755102
-546,Dutch oven,False,False,6.564891581632653
-547,electric fan,False,False,6.6167091836734695
-548,electric guitar,False,False,6.499123086734694
-549,electric locomotive,False,False,6.403459821428571
-54,hognose snake,True,True,6.853874362244898
-550,entertainment center,True,True,6.606744260204081
-551,envelope,False,False,6.439333545918367
-552,espresso maker,False,False,6.554926658163265
-553,face powder,False,False,6.620695153061225
-554,feather boa,False,False,6.624681122448979
-555,file,True,True,6.678491709183673
-556,fireboat,False,False,6.465242346938775
-557,fire engine,False,False,6.405452806122448
-558,fire screen,True,True,6.564891581632653
-559,flagpole,False,False,6.560905612244898
-55,green snake,True,True,6.552933673469388
-560,flute,False,False,6.513073979591836
-561,folding chair,False,False,6.218112244897959
-562,football helmet,False,False,6.253985969387756
-563,forklift,False,False,6.313775510204081
-564,fountain,False,False,6.275908801020408
-565,fountain pen,False,False,6.036750637755102
-566,four-poster,False,False,6.066645408163265
-567,freight car,False,False,6.1742665816326525
-568,French horn,False,False,6.084582270408164
-569,frying pan,False,False,6.369579081632653
-56,king snake,True,True,6.212133290816327
-570,fur coat,False,False,6.251992984693877
-571,garbage truck,False,False,6.246014030612245
-572,gasmask,False,False,6.3197544642857135
-573,gas pump,False,False,6.387515943877552
-574,goblet,False,False,6.042729591836735
-575,go-kart,False,False,6.289859693877552
-576,golf ball,False,False,6.236049107142857
-577,golfcart,False,False,6.307796556122448
-578,gondola,False,False,6.138392857142857
-579,gong,False,False,6.311782525510204
-57,garter snake,True,True,6.321747448979592
-580,gown,False,False,6.088568239795919
-581,grand piano,False,False,6.082589285714286
-582,greenhouse,False,False,6.130420918367348
-583,grille,True,True,6.246014030612245
-584,grocery store,False,False,6.194196428571429
-585,guillotine,False,False,6.222098214285714
-586,hair slide,False,False,6.34765625
-587,hair spray,False,False,6.305803571428571
-588,half track,False,False,6.220105229591836
-589,hammer,False,False,6.311782525510204
-58,water snake,False,False,6.15234375
-590,hamper,False,False,6.367586096938775
-591,hand blower,False,False,6.3715720663265305
-592,hand-held computer,True,True,6.281887755102041
-593,handkerchief,False,False,6.4453125
-594,hard disc,False,False,6.375558035714287
-595,harmonica,False,False,6.409438775510204
-596,harp,False,False,6.337691326530612
-597,harvester,False,False,6.433354591836735
-598,hatchet,False,False,6.373565051020408
-599,holster,False,False,6.449298469387756
-59,vine snake,True,True,6.335698341836735
-5,electric ray,True,True,6.359614158163265
-600,home theater,False,False,6.407445790816327
-601,honeycomb,False,False,6.359614158163265
-602,hook,False,False,6.668526785714287
-603,hoopskirt,False,False,6.301817602040815
-604,horizontal bar,True,True,6.439333545918367
-605,horse cart,False,False,6.401466836734694
-606,hourglass,False,False,6.2739158163265305
-607,iPod,False,False,6.4174107142857135
-608,iron,True,True,6.511080994897959
-609,jack-o'-lantern,False,False,6.33968431122449
-60,night snake,True,True,6.23405612244898
-610,jean,False,False,6.4213966836734695
-611,jeep,False,False,6.357621173469388
-612,jersey,False,False,6.449298469387756
-613,jigsaw puzzle,False,False,6.427375637755102
-614,jinrikisha,False,False,6.327726403061225
-615,joystick,False,False,6.385522959183673
-616,kimono,False,False,6.335698341836735
-617,knee pad,False,False,6.373565051020408
-618,knot,False,False,6.443319515306123
-619,lab coat,False,False,7.059151785714287
-61,boa constrictor,True,True,6.953523596938775
-620,ladle,False,False,7.087053571428571
-621,lampshade,False,False,6.915656887755102
-622,laptop,True,True,7.108976403061225
-623,lawn mower,False,False,6.935586734693877
-624,lens cap,True,True,7.138871173469388
-625,letter opener,False,False,7.0033482142857135
-626,library,True,True,6.915656887755102
-627,lifeboat,False,False,7.216597576530612
-628,lighter,False,False,7.114955357142858
-629,limousine,False,False,7.102997448979592
-62,rock python,True,True,6.995376275510204
-630,liner,True,True,7.12890625
-631,lipstick,False,False,7.172751913265306
-632,Loafer,False,False,7.214604591836735
-633,lotion,False,False,7.025271045918367
-634,loudspeaker,False,False,7.108976403061225
-635,loupe,True,True,7.144850127551021
-636,lumbermill,False,False,7.144850127551021
-637,magnetic compass,False,False,7.013313137755102
-638,mailbag,True,True,7.224569515306123
-639,mailbag,False,False,6.758211096938775
-63,Indian cobra,True,True,7.244499362244898
-640,mailbox,False,False,7.017299107142858
-641,maillot,False,False,7.142857142857142
-642,maillot,False,False,7.2026466836734695
-643,manhole cover,False,False,7.318239795918367
-644,maraca,False,False,7.03922193877551
-645,marimba,False,False,7.210618622448979
-646,mask,False,False,7.079081632653061
-647,matchstick,False,False,6.975446428571429
-648,maypole,False,False,6.8359375
-649,maze,True,True,6.620695153061225
-64,green mamba,True,True,6.481186224489796
-650,measuring cup,True,True,6.6645408163265305
-651,medicine chest,True,True,6.644610969387756
-652,megalith,False,False,6.564891581632653
-653,microphone,True,True,6.841916454081633
-654,microwave,False,False,6.706393494897959
-655,military uniform,False,False,6.688456632653061
-656,milk can,False,False,6.742267219387756
-657,minibus,False,False,6.674505739795919
-658,miniskirt,False,False,6.686463647959185
-659,minivan,False,False,6.556919642857142
-65,sea snake,True,True,6.628667091836735
-660,missile,False,False,6.668526785714287
-661,mitten,False,False,6.676498724489796
-662,mixing bowl,False,False,6.558912627551021
-663,mobile home,False,False,6.758211096938775
-664,Model T,False,False,6.531010841836735
-665,modem,True,True,6.415417729591836
-666,monastery,False,False,6.558912627551021
-667,monitor,False,False,6.734295280612244
-668,moped,False,False,6.8080357142857135
-669,mortar,False,False,6.706393494897959
-66,horned viper,True,True,6.610730229591836
-670,mortarboard,False,False,6.718351403061225
-671,mosque,False,False,6.740274234693877
-672,mosquito net,True,True,6.999362244897959
-673,motor scooter,True,True,6.640625
-674,mountain bike,False,False,6.634646045918367
-675,mountain tent,False,False,6.658561862244898
-676,mouse,True,True,6.792091836734694
-677,mousetrap,True,True,6.0307716836734695
-678,moving van,True,True,6.112484056122449
-679,muzzle,True,True,6.090561224489796
-67,diamondback,True,True,5.921157525510204
-680,nail,True,True,5.907206632653061
-681,neck brace,False,False,5.913185586734694
-682,necklace,False,False,5.871332908163265
-683,nipple,True,True,6.0307716836734695
-684,notebook,False,False,6.042729591836735
-685,obelisk,False,False,5.937101403061225
-686,oboe,False,False,5.968989158163265
-687,ocarina,False,False,6.034757653061225
-688,odometer,False,False,5.988919005102041
-689,oil filter,False,False,6.074617346938775
-68,sidewinder,True,True,5.907206632653061
-690,organ,True,True,6.026785714285714
-691,oscilloscope,False,False,6.094547193877551
-692,overskirt,False,False,6.004862882653061
-693,oxcart,False,False,6.010841836734694
-694,oxygen mask,True,True,6.092554209183673
-695,packet,False,False,6.018813775510204
-696,paddle,False,False,6.040736607142857
-697,paddlewheel,False,False,6.012834821428571
-698,padlock,False,False,5.959024234693878
-699,paintbrush,False,False,6.106505102040816
-69,trilobite,True,True,5.963010204081633
-6,stingray,True,True,6.118463010204081
-700,pajama,False,False,6.04671556122449
-701,palace,True,True,5.855389030612245
-702,panpipe,False,False,5.998883928571429
-703,paper towel,False,False,6.066645408163265
-704,parachute,False,False,5.990911989795919
-705,parallel bars,False,False,6.126434948979592
-706,park bench,False,False,6.050701530612245
-707,parking meter,True,True,6.146364795918367
-708,passenger car,False,False,6.251992984693877
-709,patio,False,False,6.251992984693877
-70,harvestman,True,True,6.0766103316326525
-710,pay-phone,True,True,6.1284279336734695
-711,pedestal,False,False,6.072624362244898
-712,pencil box,False,False,6.182238520408164
-713,pencil sharpener,True,True,6.166294642857143
-714,perfume,False,False,6.036750637755102
-715,Petri dish,False,False,6.228077168367348
-716,photocopier,False,False,6.212133290816327
-717,pick,True,True,6.14437181122449
-718,pickelhaube,False,False,6.03874362244898
-719,picket fence,False,False,6.012834821428571
-71,scorpion,True,True,6.166294642857143
-720,pickup,True,True,6.130420918367348
-721,pier,False,False,6.393494897959185
-722,piggy bank,True,True,6.060666454081633
-723,pill bottle,False,False,6.186224489795919
-724,pillow,False,False,5.984933035714286
-725,ping-pong ball,False,False,6.218112244897959
-726,pinwheel,False,False,6.034757653061225
-727,pirate,False,False,6.07063137755102
-728,pitcher,True,True,6.301817602040815
-729,plane,False,False,6.255978954081633
-72,black and gold garden spider,True,True,5.982940051020408
-730,planetarium,False,False,5.968989158163265
-731,plastic bag,False,False,6.275908801020408
-732,plate rack,False,False,6.196189413265306
-733,plow,False,False,6.124441964285714
-734,plunger,False,False,5.8832908163265305
-735,Polaroid camera,False,False,5.805564413265306
-736,pole,True,True,5.500637755102041
-737,police van,False,False,6.100526147959184
-738,poncho,False,False,6.060666454081633
-739,pool table,True,True,6.0307716836734695
-73,barn spider,True,True,5.943080357142857
-740,pop bottle,False,False,5.695950255102041
-741,pot,False,False,6.016820790816327
-742,potter's wheel,True,True,6.088568239795919
-743,power drill,False,False,5.7836415816326525
-744,prayer rug,False,False,6.098533163265306
-745,printer,True,True,6.06265943877551
-746,prison,False,False,6.118463010204081
-747,projectile,True,True,5.819515306122449
-748,projector,False,False,5.907206632653061
-749,puck,True,True,5.901227678571429
-74,garden spider,True,True,5.96500318877551
-750,punching bag,False,False,5.95703125
-751,purse,False,False,5.915178571428571
-752,quill,False,False,6.022799744897959
-753,quilt,False,False,5.819515306122449
-754,racer,False,False,5.873325892857143
-755,racket,True,True,5.95703125
-756,radiator,True,True,5.984933035714286
-757,radio,True,True,6.202168367346939
-758,radio telescope,False,False,5.968989158163265
-759,rain barrel,False,False,6.018813775510204
-75,black widow,True,True,6.042729591836735
-760,recreational vehicle,True,True,5.9331154336734695
-761,reel,True,True,6.034757653061225
-762,reflex camera,True,True,6.122448979591836
-763,refrigerator,False,False,5.578364158163265
-764,remote control,True,True,5.723852040816327
-765,restaurant,False,False,5.570392219387755
-766,revolver,False,False,5.584343112244898
-767,rifle,False,False,5.652104591836735
-768,rocking chair,False,False,5.757732780612245
-769,rotisserie,True,True,5.488679846938775
-76,tarantula,True,True,5.556441326530613
-770,rubber eraser,False,False,5.520567602040816
-771,rugby ball,False,False,5.522560586734694
-772,rule,True,True,5.4926658163265305
-773,running shoe,False,False,5.699936224489796
-774,safe,True,True,5.552455357142857
-775,safety pin,False,False,5.614237882653061
-776,saltshaker,False,False,5.456792091836735
-777,sandal,False,False,5.65609056122449
-778,sarong,False,False,5.646125637755102
-779,sax,False,False,5.436862244897959
-77,wolf spider,True,True,5.622209821428571
-780,scabbard,False,False,5.624202806122449
-781,scale,True,True,5.586336096938775
-782,school bus,True,True,5.502630739795919
-783,schooner,False,False,5.341198979591836
-784,scoreboard,False,False,5.522560586734694
-785,screen,True,True,5.729830994897959
-786,screw,False,False,5.683992346938775
-787,screwdriver,False,False,5.4926658163265305
-788,seat belt,False,False,5.311304209183673
-789,sewing machine,True,True,5.536511479591836
-78,tick,True,True,5.693957270408164
-790,shield,True,True,5.618223852040816
-791,shoe shop,False,False,5.620216836734694
-792,shoji,False,False,6.216119260204081
-793,shopping basket,False,False,6.0766103316326525
-794,shopping cart,False,False,6.0546875
-795,shovel,False,False,5.998883928571429
-796,shower cap,False,False,5.998883928571429
-797,shower curtain,False,False,5.9331154336734695
-798,ski,False,False,6.180245535714286
-799,ski mask,True,True,5.903220663265306
-79,centipede,True,True,5.988919005102041
-7,cock,True,True,6.192203443877551
-800,sleeping bag,False,False,5.998883928571429
-801,slide rule,False,False,5.821508290816327
-802,sliding door,False,False,6.1762595663265305
-803,slot,True,True,6.180245535714286
-804,snorkel,False,False,6.032764668367348
-805,snowmobile,False,False,6.106505102040816
-806,snowplow,False,False,5.94905931122449
-807,soap dispenser,False,False,6.072624362244898
-808,soccer ball,False,False,6.178252551020408
-809,sock,False,False,5.829480229591836
-80,black grouse,True,True,5.9809470663265305
-810,solar dish,False,False,6.166294642857143
-811,sombrero,False,False,6.014827806122449
-812,soup bowl,False,False,5.97297512755102
-813,space bar,False,False,6.150350765306122
-814,space heater,False,False,6.036750637755102
-815,space shuttle,True,True,5.7836415816326525
-816,spatula,True,True,5.94905931122449
-817,speedboat,False,False,6.042729591836735
-818,spider web,False,False,6.048708545918367
-819,spindle,False,False,6.116470025510204
-81,ptarmigan,True,True,5.7378029336734695
-820,sports car,False,False,6.401466836734694
-821,spotlight,True,True,6.439333545918367
-822,stage,True,True,6.351642219387756
-823,steam locomotive,False,False,6.33968431122449
-824,steel arch bridge,True,True,6.192203443877551
-825,steel drum,False,False,6.212133290816327
-826,stethoscope,True,True,6.477200255102041
-827,stole,False,False,6.146364795918367
-828,stone wall,False,False,6.108498086734694
-829,stopwatch,False,False,6.210140306122449
-82,ruffed grouse,True,True,6.228077168367348
-830,stove,False,False,6.289859693877552
-831,strainer,False,False,6.517059948979592
-832,streetcar,False,False,6.2260841836734695
-833,stretcher,True,True,6.4174107142857135
-834,studio couch,False,False,6.194196428571429
-835,stupa,True,True,6.349649234693877
-836,submarine,False,False,6.4453125
-837,suit,True,True,6.357621173469388
-838,sundial,False,False,6.45328443877551
-839,sunglass,False,False,6.3197544642857135
-83,prairie chicken,True,True,6.315768494897959
-840,sunglasses,False,False,6.457270408163265
-841,sunscreen,False,False,6.459263392857142
-842,suspension bridge,False,False,6.35562818877551
-843,swab,False,False,6.397480867346939
-844,sweatshirt,False,False,6.3197544642857135
-845,swimming trunks,False,False,6.403459821428571
-846,swing,False,False,6.503109056122448
-847,switch,True,True,6.451291454081633
-848,syringe,False,False,6.4174107142857135
-849,table lamp,False,False,6.289859693877552
-84,peacock,True,True,6.154336734693878
-850,tank,False,False,6.040736607142857
-851,tape player,True,True,6.218112244897959
-852,teapot,False,False,5.966996173469387
-853,teddy,False,False,6.008848852040816
-854,television,True,True,6.180245535714286
-855,tennis ball,False,False,5.9809470663265305
-856,thatch,True,True,6.052694515306122
-857,theater curtain,True,True,5.943080357142857
-858,thimble,False,False,5.9331154336734695
-859,thresher,False,False,6.156329719387755
-85,quail,True,True,6.080596301020408
-860,throne,False,False,5.801578443877551
-861,tile roof,False,False,5.988919005102041
-862,toaster,False,False,6.166294642857143
-863,tobacco shop,False,False,5.907206632653061
-864,toilet seat,False,False,5.94108737244898
-865,torch,False,False,6.032764668367348
-866,totem pole,False,False,5.829480229591836
-867,tow truck,True,True,6.052694515306122
-868,toyshop,False,False,6.164301658163265
-869,tractor,False,False,5.974968112244898
-86,partridge,True,True,5.953045280612245
-870,trailer truck,True,True,6.048708545918367
-871,tray,True,True,5.988919005102041
-872,trench coat,True,True,5.853396045918367
-873,tricycle,False,False,6.072624362244898
-874,trimaran,False,False,6.190210459183673
-875,tripod,False,False,6.182238520408164
-876,triumphal arch,False,False,6.002869897959184
-877,trolleybus,False,False,6.074617346938775
-878,trombone,False,False,6.132413903061225
-879,tub,False,False,6.977439413265306
-87,African grey,True,True,6.548947704081633
-880,turnstile,True,True,6.511080994897959
-881,typewriter keyboard,True,True,6.634646045918367
-882,umbrella,False,False,6.401466836734694
-883,unicycle,False,False,6.538982780612244
-884,upright,True,True,6.399473852040815
-885,vacuum,False,False,6.678491709183673
-886,vase,False,False,6.592793367346939
-887,vault,True,True,6.698421556122448
-888,velvet,False,False,6.471221301020408
-889,vending machine,True,True,6.327726403061225
-88,macaw,True,True,6.461256377551021
-890,vestment,True,True,6.425382653061225
-891,viaduct,False,False,6.598772321428571
-892,violin,False,False,6.503109056122448
-893,volleyball,False,False,6.602758290816327
-894,waffle iron,False,False,6.483179209183673
-895,wall clock,False,False,6.536989795918367
-896,wallet,False,False,6.618702168367347
-897,wardrobe,True,True,6.644610969387756
-898,warplane,False,False,6.493144132653061
-899,washbasin,True,True,6.696428571428571
-89,sulphur-crested cockatoo,True,True,6.495137117346939
-8,hen,True,True,6.692442602040815
-900,washer,False,False,6.622688137755102
-901,water bottle,False,False,6.455277423469388
-902,water jug,False,False,6.588807397959185
-903,water tower,False,False,6.439333545918367
-904,whiskey jug,False,False,6.592793367346939
-905,whistle,False,False,6.570870535714287
-906,wig,False,False,6.54296875
-907,window screen,True,True,5.743781887755102
-908,window shade,True,True,5.725845025510204
-909,Windsor tie,False,False,5.813536352040816
-90,lorikeet,True,True,5.755739795918367
-910,wine bottle,True,True,5.87531887755102
-911,wing,False,False,5.600286989795919
-912,wok,False,False,5.697943239795919
-913,wooden spoon,False,False,5.568399234693878
-914,wool,False,False,5.693957270408164
-915,worm fence,True,True,5.600286989795919
-916,wreck,False,False,5.855389030612245
-917,yawl,False,False,5.819515306122449
-918,yurt,False,False,5.705915178571429
-919,web site,True,True,5.859375
-91,coucal,True,True,5.652104591836735
-920,comic book,False,False,5.801578443877551
-921,crossword puzzle,True,True,5.893255739795919
-922,street sign,False,False,5.837452168367348
-923,traffic light,False,False,5.791613520408164
-924,book jacket,True,True,5.809550382653061
-925,menu,True,True,5.440848214285714
-926,plate,True,True,5.759725765306122
-927,guacamole,False,False,5.803571428571429
-928,consomme,False,False,5.747767857142857
-929,hot pot,False,False,5.7856345663265305
-92,bee eater,True,True,6.024792729591836
-930,trifle,True,True,5.68000637755102
-931,ice cream,True,True,5.660076530612245
-932,ice lolly,False,False,5.717873086734694
-933,French loaf,False,False,5.723852040816327
-934,bagel,False,False,5.827487244897959
-935,pretzel,False,False,5.76171875
-936,cheeseburger,False,False,5.187739158163265
-937,hotdog,False,False,5.245535714285714
-938,mashed potato,False,False,5.09406887755102
-939,head cabbage,False,False,5.113998724489796
-93,hornbill,True,True,5.2734375
-940,broccoli,False,False,5.259486607142857
-941,cauliflower,False,False,5.287388392857143
-942,zucchini,False,False,5.235570790816327
-943,spaghetti squash,False,False,5.2953603316326525
-944,acorn squash,False,False,5.2734375
-945,butternut squash,False,False,5.155851403061225
-946,cucumber,False,False,5.285395408163265
-947,artichoke,True,True,5.110012755102041
-948,bell pepper,False,False,5.253507653061225
-949,cardoon,False,False,5.209661989795919
-94,hummingbird,True,True,5.259486607142857
-950,mushroom,False,False,5.108019770408164
-951,Granny Smith,False,False,5.173788265306122
-952,strawberry,False,False,5.17578125
-953,orange,False,False,5.050223214285714
-954,lemon,False,False,5.117984693877551
-955,fig,True,True,5.221619897959184
-956,pineapple,True,True,5.235570790816327
-957,banana,False,False,5.205676020408164
-958,jackfruit,False,False,5.17578125
-959,custard apple,False,False,5.305325255102041
-95,jacamar,True,True,5.227598852040816
-960,pomegranate,False,False,5.241549744897959
-961,hay,False,False,5.147879464285714
-962,carbonara,True,True,5.2953603316326525
-963,chocolate sauce,False,False,5.127949617346939
-964,dough,True,True,5.125956632653061
-965,meat loaf,False,False,5.775669642857143
-966,pizza,False,False,5.887276785714286
-967,potpie,False,False,5.644132653061225
-968,burrito,False,False,5.773676658163265
-969,red wine,False,False,5.691964285714286
-96,toucan,True,True,5.841438137755102
-970,espresso,False,False,5.616230867346939
-971,cup,True,True,5.6879783163265305
-972,eggnog,False,False,5.703922193877551
-973,alp,True,True,5.622209821428571
-974,bubble,False,False,5.55843431122449
-975,cliff,True,True,5.705915178571429
-976,coral reef,True,True,5.632174744897959
-977,geyser,False,False,5.540497448979592
-978,lakeside,True,True,5.618223852040816
-979,promontory,True,True,5.721859056122449
-97,drake,True,True,5.75374681122449
-980,sandbar,True,True,5.76969068877551
-981,seashore,False,False,5.85140306122449
-982,valley,False,False,5.606265943877551
-983,volcano,True,True,5.711894132653061
-984,ballplayer,False,False,5.75374681122449
-985,groom,False,False,5.711894132653061
-986,scuba diver,False,False,5.76969068877551
-987,rapeseed,True,True,5.86734693877551
-988,daisy,False,False,5.751753826530613
-989,yellow lady's slipper,False,False,5.895248724489796
-98,red-breasted merganser,True,True,5.64811862244898
-990,corn,True,True,5.755739795918367
-991,acorn,False,False,5.787627551020408
-992,hip,True,True,5.705915178571429
-993,buckeye,False,False,5.707908163265306
-994,coral fungus,True,True,7.776626275510204
-995,agaric,False,False,8.03970025510204
-996,gyromitra,False,False,7.932079081632653
-997,stinkhorn,True,True,7.9380580357142865
-998,earthstar,False,False,7.670998086734694
-999,hen-of-the-woods,False,False,7.824457908163265
-99,goose,True,True,7.669005102040815
-9,ostrich,True,True,7.8125
+Index,True_Label,Match,llm_1
+0,tench,True,True
+100,black swan,True,True
+101,tusker,True,True
+102,echidna,True,True
+103,platypus,True,True
+104,wallaby,True,True
+105,koala,True,True
+106,wombat,True,True
+107,jellyfish,True,True
+108,sea anemone,True,True
+109,brain coral,True,True
+10,brambling,True,True
+110,flatworm,True,True
+111,nematode,True,True
+112,conch,True,True
+113,snail,True,True
+114,slug,True,True
+115,sea slug,True,True
+116,chiton,True,True
+117,chambered nautilus,True,True
+118,Dungeness crab,False,False
+119,rock crab,True,True
+11,goldfinch,True,True
+120,fiddler crab,True,True
+121,king crab,True,True
+122,American lobster,True,True
+123,spiny lobster,True,True
+124,crayfish,True,True
+125,hermit crab,True,True
+126,isopod,True,True
+127,white stork,True,True
+128,black stork,True,True
+129,spoonbill,True,True
+12,house finch,True,True
+130,flamingo,True,True
+131,little blue heron,True,True
+132,American egret,True,True
+133,bittern,True,True
+134,crane,True,True
+135,limpkin,True,True
+136,European gallinule,True,True
+137,American coot,True,True
+138,bustard,True,True
+139,ruddy turnstone,True,True
+13,junco,True,True
+140,red-backed sandpiper,True,True
+141,redshank,True,True
+142,dowitcher,True,True
+143,oystercatcher,True,True
+144,pelican,True,True
+145,king penguin,True,True
+146,albatross,True,True
+147,grey whale,True,True
+148,killer whale,True,True
+149,dugong,True,True
+14,indigo bunting,True,True
+150,sea lion,True,True
+151,Chihuahua,True,True
+152,Japanese spaniel,True,True
+153,Maltese dog,True,True
+154,Pekinese,True,True
+155,Shih-Tzu,True,True
+156,Blenheim spaniel,True,True
+157,papillon,True,True
+158,toy terrier,True,True
+159,Rhodesian ridgeback,True,True
+15,robin,True,True
+160,Afghan hound,True,True
+161,basset,True,True
+162,beagle,True,True
+163,bloodhound,True,True
+164,bluetick,True,True
+165,black-and-tan coonhound,True,True
+166,Walker hound,False,False
+167,English foxhound,True,True
+168,redbone,True,True
+169,borzoi,True,True
+16,bulbul,True,True
+170,Irish wolfhound,True,True
+171,Italian greyhound,True,True
+172,whippet,True,True
+173,Ibizan hound,True,True
+174,Norwegian elkhound,True,True
+175,otterhound,True,True
+176,Saluki,True,True
+177,Scottish deerhound,True,True
+178,Weimaraner,True,True
+179,Staffordshire bullterrier,True,True
+17,jay,True,True
+180,American Staffordshire terrier,True,True
+181,Bedlington terrier,True,True
+182,Border terrier,True,True
+183,Kerry blue terrier,True,True
+184,Irish terrier,True,True
+185,Norfolk terrier,True,True
+186,Norwich terrier,True,True
+187,Yorkshire terrier,True,True
+188,wire-haired fox terrier,True,True
+189,Lakeland terrier,True,True
+18,magpie,True,True
+190,Sealyham terrier,True,True
+191,Airedale,True,True
+192,cairn,True,True
+193,Australian terrier,False,False
+194,Dandie Dinmont,True,True
+195,Boston bull,True,True
+196,miniature schnauzer,True,True
+197,giant schnauzer,True,True
+198,standard schnauzer,True,True
+199,Scotch terrier,True,True
+19,chickadee,True,True
+1,goldfish,True,True
+20,water ouzel,True,True
+21,kite,False,False
+22,bald eagle,True,True
+23,vulture,False,False
+24,great grey owl,True,True
+25,European fire salamander,True,True
+26,common newt,True,True
+27,eft,True,True
+28,spotted salamander,True,True
+29,axolotl,False,False
+2,great white shark,True,True
+30,bullfrog,True,True
+31,tree frog,True,True
+32,tailed frog,True,True
+33,loggerhead,True,True
+34,leatherback turtle,True,True
+35,mud turtle,True,True
+36,terrapin,True,True
+37,box turtle,True,True
+38,banded gecko,True,True
+39,common iguana,True,True
+3,tiger shark,True,True
+40,American chameleon,True,True
+41,whiptail,True,True
+42,agama,True,True
+43,frilled lizard,True,True
+44,alligator lizard,True,True
+45,Gila monster,True,True
+46,green lizard,True,True
+47,African chameleon,True,True
+48,Komodo dragon,True,True
+49,African crocodile,True,True
+4,hammerhead,True,True
+50,American alligator,True,True
+51,triceratops,True,True
+52,thunder snake,True,True
+53,ringneck snake,True,True
+54,hognose snake,True,True
+55,green snake,True,True
+56,king snake,True,True
+57,garter snake,True,True
+58,water snake,False,False
+59,vine snake,True,True
+5,electric ray,True,True
+60,night snake,True,True
+61,boa constrictor,True,True
+62,rock python,True,True
+63,Indian cobra,True,True
+64,green mamba,True,True
+65,sea snake,True,True
+66,horned viper,True,True
+67,diamondback,True,True
+68,sidewinder,True,True
+69,trilobite,True,True
+6,stingray,True,True
+70,harvestman,True,True
+71,scorpion,True,True
+72,black and gold garden spider,True,True
+73,barn spider,True,True
+74,garden spider,True,True
+75,black widow,True,True
+76,tarantula,True,True
+77,wolf spider,True,True
+78,tick,True,True
+79,centipede,True,True
+7,cock,True,True
+80,black grouse,True,True
+81,ptarmigan,True,True
+82,ruffed grouse,True,True
+83,prairie chicken,True,True
+84,peacock,True,True
+85,quail,True,True
+86,partridge,True,True
+87,African grey,True,True
+88,macaw,True,True
+89,sulphur-crested cockatoo,True,True
+8,hen,True,True
+90,lorikeet,True,True
+91,coucal,True,True
+92,bee eater,True,True
+93,hornbill,True,True
+94,hummingbird,True,True
+95,jacamar,True,True
+96,toucan,True,True
+97,drake,True,True
+98,red-breasted merganser,True,True
+99,goose,True,True
+9,ostrich,True,True

@@ -15,12 +15,16 @@ __pycache__/
 
 # OS generated files
 /DS_Store
-/data/mid
-/data/source
-/data/llm_answer2
+# /data/mid
+# /data/source
+# /data/llm_answer2
 
 
 test.py
 
-# all files in the data folder with .png extension and .csv extension in subfolders
+# all files in the data folder
 /data/*
+/data/mid/*
+/data/source/*
+/data/llm_answer2/*
+

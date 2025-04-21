@@ -1,8 +1,7 @@
 from LmmApi.LLMInterface import LLMInterface
 from LmmApi.llama32Vision11b import llama32Vision11b
 #from LmmApi.chatGpt4o import ChatGPT4O
-from data  import results
-from data import dynamic_results as dr
+#from data  import results
 from dataset_API import dataset_interface as di
 from dataset_API import image_creater as imc
 import os
@@ -46,7 +45,7 @@ def image_creater(dir_path: str, save_path: str, samples: int = 10 ,precentage_w
 
     # Explanation methods and thresholds
     #  ['GradientShap', 'IntegratedGradients', 'DeepLift', 'DeepLiftShap', 'InputXGradient', 'Saliency', 'FeatureAblation', 'Deconvolution', 'FeaturePermutation', 'Lime', 'KernelShap', 'LRP', 'Gradient', 'Occlusion', 'LayerGradCam', 'GuidedGradCam', 'LayerConductance', 'LayerActivation', 'InternalInfluence', 'LayerGradientXActivation', 'Control Var. Sobel Filter', 'Control Var. Constant', 'Control Var. Random Uniform']
-    explanation_methods = ['Random' ,'GradientShap' ,'Saliency','GuidedGradCam', 'InputXGradient'] # lime
+    explanation_methods = ['Random', 'GradientShap', 'Saliency'] # 'Lime', 'GuidedGradCam', 'InputXGradient',
 
     # # Temporary! It doesn't make sense for this test to be implemented outside of dataset_interface === TO DO ===
     # for exp in explanation_methods:
@@ -136,6 +135,7 @@ if __name__ == "__main__":
     # llm_context.set_jsonDescription(ImageDescription_Boolean)
     # llm_context.boolean_outputs_classification("data\\midsample2\\GradientShap", "data\\llm_answer2\\GradientShap\\boolean")
 
+<<<<<<< HEAD
     # llm_context.set_jsonDescription(ImageDescription_Boolean)
     # llm_context.boolean_outputs_classification("data\\midsample2\\InputXGradient", "data\\llm_answer2\\InputXGradient\\boolean")
 
@@ -159,24 +159,17 @@ if __name__ == "__main__":
     # results.calculate_accuracy("data\\llm_answer2\\GradientShap\\boolean","data\\llm_answer2\\GradientShap\\boolean\\results")
     # results.calculate_accuracy("data\\llm_answer2\\InputXGradient\\boolean","data\\llm_answer2\\InputXGradient\\boolean\\results")
     # results.calculate_accuracy("data\\llm_answer2\\GuidedGradCam\\boolean","data\\llm_answer2\\GuidedGradCam\\boolean\\results")
+=======
+    # llm_context.set_jsonDescription(ImageDescription_5)
+    # llm_context.anchored_outputs_classification("data\\mid\\Random", "data\\llm_answer\\Random\\anchored_structured_outputs\\5_categoris")
+>>>>>>> e18ed82d1dabfb13724ed0c1db8632dfe592346e
 
-    # # Define the input and output directories
-    # data_path = "data\\llm_answer\\Saliency\\boolean\\results.csv"  # Path to the CSV file
-    # save_directory = "data\\llm_answer\\Saliency\\boolean\\results"  # Directory to save the plots
+    # llm_context.set_jsonDescription(ImageDescription_1)
+    # llm_context.anchored_outputs_classification("data\\mid\\Random", "data\\llm_answer\\Random\\anchored_structured_outputs\\1_categoris")
 
-    # # List of metrics to plot
-    # metrics = [
-    #     "Average Match",
-    #     "Average Removed Percentage",
-    #     "Threshold Delta",
-    #     "Removed Pixel Delta",
-    #     "Custom Metric"
-    # ]
+    # llm_context.structured_outputs_classification("data\\mid", "data\\llm_answer\\structured_outputs\\1_categoris")
 
-    # # Generate plots for each metric
-    # for metric in metrics:
-    #     dr.plot_graphs_by_metric(data_path, metric, save_directory)
-    #     dr.combined_plot_graphs_by_metric(data_path, metric, save_directory)
+
 
     # results.calculate_accuracy("data\\llm_answer\\anchored_structured_outputs\\5_categoris","data\\llm_answer\\anchored_structured_outputs\\5_categoris\\results")
     # results.calculate_accuracy("data\\llm_answer\\anchored_structured_outputs\\1_categoris","data\\llm_answer\\anchored_structured_outputs\\1_categoris\\results")
