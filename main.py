@@ -7,7 +7,8 @@ from dataset_API import dataset_interface as di
 from dataset_API import image_creater as imc
 import os
 from pydantic import BaseModel
-
+import kagglehub
+import shutil
 
 # def ask_llm(imges_path: str, save_path: str, jsonDescription: BaseModel):
 #     llama = llama32Vision11b()
@@ -18,7 +19,7 @@ from pydantic import BaseModel
 #     return llm_context 
 
 
-def image_creater(dir_path: str, save_path: str, samples: int = 10):
+def image_creater(dir_path: str, save_path: str, samples: int = 10 ,precentage_wise: bool = False):
     """
     Generates a dataset by applying filters using pre-trained models and explanation methods.
 
@@ -54,15 +55,22 @@ def image_creater(dir_path: str, save_path: str, samples: int = 10):
 
 
     thresholds = [0.001, 0.002, 0.005, 0.01, 0.02,  0.05,  0.1, 0.2, 0.5]
+    precentages = [5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100]
 
     # Initialize dataset interface
     dataset = di.dataset_interface(dir_path, save_path, samples)
 
     # Apply filters using models, explanation methods, and thresholds
-    for expm in explanation_methods:
-        for prtm in pre_trained_model:
-            for thresh in thresholds:
-                dataset.filter_with_model(thresh, expm, prtm)
+    if precentage_wise:
+        for expm in explanation_methods:
+            for prtm in pre_trained_model:
+                for precentage in precentages:
+                    dataset.filter_with_model(precentage, expm, prtm, precentage_wise)
+    else:
+        for expm in explanation_methods:
+            for prtm in pre_trained_model:
+                for thresh in thresholds:
+                    dataset.filter_with_model(thresh, expm, prtm)
 
     return dataset
 
@@ -84,24 +92,73 @@ class ImageDescription_Boolean(BaseModel):
     
 
 
-if __name__ == "__main__":
-    # image_creater("data\\source\\imagenet_sample2\\pt", "data\\mid", samples=1000)
+import os
+import shutil
+import kagglehub
 
-    llama = llama32Vision11b()
+if __name__ == "__main__":
+    # Download the dataset from Kaggle
+    dataset_path = kagglehub.dataset_download('prahladmehandiratta/cervical-cancer-largest-dataset-sipakmed')
+
+    # Ensure the target directory exists
+    target_directory = "data/source/cImages"
+    os.makedirs(target_directory, exist_ok=True)
+
+    # Extract the dataset if it's a compressed file (e.g., .zip)
+    if dataset_path.endswith(".zip"):
+        extracted_path = dataset_path.replace(".zip", "")
+        shutil.unpack_archive(dataset_path, extracted_path)
+    else:
+        extracted_path = dataset_path
+
+    # Move the images to the target directory
+    for root, _, files in os.walk(extracted_path):
+        for file in files:
+            if file.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.tiff')):
+                source_file = os.path.join(root, file)
+                shutil.copy(source_file, target_directory)
+
+    print(f"Images have been moved to {target_directory}")
+    
+    # image_creater("data\\source\\imagenet_sample2\\pt", "data\\midPrecentage", 200 , True)
+
+    #llama = llama32Vision11b()
     # llama = ChatGPT4O("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")
-    llm_context = LLMInterface(llama)
+    #llm_context = LLMInterface(llama)
     # llm_context.set_prompt("Tell me what you see in the picture and what category it is from imagenet")
 
-    llm_context.set_jsonDescription(ImageDescription_Boolean)
-    llm_context.boolean_outputs_classification("data\\mid\\Saliency", "data\\llm_answer\\Saliency\\boolean")
+    # llm_context.set_jsonDescription(ImageDescription_Boolean)
+    # llm_context.boolean_outputs_classification("data\\midsample2\\Saliency", "data\\llm_answer2\\Saliency\\boolean")
 
-    llm_context.set_jsonDescription(ImageDescription_Boolean)
-    llm_context.boolean_outputs_classification("data\\mid\\Random", "data\\llm_answer\\Random\\boolean")
+    # llm_context.set_jsonDescription(ImageDescription_Boolean)
+    # llm_context.boolean_outputs_classification("data\\midsample2\\Random", "data\\llm_answer2\\Random\\boolean")
 
-    llm_context.set_jsonDescription(ImageDescription_Boolean)
-    llm_context.boolean_outputs_classification("data\\mid\\GradientShap", "data\\llm_answer\\GradientShap\\boolean")
+    # llm_context.set_jsonDescription(ImageDescription_Boolean)
+    # llm_context.boolean_outputs_classification("data\\midsample2\\GradientShap", "data\\llm_answer2\\GradientShap\\boolean")
 
-    results.calculate_accuracy("data\\llm_answer\\Saliency\\boolean", "data\\llm_answer\\Saliency\\boolean\\results")
+    # llm_context.set_jsonDescription(ImageDescription_Boolean)
+    # llm_context.boolean_outputs_classification("data\\midsample2\\InputXGradient", "data\\llm_answer2\\InputXGradient\\boolean")
+
+    # llm_context.set_jsonDescription(ImageDescription_Boolean)
+    # llm_context.boolean_outputs_classification("data\\midsample2\\GuidedGradCam", "data\\llm_answer2\\GuidedGradCam\\boolean")
+
+    # dr.add_precentage_to_csv("GradientShap", "boolean", "llm_answer2", "midsample2")
+    # dr.add_precentage_to_csv("Random", "boolean", "llm_answer2", "midsample2")
+    # dr.add_precentage_to_csv("Saliency", "boolean", "llm_answer2", "midsample2")
+    # dr.add_precentage_to_csv("InputXGradient", "boolean", "llm_answer2", "midsample2")
+    # dr.add_precentage_to_csv("GuidedGradCam", "boolean", "llm_answer2", "midsample2")
+    
+    # dr.calculate_accuracy("data\\llm_answer2\\Random\\boolean", "data\\llm_answer2\\Random\\boolean\\p_results")
+    # dr.calculate_accuracy("data\\llm_answer2\\Saliency\\boolean", "data\\llm_answer2\\Saliency\\boolean\\p_results")
+    # dr.calculate_accuracy("data\\llm_answer2\\GradientShap\\boolean", "data\\llm_answer2\\GradientShap\\boolean\\p_results")
+    # dr.calculate_accuracy("data\\llm_answer2\\InputXGradient\\boolean", "data\\llm_answer2\\InputXGradient\\boolean\\p_results")
+    # dr.calculate_accuracy("data\\llm_answer2\\GuidedGradCam\\boolean", "data\\llm_answer2\\GuidedGradCam\\boolean\\p_results")
+
+    # results.calculate_accuracy("data\\llm_answer2\\Saliency\\boolean","data\\llm_answer2\\Saliency\\boolean\\results")
+    # results.calculate_accuracy("data\\llm_answer2\\Random\\boolean","data\\llm_answer2\\Random\\boolean\\results")
+    # results.calculate_accuracy("data\\llm_answer2\\GradientShap\\boolean","data\\llm_answer2\\GradientShap\\boolean\\results")
+    # results.calculate_accuracy("data\\llm_answer2\\InputXGradient\\boolean","data\\llm_answer2\\InputXGradient\\boolean\\results")
+    # results.calculate_accuracy("data\\llm_answer2\\GuidedGradCam\\boolean","data\\llm_answer2\\GuidedGradCam\\boolean\\results")
 
     # # Define the input and output directories
     # data_path = "data\\llm_answer\\Saliency\\boolean\\results.csv"  # Path to the CSV file

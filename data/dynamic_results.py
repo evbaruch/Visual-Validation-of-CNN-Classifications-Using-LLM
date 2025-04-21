@@ -3,13 +3,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # use example : add_precentage_to_csv("GradientShap", "boolean", "data\\llm_answer\\GradientShap\\boolean\\results")
-def add_precentage_to_csv(method: str, query_type: str, save_directory: str):
+def add_precentage_to_csv(method: str, query_type: str, save_directory: str ,mid: str):
   
     # Build the path to the directory containing the files
-    root_directory = os.path.join("data", "llm_answer", method, query_type)
+    root_directory = os.path.join("data", save_directory, method, query_type)
 
     # Get the path to the directory containing the percentage files
-    percentage_directory = os.path.join("data", "mid", method, "csv")
+    percentage_directory = os.path.join("data", mid, method, "csv")
 
     # do a walk in the directories and for each 2 files with the same name in the two directories
     # do a join 
@@ -197,9 +197,37 @@ def combined_plot_graphs_from_table(data_path: str, save_directory: str):
 
     print(f"Saved combined plot: {save_path}")
 
-# calculate_accuracy("data\\llm_answer\\Saliency\\boolean", "data\\llm_answer\\Saliency\\boolean\\results_precentage")
-add_precentage_to_csv("Random", "boolean", "data\\llm_answer\\Random\\boolean\\results")
-calculate_accuracy("data\\llm_answer\\Random\\boolean", "data\\llm_answer\\Random\\boolean\\results_precentage")
 
-# results.calculate_accuracy("data\\llm_answer\\Saliency\\boolean", "data\\llm_answer\\Saliency\\boolean\\results")
 
+
+# TODO: Fix to use only the name of the method and not the full path
+# def add_precentage_to_csv("GradientShap", "boolean", "p_results")
+def transform_results_to_table(input_path: str, output_path: str, method: str):
+    # Read the input CSV
+    df = pd.read_csv(input_path)
+
+    # Pivot the table to make 'Removed_Percentage' the columns and 'File' the index
+    pivoted_df = df.pivot(index='File', columns='Removed_Percentage', values='Average Match')
+
+    # Reset index so 'File' becomes a column
+    pivoted_df.reset_index(inplace=True)
+
+    # Optionally sort the columns (excluding 'File')
+    # pivoted_df = pivoted_df[['File'] + sorted([col for col in pivoted_df.columns if col != 'File'])]
+
+    # Save to the output CSV with the method name as a prefix
+    output_file_name = f"{method}_table.csv"
+    output_file_path = os.path.join(output_path, output_file_name)
+
+    # Ensure the output directory exists
+    os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
+
+    # Save the transformed results to the output file
+    pivoted_df.to_csv(output_file_path, index=False)
+    print(f"Transformed results saved to {output_file_path}")
+
+transform_results_to_table("data\\llm_answer2\\GradientShap\\boolean\\p_results\\results.csv", "data\\llm_answer2\\GradientShap\\boolean\\p_results\\table.csv","GradientShap")
+transform_results_to_table("data\\llm_answer2\\GuidedGradCam\\boolean\\p_results\\results.csv", "data\\llm_answer2\\GuidedGradCam\\boolean\\p_results\\table.csv","GuidedGradCam")
+transform_results_to_table("data\\llm_answer2\\InputXGradient\\boolean\\p_results\\results.csv", "data\\llm_answer2\\InputXGradient\\boolean\\p_results\\table.csv","InputXGradient")
+transform_results_to_table("data\\llm_answer2\\Random\\boolean\\p_results\\results.csv", "data\\llm_answer2\\Random\\boolean\\p_results\\table.csv","Random")
+transform_results_to_table("data\\llm_answer2\\Saliency\\boolean\\p_results\\results.csv", "data\\llm_answer2\\Saliency\\boolean\\p_results\\table.csv","Saliency")
