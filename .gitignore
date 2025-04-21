@@ -28,3 +28,4 @@ test.py
 /data/source/*
 /data/llm_answer2/*
 
+*.rar
