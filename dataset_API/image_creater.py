@@ -172,6 +172,118 @@ def new_remove_pixels(a_batch, x_batch, threshold):
 
     return a_masked_x_batch, removed_pixels_per_image
 
+
+def percentage_remove(a_batch, x_batch, percentage):
+    """
+    Removes a specified percentage of the least important pixels from x_batch based on a_batch.
+
+    Args:
+        a_batch (Union[np.ndarray, torch.Tensor]): Importance map for each image.
+        x_batch (Union[np.ndarray, torch.Tensor]): Batch of images to modify.
+        percentage (float): Percentage of pixels to remove (0 to 100).
+
+    Returns:
+        Tuple[Union[np.ndarray, torch.Tensor], List[int]]:
+            - Modified x_batch with pixels removed.
+            - List of the number of pixels removed per image.
+    """
+    # Ensure a_batch and x_batch are both NumPy arrays for compatibility with NumPy operations
+    if isinstance(a_batch, torch.Tensor):
+        a_batch = a_batch.cpu().numpy()
+    if isinstance(x_batch, torch.Tensor):
+        x_batch_cpu = x_batch.cpu().numpy()
+    else:
+        x_batch_cpu = x_batch  # Already a NumPy array
+
+    # Flatten the importance map to sort pixel importance
+    a_flat = a_batch.reshape(a_batch.shape[0], -1)
+    num_pixels = a_flat.shape[1]
+
+    # Calculate the number of pixels to remove based on the percentage
+    num_pixels_to_remove = int((percentage / 100) * num_pixels)
+
+    # Create a mask for each image
+    a_mask = np.ones_like(a_flat, dtype=bool)
+    for i in range(a_flat.shape[0]):
+        # Get the indices of the least important pixels
+        least_important_indices = np.argsort(a_flat[i])[:num_pixels_to_remove]
+        # Set those indices to False in the mask
+        a_mask[i, least_important_indices] = False
+
+    # Reshape the mask back to the original shape of a_batch
+    a_mask = a_mask.reshape(a_batch.shape)
+
+    # Repeat mask along the appropriate axis
+    a_reshaped_mask = np.repeat(a_mask, x_batch_cpu.shape[1], axis=1)
+    a_masked_x_batch = np.copy(x_batch_cpu)
+    a_masked_x_batch[~a_reshaped_mask] = 1
+
+    # Calculate the number of removed pixels per image
+    removed_pixels_per_image = [num_pixels_to_remove*3] * a_batch.shape[0]
+
+    # Convert back to torch tensor if needed
+    if isinstance(x_batch, torch.Tensor):
+        a_masked_x_batch = torch.from_numpy(a_masked_x_batch).to(x_batch.device)
+
+    return a_masked_x_batch, removed_pixels_per_image
+
+def percentage_random_remove(a_batch, x_batch, percentage):
+    """
+    Randomly removes a specified percentage of pixels from x_batch.
+
+    Args:
+        a_batch (Union[np.ndarray, torch.Tensor]): Importance map for each image (not used in this function but kept for compatibility).
+        x_batch (Union[np.ndarray, torch.Tensor]): Batch of images to modify.
+        percentage (float): Percentage of pixels to remove (0 to 100).
+
+    Returns:
+        Tuple[Union[np.ndarray, torch.Tensor], List[int]]:
+            - Modified x_batch with pixels removed.
+            - List of the number of pixels removed per image.
+    """
+    # Ensure x_batch is a NumPy array for compatibility with NumPy operations
+    if isinstance(x_batch, torch.Tensor):
+        x_batch_cpu = x_batch.cpu().numpy()
+    else:
+        x_batch_cpu = x_batch  # Already a NumPy array
+
+    # Get the shape of the batch
+    batch_size, channels, height, width = x_batch_cpu.shape
+    total_pixels = height * width
+
+    # Calculate the number of pixels to remove per image
+    num_pixels_to_remove = int((percentage / 100) * total_pixels)
+
+    # Create a mask for each image
+    a_masked_x_batch = np.copy(x_batch_cpu)
+    removed_pixels_per_image = []
+
+    for i in range(batch_size):
+        # Generate random indices for pixels to remove
+        random_indices = np.random.choice(total_pixels, num_pixels_to_remove, replace=False)
+
+        # Create a flat mask and set the selected indices to 0
+        flat_mask = np.ones(total_pixels, dtype=bool)
+        flat_mask[random_indices] = False
+
+        # Reshape the mask to the original image shape
+        reshaped_mask = flat_mask.reshape(height, width)
+
+        # Repeat the mask for all channels
+        channel_mask = np.repeat(reshaped_mask[np.newaxis, :, :], channels, axis=0)
+
+        # Apply the mask to the image
+        a_masked_x_batch[i][~channel_mask] = 1  # Set removed pixels to 1
+
+        # Record the number of removed pixels
+        removed_pixels_per_image.append(num_pixels_to_remove*3)
+
+    # Convert back to torch tensor if needed
+    if isinstance(x_batch, torch.Tensor):
+        a_masked_x_batch = torch.from_numpy(a_masked_x_batch).to(x_batch.device)
+
+    return a_masked_x_batch, removed_pixels_per_image
+
 def random_remove_pixels(a_batch, x_batch, threshold):
     # Ensure a_batch and x_batch are both NumPy arrays for compatibility with NumPy operations
     if isinstance(a_batch, torch.Tensor):
@@ -218,32 +330,32 @@ def beep(link):
 
 # Get probability distributions over classes for a batch of images using a given model.
 def get_probabilities(batch, model):
-  probabilities = [0] * len(batch)
+    probabilities = [0] * len(batch)
 
-  for i in range(len(batch)):
-    input_image = Image.fromarray(change_ImageNet_format(batch[i]))  # Assuming the pixel values are in the range [0, 1]
+    for i in range(len(batch)):
+        input_image = Image.fromarray(change_ImageNet_format(batch[i]))  # Assuming the pixel values are in the range [0, 1]
 
-    preprocess = transforms.Compose([
-        transforms.Resize(256),
-        transforms.CenterCrop(224),
-        transforms.ToTensor(),
-        transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
-    ])
-    input_tensor = preprocess(input_image)
-    input_batch = input_tensor.unsqueeze(0) # create a mini-batch as expected by the model
+        preprocess = transforms.Compose([
+            transforms.Resize(256),
+            transforms.CenterCrop(224),
+            transforms.ToTensor(),
+            transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
+        ])
+        input_tensor = preprocess(input_image)
+        input_batch = input_tensor.unsqueeze(0) # create a mini-batch as expected by the model
 
-    # move the input and model to GPU for speed if available
-    if torch.cuda.is_available():
-        input_batch = input_batch.to('cuda')
-        model.to('cuda')
+        # move the input and model to GPU for speed if available
+        if torch.cuda.is_available():
+            input_batch = input_batch.to('cuda')
+            model.to('cuda')
 
-    with torch.no_grad():
-        output = model(input_batch) #
-    # Tensor of shape 1000, with confidence scores over ImageNet's 1000 classes
+        with torch.no_grad():
+            output = model(input_batch) #
+        # Tensor of shape 1000, with confidence scores over ImageNet's 1000 classes
 
-    # The output has unnormalized scores. To get probabilities, you can run a softmax on it.
-    probabilities[i] = torch.nn.functional.softmax(output[0], dim=0)
-  return probabilities
+        # The output has unnormalized scores. To get probabilities, you can run a softmax on it.
+        probabilities[i] = torch.nn.functional.softmax(output[0], dim=0)
+    return probabilities
 
 """## Results"""
 

@@ -1,5 +1,4 @@
 import torch
-import torch.nn as nn
 from dataset_API import image_creater as imc
 import os
 import quantus
@@ -22,7 +21,7 @@ class dataset_interface:
         self.Correctly = []
 
 
-    def filter_with_model(self, threshold: float, method: str, pre_trained_model: str):
+    def filter_with_model(self, threshold: float, method: str, pre_trained_model: str , precentage_wise: bool = False):
         """
         Filters the dataset using a pre-trained model and an explanation method in smaller batches.
 
@@ -36,7 +35,6 @@ class dataset_interface:
                 the proportion of removed pixels, and the classification accuracy.
         """
 
-       
         # Define the subfolder path for the current method, threshold, and pre-trained model
         subfolder_path = os.path.join(
             self.save_path, f"{method}", f"{method}_{threshold}_{pre_trained_model}"
@@ -72,6 +70,18 @@ class dataset_interface:
         a_masked_x_batch = []
         removed_list = []
 
+        # choose the imc function based on the method and removal method (precentage wise or not)
+        if precentage_wise:
+            if method == "Random":
+                imc_function = imc.percentage_random_remove
+            else:
+                imc_function = imc.percentage_remove
+        else:
+            if method == "Random":
+                imc_function = imc.random_remove_pixels
+            else:
+                imc_function = imc.new_remove_pixels
+
         for i in range(num_batches):
             start_idx = i * batch_size
             end_idx = min((i + 1) * batch_size, len(x_batch))
@@ -82,14 +92,18 @@ class dataset_interface:
             # Generate explanations for the current batch
             if method == "Random":
                 a_batch = quantus.explain(model, x_batch_chunk, y_batch_chunk, method='Saliency', device=self.device)
-                a_masked_chunk, removed = imc.random_remove_pixels(a_batch, x_batch_chunk, threshold)
+<<<<<<< HEAD
+                a_masked_chunk, removed = imc_function(a_batch, x_batch_chunk, threshold)
             elif method == "GuidedGradCam":
                 layer = get_last_conv_layer(model)
                 a_batch = quantus.explain(model, x_batch_chunk, y_batch_chunk, method='GuidedGradCam', device=self.device , gc_layer=layer)
-                a_masked_chunk, removed = imc.new_remove_pixels(a_batch, x_batch_chunk, threshold)
+                a_masked_chunk, removed = imc_function(a_batch, x_batch_chunk, threshold)
+=======
+                a_masked_chunk, removed = imc.random_remove_pixels(a_batch, x_batch_chunk, threshold)
+>>>>>>> e18ed82d1dabfb13724ed0c1db8632dfe592346e
             else:
                 a_batch = quantus.explain(model, x_batch_chunk, y_batch_chunk, method=method, device=self.device)
-                a_masked_chunk, removed  = imc.new_remove_pixels(a_batch, x_batch_chunk, threshold)
+                a_masked_chunk, removed  = imc_function(a_batch, x_batch_chunk, threshold)
 
             a_masked_x_batch.extend(a_masked_chunk)
             removed_list.append(removed)
@@ -157,19 +171,3 @@ class dataset_interface:
         # Extract parts
         method, threshold, pre_trained_model = parts
         return method, threshold, pre_trained_model
-
-    
-def get_last_conv_layer(model):
-        """
-        Dynamically find the last convolutional layer in the model.
-
-        Args:
-            model (torch.nn.Module): The model to search.
-
-        Returns:
-            torch.nn.Module: The last convolutional layer in the model.
-        """
-        for layer in reversed(list(model.modules())):
-            if isinstance(layer, nn.Conv2d):
-                return layer
-        raise ValueError("No convolutional layer found in the model.")

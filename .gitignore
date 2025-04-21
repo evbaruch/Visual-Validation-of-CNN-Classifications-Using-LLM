@@ -18,6 +18,14 @@ __pycache__/
 /data/mid
 /data/source
 /data/llm_answer2
-CImages_source
-data
+
+
 test.py
+
+# all files in the data folder
+/data/*
+/data/mid/*
+/data/source/*
+/data/llm_answer2/*
+
+*.rar
