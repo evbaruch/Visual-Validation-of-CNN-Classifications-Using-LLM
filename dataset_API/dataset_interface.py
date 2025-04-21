@@ -4,6 +4,7 @@ import os
 import quantus
 from data import global_data as gd
 from PIL import Image
+import torch.nn as nn
 
 
 class dataset_interface:
@@ -19,7 +20,6 @@ class dataset_interface:
 
         self.removed = []
         self.Correctly = []
-
 
     def filter_with_model(self, threshold: float, method: str, pre_trained_model: str , precentage_wise: bool = False):
         """
@@ -79,7 +79,7 @@ class dataset_interface:
         else:
             if method == "Random":
                 imc_function = imc.random_remove_pixels
-            else:
+                layer = self.get_last_conv_layer(model)
                 imc_function = imc.new_remove_pixels
 
         for i in range(num_batches):
@@ -92,15 +92,11 @@ class dataset_interface:
             # Generate explanations for the current batch
             if method == "Random":
                 a_batch = quantus.explain(model, x_batch_chunk, y_batch_chunk, method='Saliency', device=self.device)
-<<<<<<< HEAD
                 a_masked_chunk, removed = imc_function(a_batch, x_batch_chunk, threshold)
             elif method == "GuidedGradCam":
                 layer = get_last_conv_layer(model)
                 a_batch = quantus.explain(model, x_batch_chunk, y_batch_chunk, method='GuidedGradCam', device=self.device , gc_layer=layer)
                 a_masked_chunk, removed = imc_function(a_batch, x_batch_chunk, threshold)
-=======
-                a_masked_chunk, removed = imc.random_remove_pixels(a_batch, x_batch_chunk, threshold)
->>>>>>> e18ed82d1dabfb13724ed0c1db8632dfe592346e
             else:
                 a_batch = quantus.explain(model, x_batch_chunk, y_batch_chunk, method=method, device=self.device)
                 a_masked_chunk, removed  = imc_function(a_batch, x_batch_chunk, threshold)
@@ -137,6 +133,7 @@ class dataset_interface:
 
         return f"{method} {threshold} {pre_trained_model} removed avrage: { removed } Correctly: {Correctly}"
     
+
     @staticmethod
     def parse_file_name(path):
         """
@@ -171,3 +168,18 @@ class dataset_interface:
         # Extract parts
         method, threshold, pre_trained_model = parts
         return method, threshold, pre_trained_model
+
+def get_last_conv_layer(model):
+        """
+        Dynamically find the last convolutional layer in the model.
+
+        Args:
+            model (torch.nn.Module): The model to search.
+
+        Returns:
+            torch.nn.Module: The last convolutional layer in the model.
+        """
+        for layer in reversed(list(model.modules())):
+            if isinstance(layer, nn.Conv2d):
+                return layer
+        raise ValueError("No convolutional layer found in the model.")

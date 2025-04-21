@@ -135,7 +135,6 @@ if __name__ == "__main__":
     # llm_context.set_jsonDescription(ImageDescription_Boolean)
     # llm_context.boolean_outputs_classification("data\\midsample2\\GradientShap", "data\\llm_answer2\\GradientShap\\boolean")
 
-<<<<<<< HEAD
     # llm_context.set_jsonDescription(ImageDescription_Boolean)
     # llm_context.boolean_outputs_classification("data\\midsample2\\InputXGradient", "data\\llm_answer2\\InputXGradient\\boolean")
 
@@ -159,10 +158,6 @@ if __name__ == "__main__":
     # results.calculate_accuracy("data\\llm_answer2\\GradientShap\\boolean","data\\llm_answer2\\GradientShap\\boolean\\results")
     # results.calculate_accuracy("data\\llm_answer2\\InputXGradient\\boolean","data\\llm_answer2\\InputXGradient\\boolean\\results")
     # results.calculate_accuracy("data\\llm_answer2\\GuidedGradCam\\boolean","data\\llm_answer2\\GuidedGradCam\\boolean\\results")
-=======
-    # llm_context.set_jsonDescription(ImageDescription_5)
-    # llm_context.anchored_outputs_classification("data\\mid\\Random", "data\\llm_answer\\Random\\anchored_structured_outputs\\5_categoris")
->>>>>>> e18ed82d1dabfb13724ed0c1db8632dfe592346e
 
     # llm_context.set_jsonDescription(ImageDescription_1)
     # llm_context.anchored_outputs_classification("data\\mid\\Random", "data\\llm_answer\\Random\\anchored_structured_outputs\\1_categoris")
