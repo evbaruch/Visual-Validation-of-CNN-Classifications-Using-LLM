@@ -19,5 +19,6 @@ __pycache__/
 # /data/source
 # /data/llm_answer2
 
-
+data.zip
+data
 test.py
