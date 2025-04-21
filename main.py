@@ -1,5 +1,5 @@
-from LmmApi.LLMInterface import LLMInterface
-from LmmApi.llama32Vision11b import llama32Vision11b
+#from LmmApi.LLMInterface import LLMInterface
+#from LmmApi.llama32Vision11b import llama32Vision11b
 #from LmmApi.chatGpt4o import ChatGPT4O
 #from data  import results
 from dataset_API import dataset_interface as di
@@ -8,6 +8,7 @@ import os
 from pydantic import BaseModel
 import kagglehub
 import shutil
+from data import CCDataSet_init as CCD
 
 # def ask_llm(imges_path: str, save_path: str, jsonDescription: BaseModel):
 #     llama = llama32Vision11b()
@@ -45,7 +46,7 @@ def image_creater(dir_path: str, save_path: str, samples: int = 10 ,precentage_w
 
     # Explanation methods and thresholds
     #  ['GradientShap', 'IntegratedGradients', 'DeepLift', 'DeepLiftShap', 'InputXGradient', 'Saliency', 'FeatureAblation', 'Deconvolution', 'FeaturePermutation', 'Lime', 'KernelShap', 'LRP', 'Gradient', 'Occlusion', 'LayerGradCam', 'GuidedGradCam', 'LayerConductance', 'LayerActivation', 'InternalInfluence', 'LayerGradientXActivation', 'Control Var. Sobel Filter', 'Control Var. Constant', 'Control Var. Random Uniform']
-    explanation_methods = ['Random', 'GradientShap', 'Saliency'] # 'Lime', 'GuidedGradCam', 'InputXGradient',
+    explanation_methods = ['GuidedGradCam', 'InputXGradient', 'Random', 'GradientShap', 'Saliency'] # 'Lime', 'GuidedGradCam', 'InputXGradient',
 
     # # Temporary! It doesn't make sense for this test to be implemented outside of dataset_interface === TO DO ===
     # for exp in explanation_methods:
@@ -57,7 +58,7 @@ def image_creater(dir_path: str, save_path: str, samples: int = 10 ,precentage_w
     precentages = [5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100]
 
     # Initialize dataset interface
-    dataset = di.dataset_interface(dir_path, save_path, samples)
+    dataset = di.dataset_interface(dir_path, save_path, CCD.classes, samples)
 
     # Apply filters using models, explanation methods, and thresholds
     if precentage_wise:
@@ -69,7 +70,7 @@ def image_creater(dir_path: str, save_path: str, samples: int = 10 ,precentage_w
         for expm in explanation_methods:
             for prtm in pre_trained_model:
                 for thresh in thresholds:
-                    dataset.filter_with_model(thresh, expm, prtm)
+                    dataset.filter_with_model_batch(thresh, expm, prtm)
 
     return dataset
 
@@ -91,35 +92,35 @@ class ImageDescription_Boolean(BaseModel):
     
 
 
-import os
-import shutil
-import kagglehub
+# import os
+# import shutil
+# import kagglehub
 
 if __name__ == "__main__":
-    # Download the dataset from Kaggle
-    dataset_path = kagglehub.dataset_download('prahladmehandiratta/cervical-cancer-largest-dataset-sipakmed')
+    # # Download the dataset from Kaggle
+    # dataset_path = kagglehub.dataset_download('prahladmehandiratta/cervical-cancer-largest-dataset-sipakmed')
 
-    # Ensure the target directory exists
-    target_directory = "data/source/cImages"
-    os.makedirs(target_directory, exist_ok=True)
+    # # Ensure the target directory exists
+    # target_directory = "data/source/cImages"
+    # os.makedirs(target_directory, exist_ok=True)
 
-    # Extract the dataset if it's a compressed file (e.g., .zip)
-    if dataset_path.endswith(".zip"):
-        extracted_path = dataset_path.replace(".zip", "")
-        shutil.unpack_archive(dataset_path, extracted_path)
-    else:
-        extracted_path = dataset_path
+    # # Extract the dataset if it's a compressed file (e.g., .zip)
+    # if dataset_path.endswith(".zip"):
+    #     extracted_path = dataset_path.replace(".zip", "")
+    #     shutil.unpack_archive(dataset_path, extracted_path)
+    # else:
+    #     extracted_path = dataset_path
 
-    # Move the images to the target directory
-    for root, _, files in os.walk(extracted_path):
-        for file in files:
-            if file.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.tiff')):
-                source_file = os.path.join(root, file)
-                shutil.copy(source_file, target_directory)
+    # # Move the images to the target directory
+    # for root, _, files in os.walk(extracted_path):
+    #     for file in files:
+    #         if file.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.tiff')):
+    #             source_file = os.path.join(root, file)
+    #             shutil.copy(source_file, target_directory)
 
-    print(f"Images have been moved to {target_directory}")
+    # print(f"Images have been moved to {target_directory}")
     
-    # image_creater("data\\source\\imagenet_sample2\\pt", "data\\midPrecentage", 200 , True)
+    image_creater("data/source/CervicalCancer/pt/CROPPED_40", "data\\midCervicalCancer", 200000 )
 
     #llama = llama32Vision11b()
     # llama = ChatGPT4O("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")

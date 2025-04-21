@@ -9,11 +9,12 @@ from PIL import Image
 
 class dataset_interface:
 
-    def __init__(self, data_path: str, save_path: str, samples: int = 200):
+    def __init__(self, data_path: str, save_path: str, categories,  samples: int = 200):
 
         self.data_path = data_path
         self.save_path = save_path
         self.samples = samples
+        self.categories = categories
 
         self.top_k = 5
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu") 
@@ -22,7 +23,7 @@ class dataset_interface:
         self.Correctly = []
 
 
-    def filter_with_model(self, threshold: float, method: str, pre_trained_model: str , precentage_wise: bool = False):
+    def filter_with_model_batch(self, threshold: float, method: str, pre_trained_model: str , precentage_wise: bool = False):
         """
         Filters the dataset using a pre-trained model and an explanation method in smaller batches.
 
@@ -68,6 +69,7 @@ class dataset_interface:
         # Process in smaller batches
         batch_size = 32  # Adjust this value based on your system's memory capacity
         num_batches = (len(x_batch) + batch_size - 1) // batch_size
+        x = len(x_batch)
 
         a_masked_x_batch = []
         removed_list = []
@@ -109,18 +111,18 @@ class dataset_interface:
         # to flatten the list
         removed_list = [item for sublist in removed_list for item in sublist]
 
-        categories = gd.load_imagenet_classes()
+        #categories = gd.load_imagenet_classes()
 
 
-        # Retrieve results and accuracy
-        df = imc.new_get_results5(a_masked_x_batch, y_batch, model, categories, removed_list)
-        Correctly = imc.get_corrects(df, self.top_k)
-        self.Correctly.append(Correctly)
+        # # Retrieve results and accuracy
+        # df = imc.new_get_results5(a_masked_x_batch, y_batch, model, self.categories, removed_list)
+        # Correctly = imc.get_corrects(df, self.top_k)
+        # self.Correctly.append(Correctly)
 
-        # Save results to CSV
-        csv_dir = os.path.join(self.save_path, f"{method}", "csv")
-        os.makedirs(csv_dir, exist_ok=True)
-        df.to_csv(os.path.join(csv_dir, f"{method}_{threshold}_{pre_trained_model}.csv"), index=False)
+        # # Save results to CSV
+        # csv_dir = os.path.join(self.save_path, f"{method}", "csv")
+        # os.makedirs(csv_dir, exist_ok=True)
+        # df.to_csv(os.path.join(csv_dir, f"{method}_{threshold}_{pre_trained_model}.csv"), index=False)
 
         # Save images to the subfolder
         os.makedirs(subfolder_path, exist_ok=True)
@@ -128,12 +130,93 @@ class dataset_interface:
             img = imc.change_ImageNet_format(imeg)
             img = Image.fromarray(img.astype('uint8'))
             imeg_label_idx = int(label.cpu().item()) if isinstance(label, torch.Tensor) else label
-            real_name = categories[imeg_label_idx]
+            real_name = self.categories[imeg_label_idx]
             img.save(os.path.join(subfolder_path, f"{i}_{real_name}.png"))
 
         removed = sum(removed_list) / len(removed_list)
 
-        return f"{method} {threshold} {pre_trained_model} removed avrage: { removed } Correctly: {Correctly}"
+        return f"{method} {threshold} {pre_trained_model} removed avrage: { removed } Correctly: (Correctly)"
+    
+
+    def filter_with_model(self, threshold: float, method: str, pre_trained_model: str):
+        """
+        Filters the dataset using a pre-trained model and an explanation method.
+
+        Args:
+            threshold (float): The threshold value for removing pixels.
+            method (str): The explanation method to use.
+            pre_trained_model (str): The pre-trained model to use.
+
+        Returns:
+            str: A string containing the method, threshold, pre-trained model name, 
+                the proportion of removed pixels, and the classification accuracy.
+        """
+
+        x_link = os.path.join(self.data_path, "x_batch.pt")
+        y_link = os.path.join(self.data_path, "y_batch.pt")
+
+        # Load image batches: Loads `nr_samples` samples for x (input images), y (labels), and s (saliency maps)
+        # from the specified links and moves them to the given device (CPU or GPU).
+        x_batch, y_batch = imc.load_images(self.samples, x_link, y_link, self.device)
+
+        # Load the pre-trained model `v3_small` and assign it to the device for computation
+        exist_models = imc.exist_models()
+        if pre_trained_model == exist_models[0]:
+            model = imc.resnet18(self.device)
+        elif pre_trained_model == exist_models[1]:
+            model = imc.v3_small(self.device)
+        elif pre_trained_model == exist_models[2]:
+            model = imc.v3_large(self.device)
+        elif pre_trained_model == exist_models[3]:
+            model = imc.v3_inception(self.device)
+
+
+        # Generate explanations: Uses the `quantus.explain` function with the selected method
+        # to calculate saliency maps (`a_batch`) based on the model’s predictions for `x_batch`.
+        if method == "Random":
+            a_batch = quantus.explain(model, x_batch, y_batch, method='Saliency', device=self.device)
+            # Randomly remove pixels based on the threshold
+            a_masked_x_batch, removed = imc.random_remove_pixels(a_batch, x_batch, threshold)
+        else:
+            a_batch = quantus.explain(model, x_batch, y_batch, method=method, device=self.device)
+            # Remove pixels below the specified threshold in the explanation maps and calculate the masked x_batch.
+            a_masked_x_batch, removed = imc.new_remove_pixels(a_batch, x_batch, threshold)
+
+        # `a_masked_x_batch` is the result of applying the mask, and `removed` gives the proportion of pixels removed.
+
+        self.removed.append(removed)
+
+        # # Retrieve results and accuracy: Evaluate the top-k predictions based on the masked batch.
+        # # The function `get_results` returns a DataFrame with results.
+        # df = imc.new_get_results5(a_masked_x_batch, y_batch, model, self.categories)  # updated v2.0
+
+        # # Calculate and print classification accuracy based on the top-k matches in `df`.
+        # Correctly = imc.get_corrects(df, self.top_k)
+        # self.Correctly.append(Correctly)
+
+        # csv_dir = os.path.join( self.save_path, f"{method}", "csv")
+        # os.makedirs(csv_dir, exist_ok=True)
+        # df.to_csv(os.path.join(csv_dir, f"{method}_{threshold}_{pre_trained_model}.csv"), index=False)
+
+        for imeg, label, i in zip(a_masked_x_batch, y_batch, range(len(a_masked_x_batch))):  # Use zip to iterate over both lists simultaneously
+            # Format the image
+            img = imc.change_ImageNet_format(imeg)
+        
+            # Convert the array to an image
+            img = Image.fromarray(img.astype('uint8'))  # Ensure the data is in uint8 format for saving
+    
+            # Handle label if it's a Tensor
+            imeg_label_idx = int(label.cpu().item()) if isinstance(label, torch.Tensor) else label
+
+            real_name = self.categories[imeg_label_idx]
+
+
+            # Save the image as PNG
+            image_dir = os.path.join(self.save_path, f"{method}", f"{method}_{threshold}_{pre_trained_model}")
+            os.makedirs(image_dir, exist_ok=True)
+            img.save(os.path.join(image_dir, f"{i}_{real_name}.png"))  # Use forward slash or raw string literal for file paths
+
+        return f"{method} {threshold} {pre_trained_model} removed: {removed} Correctly: -"
     
     @staticmethod
     def parse_file_name(path):
