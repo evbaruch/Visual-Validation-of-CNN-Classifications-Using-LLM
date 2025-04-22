@@ -24,7 +24,11 @@ test.py
 
 # all files in the data folder
 /data/midCervicalCancer/*
+/data/midCervicalCancer_thresholds/*
 /data/source/*
 /data/llm_answer/*
 
 *.rar
+
+/data/*
+!/data/*.py

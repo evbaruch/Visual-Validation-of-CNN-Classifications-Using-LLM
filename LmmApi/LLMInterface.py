@@ -52,6 +52,10 @@ class LLMInterface:
         """Set the prompt for the LLM."""
         self.prompt = prompt
 
+    def set_background(self, background: str):
+        """Set the background for the LLM."""
+        self.background = background
+
     def set_jsonDescription(self, jsonDescription: BaseModel):
         """Set the JSON description for the LLM."""
         self.jsonDescription = jsonDescription
@@ -278,9 +282,20 @@ class LLMInterface:
                 image_name = os.path.basename(file_path)
                 image_name = image_name.split('_')[1].split('.')[0]  # Extracts 'tench'
 
-                # Generate a response from the LLM
-                response = self.strategy.generate_response(f"What do you see in the picture? Is it a {image_name} from the imagenet database?", file_path, self.jsonDescription)
+                # Construct the prompt dynamically
+                prompt = (
+                    f"You are a medical image analysis expert. "
+                    f"Analyze the image and answer: Is it a {image_name}? "
+                    f"Use the following background knowledge: {self.background}"
+                )
 
+                # Generate a response from the LLM
+                response = self.strategy.generate_response(
+                    prompt=prompt,
+                    background=self.background,
+                    image=file_path,
+                    jsonDescription=self.jsonDescription
+                )
                 # Extract the model dump from the response
                 response = list(response.model_dump().values())
 

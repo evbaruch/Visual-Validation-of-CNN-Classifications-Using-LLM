@@ -15,7 +15,7 @@ class llama32Vision11b(LLMStrategy):
         self.model = 'llama3.2-vision:11b'
 
 
-    def generate_response(self, prompt: str, image: str, jsonDescription: BaseModel) -> list:
+    def generate_response(self, prompt: str, background: str, image: str, jsonDescription: BaseModel) -> list:
         """
         Generates a classification response based on the provided prompt and image.
 
@@ -50,7 +50,7 @@ class llama32Vision11b(LLMStrategy):
                 messages=[
                     {
                         'role': 'system',
-                        'content': f"You are an image classifier. Use the ImageNet categories to classify images. return as JSON"
+                        'content': f"{background}"
                     },
                     {
                         'role': 'user',

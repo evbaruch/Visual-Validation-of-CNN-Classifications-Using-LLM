@@ -1,7 +1,7 @@
-#from LmmApi.LLMInterface import LLMInterface
-#from LmmApi.llama32Vision11b import llama32Vision11b
+from LmmApi.LLMInterface import LLMInterface
+from LmmApi.llama32Vision11b import llama32Vision11b
 #from LmmApi.chatGpt4o import ChatGPT4O
-#from data  import results
+from data  import results
 from dataset_API import dataset_interface as di
 from dataset_API import image_creater as imc
 import os
@@ -65,7 +65,7 @@ def image_creater(dir_path: str, save_path: str, samples: int = 10 ,precentage_w
         for expm in explanation_methods:
             for prtm in pre_trained_model:
                 for precentage in precentages:
-                    dataset.filter_with_model(precentage, expm, prtm, precentage_wise)
+                    dataset.filter_with_model_batch(precentage, expm, prtm, precentage_wise)
     else:
         for expm in explanation_methods:
             for prtm in pre_trained_model:
@@ -91,44 +91,32 @@ class ImageDescription_Boolean(BaseModel):
     boolean: bool   
     
 
-
-# import os
-# import shutil
-# import kagglehub
-
 if __name__ == "__main__":
-    # # Download the dataset from Kaggle
-    # dataset_path = kagglehub.dataset_download('prahladmehandiratta/cervical-cancer-largest-dataset-sipakmed')
 
-    # # Ensure the target directory exists
-    # target_directory = "data/source/cImages"
-    # os.makedirs(target_directory, exist_ok=True)
+    # image_creater("data/source/CervicalCancer/pt/CROPPED_40", "data\\midCervicalCancer", 200000, True) 
 
-    # # Extract the dataset if it's a compressed file (e.g., .zip)
-    # if dataset_path.endswith(".zip"):
-    #     extracted_path = dataset_path.replace(".zip", "")
-    #     shutil.unpack_archive(dataset_path, extracted_path)
-    # else:
-    #     extracted_path = dataset_path
-
-    # # Move the images to the target directory
-    # for root, _, files in os.walk(extracted_path):
-    #     for file in files:
-    #         if file.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.tiff')):
-    #             source_file = os.path.join(root, file)
-    #             shutil.copy(source_file, target_directory)
-
-    # print(f"Images have been moved to {target_directory}")
-    
-    image_creater("data/source/CervicalCancer/pt/CROPPED_40", "data\\midCervicalCancer", 200000 )
-
-    #llama = llama32Vision11b()
+    llama = llama32Vision11b()
     # llama = ChatGPT4O("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")
-    #llm_context = LLMInterface(llama)
-    # llm_context.set_prompt("Tell me what you see in the picture and what category it is from imagenet")
+    llm_context = LLMInterface(llama)
 
-    # llm_context.set_jsonDescription(ImageDescription_Boolean)
-    # llm_context.boolean_outputs_classification("data\\midsample2\\Saliency", "data\\llm_answer2\\Saliency\\boolean")
+    
+    llm_context.set_background(r"""You are a medical image analysis expert specialized in cytopathology. You are tasked with classifying microscopic images of cervical cells into one of the following categories based on their visual characteristics: Dyskeratotic, Koilocytotic, Metaplastic, Parabasal, or Superficial-Intermediate.
+
+    Each cell type has unique morphological features:
+    - Dyskeratotic: Abnormal keratinization, hyperchromatic nuclei.
+    - Koilocytotic: Perinuclear halo, nuclear enlargement, irregularity.
+    - Metaplastic: Immature squamous cells, dense cytoplasm.
+    - Parabasal: Small round cells with large nuclei, usually in clusters.
+    - Superficial-Intermediate: Flattened cells with small nuclei, abundant cytoplasm.
+
+    Use your visual recognition capabilities and domain expertise to classify each provided image.
+    return as JSON!
+    """)
+
+    #llm_context.set_prompt("Tell me what you see in the picture and what category it is from imagenet")
+
+    llm_context.set_jsonDescription(ImageDescription_Boolean)
+    llm_context.boolean_outputs_classification("data\\midCervicalCancer\\GuidedGradCam", "data\\llm_answer_CervicalCancer\\GuidedGradCam\\boolean")
 
     # llm_context.set_jsonDescription(ImageDescription_Boolean)
     # llm_context.boolean_outputs_classification("data\\midsample2\\Random", "data\\llm_answer2\\Random\\boolean")
