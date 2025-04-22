@@ -92,34 +92,7 @@ class ImageDescription_Boolean(BaseModel):
     
 
 
-# import os
-# import shutil
-# import kagglehub
-
 if __name__ == "__main__":
-    # # Download the dataset from Kaggle
-    # dataset_path = kagglehub.dataset_download('prahladmehandiratta/cervical-cancer-largest-dataset-sipakmed')
-
-    # # Ensure the target directory exists
-    # target_directory = "data/source/cImages"
-    # os.makedirs(target_directory, exist_ok=True)
-
-    # # Extract the dataset if it's a compressed file (e.g., .zip)
-    # if dataset_path.endswith(".zip"):
-    #     extracted_path = dataset_path.replace(".zip", "")
-    #     shutil.unpack_archive(dataset_path, extracted_path)
-    # else:
-    #     extracted_path = dataset_path
-
-    # # Move the images to the target directory
-    # for root, _, files in os.walk(extracted_path):
-    #     for file in files:
-    #         if file.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.tiff')):
-    #             source_file = os.path.join(root, file)
-    #             shutil.copy(source_file, target_directory)
-
-    # print(f"Images have been moved to {target_directory}")
-    
     image_creater("data/source/CervicalCancer/pt/CROPPED_40", "data\\midCervicalCancer", 200000 )
 
     #llama = llama32Vision11b()
