@@ -23,10 +23,8 @@ __pycache__/
 test.py
 
 # all files in the data folder
-/data/midCervicalCancer/*
-/data/midCervicalCancer_thresholds/*
-/data/source/*
-/data/llm_answer/*
+/data/*
+!/data/*.py
 
 *.rar
 
