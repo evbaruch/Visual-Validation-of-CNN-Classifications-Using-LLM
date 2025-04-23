@@ -283,11 +283,13 @@ class LLMInterface:
                 image_name = image_name.split('_')[1].split('.')[0]  # Extracts 'tench'
 
                 # Construct the prompt dynamically
-                prompt = (
-                    f"You are a medical image analysis expert. "
-                    f"Analyze the image and answer: Is it a {image_name}? "
-                    f"Use the following background knowledge: {self.background}"
-                )
+                # prompt = (
+                #     f"You are a medical image analysis expert. "
+                #     f"Analyze the image and answer: Is it a {image_name}? "
+                #     f"Use the following background knowledge: {self.background}"
+                # )
+
+                prompt = f"What do you see in the picture? Is it a {image_name} from the imagenet database?"
 
                 # Generate a response from the LLM
                 response = self.strategy.generate_response(

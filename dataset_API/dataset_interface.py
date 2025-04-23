@@ -5,6 +5,7 @@ import os
 import quantus
 from data import global_data as gd
 from PIL import Image
+import numpy as np
 
 
 class dataset_interface:
@@ -48,7 +49,9 @@ class dataset_interface:
             print(f"Skipping processing for {subfolder_path} as it already exists.")
             return f"Skipped {method} {threshold} {pre_trained_model}"
 
-        # Proceed with processing if the subfolder does not exist
+         # Define the path to save the explanation maps
+        a_batches_file = os.path.join(self.save_path, f"{method}", f"a_batches {method} {pre_trained_model}.npz")
+
         x_link = os.path.join(self.data_path, "x_batch.pt")
         y_link = os.path.join(self.data_path, "y_batch.pt")
 
@@ -69,7 +72,40 @@ class dataset_interface:
         # Process in smaller batches
         batch_size = 32  # Adjust this value based on your system's memory capacity
         num_batches = (len(x_batch) + batch_size - 1) // batch_size
-        x = len(x_batch)
+
+        # Check if the explanation maps already exist
+        if os.path.exists(a_batches_file):
+            #print(f"Loading precomputed explanation maps from {a_batches_file}")
+            a_batches = np.load(a_batches_file)["a_batches"]
+        else:
+            print(f"Generating explanation maps for {method} and {pre_trained_model}")
+
+            a_batches = []  # Store explanation maps for all batches
+            for i in range(num_batches):
+                start_idx = i * batch_size
+                end_idx = min((i + 1) * batch_size, len(x_batch))
+
+                x_batch_chunk = x_batch[start_idx:end_idx]
+                y_batch_chunk = y_batch[start_idx:end_idx]
+
+                # Generate explanations for the current batch
+                if method == "Random":
+                    a_batch = quantus.explain(model, x_batch_chunk, y_batch_chunk, method='Saliency', device=self.device)
+                elif method == "GuidedGradCam":
+                    layer = get_last_conv_layer(model)
+                    a_batch = quantus.explain(model, x_batch_chunk, y_batch_chunk, method='GuidedGradCam', device=self.device, gc_layer=layer)
+                else:
+                    a_batch = quantus.explain(model, x_batch_chunk, y_batch_chunk, method=method, device=self.device)
+
+                a_batches.append(a_batch)
+
+            # Flatten the explanation maps
+            a_batches = np.concatenate(a_batches, axis=0) if isinstance(a_batches[0], np.ndarray) else torch.cat(a_batches, dim=0).cpu().numpy()
+
+            # Save the explanation maps to a compressed file
+            os.makedirs(os.path.dirname(a_batches_file), exist_ok=True)
+            np.savez_compressed(a_batches_file, a_batches=a_batches)
+            print(f"Explanation maps saved to {a_batches_file}")
 
         a_masked_x_batch = []
         removed_list = []
@@ -91,19 +127,10 @@ class dataset_interface:
             end_idx = min((i + 1) * batch_size, len(x_batch))
 
             x_batch_chunk = x_batch[start_idx:end_idx]
-            y_batch_chunk = y_batch[start_idx:end_idx]
+            a_batch_chunk = a_batches[start_idx:end_idx]
 
-            # Generate explanations for the current batch
-            if method == "Random":
-                a_batch = quantus.explain(model, x_batch_chunk, y_batch_chunk, method='Saliency', device=self.device)
-                a_masked_chunk, removed = imc_function(a_batch, x_batch_chunk, threshold)
-            elif method == "GuidedGradCam":
-                layer = get_last_conv_layer(model)
-                a_batch = quantus.explain(model, x_batch_chunk, y_batch_chunk, method='GuidedGradCam', device=self.device , gc_layer=layer)
-                a_masked_chunk, removed = imc_function(a_batch, x_batch_chunk, threshold)
-            else:
-                a_batch = quantus.explain(model, x_batch_chunk, y_batch_chunk, method=method, device=self.device)
-                a_masked_chunk, removed  = imc_function(a_batch, x_batch_chunk, threshold)
+            # Apply the masking function
+            a_masked_chunk, removed = imc_function(a_batch_chunk, x_batch_chunk, threshold)
 
             a_masked_x_batch.extend(a_masked_chunk)
             removed_list.append(removed)
@@ -137,6 +164,120 @@ class dataset_interface:
 
         return f"{method} {threshold} {pre_trained_model} removed avrage: { removed } Correctly: (Correctly)"
     
+    #  def filter_with_model_batch(self, threshold: float, method: str, pre_trained_model: str , precentage_wise: bool = False):
+    #     """
+    #     Filters the dataset using a pre-trained model and an explanation method in smaller batches.
+
+    #     Args:
+    #         threshold (float): The threshold value for removing pixels.
+    #         method (str): The explanation method to use.
+    #         pre_trained_model (str): The pre-trained model to use.
+
+    #     Returns:
+    #         str: A string containing the method, threshold, pre-trained model name, 
+    #             the proportion of removed pixels, and the classification accuracy.
+    #     """
+
+       
+    #     # Define the subfolder path for the current method, threshold, and pre-trained model
+    #     subfolder_path = os.path.join(
+    #         self.save_path, f"{method}", f"{method}_{threshold}_{pre_trained_model}"
+    #     )
+
+    #     # Check if the subfolder already exists
+    #     if os.path.exists(subfolder_path):
+    #         print(f"Skipping processing for {subfolder_path} as it already exists.")
+    #         return f"Skipped {method} {threshold} {pre_trained_model}"
+
+    #     # Proceed with processing if the subfolder does not exist
+    #     x_link = os.path.join(self.data_path, "x_batch.pt")
+    #     y_link = os.path.join(self.data_path, "y_batch.pt")
+
+    #     # Load image batches
+    #     x_batch, y_batch = imc.load_images(self.samples, x_link, y_link, self.device)
+
+    #     # Load the pre-trained model
+    #     exist_models = imc.exist_models()
+    #     if pre_trained_model == exist_models[0]:
+    #         model = imc.resnet18(self.device)
+    #     elif pre_trained_model == exist_models[1]:
+    #         model = imc.v3_small(self.device)
+    #     elif pre_trained_model == exist_models[2]:
+    #         model = imc.v3_large(self.device)
+    #     elif pre_trained_model == exist_models[3]:
+    #         model = imc.v3_inception(self.device)
+
+    #     # Process in smaller batches
+    #     batch_size = 32  # Adjust this value based on your system's memory capacity
+    #     num_batches = (len(x_batch) + batch_size - 1) // batch_size
+    #     x = len(x_batch)
+
+    #     a_masked_x_batch = []
+    #     removed_list = []
+
+    #     # choose the imc function based on the method and removal method (precentage wise or not)
+    #     if precentage_wise:
+    #         if method == "Random":
+    #             imc_function = imc.percentage_random_remove
+    #         else:
+    #             imc_function = imc.percentage_remove
+    #     else:
+    #         if method == "Random":
+    #             imc_function = imc.random_remove_pixels
+    #         else:
+    #             imc_function = imc.new_remove_pixels
+
+    #     for i in range(num_batches):
+    #         start_idx = i * batch_size
+    #         end_idx = min((i + 1) * batch_size, len(x_batch))
+
+    #         x_batch_chunk = x_batch[start_idx:end_idx]
+    #         y_batch_chunk = y_batch[start_idx:end_idx]
+
+    #         # Generate explanations for the current batch
+    #         if method == "Random":
+    #             a_batch = quantus.explain(model, x_batch_chunk, y_batch_chunk, method='Saliency', device=self.device)
+    #             a_masked_chunk, removed = imc_function(a_batch, x_batch_chunk, threshold)
+    #         elif method == "GuidedGradCam":
+    #             layer = get_last_conv_layer(model)
+    #             a_batch = quantus.explain(model, x_batch_chunk, y_batch_chunk, method='GuidedGradCam', device=self.device , gc_layer=layer)
+    #             a_masked_chunk, removed = imc_function(a_batch, x_batch_chunk, threshold)
+    #         else:
+    #             a_batch = quantus.explain(model, x_batch_chunk, y_batch_chunk, method=method, device=self.device)
+    #             a_masked_chunk, removed  = imc_function(a_batch, x_batch_chunk, threshold)
+
+    #         a_masked_x_batch.extend(a_masked_chunk)
+    #         removed_list.append(removed)
+            
+    #     # to flatten the list
+    #     removed_list = [item for sublist in removed_list for item in sublist]
+
+    #     #categories = gd.load_imagenet_classes()
+
+
+    #     # # Retrieve results and accuracy
+    #     # df = imc.new_get_results5(a_masked_x_batch, y_batch, model, self.categories, removed_list)
+    #     # Correctly = imc.get_corrects(df, self.top_k)
+    #     # self.Correctly.append(Correctly)
+
+    #     # # Save results to CSV
+    #     # csv_dir = os.path.join(self.save_path, f"{method}", "csv")
+    #     # os.makedirs(csv_dir, exist_ok=True)
+    #     # df.to_csv(os.path.join(csv_dir, f"{method}_{threshold}_{pre_trained_model}.csv"), index=False)
+
+    #     # Save images to the subfolder
+    #     os.makedirs(subfolder_path, exist_ok=True)
+    #     for imeg, label, i in zip(a_masked_x_batch, y_batch, range(len(a_masked_x_batch))):
+    #         img = imc.change_ImageNet_format(imeg)
+    #         img = Image.fromarray(img.astype('uint8'))
+    #         imeg_label_idx = int(label.cpu().item()) if isinstance(label, torch.Tensor) else label
+    #         real_name = self.categories[imeg_label_idx]
+    #         img.save(os.path.join(subfolder_path, f"{i}_{real_name}.png"))
+
+    #     removed = sum(removed_list) / len(removed_list)
+
+    #     return f"{method} {threshold} {pre_trained_model} removed avrage: { removed } Correctly: (Correctly)"
+
 
     def filter_with_model(self, threshold: float, method: str, pre_trained_model: str):
         """
