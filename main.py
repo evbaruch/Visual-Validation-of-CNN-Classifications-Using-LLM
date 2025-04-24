@@ -97,9 +97,9 @@ if __name__ == "__main__":
     #image_creater("data/source/CervicalCancer/pt/CROPPED_40", "data\\midCervicalCancer", 200000, True) 
     image_creater("data\\source\\imagenet_sample2\\pt", "data\\midPrecentage", 200 , True)
 
-    # llama = llama32Vision11b()
-    # # llama = ChatGPT4O("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")
-    # llm_context = LLMInterface(llama)
+    llama = llama32Vision11b()
+    # llama = ChatGPT4O("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")
+    llm_context = LLMInterface(llama)
 
     
     # llm_context.set_background(r"""You are a medical image analysis expert specialized in cytopathology. You are tasked with classifying microscopic images of cervical cells into one of the following categories based on their visual characteristics: Dyskeratotic, Koilocytotic, Metaplastic, Parabasal, or Superficial-Intermediate.
@@ -115,14 +115,14 @@ if __name__ == "__main__":
     # return as JSON!
     # """)
 
-    # llm_context.set_background(f"You are an image classifier. Use the ImageNet categories to classify images. return as JSON")
+    llm_context.set_background(f"You are an image classifier. Use the ImageNet categories to classify images. return as JSON")
 
     # # llm_context.set_prompt("Tell me what you see in the picture and  what category it is from imagenet")
 
-    # llm_context.set_jsonDescription(ImageDescription_Boolean)
-    # llm_context.boolean_outputs_classification("data\\midPrecentage\\Random", "data\\llm_answer_precentage\\Random\\boolean")
+    llm_context.set_jsonDescription(ImageDescription_Boolean)
+    llm_context.boolean_outputs_classification("data\\midPrecentage\\Random", "data\\llm_answer_precentage\\Random\\boolean")
 
-    # llm_context.boolean_outputs_classification("data\\midPrecentage\\Saliency", "data\\llm_answer_precentage\\Saliency\\boolean")
+    llm_context.boolean_outputs_classification("data\\midPrecentage\\Saliency", "data\\llm_answer_precentage\\Saliency\\boolean")
 
     # llm_context.set_jsonDescription(ImageDescription_Boolean)
     # llm_context.boolean_outputs_classification("data\\midCervicalCancer\\Saliency", "data\\llm_answer_CervicalCancer\\Saliency\\boolean")
