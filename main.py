@@ -7,9 +7,9 @@ from dataset_API import dataset_interface as di
 from dataset_API import image_creater as imc
 import os
 from pydantic import BaseModel
-import kagglehub
-import shutil
-from data import CCDataSet_init as CCD
+# import kagglehub
+# import shutil
+# from data import CCDataSet_init as CCD
 
 # def ask_llm(imges_path: str, save_path: str, jsonDescription: BaseModel):
 #     llama = llama32Vision11b()
