@@ -35,6 +35,10 @@ def add_precentage_to_csv(method: str, query_type: str, save_directory: str ,mid
             percentage_file_path = os.path.join(percentage_directory, f"{file_name}.csv")
 
             # Load the percentage file into a DataFrame
+            if not os.path.exists(percentage_file_path):
+                print(f"Percentage file not found: {percentage_file_path}")
+                continue
+
             percentage_df = pd.read_csv(percentage_file_path)
 
             # Merge the two DataFrames on 'File' column
@@ -72,6 +76,10 @@ def calculate_accuracy(root_directory: str, save_path: str):
         for file in files:
             # Get the full path of the file
             file_path = os.path.join(root_directory, file)
+
+            if not os.path.exists(file_path):
+                print(f"File not found: {file_path}")
+                continue
 
             # Load the CSV file into a DataFrame
             df = pd.read_csv(file_path)
@@ -226,8 +234,14 @@ def transform_results_to_table(input_path: str, output_path: str, method: str):
     pivoted_df.to_csv(output_file_path, index=False)
     print(f"Transformed results saved to {output_file_path}")
 
-# transform_results_to_table("data\\llm_answer2\\GradientShap\\boolean\\p_results\\results.csv", "data\\llm_answer2\\GradientShap\\boolean\\p_results\\table.csv","GradientShap")
-# transform_results_to_table("data\\llm_answer2\\GuidedGradCam\\boolean\\p_results\\results.csv", "data\\llm_answer2\\GuidedGradCam\\boolean\\p_results\\table.csv","GuidedGradCam")
-# transform_results_to_table("data\\llm_answer2\\InputXGradient\\boolean\\p_results\\results.csv", "data\\llm_answer2\\InputXGradient\\boolean\\p_results\\table.csv","InputXGradient")
-# transform_results_to_table("data\\llm_answer2\\Random\\boolean\\p_results\\results.csv", "data\\llm_answer2\\Random\\boolean\\p_results\\table.csv","Random")
-# transform_results_to_table("data\\llm_answer2\\Saliency\\boolean\\p_results\\results.csv", "data\\llm_answer2\\Saliency\\boolean\\p_results\\table.csv","Saliency")
+
+def getDynamicResults(method: str, query_type: str, save_directory: str ,mid: str):
+    # Add percentage to CSV files
+    add_precentage_to_csv(method, query_type, save_directory, mid)
+
+    # Calculate accuracy and save results
+    calculate_accuracy(os.path.join("data", save_directory, method, query_type), os.path.join("data", save_directory, method ,query_type, "p_results"))
+
+    # Transform results to table format
+    transform_results_to_table(os.path.join("data", save_directory, method, query_type,"p_results", "results.csv" ), os.path.join("data", save_directory, method ,query_type , "p_results"), method)
+  

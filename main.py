@@ -2,6 +2,7 @@ from LmmApi.LLMInterface import LLMInterface
 from LmmApi.llama32Vision11b import llama32Vision11b
 #from LmmApi.chatGpt4o import ChatGPT4O
 from data  import results
+from data import dynamic_results as dr
 from dataset_API import dataset_interface as di
 from dataset_API import image_creater as imc
 import os
@@ -96,9 +97,9 @@ if __name__ == "__main__":
     #image_creater("data/source/CervicalCancer/pt/CROPPED_40", "data\\midCervicalCancer", 200000, True) 
     #image_creater("data\\source\\imagenet_sample2\\pt", "data\\midPrecentage", 200 , True)
 
-    llama = llama32Vision11b()
-    # llama = ChatGPT4O("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")
-    llm_context = LLMInterface(llama)
+    # llama = llama32Vision11b()
+    # # llama = ChatGPT4O("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")
+    # llm_context = LLMInterface(llama)
 
     
     # llm_context.set_background(r"""You are a medical image analysis expert specialized in cytopathology. You are tasked with classifying microscopic images of cervical cells into one of the following categories based on their visual characteristics: Dyskeratotic, Koilocytotic, Metaplastic, Parabasal, or Superficial-Intermediate.
@@ -114,14 +115,14 @@ if __name__ == "__main__":
     # return as JSON!
     # """)
 
-    llm_context.set_background(f"You are an image classifier. Use the ImageNet categories to classify images. return as JSON")
+    # llm_context.set_background(f"You are an image classifier. Use the ImageNet categories to classify images. return as JSON")
 
-    # llm_context.set_prompt("Tell me what you see in the picture and  what category it is from imagenet")
+    # # llm_context.set_prompt("Tell me what you see in the picture and  what category it is from imagenet")
 
-    llm_context.set_jsonDescription(ImageDescription_Boolean)
-    llm_context.boolean_outputs_classification("data\\midPrecentage\\Random", "data\\llm_answer_precentage\\Random\\boolean")
+    # llm_context.set_jsonDescription(ImageDescription_Boolean)
+    # llm_context.boolean_outputs_classification("data\\midPrecentage\\Random", "data\\llm_answer_precentage\\Random\\boolean")
 
-    llm_context.boolean_outputs_classification("data\\midPrecentage\\Saliency", "data\\llm_answer_precentage\\Saliency\\boolean")
+    # llm_context.boolean_outputs_classification("data\\midPrecentage\\Saliency", "data\\llm_answer_precentage\\Saliency\\boolean")
 
     # llm_context.set_jsonDescription(ImageDescription_Boolean)
     # llm_context.boolean_outputs_classification("data\\midCervicalCancer\\Saliency", "data\\llm_answer_CervicalCancer\\Saliency\\boolean")
@@ -139,23 +140,28 @@ if __name__ == "__main__":
     # llm_context.boolean_outputs_classification("data\\midsample2\\GuidedGradCam", "data\\llm_answer2\\GuidedGradCam\\boolean")
 
     # dr.add_precentage_to_csv("GradientShap", "boolean", "llm_answer2", "midsample2")
-    # dr.add_precentage_to_csv("Random", "boolean", "llm_answer2", "midsample2")
+    dr.getDynamicResults("Random", "boolean", "llm_answer_precentage", "midPrecentage")
+    # dr.add_precentage_to_csv("Random", "boolean", "llm_answer_precentage", "midPrecentage")
+
     # dr.add_precentage_to_csv("Saliency", "boolean", "llm_answer2", "midsample2")
     # dr.add_precentage_to_csv("InputXGradient", "boolean", "llm_answer2", "midsample2")
     # dr.add_precentage_to_csv("GuidedGradCam", "boolean", "llm_answer2", "midsample2")
     
-    # dr.calculate_accuracy("data\\llm_answer2\\Random\\boolean", "data\\llm_answer2\\Random\\boolean\\p_results")
+    # dr.calculate_accuracy("data\\llm_answer_precentage\\Random\\boolean", "data\\llm_answer_precentage\\Random\\boolean\\p_results")
+    
     # dr.calculate_accuracy("data\\llm_answer2\\Saliency\\boolean", "data\\llm_answer2\\Saliency\\boolean\\p_results")
     # dr.calculate_accuracy("data\\llm_answer2\\GradientShap\\boolean", "data\\llm_answer2\\GradientShap\\boolean\\p_results")
     # dr.calculate_accuracy("data\\llm_answer2\\InputXGradient\\boolean", "data\\llm_answer2\\InputXGradient\\boolean\\p_results")
     # dr.calculate_accuracy("data\\llm_answer2\\GuidedGradCam\\boolean", "data\\llm_answer2\\GuidedGradCam\\boolean\\p_results")
 
     # results.calculate_accuracy("data\\llm_answer2\\Saliency\\boolean","data\\llm_answer2\\Saliency\\boolean\\results")
-    # results.calculate_accuracy("data\\llm_answer2\\Random\\boolean","data\\llm_answer2\\Random\\boolean\\results")
+    results.calculate_accuracy("data\\llm_answer_precentage\\Random\\boolean","data\\llm_answer_precentage\\Random\\boolean\\results")
     # results.calculate_accuracy("data\\llm_answer2\\GradientShap\\boolean","data\\llm_answer2\\GradientShap\\boolean\\results")
     # results.calculate_accuracy("data\\llm_answer2\\InputXGradient\\boolean","data\\llm_answer2\\InputXGradient\\boolean\\results")
     # results.calculate_accuracy("data\\llm_answer2\\GuidedGradCam\\boolean","data\\llm_answer2\\GuidedGradCam\\boolean\\results")
 
+    # dr.transform_results_to_table("data\\llm_answer_precentage\\Random\\boolean\\p_results\\results.csv", "data\\llm_answer_precentage\\Random\\boolean\\p_results","Random")
+    
     # llm_context.set_jsonDescription(ImageDescription_1)
     # llm_context.anchored_outputs_classification("data\\mid\\Random", "data\\llm_answer\\Random\\anchored_structured_outputs\\1_categoris")
 
