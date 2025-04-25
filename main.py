@@ -7,9 +7,9 @@ from dataset_API import dataset_interface as di
 from dataset_API import image_creater as imc
 import os
 from pydantic import BaseModel
-import kagglehub
-import shutil
-from data import CCDataSet_init as CCD
+# import kagglehub
+# import shutil
+# from data import CCDataSet_init as CCD
 
 # def ask_llm(imges_path: str, save_path: str, jsonDescription: BaseModel):
 #     llama = llama32Vision11b()
@@ -59,7 +59,7 @@ def image_creater(dir_path: str, save_path: str, samples: int = 10 ,precentage_w
     precentages = [5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100]
 
     # Initialize dataset interface
-    dataset = di.dataset_interface(dir_path, save_path, CCD.classes, samples)
+    dataset = di.dataset_interface(dir_path, save_path, samples)
 
     # Apply filters using models, explanation methods, and thresholds
     if precentage_wise:
@@ -95,7 +95,7 @@ class ImageDescription_Boolean(BaseModel):
 if __name__ == "__main__":
 
     #image_creater("data/source/CervicalCancer/pt/CROPPED_40", "data\\midCervicalCancer", 200000, True) 
-    #image_creater("data\\source\\imagenet_sample2\\pt", "data\\midPrecentage", 200 , True)
+    image_creater("data\\source\\imagenet_sample2\\pt", "data\\midPrecentage", 200 , True)
 
     llama = llama32Vision11b()
     # llama = ChatGPT4O("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")
@@ -117,43 +117,12 @@ if __name__ == "__main__":
 
     llm_context.set_background(f"You are an image classifier. Use the ImageNet categories to classify images. return as JSON")
 
-    # llm_context.set_prompt("Tell me what you see in the picture and  what category it is from imagenet")
-
-    llm_context.set_jsonDescription(ImageDescription_Boolean)
-    llm_context.boolean_outputs_classification("data\\midPrecentage\\GradientShap", "data\\llm_answer_precentage\\GradientShap\\boolean")
-
-    llm_context.boolean_outputs_classification("data\\midPrecentage\\InputXGradient", "data\\llm_answer_precentage\\InputXGradient\\boolean")
-
-    llm_context.boolean_outputs_classification("data\\midPrecentage\\GuidedGradCam", "data\\llm_answer_precentage\\GuidedGradCam\\boolean")
-
-
-
-    # llama = llama32Vision11b()
-    # # llama = ChatGPT4O("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")
-    # llm_context = LLMInterface(llama)
-
-    
-    # llm_context.set_background(r"""You are a medical image analysis expert specialized in cytopathology. You are tasked with classifying microscopic images of cervical cells into one of the following categories based on their visual characteristics: Dyskeratotic, Koilocytotic, Metaplastic, Parabasal, or Superficial-Intermediate.
-
-    # Each cell type has unique morphological features:
-    # - Dyskeratotic: Abnormal keratinization, hyperchromatic nuclei.
-    # - Koilocytotic: Perinuclear halo, nuclear enlargement, irregularity.
-    # - Metaplastic: Immature squamous cells, dense cytoplasm.
-    # - Parabasal: Small round cells with large nuclei, usually in clusters.
-    # - Superficial-Intermediate: Flattened cells with small nuclei, abundant cytoplasm.
-
-    # Use your visual recognition capabilities and domain expertise to classify each provided image.
-    # return as JSON!
-    # """)
-
-    # llm_context.set_background(f"You are an image classifier. Use the ImageNet categories to classify images. return as JSON")
-
     # # llm_context.set_prompt("Tell me what you see in the picture and  what category it is from imagenet")
 
-    # llm_context.set_jsonDescription(ImageDescription_Boolean)
-    # llm_context.boolean_outputs_classification("data\\midPrecentage\\Random", "data\\llm_answer_precentage\\Random\\boolean")
+    llm_context.set_jsonDescription(ImageDescription_Boolean)
+    llm_context.boolean_outputs_classification("data\\midPrecentage\\Random", "data\\llm_answer_precentage\\Random\\boolean")
 
-    # llm_context.boolean_outputs_classification("data\\midPrecentage\\Saliency", "data\\llm_answer_precentage\\Saliency\\boolean")
+    llm_context.boolean_outputs_classification("data\\midPrecentage\\Saliency", "data\\llm_answer_precentage\\Saliency\\boolean")
 
     # llm_context.set_jsonDescription(ImageDescription_Boolean)
     # llm_context.boolean_outputs_classification("data\\midCervicalCancer\\Saliency", "data\\llm_answer_CervicalCancer\\Saliency\\boolean")
@@ -171,8 +140,9 @@ if __name__ == "__main__":
     # llm_context.boolean_outputs_classification("data\\midsample2\\GuidedGradCam", "data\\llm_answer2\\GuidedGradCam\\boolean")
 
     # dr.add_precentage_to_csv("GradientShap", "boolean", "llm_answer2", "midsample2")
-    dr.getDynamicResults("Random", "boolean", "llm_answer_precentage", "midPrecentage")
-    # dr.add_precentage_to_csv("Random", "boolean", "llm_answer_precentage", "midPrecentage")
+    # dr.getDynamicResults("Random", "boolean", "llm_answer_precentage", "midPrecentage")
+    dr.getDynamicResults("Saliency", "boolean", "llm_answer_precentage", "midPrecentage")
+    dr.add_precentage_to_csv("Random", "boolean", "llm_answer_precentage", "midPrecentage")
 
     # dr.add_precentage_to_csv("Saliency", "boolean", "llm_answer2", "midsample2")
     # dr.add_precentage_to_csv("InputXGradient", "boolean", "llm_answer2", "midsample2")
@@ -187,6 +157,7 @@ if __name__ == "__main__":
 
     # results.calculate_accuracy("data\\llm_answer2\\Saliency\\boolean","data\\llm_answer2\\Saliency\\boolean\\results")
     results.calculate_accuracy("data\\llm_answer_precentage\\Random\\boolean","data\\llm_answer_precentage\\Random\\boolean\\results")
+    results.calculate_accuracy("data\\llm_answer_precentage\\Saliency\\boolean","data\\llm_answer_precentage\\Saliency\\boolean\\results")
     # results.calculate_accuracy("data\\llm_answer2\\GradientShap\\boolean","data\\llm_answer2\\GradientShap\\boolean\\results")
     # results.calculate_accuracy("data\\llm_answer2\\InputXGradient\\boolean","data\\llm_answer2\\InputXGradient\\boolean\\results")
     # results.calculate_accuracy("data\\llm_answer2\\GuidedGradCam\\boolean","data\\llm_answer2\\GuidedGradCam\\boolean\\results")
