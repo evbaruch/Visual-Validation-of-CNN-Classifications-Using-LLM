@@ -30,3 +30,4 @@ test.py
 
 /data/*
 !/data/*.py
+test4.py
