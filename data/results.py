@@ -2,6 +2,8 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 from dataset_API.dataset_interface import dataset_interface
+import re
+
 
 
 def calculate_accuracy(root_directory: str, save_path: str):
@@ -43,6 +45,7 @@ def calculate_accuracy(root_directory: str, save_path: str):
     results_df = pd.DataFrame(results)
     results_df.to_csv(f"{save_path}\\results.csv", index=False)
 
+    create_results_table(f"{save_path}\\results.csv", f"{save_path}\\pivot_table.csv")
     plot_graphs_from_table(f"{save_path}\\results.csv", save_path)
     combined_plot_graphs_from_table(f"{save_path}\\results.csv", save_path)
 
@@ -169,3 +172,35 @@ def combined_plot_graphs_from_table(data_path: str, save_directory: str):
     plt.close()
 
     print(f"Saved combined plot: {save_path}")
+
+
+
+def create_results_table(original_file, save_location):
+    """
+    Create a pivot table from the original file where rows are methods,
+    columns are percentages, and values are average match scores.
+    Supports any prefix before the percentage and method in the filename.
+    
+    :param original_file: Path to the input CSV file.
+    :param save_location: Path to save the output CSV file.
+    """
+    # Read the original CSV
+    df = pd.read_csv(original_file)
+    
+    # Use a general regex pattern to extract the first number and then the method
+    df['Percentage'] = df['File'].apply(lambda x: int(re.search(r'_(\d+)_', x).group(1)))
+    df['Method'] = df['File'].apply(lambda x: re.search(r'_\d+_(.+)\.csv', x).group(1))
+    
+    # Create the pivot table
+    pivot = df.pivot(index='Method', columns='Percentage', values='Average Match')
+    
+    # Sort the columns (percentages) in ascending order
+    pivot = pivot[sorted(pivot.columns)]
+    
+    # Save to CSV
+    pivot.to_csv(save_location)
+    
+    print(f"Pivot table created and saved to {save_location}")
+
+# Example usage:
+# create_results_table('original.csv', 'pivot_table.csv')

@@ -12,4 +12,3 @@ if __name__ == "__main__":
     results.calculate_accuracy("data\\llm_answer_precentage\\GuidedGradCam\\boolean","data\\llm_answer_precentage\\GuidedGradCam\\boolean\\results")
     results.calculate_accuracy("data\\llm_answer_CervicalCancer_COMPLETE\\Random\\boolean","data\\llm_answer_CervicalCancer_COMPLETE\\Random\\boolean\\results")
     results.calculate_accuracy("data\\llm_answer_CervicalCancer_COMPLETE\\Saliency\\boolean","data\\llm_answer_CervicalCancer_COMPLETE\\Saliency\\boolean\\results")
-0000000
