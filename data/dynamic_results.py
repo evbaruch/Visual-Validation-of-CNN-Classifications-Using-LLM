@@ -99,7 +99,7 @@ def calculate_accuracy(root_directory: str, save_path: str):
     for pre_trained_model, df in pre_trained_model_matrix.items():
         for i in range(0, 100, 5):
             # Filter the DataFrame for the current percentage range
-            filtered_df = df[(df['Removed_Percentage'] >= i) & (df['Removed_Percentage'] < i + 10)]
+            filtered_df = df[(df['Removed_Percentage'] >= i) & (df['Removed_Percentage'] < i + 6)]
 
             # Calculate the average of the 'Match' column
             average_match = filtered_df['Match'].mean()
