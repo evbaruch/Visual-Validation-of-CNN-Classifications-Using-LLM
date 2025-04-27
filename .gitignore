@@ -15,18 +15,15 @@ __pycache__/
 
 # OS generated files
 /DS_Store
-/data/mid
-/data/source
-/data/llm_answer2
 
+# Ignored data folder
+/data/*
+!/data/*.py
+!/data/llm_answer_precentage/Saliency/boolean/p_results/*
+!/data/llm_answer_precentage/Saliency/boolean/results/*
+!/data/llm_answer_precentage/Random/boolean/p_results/*
+!/data/llm_answer_precentage/Random/boolean/results/*
 
 test.py
 
-# all files in the data folder
-/data/*
-!/data/*.py
-
 *.rar
-
-/data/*
-!/data/*.py
