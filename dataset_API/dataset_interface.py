@@ -15,6 +15,10 @@ class dataset_interface:
         self.data_path = data_path
         self.save_path = save_path
         self.samples = samples
+        # self.categories = gd.load_imagenet_classes()
+        # {'Superficial-Intermediate': 0, 'Metaplastic': 1, 'Koilocytotic': 2, 'Dyskeratotic': 3, 'Parabasal': 4}
+        self.categories = ["Superficial-Intermediate","Metaplastic","Koilocytotic","Dyskeratotic","Parabasal"]
+
 
         self.top_k = 5
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu") 
@@ -137,18 +141,17 @@ class dataset_interface:
         # to flatten the list
         removed_list = [item for sublist in removed_list for item in sublist]
 
-        self.categories = gd.load_imagenet_classes()
 
 
-        # Retrieve results and accuracy
-        df = imc.new_get_results5(a_masked_x_batch, y_batch, model, self.categories, removed_list)
-        Correctly = imc.get_corrects(df, self.top_k)
-        self.Correctly.append(Correctly)
+        # # Retrieve results and accuracy
+        # df = imc.new_get_results5(a_masked_x_batch, y_batch, model, self.categories, removed_list)
+        # Correctly = imc.get_corrects(df, self.top_k)
+        # self.Correctly.append(Correctly)
 
-        # Save results to CSV
-        csv_dir = os.path.join(self.save_path, f"{method}", "csv")
-        os.makedirs(csv_dir, exist_ok=True)
-        df.to_csv(os.path.join(csv_dir, f"{method}_{threshold}_{pre_trained_model}.csv"), index=False)
+        # # Save results to CSV
+        # csv_dir = os.path.join(self.save_path, f"{method}", "csv")
+        # os.makedirs(csv_dir, exist_ok=True)
+        # df.to_csv(os.path.join(csv_dir, f"{method}_{threshold}_{pre_trained_model}.csv"), index=False)
 
         # Save images to the subfolder
         os.makedirs(subfolder_path, exist_ok=True)

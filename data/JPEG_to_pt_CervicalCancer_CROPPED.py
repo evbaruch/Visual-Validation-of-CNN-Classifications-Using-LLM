@@ -75,6 +75,7 @@ def main(image_dir, save_image_dir, num_for_categorie):
     # Encode the labels as integers
     unique_labels = list(set(labels))
     label_to_index = {label: idx for idx, label in enumerate(unique_labels)}
+    print(label_to_index)
     encoded_labels = [label_to_index[label] for label in labels]
     
     # Stack image tensors into a single tensor
