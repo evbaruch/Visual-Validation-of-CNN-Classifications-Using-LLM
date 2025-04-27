@@ -7,7 +7,7 @@ import global_data as gd
 import random  # Import random for sampling
 
 load_image_dir = "data\\source\\CervicalCancer\\JPEG"
-save_image_dir = "data\\source\\CervicalCancer\\pt\\CROPPED"
+save_image_dir = "data\\source\\CervicalCancer\\pt\\COMPLETE"
 
 def process_images(image_dir, imagenet_classes, transform, num_for_categorie):
     """
@@ -27,7 +27,7 @@ def process_images(image_dir, imagenet_classes, transform, num_for_categorie):
     labels = []
 
     for category in imagenet_classes:
-        for type in ["CROPPED"]:
+        for type in ["COMPLETE"]:
             path = os.path.join(image_dir, category, type)
             try:
                 # Get all filenames in the directory
