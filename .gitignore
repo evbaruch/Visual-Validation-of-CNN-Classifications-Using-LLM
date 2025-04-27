@@ -23,6 +23,9 @@ __pycache__/
 !/data/llm_answer_precentage/Saliency/boolean/results/*
 !/data/llm_answer_precentage/Random/boolean/p_results/*
 !/data/llm_answer_precentage/Random/boolean/results/*
+!/data/llm_answer_precentage/GradientShap/boolean/results/*
+!/data/llm_answer_precentage/GuidedGradCam/boolean/results/*
+!/data/llm_answer_precentage/InputXGradient/boolean/results/*
 
 test.py
 
