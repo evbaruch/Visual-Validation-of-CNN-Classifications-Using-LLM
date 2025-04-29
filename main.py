@@ -47,7 +47,7 @@ def image_creater(dir_path: str, save_path: str, samples: int = 10 ,precentage_w
 
     # Explanation methods and thresholds
     #  ['GradientShap', 'IntegratedGradients', 'DeepLift', 'DeepLiftShap', 'InputXGradient', 'Saliency', 'FeatureAblation', 'Deconvolution', 'FeaturePermutation', 'Lime', 'KernelShap', 'LRP', 'Gradient', 'Occlusion', 'LayerGradCam', 'GuidedGradCam', 'LayerConductance', 'LayerActivation', 'InternalInfluence', 'LayerGradientXActivation', 'Control Var. Sobel Filter', 'Control Var. Constant', 'Control Var. Random Uniform']
-    explanation_methods = ['Random' , 'Saliency', 'GuidedGradCam', 'InputXGradient'] # 'Lime', 'GuidedGradCam', 'InputXGradient',
+    explanation_methods = ['Random' , 'Saliency', 'GuidedGradCam', 'InputXGradient', 'GradientShap'] # 'Lime', 'GuidedGradCam', 'InputXGradient',
 
     # # Temporary! It doesn't make sense for this test to be implemented outside of dataset_interface === TO DO ===
     # for exp in explanation_methods:
@@ -95,34 +95,34 @@ class ImageDescription_Boolean(BaseModel):
 if __name__ == "__main__":
 
     #image_creater("data/source/CervicalCancer/pt/CROPPED_40", "data\\midCervicalCancer", 200000, True) 
-    image_creater("data\\source\\CervicalCancer\\pt\\COMPLETE_40", "data\midCervicalCancer_COMPLETE", 2000 , True)
+    image_creater("data\\source\\CervicalCancer\\pt\\COMPLETE_20", "data\midCervicalCancer_COMPLETE_reversed", 2000 , True)
 
-    llama = llama32Vision11b()
-    # # llama = ChatGPT4O("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")
-    llm_context = LLMInterface(llama)
+    # llama = llama32Vision11b()
+    # # # llama = ChatGPT4O("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")
+    # llm_context = LLMInterface(llama)
 
     
-    llm_context.set_background(r"""You are a medical image analysis expert specialized in cytopathology. You are tasked with classifying microscopic images of cervical cells into one of the following categories based on their visual characteristics: Dyskeratotic, Koilocytotic, Metaplastic, Parabasal, or Superficial-Intermediate.
+    # llm_context.set_background(r"""You are a medical image analysis expert specialized in cytopathology. You are tasked with classifying microscopic images of cervical cells into one of the following categories based on their visual characteristics: Dyskeratotic, Koilocytotic, Metaplastic, Parabasal, or Superficial-Intermediate.
 
-    Each cell type has unique morphological features:
-    - Dyskeratotic: Abnormal keratinization, hyperchromatic nuclei.
-    - Koilocytotic: Perinuclear halo, nuclear enlargement, irregularity.
-    - Metaplastic: Immature squamous cells, dense cytoplasm.
-    - Parabasal: Small round cells with large nuclei, usually in clusters.
-    - Superficial-Intermediate: Flattened cells with small nuclei, abundant cytoplasm.
+    # Each cell type has unique morphological features:
+    # - Dyskeratotic: Abnormal keratinization, hyperchromatic nuclei.
+    # - Koilocytotic: Perinuclear halo, nuclear enlargement, irregularity.
+    # - Metaplastic: Immature squamous cells, dense cytoplasm.
+    # - Parabasal: Small round cells with large nuclei, usually in clusters.
+    # - Superficial-Intermediate: Flattened cells with small nuclei, abundant cytoplasm.
 
-    Use your visual recognition capabilities and domain expertise to classify each provided image.
-    return as JSON!
-    """)
+    # Use your visual recognition capabilities and domain expertise to classify each provided image.
+    # return as JSON!
+    # """)
 
-    # llm_context.set_background(f"You are an image classifier. Use the ImageNet categories to classify images. return as JSON")
+    # # llm_context.set_background(f"You are an image classifier. Use the ImageNet categories to classify images. return as JSON")
 
-    # # llm_context.set_prompt("Tell me what you see in the picture and  what category it is from imagenet")
+    # # # llm_context.set_prompt("Tell me what you see in the picture and  what category it is from imagenet")
 
-    llm_context.set_jsonDescription(ImageDescription_Boolean)
-    llm_context.boolean_outputs_classification("data\\midCervicalCancer_COMPLETE\\GuidedGradCam", "data\\llm_answer_CervicalCancer_COMPLETE\\GuidedGradCam\\boolean")
+    # llm_context.set_jsonDescription(ImageDescription_Boolean)
+    # llm_context.boolean_outputs_classification("data\\midCervicalCancer_COMPLETE\\GuidedGradCam", "data\\llm_answer_CervicalCancer_COMPLETE\\GuidedGradCam\\boolean")
 
-    llm_context.boolean_outputs_classification("data\\midCervicalCancer_COMPLETE\\InputXGradient", "data\\llm_answer_CervicalCancer_COMPLETE\\InputXGradient\\boolean")
+    # llm_context.boolean_outputs_classification("data\\midCervicalCancer_COMPLETE\\InputXGradient", "data\\llm_answer_CervicalCancer_COMPLETE\\InputXGradient\\boolean")
 
     # llm_context.set_jsonDescription(ImageDescription_Boolean)
     # llm_context.boolean_outputs_classification("data\\midCervicalCancer\\Saliency", "data\\llm_answer_CervicalCancer\\Saliency\\boolean")

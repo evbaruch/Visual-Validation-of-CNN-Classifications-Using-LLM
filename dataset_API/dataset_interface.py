@@ -4,6 +4,7 @@ from dataset_API import image_creater as imc
 import os
 import quantus
 from data import global_data as gd
+from data import JPEG_to_pt_CervicalCancer_CROPPED as JtPCCD
 from PIL import Image
 import numpy as np
 
@@ -17,8 +18,14 @@ class dataset_interface:
         self.samples = samples
         # self.categories = gd.load_imagenet_classes()
         # {'Superficial-Intermediate': 0, 'Metaplastic': 1, 'Koilocytotic': 2, 'Dyskeratotic': 3, 'Parabasal': 4}
-        self.categories = ["Superficial-Intermediate","Metaplastic","Koilocytotic","Dyskeratotic","Parabasal"]
+        # {'Superficial-Intermediate': 0, 'Dyskeratotic': 1, 'Metaplastic': 2, 'Parabasal': 3, 'Koilocytotic': 4}
 
+        temp = []
+        for key, val in JtPCCD.MAP.items():
+            temp.append(key)
+
+
+        self.categories = temp
 
         self.top_k = 5
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu") 
@@ -118,7 +125,7 @@ class dataset_interface:
             if method == "Random":
                 imc_function = imc.percentage_random_remove
             else:
-                imc_function = imc.percentage_remove
+                imc_function = imc.percentage_remove_reverse
         else:
             if method == "Random":
                 imc_function = imc.random_remove_pixels

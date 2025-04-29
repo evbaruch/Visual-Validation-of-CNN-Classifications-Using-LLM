@@ -227,6 +227,61 @@ def percentage_remove(a_batch, x_batch, percentage):
 
     return a_masked_x_batch, removed_pixels_per_image
 
+
+def percentage_remove_reverse(a_batch, x_batch, percentage):
+    """
+    Removes a specified percentage of the least important pixels from x_batch based on a_batch.
+
+    Args:
+        a_batch (Union[np.ndarray, torch.Tensor]): Importance map for each image.
+        x_batch (Union[np.ndarray, torch.Tensor]): Batch of images to modify.
+        percentage (float): Percentage of pixels to remove (0 to 100).
+
+    Returns:
+        Tuple[Union[np.ndarray, torch.Tensor], List[int]]:
+            - Modified x_batch with pixels removed.
+            - List of the number of pixels removed per image.
+    """
+    # Ensure a_batch and x_batch are both NumPy arrays for compatibility with NumPy operations
+    if isinstance(a_batch, torch.Tensor):
+        a_batch = a_batch.cpu().numpy()
+    if isinstance(x_batch, torch.Tensor):
+        x_batch_cpu = x_batch.cpu().numpy()
+    else:
+        x_batch_cpu = x_batch  # Already a NumPy array
+
+    # Flatten the importance map to sort pixel importance
+    a_flat = a_batch.reshape(a_batch.shape[0], -1)
+    num_pixels = a_flat.shape[1]
+
+    # Calculate the number of pixels to remove based on the percentage
+    num_pixels_to_remove = int((percentage / 100) * num_pixels)
+
+    # Create a mask for each image
+    a_mask = np.ones_like(a_flat, dtype=bool)
+    for i in range(a_flat.shape[0]):
+        # Get the indices of the least important pixels
+        least_important_indices = np.argsort(a_flat[i])[-num_pixels_to_remove:]
+        # Set those indices to False in the mask
+        a_mask[i, least_important_indices] = False
+
+    # Reshape the mask back to the original shape of a_batch
+    a_mask = a_mask.reshape(a_batch.shape)
+
+    # Repeat mask along the appropriate axis
+    a_reshaped_mask = np.repeat(a_mask, x_batch_cpu.shape[1], axis=1)
+    a_masked_x_batch = np.copy(x_batch_cpu)
+    a_masked_x_batch[~a_reshaped_mask] = 1
+
+    # Calculate the number of removed pixels per image
+    removed_pixels_per_image = [num_pixels_to_remove*3] * a_batch.shape[0]
+
+    # Convert back to torch tensor if needed
+    if isinstance(x_batch, torch.Tensor):
+        a_masked_x_batch = torch.from_numpy(a_masked_x_batch).to(x_batch.device)
+
+    return a_masked_x_batch, removed_pixels_per_image
+
 def percentage_random_remove(a_batch, x_batch, percentage):
     """
     Randomly removes a specified percentage of pixels from x_batch.

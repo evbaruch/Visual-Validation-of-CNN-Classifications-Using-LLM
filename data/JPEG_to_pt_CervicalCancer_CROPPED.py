@@ -1,13 +1,15 @@
 import os
 import torch
 from PIL import Image
-import CCDataSet_init as CCD
+from data import CCDataSet_init as CCD
 from tqdm import tqdm
-import global_data as gd
+from data import global_data as gd
 import random  # Import random for sampling
 
 load_image_dir = "data\\source\\CervicalCancer\\JPEG"
 save_image_dir = "data\\source\\CervicalCancer\\pt\\COMPLETE"
+
+MAP = {'Superficial-Intermediate': 0, 'Dyskeratotic': 1, 'Metaplastic': 2, 'Parabasal': 3, 'Koilocytotic': 4}
 
 def process_images(image_dir, imagenet_classes, transform, num_for_categorie):
     """
@@ -73,10 +75,10 @@ def main(image_dir, save_image_dir, num_for_categorie):
     image_tensors, labels = process_images(image_dir, imagenet_classes, transform, num_for_categorie)
 
     # Encode the labels as integers
-    unique_labels = list(set(labels))
-    label_to_index = {label: idx for idx, label in enumerate(unique_labels)}
-    print(label_to_index)
-    encoded_labels = [label_to_index[label] for label in labels]
+    # unique_labels = list(set(labels))
+    # label_to_index = {label: idx for idx, label in enumerate(unique_labels)}
+    # print(label_to_index)
+    encoded_labels = [MAP[label] for label in labels]
     
     # Stack image tensors into a single tensor
     x_batch = torch.stack(image_tensors)
@@ -91,4 +93,4 @@ def main(image_dir, save_image_dir, num_for_categorie):
 
 # Run the script if executed directly
 if __name__ == "__main__":
-    main(load_image_dir, save_image_dir, 40)
+    main(load_image_dir, save_image_dir, 20)
