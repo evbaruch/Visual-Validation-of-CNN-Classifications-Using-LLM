@@ -32,6 +32,13 @@ __pycache__/
 !/data/llm_answer_CervicalCancer_COMPLETE/GuidedGradCam/boolean/results/*
 !/data/llm_answer_CervicalCancer_COMPLETE/InputXGradient/boolean/results/*
 
+!/data/midPrecentage/GradientShap/results/*
+!/data/midPrecentage/InputXGradient/results/*
+!/data/midPrecentage/GuidedGradCam/results/*
+!/data/midPrecentage/Saliency/results/*
+!/data/midPrecentage/Random/results/*
+
+
 test.py
 
 *.rar
