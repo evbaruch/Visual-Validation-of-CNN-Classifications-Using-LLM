@@ -202,5 +202,85 @@ def create_results_table(original_file, save_location):
     
     print(f"Pivot table created and saved to {save_location}")
 
-# Example usage:
-# create_results_table('original.csv', 'pivot_table.csv')
+def inverted_tables(data_path: str, save_directory: str):
+    """
+    Creates inverted tables for each method (resnet18, v3_inception, v3_large, v3_small).
+    Rows will be the file names (list_of_directories), and columns will be percentages.
+
+    Args:
+        data_path (str): Path to the directory containing subdirectories with pivot tables.
+        save_directory (str): Path to save the inverted tables.
+
+    Returns:
+        None
+    """
+    os.makedirs(save_directory, exist_ok=True)  # Ensure the save directory exists
+
+    # Initialize dictionaries to store data for each method
+    methods_data = {
+        "resnet18": {},
+        "v3_inception": {},
+        "v3_large": {},
+        "v3_small": {}
+    }
+
+    list_of_directories = os.listdir(data_path)
+    for directory in list_of_directories:
+        path = os.path.join(data_path, f"{directory}\\results")
+        pivot_file = os.path.join(path, "pivot_table.csv")
+        
+        if os.path.exists(pivot_file):
+            # Read the pivot table
+            pivot_table = pd.read_csv(pivot_file, index_col=0)
+            
+            # Add data for each method
+            for method in methods_data.keys():
+                if method in pivot_table.index:
+                    methods_data[method][directory] = pivot_table.loc[method].to_dict()
+
+    # Create and save inverted tables for each method
+    for method, data in methods_data.items():
+        if data:  # Only process if there is data for the method
+            # Convert the dictionary to a DataFrame
+            inverted_table = pd.DataFrame.from_dict(data, orient="index")
+            
+            # Save the inverted table to a CSV file
+            save_path = os.path.join(save_directory, f"{method}_inverted_table.csv")
+            inverted_table.to_csv(save_path)
+            create_graph_from_table(save_path, os.path.join(save_directory, f"{method}_graph.png"))
+            print(f"Inverted table for {method} saved to {save_path}")
+
+def create_graph_from_table(table_path: str, save_path: str):
+    """
+    Creates a graph from a single inverted table and saves it as an image.
+
+    Args:
+        table_path (str): Path to the CSV file containing the inverted table.
+        save_path (str): Path to save the generated graph.
+
+    Returns:
+        None
+    """
+    # Read the inverted table
+    table = pd.read_csv(table_path, index_col=0)
+
+    # Plot the data
+    plt.figure(figsize=(10, 6))
+    for index, row in table.iterrows():
+        plt.plot(row.index, row.values, marker='o', label=index)
+
+    # Add title, labels, and legend
+    method_name = table_path.split("\\")[-1].replace("_inverted_table.csv", "")
+    plt.title(f"Performance Graph for {method_name}", fontsize=14)
+    plt.xlabel("Percentage", fontsize=12)
+    plt.ylabel("Performance", fontsize=12)
+    plt.legend(title="Directories", fontsize=10)
+    plt.grid(True)
+
+    # Save the graph as an image
+    plt.savefig(save_path)
+    plt.close()
+    print(f"Graph saved to {save_path}")           
+                
+# Example usage
+inverted_tables("data\\midPrecentage", "data\\midPrecentage\\inverted_tables")
