@@ -151,8 +151,8 @@ class dataset_interface:
 
 
         # # Retrieve results and accuracy
-        # df = imc.new_get_results5(a_masked_x_batch, y_batch, model, self.categories, removed_list)
-        # Correctly = imc.get_corrects(df, self.top_k)
+        df = imc.new_get_results5(a_masked_x_batch, y_batch, model, self.categories, removed_list)
+        Correctly = imc.get_corrects(df, self.top_k)
         # self.Correctly.append(Correctly)
 
         # # Save results to CSV

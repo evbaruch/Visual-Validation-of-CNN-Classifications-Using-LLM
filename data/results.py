@@ -226,7 +226,7 @@ def inverted_tables(data_path: str, save_directory: str):
 
     list_of_directories = os.listdir(data_path)
     for directory in list_of_directories:
-        path = os.path.join(data_path, f"{directory}\\results")
+        path = os.path.join(data_path, f"{directory}\\boolean\\results") # <= TODO: Change this to the correct path
         pivot_file = os.path.join(path, "pivot_table.csv")
         
         if os.path.exists(pivot_file):
@@ -283,4 +283,4 @@ def create_graph_from_table(table_path: str, save_path: str):
     print(f"Graph saved to {save_path}")           
                 
 # Example usage
-inverted_tables("data\\midPrecentage", "data\\midPrecentage\\inverted_tables")
+# inverted_tables("data\\midPrecentage", "data\\midPrecentage\\inverted_tables")
