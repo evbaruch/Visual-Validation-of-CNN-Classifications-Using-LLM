@@ -4,8 +4,8 @@ from PIL import Image
 import global_data as gd
 from tqdm import tqdm
 
-load_image_dir = "data\\source\\imagenet_sample2\\JPEG"
-save_image_dir = "data\\source\\imagenet_sample2\\pt"
+load_image_dir = "data\\source\\imagenet_sample\\JPEG"
+save_image_dir = "data\\source\\imagenet_sample\\pt"
 
 def process_images(image_dir, imagenet_classes, transform):
     """

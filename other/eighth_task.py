@@ -88,7 +88,7 @@ def normalize_image(arr: Union[np.ndarray, torch.Tensor]) -> np.ndarray:
     else:
         arr_copy = arr.copy()
 
-    arr_copy = (np.array(arr_copy) * std.reshape(-1, 1, 1)) + mean.reshape(-1, 1, 1)
+    # arr_copy = (np.array(arr_copy) * std.reshape(-1, 1, 1)) + mean.reshape(-1, 1, 1)
     arr_copy  = np.moveaxis(arr_copy, 0, -1)
     arr_copy = (arr_copy * 255.).astype(np.uint8)
     return arr_copy
@@ -156,7 +156,7 @@ def get_probabilities(batch, model):
         transforms.Resize(256),
         transforms.CenterCrop(224),
         transforms.ToTensor(),
-        transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
+        # transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
     ])
     input_tensor = preprocess(input_image)
     input_batch = input_tensor.unsqueeze(0) # create a mini-batch as expected by the model

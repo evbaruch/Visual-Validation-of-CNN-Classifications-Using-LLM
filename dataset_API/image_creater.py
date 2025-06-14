@@ -124,7 +124,7 @@ def change_ImageNet_format(arr: Union[np.ndarray, torch.Tensor]) -> np.ndarray:
     else:
         arr_copy = arr.copy()
 
-    arr_copy = (np.array(arr_copy) * std.reshape(-1, 1, 1)) + mean.reshape(-1, 1, 1)
+    # arr_copy = (np.array(arr_copy) * std.reshape(-1, 1, 1)) + mean.reshape(-1, 1, 1)
     arr_copy  = np.moveaxis(arr_copy, 0, -1)
     arr_copy = (arr_copy * 255.).astype(np.uint8)
     return arr_copy
@@ -171,7 +171,6 @@ def new_remove_pixels(a_batch, x_batch, threshold):
         a_masked_x_batch = torch.from_numpy(a_masked_x_batch).to(x_batch.device)
 
     return a_masked_x_batch, removed_pixels_per_image
-
 
 def percentage_remove(a_batch, x_batch, percentage):
     """
@@ -226,7 +225,6 @@ def percentage_remove(a_batch, x_batch, percentage):
         a_masked_x_batch = torch.from_numpy(a_masked_x_batch).to(x_batch.device)
 
     return a_masked_x_batch, removed_pixels_per_image
-
 
 def percentage_remove_reverse(a_batch, x_batch, percentage):
     """
@@ -372,6 +370,109 @@ def random_remove_pixels(a_batch, x_batch, threshold):
 
     return a_masked_x_batch, removed_pixels_per_image
 
+def percentage_remove(a_batch, x_batch, percentage: int, color: int, reverse: bool = False):
+    # Ensure a_batch and x_batch are both NumPy arrays for compatibility with NumPy operations
+    if isinstance(a_batch, torch.Tensor):
+        a_batch = a_batch.cpu().numpy()
+    if isinstance(x_batch, torch.Tensor):
+        x_batch_cpu = x_batch.cpu().numpy()
+    else:
+        x_batch_cpu = x_batch  # Already a NumPy array
+
+    # Flatten the importance map to sort pixel importance
+    a_flat = a_batch.reshape(a_batch.shape[0], -1)
+    num_pixels = a_flat.shape[1]
+
+    # Calculate the number of pixels to remove based on the percentage
+    num_pixels_to_remove = int((percentage / 100) * num_pixels)
+
+    # Create a mask for each image
+    a_mask = np.ones_like(a_flat, dtype=bool)
+    for i in range(a_flat.shape[0]):
+        # Get the indices of the least important pixels
+        if reverse:      
+            least_important_indices = np.argsort(a_flat[i])[-num_pixels_to_remove:]
+        else:
+            least_important_indices = np.argsort(a_flat[i])[:num_pixels_to_remove]
+        # Set those indices to False in the mask
+        a_mask[i, least_important_indices] = False
+
+    # Reshape the mask back to the original shape of a_batch
+    a_mask = a_mask.reshape(a_batch.shape)
+
+    # Repeat mask along the appropriate axis
+    a_reshaped_mask = np.repeat(a_mask, x_batch_cpu.shape[1], axis=1)
+    a_masked_x_batch = np.copy(x_batch_cpu)
+    
+    
+    a_masked_x_batch[~a_reshaped_mask] = color
+
+    # Calculate the number of removed pixels per image
+    removed_pixels_per_image = [num_pixels_to_remove*3] * a_batch.shape[0]
+
+    # Convert back to torch tensor if needed
+    if isinstance(x_batch, torch.Tensor):
+        a_masked_x_batch = torch.from_numpy(a_masked_x_batch).to(x_batch.device)
+
+    return a_masked_x_batch, removed_pixels_per_image
+
+def random_remove(a_batch, x_batch, percentage: int, color: int, reverse: bool = False):
+    """
+    Randomly removes a specified percentage of pixels from x_batch.
+
+    Args:
+        a_batch (Union[np.ndarray, torch.Tensor]): Importance map for each image (not used in this function but kept for compatibility).
+        x_batch (Union[np.ndarray, torch.Tensor]): Batch of images to modify.
+        percentage (float): Percentage of pixels to remove (0 to 100).
+
+    Returns:
+        Tuple[Union[np.ndarray, torch.Tensor], List[int]]:
+            - Modified x_batch with pixels removed.
+            - List of the number of pixels removed per image.
+    """
+    # Ensure x_batch is a NumPy array for compatibility with NumPy operations
+    if isinstance(x_batch, torch.Tensor):
+        x_batch_cpu = x_batch.cpu().numpy()
+    else:
+        x_batch_cpu = x_batch  # Already a NumPy array
+
+    # Get the shape of the batch
+    batch_size, channels, height, width = x_batch_cpu.shape
+    total_pixels = height * width
+
+    # Calculate the number of pixels to remove per image
+    num_pixels_to_remove = int((percentage / 100) * total_pixels)
+
+    # Create a mask for each image
+    a_masked_x_batch = np.copy(x_batch_cpu)
+    removed_pixels_per_image = []
+
+    for i in range(batch_size):
+        # Generate random indices for pixels to remove
+        random_indices = np.random.choice(total_pixels, num_pixels_to_remove, replace=False)
+
+        # Create a flat mask and set the selected indices to 0
+        flat_mask = np.ones(total_pixels, dtype=bool)
+        flat_mask[random_indices] = False
+
+        # Reshape the mask to the original image shape
+        reshaped_mask = flat_mask.reshape(height, width)
+
+        # Repeat the mask for all channels
+        channel_mask = np.repeat(reshaped_mask[np.newaxis, :, :], channels, axis=0)
+
+        # Apply the mask to the image
+        a_masked_x_batch[i][~channel_mask] = color  # Set removed pixels to 1
+
+        # Record the number of removed pixels
+        removed_pixels_per_image.append(num_pixels_to_remove*3)
+
+    # Convert back to torch tensor if needed
+    if isinstance(x_batch, torch.Tensor):
+        a_masked_x_batch = torch.from_numpy(a_masked_x_batch).to(x_batch.device)
+
+    return a_masked_x_batch, removed_pixels_per_image
+
 # Load and play an audio file from a specified link.
 def beep(link):
     audio_file = link # Load the audio file and get the audio data and sampling rate
@@ -394,7 +495,7 @@ def get_probabilities(batch, model):
             transforms.Resize(256),
             transforms.CenterCrop(224),
             transforms.ToTensor(),
-            transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
+            # transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
         ])
         input_tensor = preprocess(input_image)
         input_batch = input_tensor.unsqueeze(0) # create a mini-batch as expected by the model
@@ -463,7 +564,8 @@ def new_get_results5(x_batch, y_batch, model, categories, removed_pixels):
         prob_list = [0] * top5_prob.size(0)
 
         for j in range(top5_prob.size(0)):
-            class_list[j] = categories[top5_catid[j]]
+            class_id = int(top5_catid[j].item())
+            class_list[j] = categories[class_id]
             prob_list[j] = top5_prob[j].item()
 
         # Convert y_batch[i] to an integer label if it's still a CUDA tensor

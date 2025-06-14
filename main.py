@@ -91,14 +91,15 @@ class ImageDescription_5(BaseModel):
 class ImageDescription_Boolean(BaseModel):
     boolean: bool   
     
+ 
+
 
 if __name__ == "__main__":
 
     #image_creater("data/source/CervicalCancer/pt/CROPPED_40", "data\\midCervicalCancer", 200000, True) 
-    image_creater("data\\source\\CervicalCancer\\pt\\COMPLETE_20", "data\midCervicalCancer_COMPLETE_reversed", 2000 , True)
+    image_creater("data\\source\\imagenet_sample\\pt", "data\\midImagenet", 2000 , True)
 
     # llama = llama32Vision11b()
-    # # # # llama = ChatGPT4O("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")
     # llm_context = LLMInterface(llama)
 
     
