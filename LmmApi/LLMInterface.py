@@ -265,7 +265,7 @@ class LLMInterface:
         os.makedirs(save_path, exist_ok=True)
 
         for dirpath, _, filenames in os.walk(root_directory): 
-            image_files = [f for f in filenames if f.endswith('.png')] 
+            image_files = [f for f in filenames if f.endswith('.jpg')]  # Include common image formats
             data = []
             max_labels = 0
             max_llm = 0
@@ -280,16 +280,17 @@ class LLMInterface:
                 # Get the full path of the image file
                 file_path = os.path.join(dirpath, file)
                 image_name = os.path.basename(file_path)
-                image_name = image_name.split('_')[1].split('.')[0]  # Extracts 'tench'
+                image_name = image_name.split('_', 1)[1].split('.')[0]  # Extracts 'tench'
+                image_name = image_name.replace('_', ' ')  # Replace underscores with spaces for better readability
 
                 # Construct the prompt dynamically
-                prompt = (
-                    f"You are a medical image analysis expert. "
-                    f"Analyze the image and answer: Is it a {image_name}? "
-                    f"Use the following background knowledge: {self.background}"
-                )
+                # prompt = (
+                #     f"You are a medical image analysis expert. "
+                #     f"Analyze the image and answer: Is it a {image_name}? "
+                #     f"Use the following background knowledge: {self.background}"
+                # )
 
-                # prompt = f"What do you see in the picture? Is it a {image_name} from the imagenet database?"
+                prompt = f"What do you see in the picture? Is it a {image_name} from the imagenet database?"
 
                 # Generate a response from the LLM
                 response = self.strategy.generate_response(

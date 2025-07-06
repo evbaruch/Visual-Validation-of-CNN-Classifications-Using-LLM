@@ -1,26 +1,46 @@
-from data  import dynamic_results as dr
-from data  import results
+import os
+import re
+from PIL import Image
 
-if __name__ == "__main__":
+def is_image_okay(filepath):
+    try:
+        with Image.open(filepath) as img:
+            img.verify()  # Check if image can be opened and is not corrupted
+        return True
+    except Exception:
+        return False
 
-    # dr.getDynamicResults("InputXGradient", "boolean", "llm_answer_precentage", "midPrecentage")
-    # dr.getDynamicResults("GradientShap", "boolean", "llm_answer_precentage", "midPrecentage")
-    # dr.getDynamicResults("Random", "boolean", "llm_answer_precentage", "midPrecentage")
+def remove_gradcam_suffix(root_directory):
+    pattern = re.compile(r'(.*)_random\d+\.(jpg|png|jpeg)$', re.IGNORECASE)
+    corrupted_file_count = 0
+    renamed_file_count = 0
+    skipped_file_count = 0
+    ok_file_count = 0
+    for dirpath, _, filenames in os.walk(root_directory):
+        for filename in filenames:
+            old_path = os.path.join(dirpath, filename)
+            if not is_image_okay(old_path):
+                print(f"❌ {old_path} (corrupted or unreadable)")
+                corrupted_file_count += 1
+                continue
+            match = pattern.match(filename)
+            if match:
+                new_filename = f"{match.group(1)}.{match.group(2)}"
+                new_path = os.path.join(dirpath, new_filename)
+                if not os.path.exists(new_path):
+                    os.rename(old_path, new_path)
+                    print(f"➡️ {old_path} -> {new_path}")
+                    renamed_file_count += 1
+                else:
+                    print(f"⚠️ Skipped (target exists): {new_path}")
+                    skipped_file_count += 1
+            else:
+                print(f"✅ {old_path} (no rename needed)")
+                ok_file_count += 1
+    print(f"Total files corrupted ❌: {corrupted_file_count}")
+    print(f"Total files renamed ➡️: {renamed_file_count}")
+    print(f"Total files skipped ⚠️: {skipped_file_count}")
+    print(f"Total files okay ✅: {ok_file_count}")
 
-    # results.calculate_accuracy("data\\llm_answer_precentage\\InputXGradient\\boolean","data\\llm_answer_precentage\\InputXGradient\\boolean\\results")
-    # results.calculate_accuracy("data\\llm_answer_precentage\\GradientShap\\boolean","data\\llm_answer_precentage\\GradientShap\\boolean\\results")
-    # results.calculate_accuracy("data\\llm_answer_precentage\\GuidedGradCam\\boolean","data\\llm_answer_precentage\\GuidedGradCam\\boolean\\results")
-    # results.calculate_accuracy("data\\llm_answer_CervicalCancer_COMPLETE\\Random\\boolean","data\\llm_answer_CervicalCancer_COMPLETE\\Random\\boolean\\results")
-    # results.calculate_accuracy("data\\llm_answer_CervicalCancer_COMPLETE\\Saliency\\boolean","data\\llm_answer_CervicalCancer_COMPLETE\\Saliency\\boolean\\results")
-    # results.calculate_accuracy("data\\llm_answer_CervicalCancer_COMPLETE\\GuidedGradCam\\boolean","data\\llm_answer_CervicalCancer_COMPLETE\\GuidedGradCam\\boolean\\results")
-    # results.calculate_accuracy("data\\llm_answer_CervicalCancer_COMPLETE\\InputXGradient\\boolean","data\\llm_answer_CervicalCancer_COMPLETE\\InputXGradient\\boolean\\results")
-
-    # results.calculate_accuracy("data\\llm_answer_CervicalCancer_COMPLETE_reversed\\Saliency\\boolean", "data\\llm_answer_CervicalCancer_COMPLETE_reversed\\Saliency\\boolean\\results")
-    # results.calculate_accuracy("data\\llm_answer_CervicalCancer_COMPLETE_reversed\\Random\\boolean", "data\\llm_answer_CervicalCancer_COMPLETE_reversed\\Random\\boolean\\results")
-    # results.calculate_accuracy("data\\llm_answer_CervicalCancer_COMPLETE_reversed\\InputXGradient\\boolean", "data\\llm_answer_CervicalCancer_COMPLETE_reversed\\InputXGradient\\boolean\\results")
-
-    results.calculate_accuracy("data\\midPrecentage\\GradientShap", "data\\midPrecentage\\GradientShap\\results")
-    results.calculate_accuracy("data\\midPrecentage\\GuidedGradCam", "data\\midPrecentage\\GuidedGradCam\\results")
-    results.calculate_accuracy("data\\midPrecentage\\InputXGradient", "data\\midPrecentage\\InputXGradient\\results")
-    results.calculate_accuracy("data\\midPrecentage\\Random", "data\\midPrecentage\\Random\\results")
-    results.calculate_accuracy("data\\midPrecentage\\Saliency", "data\\midPrecentage\\Saliency\\results")
+# Example usage:
+remove_gradcam_suffix("data\\midAvi_grey\\random")

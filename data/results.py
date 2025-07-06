@@ -191,6 +191,9 @@ def create_results_table(original_file, save_location):
     df['Percentage'] = df['File'].apply(lambda x: int(re.search(r'_(\d+)_', x).group(1)))
     df['Method'] = df['File'].apply(lambda x: re.search(r'_\d+_(.+)\.csv', x).group(1))
     
+    # df['Percentage'] = df['File'].apply(lambda x: int(re.search(r'_(\d+)', x).group(1)))
+    # df['Method'] = original_file.split("\\")[-2].replace(".csv", "")
+    
     # Create the pivot table
     pivot = df.pivot(index='Method', columns='Percentage', values='Average Match')
     
