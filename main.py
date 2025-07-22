@@ -1,8 +1,8 @@
 from LmmApi.LLMInterface import LLMInterface
 from LmmApi.llama32Vision11b import llama32Vision11b
 #from LmmApi.chatGpt4o import ChatGPT4O
-from data  import results
-from data import dynamic_results as dr
+from .  import results
+from trash import dynamic_results as dr
 from dataset_API import dataset_interface as di
 from dataset_API import image_creater as imc
 import os

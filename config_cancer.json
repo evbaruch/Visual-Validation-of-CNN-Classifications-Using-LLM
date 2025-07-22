@@ -1,0 +1,21 @@
+{
+  "input_folder":        "data/source/CervicalCancer/JPEG/CROPPED",
+  "mid_folder":       "data/mid_CervicalCancer_test",
+  "results_csv":       "data/results/imagenet_eval.csv",
+  "mask_color":          [0.5, 0.5, 0.5],
+  "gradcam_target_layer":"layer4",
+  "reduce_samples":      false,
+  "skip_slow_methods":   false,
+  "batch_thresholds":    true,
+  "thresholds":          [0.05,0.10,0.15,0.20,0.25,0.30,0.35,0.40,0.45,0.50,0.55,0.60,0.65,0.70,0.75,0.80,0.85,0.90,0.95],
+  "img_size":            224,
+  "normalize_mean":      [0.485,0.456,0.406],
+  "normalize_std":       [0.229,0.224,0.225],
+  "model_name":          "resnet18",
+  "model_weights":       null,
+  "weights_path":        "data/weights/cancer_resnet18.pth",
+  "num_classes":         5,
+  "label_extraction": {
+    "method": "folder"
+  }
+}
