@@ -18,11 +18,12 @@ model.to(device).eval()
 
 # 2) your normal test set transform
 tfm = transforms.Compose([
-    transforms.Resize(224),
+    transforms.Resize((224, 224)),
     transforms.ToTensor(),
     transforms.Normalize([0.485,0.456,0.406],[0.229,0.224,0.225]),
 ])
-test_ds = datasets.ImageFolder("data/source/CervicalCancer/JPEG/CROPPED", transform=tfm)
+#test_ds = datasets.ImageFolder("data/source/CervicalCancer/JPEG/CROPPED", transform=tfm)
+test_ds = datasets.ImageFolder("data\mid_CervicalCancer\\random\\05", transform=tfm)
 test_loader = torch.utils.data.DataLoader(test_ds, batch_size=64)
 
 correct = 0
@@ -30,8 +31,11 @@ total = 0
 with torch.no_grad():
     for imgs, labs in test_loader:
         imgs, labs = imgs.to(device), labs.to(device)
-        preds = model(imgs).argmax(1)
-        correct += (preds==labs).sum().item()
+        preds = model(imgs).topk(1,dim=1)[1].cpu().squeeze(1).tolist()
+        # correct += (preds==labs)
+        for i in range(len(preds)):
+            if preds[i] == labs[i].item():
+                correct += 1
         total += labs.size(0)
 
 print(f"Baseline test accuracy: {100*correct/total:.2f}%")

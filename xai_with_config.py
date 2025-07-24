@@ -225,10 +225,10 @@ def get_category_from_path(path):
     m = LABEL_CFG["method"]
     if m == "folder":
         # parent‐folder name
-        return os.path.basename(os.path.dirname(path))
+        return os.path.basename(os.path.dirname(path)).split('.')[0]
     elif m == "filename":
         # filename without extension
-        return os.path.basename(path)
+        return os.path.basename(path).split('.')[0]
     else:
         raise ValueError(f"Unknown label_extraction method: {m}")
 
@@ -236,16 +236,6 @@ def get_category_from_path(path):
 # --------------------
 # 5) Model builders
 # --------------------
-# def build_base_model():
-#     if MODEL_WEIGHTS:
-#         enum = getattr(ResNet18_Weights, MODEL_WEIGHTS)
-#         m = getattr(models, MODEL_NAME)(weights=enum)
-#     else:
-#         m = getattr(models, MODEL_NAME)(pretrained=False)
-#         m.fc = nn.Linear(m.fc.in_features, NUM_CLASSES)
-#         state = torch.load(WEIGHTS_PATH, map_location=device)
-#         m.load_state_dict(state)
-#     return m.to(device).eval()
 
 def build_base_model():
     """
@@ -290,7 +280,7 @@ def build_guided_model():
 # --------------------
 def process_all_methods(img_path):
     cat = get_category_from_path(img_path)
-    img_name = os.path.basename(img_path)
+    img_name = os.path.basename(img_path).split('.')[0]
     img = Image.open(img_path).convert("RGB")
     x   = preprocess(img).unsqueeze(0).to(device)
 
@@ -338,21 +328,56 @@ def process_all_methods(img_path):
         else:
             # fallback single-threshold (not shown for brevity)
             continue
+        
+        
 
         for t, (xm, pct) in results.items():
+            
+            # # Check actual changed pixels before saving
+            # original = denormalize(x.squeeze(0)).cpu().numpy()
+            # masked = denormalize(xm.squeeze(0)).cpu().numpy()
+            # # Compare only non-masked pixels (all channels)
+            # changed = np.any(np.abs(original - masked) > 1e-5, axis=0)  # shape: HxW, True if any channel changed
+            # actual_pct = changed.sum() / changed.size
+            # actual_pct *= 100  # convert to percentage
+            # if abs(actual_pct - pct) > 0.01:
+            #     print(f"Warning: For threshold {t:.2f}, actual changed pixels in saved image = {actual_pct:.4f}")
+
             m = LABEL_CFG["method"]
             if m == "folder":
                 # parent‐folder name
-                out_dir = os.path.join(OUTPUT_FOLDER, xai_method, cat, f"{int(t*100):02d}")
+                out_dir = os.path.join(OUTPUT_FOLDER, xai_method, f"{int(t*100):02d}", cat)
                 os.makedirs(out_dir, exist_ok=True)
                 out_path = os.path.join(out_dir, f"{img_name}.png")
                 save_tensor_img(xm, out_path)
+                
+                # img_corrupt = Image.open(out_path).convert("RGB").resize((224, 224))
+                # img_full = Image.open(img_path).convert("RGB").resize((224, 224))
+            
+                
+                # arr1 = np.array(img_corrupt).astype(np.int16)
+                # arr2 = np.array(img_full).astype(np.int16)
+
+                # delta = 1 # allowed difference per channel
+                # x = np.abs(arr1 - arr2)
+                # y = np.abs(arr1 - arr2) > delta
+                # diff = np.sum(np.abs(arr1 - arr2) > delta)
+
+                # total = arr1.size
+                # true_pct = (diff / total) * 100
+                
+                # if true_pct != pct:
+                #     print(f"Warning: For threshold {t:.2f}, actual changed pixels in saved image = {true_pct:.4f} != expected {pct:.2f}")
+
+                
             elif m == "filename":
                 
                 out_dir = os.path.join(OUTPUT_FOLDER, xai_method, f"{int(t*100):02d}")
                 os.makedirs(out_dir, exist_ok=True)
-                out_path = os.path.join(out_dir, f"{cat}.png")
+                out_path = os.path.join(out_dir, f"{cat}.jpeg")
                 save_tensor_img(xm, out_path)
+                
+            
 
             # print(f"[{cat}][{name}@{int(t*100)}%] → {out_path} ({pct:.1f}% removed)")
 

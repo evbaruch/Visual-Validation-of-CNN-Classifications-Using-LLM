@@ -1,7 +1,7 @@
 {
   "input_folder":        "data/source/imagenet_sample/JPEG",
   "mid_folder":       "data/mid_imagenet_test",
-  "results_csv":       "imagenet_eval.csv",
+  "results_csv":       "data/results/imagenet_eval.csv",
   "mask_color":          [0.0, 0.0, 0.0],
   "gradcam_target_layer":"layer4",
   "reduce_samples":      false,

@@ -28,6 +28,7 @@ LABEL_CFG      = cfg["label_extraction"]
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Device: {device}, Model: {MODEL_NAME}")
+print(f"Percentages: {PCTS}")
 
 # 2) Build & load model
 def build_model():
@@ -102,8 +103,9 @@ for m in METHODS:
         paths = []
         base  = os.path.join(INPUT_FOLDER, m)
         if LABEL_CFG["method"]=="folder":
-            for cat in os.listdir(base):
-                qdir = os.path.join(base, cat, f"{pct:02d}")
+            qdir = os.path.join(base, f"{pct:02d}")
+            for cat in os.listdir(qdir):
+                qdir = os.path.join(qdir, cat)
                 if not os.path.isdir(qdir): continue
                 for f in os.listdir(qdir):
                     if os.path.splitext(f)[1].lower() in VALID_EXTS:
@@ -150,6 +152,9 @@ for m in METHODS:
         results5[m].append(acc5)
 
 # 6) Write CSV + plots
+# make sure the results dir part of RESULTS_CSV path exists
+os.makedirs(os.path.dirname(RESULTS_CSV), exist_ok=True)
+
 with open(RESULTS_CSV, "w", newline="") as f:
     w = csv.writer(f)
     w.writerow([f"XAI Eval ({MODEL_NAME})"])
