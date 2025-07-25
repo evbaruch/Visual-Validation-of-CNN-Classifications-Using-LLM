@@ -348,7 +348,7 @@ def process_all_methods(img_path):
                 # parent‐folder name
                 out_dir = os.path.join(OUTPUT_FOLDER, xai_method, f"{int(t*100):02d}", cat)
                 os.makedirs(out_dir, exist_ok=True)
-                out_path = os.path.join(out_dir, f"{img_name}.png")
+                out_path = os.path.join(out_dir, f"{img_name}.jpeg")
                 save_tensor_img(xm, out_path)
                 
                 # img_corrupt = Image.open(out_path).convert("RGB").resize((224, 224))
