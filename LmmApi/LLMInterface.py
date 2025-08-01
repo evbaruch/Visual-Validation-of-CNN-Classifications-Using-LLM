@@ -4,6 +4,8 @@ from pydantic import BaseModel # a base class for data validation and settings m
 import os
 import pandas as pd
 from tqdm import tqdm
+from pathlib import Path
+import sys
 # Context Class
 class LLMInterface:
     """
@@ -259,3 +261,222 @@ class LLMInterface:
             # Save the DataFrame to a CSV file
             df.to_csv(save_path_csv, index=False)
             
+    # def boolean_outputs_classification_reverse(self, root_directory: str, save_path: str, rewrite = False):
+
+    #     xai = "guided_gradcam"
+    #     P = "05"
+    #     columns = ['Index', 'True_Label', 'Match', 'llm_1']
+        
+    #     for image in os.listdir(f"{root_directory}/{xai}/{xai}{P}"):
+    #         for P in ["05","10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70", "75", "80", "85", "90", "95"]:
+    #             for xai in ["guided_backprop","guided_gradcam", "integrated_gradients","inputxgradient", "smoothgrad"]:
+    #                 print(f"{root_directory}/{xai}/{xai}{P}/{image}")
+    #                 file_path = f"{root_directory}/{xai}/{xai}_{P}/{image}"
+    #                 basename = os.path.basename(file_path)
+    #                 image_name = basename.split('_', 1)[1].split('.')[0]  # Extracts 'tench'
+    #                 insex = basename.split('_')[0]  # Extracts the index from the file name
+    #                 image_name = image_name.replace('_', ' ')  # Replace underscores with spaces for better readability
+    #                 print(f"Image name: {image_name}")
+                    
+    #                 prompt = f"What do you see in the picture? Is it a {image_name} from the imagenet database?"
+
+    #                 # Generate a response from the LLM
+    #                 response = self.strategy.generate_response(
+    #                     prompt=prompt,
+    #                     background=self.background,
+    #                     image=file_path,
+    #                     jsonDescription=self.jsonDescription
+    #                 )
+    #                 # Extract the model dump from the response
+    #                 response = list(response.model_dump().values())
+
+    #                 correctly = response[0]
+                    
+                    
+    #                 data = [insex, image_name, correctly] + response
+                    
+    #                     # add data to xai csv in a new line
+                   
+                   
+                        
+    def boolean_outputs_classification_reverse(self, root_directory: str, save_path: str, rewrite=False):
+        """
+        Stream-style processing with loop order: image -> P -> xai.
+        Only path pattern: {root_directory}/{xai}/{xai}_{P}/{image}.
+        Each image is saved immediately per (xai,P) CSV.
+        """
+
+        os.makedirs(save_path, exist_ok=True)
+        
+        xai = "guided_gradcam"
+        P = "05"
+
+        xai_methods = [
+            "guided_backprop",
+            "guided_gradcam",
+            "integrated_gradients",
+            "inputxgradient",
+            "smoothgrad",
+        ]
+        P_values = ["05", "10", "15", "20", "25", "30", "35", "40", "45", "50",
+                    "55", "60", "65", "70", "75", "80", "85", "90", "95"]
+
+
+        def append_row(xai: str, P: str, row: list):
+            combo = f"{xai}_{P}"
+            csv_path = os.path.join(f"{save_path}/{xai}", f"{combo}.csv")
+            os.makedirs(f"{save_path}/{xai}", exist_ok=True)
+            llm_count = max(1, len(row) - 3)
+            llm_columns = [f'llm_{i+1}' for i in range(llm_count)]
+            columns = ['Index', 'True_Label', 'Match'] + llm_columns
+
+            write_header = not os.path.isfile(csv_path) or (rewrite and os.path.getsize(csv_path) == 0)
+            df_row = pd.DataFrame([row], columns=columns)
+            with open(csv_path, 'a', newline='', encoding='utf-8') as f:
+                df_row.to_csv(f, header=write_header, index=False)
+
+        for image in os.listdir(f"{root_directory}/{xai}/{xai}{P}"):
+            for P in P_values:
+                for xai in xai_methods:
+                    file_path = os.path.join(root_directory, xai, f"{xai}{P}", image)
+                    if not os.path.isfile(file_path):
+                        continue  # not present for this combo
+
+                    # Parse filename like "012_goldfish.png"
+                    basename = os.path.basename(file_path)
+                    try:
+                        # index_part, rest = basename.split('_', 1)
+                        # true_label_raw = rest.split('.')[0]
+                        true_label_raw = basename.split('_', 1)[1].split('.')[0]  # Extracts 'tench'
+                        index_part = basename.split('_')[0]  # Extracts the index from the file name
+                    except ValueError:
+                        continue  # unexpected format, skip
+                    true_label = true_label_raw.replace('_', ' ')
+
+                    prompt = f"What do you see in the picture? Is it a {true_label} from the imagenet database?"
+
+                    response = self.strategy.generate_response(
+                        prompt=prompt,
+                        background=self.background,
+                        image=file_path,
+                        jsonDescription=self.jsonDescription
+                    )
+                    response_values = list(response.model_dump().values())
+                    correctly = response_values[0] if response_values else False
+
+                    row = [index_part, true_label, correctly] + response_values
+                    append_row(xai, P, row)
+
+
+    def boolean_outputs_classification_reverse2(self, root_directory: str, save_path: str, rewrite=False):
+        """
+        Stream-style processing with loop order: image -> P -> xai.
+        Only path pattern: {root_directory}/{xai}/{xai}{P}/{image}.
+        Each image is saved immediately per (xai,P) CSV.
+        Resumes by skipping already-recorded (Index, True_Label) pairs.
+        """
+        os.makedirs(save_path, exist_ok=True)
+
+        xai_methods = [
+            "guided_backprop",
+            "guided_gradcam",
+            "integrated_gradients",
+            "inputxgradient",
+            "smoothgrad",
+        ]
+        P_values = [ "05", "10", "15", "20", "25", "30", "35", "40", "45", "50",
+                    "55", "60", "65", "70", "75", "80", "85", "90", "95"]
+
+        # Cache of already seen (Index, True_Label) per combo to avoid re-reading every time
+        seen_records: dict[tuple[str, str], set[tuple[str, str]]] = {}
+
+        def load_seen(xai: str, P: str) -> set[tuple[str, str]]:
+            key = (xai, P)
+            if key in seen_records:
+                return seen_records[key]
+            xai_folder = os.path.join(save_path, xai)
+            combo = f"{xai}_{P}"
+            csv_path = os.path.join(xai_folder, f"{combo}.csv")
+            seen = set()
+            if os.path.isfile(csv_path) and not rewrite:
+                try:
+                    df_existing = pd.read_csv(csv_path)
+                    if 'Index' in df_existing.columns and 'True_Label' in df_existing.columns:
+                        for _, row in df_existing.iterrows():
+                            seen.add((str(row['Index']), str(row['True_Label'])))
+                except Exception:
+                    pass  # if reading fails, treat as empty
+            seen_records[key] = seen
+            return seen
+
+        def append_row(xai: str, P: str, row: list):
+            combo = f"{xai}_{P}"
+            xai_folder = os.path.join(save_path, xai)
+            os.makedirs(xai_folder, exist_ok=True)
+            csv_path = os.path.join(xai_folder, f"{combo}.csv")
+
+            # If rewrite requested and file exists, remove it once so header will be written fresh
+            if rewrite and os.path.isfile(csv_path):
+                try:
+                    os.remove(csv_path)
+                except OSError:
+                    pass
+
+            llm_count = max(1, len(row) - 3)
+            llm_columns = [f'llm_{i+1}' for i in range(llm_count)]
+            columns = ['Index', 'True_Label', 'Match'] + llm_columns
+
+            write_header = not os.path.isfile(csv_path)
+            df_row = pd.DataFrame([row], columns=columns)
+            with open(csv_path, 'a', newline='', encoding='utf-8') as f:
+                df_row.to_csv(f, header=write_header, index=False)
+
+            # Update cache so we don't repeat
+            index_part, true_label = row[0], row[1]
+            load_seen(xai, P).add((str(index_part), str(true_label)))
+
+        # You had this as your image source
+        xai = "guided_gradcam"
+        P = "05"
+
+
+        for image in tqdm(os.listdir(f"{root_directory}/{xai}/{xai}{P}"), desc=f"Processing images"):
+            if not image.lower().endswith(('.png', '.jpg', '.jpeg')):
+                continue
+
+            for P in P_values:
+                for xai in xai_methods:
+                    file_path = os.path.join(root_directory, xai, f"{xai}{P}", image)
+
+                    sys.stdout.write("\r" + f"{file_path}" + " " * 10)
+                    sys.stdout.flush()
+
+                    if not os.path.isfile(file_path):
+                        continue  # file not present
+
+                    basename = os.path.basename(file_path)
+                    try:
+                        index_part = basename.split('_')[0]
+                        true_label_raw = basename.split('_', 1)[1].split('.')[0]
+                    except (IndexError, ValueError):
+                        continue  # malformed name
+                    true_label = true_label_raw.replace('_', ' ')
+
+                    # Resume check
+                    seen = load_seen(xai, P)
+                    if (index_part, true_label) in seen:
+                        continue  # already processed
+
+                    prompt = f"What do you see in the picture? Is it a {true_label} from the imagenet database?"
+
+                    response = self.strategy.generate_response(
+                        prompt=prompt,
+                        background=self.background,
+                        image=file_path,
+                        jsonDescription=self.jsonDescription
+                    )
+                    response_values = list(response.model_dump().values())
+                    correctly = response_values[0] if response_values else False
+
+                    row = [index_part, true_label, correctly] + response_values
+                    append_row(xai, P, row)

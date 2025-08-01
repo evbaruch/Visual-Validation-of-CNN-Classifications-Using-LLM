@@ -17,7 +17,7 @@ model.fc = nn.Sequential(
     nn.Dropout(0.5),
     nn.Linear(512, 5)            # 5 classes
 )
-model.load_state_dict(torch.load("data/weights/cancer_resnet18_modified_1-2.pth", map_location=device))
+model.load_state_dict(torch.load("data/weights/cancer_resnet18.pth", map_location=device))
 model.to(device).eval()
 
 # 2) your normal test set transform
@@ -35,7 +35,7 @@ os.makedirs("data/results", exist_ok=True)
 for xai_method_idx, xai_method in enumerate(xai_methods):
     for i, index in zip(np.arange(0.05, 1.00, 0.05), range(19)):
         pct = int(i * 100)
-        test_ds = datasets.ImageFolder(f"data/mid_CervicalCancer_modified_1-2/{xai_method}/{pct:02d}", transform=tfm)
+        test_ds = datasets.ImageFolder(f"data/mid_CervicalCancer_test_images/{xai_method}/{pct:02d}", transform=tfm)
         test_loader = torch.utils.data.DataLoader(test_ds, batch_size=64, shuffle=False)
 
         correct = 0
@@ -58,10 +58,10 @@ for xai_method_idx, xai_method in enumerate(xai_methods):
         index=[f"{int(p*100)}%" for p in np.arange(0.05, 1.00, 0.05)]
     )
     results_df = results_df.T
-    results_df.to_csv("data/results/CervicalCancer_modified_1-2.csv")
+    results_df.to_csv("data/results/CervicalCancer_test_images.csv")
 
     # load the csv
-results_df = pd.read_csv("data/results/CervicalCancer_modified_1-2.csv", index_col=0)
+results_df = pd.read_csv("data/results/CervicalCancer_test_images.csv", index_col=0)
 
 
 plt.figure(figsize=(10, 6))
@@ -81,5 +81,5 @@ plt.title("XAI Methods Comparison - Cervical Cancer Dataset Top-1 Accuracy (Resn
 plt.legend()
 plt.grid(True, linestyle='--', alpha=0.6)
 plt.tight_layout()
-plt.savefig("data/results/CervicalCancer_eval_modified_1-2.png")
+plt.savefig("data/results/CervicalCancer_test_images.png")
 plt.close()

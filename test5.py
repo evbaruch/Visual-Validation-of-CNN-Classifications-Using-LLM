@@ -16,7 +16,7 @@ def get_few_shot_prompt_and_paths(few_shot_folder: str):
     prompt_lines = []
     image_paths = []
 
-    for img_path in sorted(glob.glob(os.path.join(few_shot_folder, "*.jpg"))):
+    for img_path in sorted(glob.glob(os.path.join(few_shot_folder, "*.jpeg"))):
         filename = os.path.basename(img_path)
         label = filename.split("_")[0].capitalize()
         prompt_lines.append(f"Image {filename} shows a {label} cell.")
@@ -33,11 +33,12 @@ def collect_test_images(base_folder: str):
             if not file.lower().endswith((".png", ".jpg", ".jpeg")):
                 continue
             parts = os.path.normpath(root).split(os.sep)
-            if len(parts) < 3:
+            # Expect: .../<base_folder>/<xai_method>/<percentage>/<label>/
+            if len(parts) < 4:
                 continue
-            xai_method = parts[-3]
-            percentage = parts[-2]
-            label = parts[-1]
+            xai_method = parts[-4]
+            percentage = parts[-3]
+            label = parts[-2]
             full_path = os.path.join(root, file)
             grouped[xai_method][percentage].append({
                 "path": full_path,
@@ -46,7 +47,10 @@ def collect_test_images(base_folder: str):
     return grouped
 
 
-def classify_image(llm_context, few_shot_prompt, few_shot_paths, test_image_path):
+import shutil
+import tempfile
+
+def classify_image(llm_context, few_shot_prompt, few_shot_paths, test_image_path, use_few_shot=True):
     prompt = (
         "You are a medical image analysis expert. Your task is to classify a cervical cell image "
         "into one of the following categories:\n\n"
@@ -61,11 +65,24 @@ def classify_image(llm_context, few_shot_prompt, few_shot_paths, test_image_path
     llm_context.set_background(prompt)
     llm_context.set_jsonDescription(CervicalCellPrediction)
 
-    # Only one image at a time
-    llm_context.anchored_outputs_classification(
-        imges_path=few_shot_paths + [test_image_path],
-        save_path="temp_llm_result"
-    )
+    if use_few_shot:
+        # Few-shot: copy few-shot images + test image to temp dir
+        with tempfile.TemporaryDirectory() as temp_dir:
+            for img_path in few_shot_paths:
+                shutil.copy(img_path, temp_dir)
+            shutil.copy(test_image_path, temp_dir)
+            llm_context.anchored_outputs_classification(
+                root_directory=temp_dir,
+                save_path="temp_llm_result"
+            )
+    else:
+        # Single image: copy only test image to temp dir
+        with tempfile.TemporaryDirectory() as temp_dir:
+            shutil.copy(test_image_path, temp_dir)
+            llm_context.anchored_outputs_classification(
+                root_directory=temp_dir,
+                save_path="temp_llm_result"
+            )
 
     # Read prediction
     result_path = os.path.join("temp_llm_result", "response.json")
@@ -79,7 +96,6 @@ def classify_image(llm_context, few_shot_prompt, few_shot_paths, test_image_path
             return prediction.get("category", "").strip().capitalize()
         except:
             return None
-
 
 def build_accuracy_matrix(few_shot_folder, test_folder, output_csv_path):
     few_shot_prompt, few_shot_paths = get_few_shot_prompt_and_paths(few_shot_folder)
@@ -121,7 +137,7 @@ def build_accuracy_matrix(few_shot_folder, test_folder, output_csv_path):
 
 if __name__ == "__main__":
     build_accuracy_matrix(
-        few_shot_folder="data/few_shot_examples/",
-        test_folder="data/mid_CervicalCancer_modified_dataset/",
+        few_shot_folder="data\\few_shots\\",
+        test_folder="data\\mid_CervicalCancer_evtr\\",
         output_csv_path="llm_accuracy_matrix.csv"
     )
